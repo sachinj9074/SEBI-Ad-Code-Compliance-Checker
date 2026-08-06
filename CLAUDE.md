@@ -34,12 +34,12 @@ open decisions. If the two conflict, the README wins on product/design; this fil
 - Windows 11, **PowerShell is the primary shell** (Bash tool also available). Python 3.12, venv at `.venv`.
 - Direct model API for all model calls (README §9). API key in `.env` (gitignored), never committed.
 
+## Resolved decisions
+- **Model provider = Anthropic Claude** (native vision, Devanagari, structured output). All model
+  calls go through one client in `src/` so the provider stays swappable. API key in `.env`.
+- **Sources = fetch from official public sites.** The missing SEBI/AMFI documents are being
+  downloaded from sebi.gov.in / amfiindia.com into `sources/`. See `sources/SOURCES.md`.
+
 ## Open decisions (confirm before writing the code that depends on them)
-- **Model provider.** README says "direct model API, chosen on cost, vision-capable." Default
-  assumption: **Anthropic Claude** (native vision, Devanagari, structured output). Isolated behind
-  a model client in `src/` so it can be swapped.
 - **Severity enum.** Set to `critical | high | medium | low` at setup; reconcile with the
   checklist's own severity language on Day 1.
-- **Missing public sources.** Sixth Schedule, Mar-2026 MF Master Circular (advertisement chapter),
-  and current AMFI guidance are not yet in `sources/`. Needed to fill `source_clause` on rules.
-  See `sources/SOURCES.md`.
