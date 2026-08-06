@@ -1,0 +1,52 @@
+[
+  {
+    "rule_id": "VID-001",
+    "title": "Prominent 14-word disclaimer with voice-over",
+    "description": "In audio-visual creatives the standard 14-word warning must be prominent, with the visual and an accompanying voice-over reiteration audible and clear, running for at least 5 seconds.",
+    "trigger": { "type": "unconditional" },
+    "applies_to": ["all"],
+    "creative_type": ["video"],
+    "severity": "high",
+    "check_type": "assisted",
+    "source_clause": "Sixth Schedule (Advertisement Code) clause (j); internal Video checkpoints",
+    "source_date": "2012-02-21",
+    "provenance": ["sebi", "internal_policy"],
+    "examples": {
+      "pass": { "content": "Video with the 14-word warning on screen and a matching voice-over running for 6 seconds.", "note": "Prominent, ≥5s, with voice-over." },
+      "fail": { "content": "Video where the disclaimer flashes for 1 second with no voice-over.", "note": "Not prominent, under 5s, no voice-over." }
+    }
+  },
+  {
+    "rule_id": "VID-002",
+    "title": "Regional-language and Hinglish disclaimer treatment",
+    "description": "For a regional-language video the 14-word disclaimer must also be in the regional language; for Hinglish content the voice-over of the disclaimer must be in Hindi and the disclaimer text must appear in both Hindi and English.",
+    "trigger": { "type": "conditional", "feature": "non_english_language" },
+    "applies_to": ["all"],
+    "creative_type": ["video"],
+    "severity": "medium",
+    "check_type": "assisted",
+    "source_clause": "Internal Video checkpoints; Sixth Schedule (Advertisement Code) clause (ia)",
+    "source_date": "2021-03-05",
+    "provenance": ["sebi", "internal_policy"],
+    "examples": {
+      "pass": { "content": "Hinglish video with a Hindi voice-over of the disclaimer and on-screen text in both Hindi and English.", "note": "Correct Hinglish treatment." },
+      "fail": { "content": "Regional-language video whose disclaimer appears only in English.", "note": "Disclaimer not in the regional language." }
+    }
+  },
+  {
+    "rule_id": "VID-003",
+    "title": "Approved script, legible labels, no conflicting graphics",
+    "description": "The video content must match the approved script exactly, must carry legible product labels and risk-o-meter, and must not contain conflicting images or graphics.",
+    "trigger": { "type": "unconditional" },
+    "applies_to": ["all"],
+    "creative_type": ["video"],
+    "severity": "medium",
+    "check_type": "assisted",
+    "source_clause": "Internal Video checkpoints",
+    "provenance": ["internal_policy"],
+    "examples": {
+      "pass": { "content": "Video matches the approved script, shows legible product labels and risk-o-meter, and has no conflicting graphics.", "note": "Compliant on all three." },
+      "fail": { "content": "Video adds an off-script claim and shows a background graphic that contradicts the risk label.", "note": "Deviates from script; conflicting graphic." }
+    }
+  }
+]

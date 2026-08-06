@@ -1,0 +1,155 @@
+[
+  {
+    "rule_id": "PERF-001",
+    "title": "CAGR for 1Y / 3Y / 5Y / since inception",
+    "description": "Performance must be advertised in terms of CAGR for at least the past 1 year, 3 years, 5 years, and since inception.",
+    "trigger": { "type": "conditional", "feature": "performance" },
+    "applies_to": ["mf_scheme"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "high",
+    "check_type": "automated",
+    "source_clause": "MF Master Circular 2026-03-20, para 14.2.1(a)",
+    "source_date": "2026-03-20",
+    "provenance": ["sebi"],
+    "examples": {
+      "pass": { "content": "CAGR — 1Y: 12.4% | 3Y: 15.2% | 5Y: 13.8% | Since inception: 11.5%.", "note": "All four periods shown as CAGR." },
+      "fail": { "content": "Look at our stellar 1-year return of 12.4%!", "note": "Only 1Y shown; 3Y/5Y/since-inception missing." }
+    }
+  },
+  {
+    "rule_id": "PERF-002",
+    "title": "Point-to-point return on ₹10,000",
+    "description": "Point-to-point returns on a standard investment of Rs. 10,000 must also be provided alongside CAGR.",
+    "trigger": { "type": "conditional", "feature": "performance" },
+    "applies_to": ["mf_scheme"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "medium",
+    "check_type": "automated",
+    "source_clause": "MF Master Circular 2026-03-20, para 14.2.1(b)",
+    "source_date": "2026-03-20",
+    "provenance": ["sebi"],
+    "examples": {
+      "pass": { "content": "CAGR 1Y 12.4%; value of ₹10,000 invested 1 year ago: ₹11,240.", "note": "₹10,000 standard-investment value shown." },
+      "fail": { "content": "CAGR — 1Y 12.4% | 3Y 15.2% | 5Y 13.8% | SI 11.5%.", "note": "CAGR present but no ₹10,000 point-to-point value." }
+    }
+  },
+  {
+    "rule_id": "PERF-003",
+    "title": "Plan stated + different-expense-structure footnote",
+    "description": "It must be specifically mentioned whether the performance shown is of the Direct or Regular plan, along with a footnote stating that different plans have a different expense structure.",
+    "trigger": { "type": "conditional", "feature": "performance" },
+    "applies_to": ["mf_scheme"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "medium",
+    "check_type": "automated",
+    "source_clause": "MF Master Circular 2026-03-20, para 14.2.1(d)",
+    "source_date": "2026-03-20",
+    "provenance": ["sebi"],
+    "examples": {
+      "pass": { "content": "Performance shown is for the Direct Plan - Growth option. Different plans have a different expense structure.", "note": "Plan named and expense-structure footnote present." },
+      "fail": { "content": "5Y CAGR: 13.8%. Invest today.", "note": "Neither plan nor expense-structure footnote stated." }
+    }
+  },
+  {
+    "rule_id": "PERF-004",
+    "title": "Data as of last day of preceding month-end",
+    "description": "Performance information must be based on the period computed from the last day of the month-end preceding the date of the advertisement.",
+    "trigger": { "type": "conditional", "feature": "performance" },
+    "applies_to": ["mf_scheme"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "medium",
+    "check_type": "assisted",
+    "source_clause": "MF Master Circular 2026-03-20, para 14.2.1(c)",
+    "source_date": "2026-03-20",
+    "provenance": ["sebi"],
+    "examples": {
+      "pass": { "content": "Performance data as on 31 July 2026.", "note": "Month-end dating (verify it precedes the ad date)." },
+      "fail": { "content": "Performance data as on 15 July 2026.", "note": "Mid-month 'as on' date, not a month-end." }
+    }
+  },
+  {
+    "rule_id": "PERF-005",
+    "title": "Fund-manager-change footnote",
+    "description": "If the scheme has not been managed by the same fund manager for the full period of the performance shown, that must be disclosed in a footnote.",
+    "trigger": { "type": "conditional", "feature": "performance" },
+    "applies_to": ["mf_scheme"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "low",
+    "check_type": "assisted",
+    "source_clause": "MF Master Circular 2026-03-20, paras 14.2.1(e), 14.2.6(c)",
+    "source_date": "2026-03-20",
+    "provenance": ["sebi"],
+    "examples": {
+      "pass": { "content": "Note: the fund manager changed on 1 April 2025; performance prior to that date reflects the previous manager.", "note": "FM-change disclosed." },
+      "fail": { "content": "5Y CAGR 13.8% under our fund manager's expert stewardship.", "note": "Attributes full-period performance to current FM with no tenure footnote — verify FM tenure." }
+    }
+  },
+  {
+    "rule_id": "PERF-006",
+    "title": "Short-track-record performance limits",
+    "description": "Where the scheme has been in existence for less than six months, past performance must not be provided; if in existence for more than six months but less than one year, only the simple annualised growth rate (past 6 months and since inception) may be shown.",
+    "trigger": { "type": "conditional", "feature": "performance" },
+    "applies_to": ["mf_scheme"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "high",
+    "check_type": "assisted",
+    "source_clause": "MF Master Circular 2026-03-20, para 14.2.2",
+    "source_date": "2026-03-20",
+    "provenance": ["sebi"],
+    "examples": {
+      "pass": { "content": "The scheme was launched 8 months ago; simple annualised return since inception is shown.", "note": "6–12 month scheme uses simple annualised return." },
+      "fail": { "content": "Launched just 3 months ago and already up 5% — see the returns!", "note": "Past performance shown for a sub-6-month scheme." }
+    }
+  },
+  {
+    "rule_id": "PERF-007",
+    "title": "Scheme and benchmark risk-o-meter when performance shown",
+    "description": "When the performance of a scheme or benchmark is displayed, the risk-o-meter of both the scheme and the benchmark must be given.",
+    "trigger": { "type": "conditional", "feature": "performance" },
+    "applies_to": ["mf_scheme"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "medium",
+    "check_type": "assisted",
+    "source_clause": "Internal Performance checklist item 12; MF Master Circular 2026-03-20 (product labelling)",
+    "source_date": "2026-03-20",
+    "provenance": ["sebi", "internal_policy"],
+    "examples": {
+      "pass": { "content": "Performance table alongside the scheme risk-o-meter and the benchmark risk-o-meter.", "note": "Both risk-o-meters present with performance." },
+      "fail": { "content": "Performance vs benchmark shown, with only the scheme risk-o-meter.", "note": "Benchmark risk-o-meter missing." }
+    }
+  },
+  {
+    "rule_id": "PERF-008",
+    "title": "SIP performance requires lumpsum, cash-flow detail, and XIRR note",
+    "description": "When SIP performance is shown, the corresponding scheme lumpsum performance must also be shown, the SIP instalment periodicity must be stated, and an XIRR note must be given for the SIP returns.",
+    "trigger": { "type": "conditional", "feature": "sip_reference" },
+    "applies_to": ["mf_scheme"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "medium",
+    "check_type": "automated",
+    "source_clause": "Internal Performance checklist items 16-17; MF Master Circular 2026-03-20, Chapter 14",
+    "source_date": "2026-03-20",
+    "provenance": ["sebi", "internal_policy"],
+    "examples": {
+      "pass": { "content": "SIP returns (XIRR): 14.1% — ₹1,000 invested on the first business day of every month. Corresponding lumpsum CAGR: 13.8%. Returns computed using the XIRR method.", "note": "SIP + lumpsum + periodicity + XIRR note." },
+      "fail": { "content": "Your SIP would have earned 14.1% returns!", "note": "SIP return only; no lumpsum, periodicity, or XIRR note." }
+    }
+  },
+  {
+    "rule_id": "PERF-009",
+    "title": "Other schemes managed by the same fund manager",
+    "description": "When a scheme's performance is advertised, performance of the other schemes managed by the same fund manager must be included (1Y/3Y/5Y CAGR with benchmarks); if the fund manager manages more than six schemes, disclose the total number and the top-3 and bottom-3 schemes.",
+    "trigger": { "type": "conditional", "feature": "performance" },
+    "applies_to": ["mf_scheme"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "medium",
+    "check_type": "assisted",
+    "source_clause": "MF Master Circular 2026-03-20, para 14.2.6",
+    "source_date": "2026-03-20",
+    "provenance": ["sebi"],
+    "examples": {
+      "pass": { "content": "Performance of other schemes managed by the fund manager (1Y/3Y/5Y CAGR with benchmarks); as the manager runs more than six schemes, the total count and top-3 and bottom-3 schemes are disclosed (link provided).", "note": "Other-schemes disclosure present." },
+      "fail": { "content": "A single scheme's 1/3/5Y performance, with no reference to the manager's other schemes.", "note": "Other-schemes-managed disclosure missing — verify completeness." }
+    }
+  }
+]

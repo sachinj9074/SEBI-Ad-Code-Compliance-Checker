@@ -1,0 +1,36 @@
+[
+  {
+    "rule_id": "CELEB-001",
+    "title": "No celebrity in the advertisement",
+    "description": "No celebrity shall form part of the advertisement. A prominent person detected in the creative must be reviewed against the 7-part celebrity definition (celebrity-index top 50, lead film/TV/OTT role, >10 lakh social followers, national/international sportsperson, TV host/anchor, competition winner/runner-up, or influential virtual character). 'Once a celebrity, always a celebrity.'",
+    "trigger": { "type": "conditional", "feature": "prominent_person" },
+    "applies_to": ["all"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "high",
+    "check_type": "assisted",
+    "source_clause": "Sixth Schedule (Advertisement Code) clause (e); internal celebrity checklist (7-part definition)",
+    "source_date": "2012-02-21",
+    "provenance": ["sebi", "internal_policy"],
+    "examples": {
+      "pass": { "content": "Creative featuring an anonymous everyday-investor model with no public persona.", "note": "No celebrity; a person appears but is not a public figure." },
+      "fail": { "content": "Creative featuring a well-known film actor endorsing the scheme.", "note": "Prominent person detected — raise needs_review to confirm celebrity status." }
+    }
+  },
+  {
+    "rule_id": "CELEB-002",
+    "title": "No caricatures, avatars, or memes of cine personalities",
+    "description": "The creative must not use caricatures, avatars, or memes of popular cine actors, movie posters, movie or series scenes, or 'filmi' dialogues in promotional material, especially on social media.",
+    "trigger": { "type": "conditional", "feature": "prominent_person" },
+    "applies_to": ["all"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "medium",
+    "check_type": "assisted",
+    "source_clause": "Internal celebrity checklist item 8; Sixth Schedule (Advertisement Code) clause (e)",
+    "source_date": "2012-02-21",
+    "provenance": ["internal_policy", "sebi"],
+    "examples": {
+      "pass": { "content": "An original illustrated character created for the campaign.", "note": "No reference to a cine personality." },
+      "fail": { "content": "A meme built on a famous movie scene with a well-known 'filmi' dialogue, used to promote the SIP.", "note": "Meme of a movie scene / dialogue." }
+    }
+  }
+]
