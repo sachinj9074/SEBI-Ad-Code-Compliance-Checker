@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sebi-ad-checker/schemas/factsheet_record.schema.json",
+  "title": "Factsheet Record",
+  "description": "One scheme variant (plan + option) in the factsheet knowledge base. README section 6. Multiple records may share a scheme_name when the factsheet reports returns per plan/option.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["scheme_name", "fund_type", "as_of_date", "source_file"],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "description": "Stable key, e.g. 'acme-large-cap|direct|growth' (optional)."
+    },
+    "scheme_name": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "category": { "type": "string", "description": "e.g. Large Cap, Liquid, Index." },
+    "fund_type": { "enum": ["active", "passive"] },
+    "plan": { "enum": ["direct", "regular", null] },
+    "option": { "enum": ["growth", "idcw", "idcw_payout", "idcw_reinvestment", null] },
+    "returns": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Returns per period; scheme vs benchmark. Null where the factsheet does not report a period.",
+      "properties": {
+        "1Y": { "$ref": "#/$defs/return_pair" },
+        "3Y": { "$ref": "#/$defs/return_pair" },
+        "5Y": { "$ref": "#/$defs/return_pair" },
+        "since_inception": { "$ref": "#/$defs/return_pair" }
+      }
+    },
+    "riskometer_level": {
+      "enum": ["low", "low_to_moderate", "moderate", "moderately_high", "high", "very_high"]
+    },
+    "benchmark": { "type": "string" },
+    "aum": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": { "type": "number" },
+        "unit": { "type": "string", "default": "INR_crore" },
+        "as_of_date": { "type": "string", "format": "date" }
+      }
+    },
+    "top_holdings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "weight_pct": { "type": "number" }
+        }
+      }
+    },
+    "fund_managers": { "type": "array", "items": { "type": "string" } },
+    "inception_date": { "type": "string", "format": "date" },
+    "as_of_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Factsheet as-of date; stamped on every fact-check verdict."
+    },
+    "source_file": { "type": "string" },
+
+    "underlying_index": { "type": "string", "description": "Passive funds only." },
+    "tracking_error": { "type": "number", "description": "Passive funds only." },
+    "tracking_difference": { "type": "number", "description": "Passive funds only." },
+    "expense_ratio": { "type": "number", "description": "Passive funds only." }
+  },
+  "$defs": {
+    "return_pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scheme": { "type": ["number", "null"] },
+        "benchmark": { "type": ["number", "null"] }
+      }
+    }
+  }
+}

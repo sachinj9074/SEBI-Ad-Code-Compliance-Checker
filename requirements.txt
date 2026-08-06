@@ -1,0 +1,22 @@
+# SEBI Ad Code Compliance Checker — dependencies
+# Install:  .venv\Scripts\python.exe -m pip install -r requirements.txt
+
+# --- Setup / validation ---
+jsonschema>=4.21        # validate rule / verdict / factsheet-record against /schemas
+
+# --- Day 1: corpus + pass-one checker ---
+openpyxl>=3.1           # read the internal compliance checklist (.xlsx)
+python-docx>=1.1        # extract text from DOCX creatives
+pdfplumber>=0.11        # extract text from text-layer PDFs
+rapidfuzz>=3.9          # fuzzy match verbatim mandated disclaimers
+python-dotenv>=1.0      # load API key from .env
+
+# --- Model API (direct calls; provider is an open decision, default Anthropic) ---
+anthropic>=0.40         # vision-capable, Devanagari, structured output
+
+# --- Day 2: factsheet KB + vision ingestion ---
+pymupdf>=1.24           # rasterize PDF pages for vision when tables garble; page chunking
+pillow>=10.3            # image handling for banners / carousels
+
+# --- Day 3: UI ---
+streamlit>=1.37         # display layer only (README §9)

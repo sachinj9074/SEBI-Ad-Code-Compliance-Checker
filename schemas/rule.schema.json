@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sebi-ad-checker/schemas/rule.schema.json",
+  "title": "Compliance Rule",
+  "description": "One rule in the SEBI ad-code corpus (Layer 1, the scored spine). See README section 4.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "rule_id",
+    "description",
+    "trigger",
+    "applies_to",
+    "creative_type",
+    "severity",
+    "check_type",
+    "source_clause",
+    "provenance",
+    "examples"
+  ],
+  "properties": {
+    "rule_id": {
+      "type": "string",
+      "pattern": "^[A-Z]{2,6}-[0-9]{3}$",
+      "description": "Stable unique id, e.g. PERF-001, DISC-004, PROH-001."
+    },
+    "title": {
+      "type": "string",
+      "description": "Short human label (optional)."
+    },
+    "description": {
+      "type": "string",
+      "description": "Plain-language statement of what the rule requires or prohibits."
+    },
+    "trigger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": { "enum": ["unconditional", "conditional"] },
+        "feature": {
+          "$ref": "#/$defs/feature",
+          "description": "Required when type=conditional: the Stage-A content feature that activates this rule."
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "conditional" } } },
+          "then": { "required": ["feature"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "unconditional" } } },
+          "then": { "not": { "required": ["feature"] } }
+        }
+      ]
+    },
+    "applies_to": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": ["all", "mf_scheme", "iap", "non_iap", "nfo", "aif", "pms", "branding", "social_media"]
+      },
+      "description": "Business-area tags. v1 populates only all, mf_scheme, nfo."
+    },
+    "creative_type": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"]
+      },
+      "description": "Creative-type tags. video rules are encoded but inactive in v1."
+    },
+    "severity": {
+      "enum": ["critical", "high", "medium", "low"],
+      "description": "Severity of a violation. NOTE: enum chosen at setup; reconcile with checklist conventions on Day 1."
+    },
+    "check_type": {
+      "enum": ["automated", "assisted"],
+      "description": "automated = machine-decidable; assisted = raises needs_review for a human."
+    },
+    "source_clause": {
+      "type": "string",
+      "description": "Governing clause / circular reference, e.g. 'Sixth Schedule clause 2(a)' or 'MF Master Circular 2026-03-20, para 12.x'."
+    },
+    "source_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the source document, for supersession tracking (README section 4)."
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "enum": ["sebi", "amfi", "internal_policy"] },
+      "description": "Where the rule comes from; a combination is allowed."
+    },
+    "mandated_text": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "description": "Verbatim required disclaimer text." },
+        "language": { "$ref": "#/$defs/language" },
+        "match_threshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.85,
+          "description": "Fuzzy-match similarity threshold to tolerate line-break / punctuation drift."
+        }
+      },
+      "description": "Only for disclaimer-presence rules."
+    },
+    "examples": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pass", "fail"],
+      "properties": {
+        "pass": { "$ref": "#/$defs/example" },
+        "fail": { "$ref": "#/$defs/example" }
+      },
+      "description": "Seed eval cases: one snippet that should PASS this rule and one that should FAIL. README section 8."
+    }
+  },
+  "$defs": {
+    "feature": {
+      "enum": [
+        "performance",
+        "named_stocks",
+        "named_sectors",
+        "sip_reference",
+        "aum_figure",
+        "yield_ytm",
+        "prominent_person",
+        "scheme_name",
+        "non_english_language"
+      ]
+    },
+    "language": {
+      "enum": ["en", "hi", "hinglish", "other"]
+    },
+    "example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["content"],
+      "properties": {
+        "content": { "type": "string", "description": "Creative snippet." },
+        "note": { "type": "string", "description": "Why this is a pass/fail (optional)." }
+      }
+    }
+  }
+}

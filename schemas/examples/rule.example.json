@@ -1,0 +1,23 @@
+{
+  "rule_id": "PROH-001",
+  "title": "No assured or guaranteed returns",
+  "description": "The creative must not state, imply, or suggest assured, guaranteed, or protected returns for any mutual fund scheme.",
+  "trigger": { "type": "unconditional" },
+  "applies_to": ["all"],
+  "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+  "severity": "critical",
+  "check_type": "automated",
+  "source_clause": "SEBI (Mutual Funds) Regulations 1996, Sixth Schedule (Advertisement Code); MF Master Circular 2026-03-20, advertisement chapter",
+  "source_date": "2026-03-20",
+  "provenance": ["sebi"],
+  "examples": {
+    "pass": {
+      "content": "Mutual fund investments are subject to market risks. Past performance may or may not be sustained in future.",
+      "note": "Makes no assurance of returns."
+    },
+    "fail": {
+      "content": "Invest now and get guaranteed 12% annual returns, capital fully protected!",
+      "note": "'guaranteed' and 'capital fully protected' assert assured returns."
+    }
+  }
+}

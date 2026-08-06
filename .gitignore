@@ -1,0 +1,22 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets / environment
+.env
+.env.*
+*.key
+.streamlit/secrets.toml
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Scratch
+scratch/
+*.tmp

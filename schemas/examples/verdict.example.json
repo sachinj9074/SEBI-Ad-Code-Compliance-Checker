@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1.0",
+  "meta": {
+    "creative_id": "sample-001",
+    "source_filename": "sample_clean.docx",
+    "areas_selected": ["mf_scheme"],
+    "creative_type": "general_kv",
+    "run_at": "2026-08-06T10:00:00Z",
+    "model_used": "tbd",
+    "tool_version": "0.1.0"
+  },
+  "extraction": {
+    "extracted_text": "Mutual fund investments are subject to market risks. Past performance may or may not be sustained in future.",
+    "languages_detected": ["en"],
+    "confidence": 0.98,
+    "source_kind": "docx",
+    "warnings": []
+  },
+  "feature_detection": {
+    "features": [
+      { "feature": "performance", "present": false, "confidence": 0.95 }
+    ]
+  },
+  "rule_layer": {
+    "results": [
+      {
+        "rule_id": "PROH-001",
+        "verdict": "pass",
+        "triggered_by": "unconditional",
+        "severity": "critical",
+        "check_type": "automated"
+      }
+    ],
+    "summary": { "rules_run": 1, "passed": 1, "failed": 0, "needs_review": 0, "not_applicable": 0 }
+  },
+  "fact_check_layer": {
+    "results": [],
+    "summary": { "claims_checked": 0, "matches": 0, "mismatches": 0, "ambiguous": 0, "not_found": 0 }
+  },
+  "advisory_layer": { "notes": [] },
+  "summary_strip": {
+    "rules_run": 1,
+    "passed": 1,
+    "failed": 0,
+    "needs_review": 0,
+    "fact_mismatches": 0,
+    "advisory_notes": 0
+  }
+}

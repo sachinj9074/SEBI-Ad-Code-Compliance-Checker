@@ -1,0 +1,26 @@
+{
+  "record_id": "acme-large-cap|direct|growth",
+  "scheme_name": "ACME Large Cap Fund",
+  "aliases": ["ACME Large Cap"],
+  "category": "Large Cap",
+  "fund_type": "active",
+  "plan": "direct",
+  "option": "growth",
+  "returns": {
+    "1Y": { "scheme": 12.4, "benchmark": 11.1 },
+    "3Y": { "scheme": 15.2, "benchmark": 14.0 },
+    "5Y": { "scheme": 13.8, "benchmark": 12.9 },
+    "since_inception": { "scheme": 11.5, "benchmark": 10.8 }
+  },
+  "riskometer_level": "very_high",
+  "benchmark": "Nifty 100 TRI",
+  "aum": { "value": 8421.6, "unit": "INR_crore", "as_of_date": "2026-06-30" },
+  "top_holdings": [
+    { "name": "Sample Bank Ltd", "weight_pct": 8.2 },
+    { "name": "Sample Energy Ltd", "weight_pct": 6.1 }
+  ],
+  "fund_managers": ["A. Manager", "B. Manager"],
+  "inception_date": "2013-05-10",
+  "as_of_date": "2026-06-30",
+  "source_file": "factsheet_active_2026-06-30.pdf"
+}

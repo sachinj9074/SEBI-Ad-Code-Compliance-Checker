@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sebi-ad-checker/schemas/verdict.schema.json",
+  "title": "Creative Verdict",
+  "description": "Full structured verdict for one creative. Three separated layers (README section 3). Never merge the layers.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "meta",
+    "extraction",
+    "feature_detection",
+    "rule_layer",
+    "fact_check_layer",
+    "advisory_layer",
+    "summary_strip"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_filename", "areas_selected", "creative_type", "run_at"],
+      "properties": {
+        "creative_id": { "type": "string" },
+        "source_filename": { "type": "string" },
+        "areas_selected": { "type": "array", "items": { "type": "string" } },
+        "creative_type": { "type": "string" },
+        "run_at": { "type": "string", "format": "date-time" },
+        "model_used": { "type": "string" },
+        "tool_version": { "type": "string" }
+      }
+    },
+    "extraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["extracted_text", "confidence", "source_kind"],
+      "description": "Show-back panel + extraction confidence (README section 5).",
+      "properties": {
+        "extracted_text": { "type": "string" },
+        "languages_detected": { "type": "array", "items": { "type": "string" } },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "source_kind": { "enum": ["docx", "pdf_text", "pdf_scanned", "image", "carousel"] },
+        "layout_notes": { "type": "string" },
+        "legibility_notes": { "type": "string" },
+        "frames": {
+          "type": "array",
+          "description": "Per-frame extraction for carousels.",
+          "items": { "type": "object" }
+        },
+        "warnings": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "feature_detection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["features"],
+      "description": "Stage A: what the creative contains, driving conditional rule activation.",
+      "properties": {
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["feature", "present"],
+            "properties": {
+              "feature": { "type": "string" },
+              "present": { "type": "boolean" },
+              "evidence": { "type": "string" },
+              "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+            }
+          }
+        }
+      }
+    },
+    "rule_layer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["results", "summary"],
+      "description": "Layer 1 — the scored spine.",
+      "properties": {
+        "results": { "type": "array", "items": { "$ref": "#/$defs/rule_result" } },
+        "summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["rules_run", "passed", "failed", "needs_review", "not_applicable"],
+          "properties": {
+            "rules_run": { "type": "integer" },
+            "passed": { "type": "integer" },
+            "failed": { "type": "integer" },
+            "needs_review": { "type": "integer" },
+            "not_applicable": { "type": "integer" }
+          }
+        }
+      }
+    },
+    "fact_check_layer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["results", "summary"],
+      "description": "Layer 2 — factsheet fact-check, separate section and severity model. Never blended into the compliance score.",
+      "properties": {
+        "results": { "type": "array", "items": { "$ref": "#/$defs/fact_result" } },
+        "summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["claims_checked", "matches", "mismatches", "ambiguous", "not_found"],
+          "properties": {
+            "claims_checked": { "type": "integer" },
+            "matches": { "type": "integer" },
+            "mismatches": { "type": "integer" },
+            "ambiguous": { "type": "integer" },
+            "not_found": { "type": "integer" }
+          }
+        }
+      }
+    },
+    "advisory_layer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["notes"],
+      "description": "Layer 3 — advisory, unscored. Never affects the pass/fail summary.",
+      "properties": {
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["note"],
+            "properties": {
+              "note": { "type": "string" },
+              "area": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "summary_strip": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rules_run", "passed", "failed", "needs_review", "fact_mismatches", "advisory_notes"],
+      "description": "Top-of-page counts (README section 7).",
+      "properties": {
+        "rules_run": { "type": "integer" },
+        "passed": { "type": "integer" },
+        "failed": { "type": "integer" },
+        "needs_review": { "type": "integer" },
+        "fact_mismatches": { "type": "integer" },
+        "advisory_notes": { "type": "integer" }
+      }
+    }
+  },
+  "$defs": {
+    "rule_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rule_id", "verdict"],
+      "properties": {
+        "rule_id": { "type": "string" },
+        "verdict": { "enum": ["pass", "fail", "needs_review", "not_applicable"] },
+        "triggered_by": { "type": "string", "description": "feature name or 'unconditional'." },
+        "offending_text": { "type": "string" },
+        "offending_element": {
+          "type": "string",
+          "description": "For image creatives: which element, e.g. 'disclaimer, bottom strip'."
+        },
+        "severity": { "enum": ["critical", "high", "medium", "low"] },
+        "source_clause": { "type": "string" },
+        "provenance": { "type": "array", "items": { "type": "string" } },
+        "check_type": { "enum": ["automated", "assisted"] },
+        "suggested_rewrite": { "type": "string" },
+        "explanation": { "type": "string" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "fact_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_text", "verdict"],
+      "properties": {
+        "claim_text": { "type": "string" },
+        "claim_field": { "type": "string", "description": "e.g. returns_1y, aum, riskometer." },
+        "claimed_value": { "type": "string" },
+        "scheme_matched": { "type": "string" },
+        "plan": { "type": "string" },
+        "option": { "type": "string" },
+        "factsheet_value": { "type": "string" },
+        "as_of_date": { "type": "string", "format": "date" },
+        "source_file": { "type": "string" },
+        "verdict": { "enum": ["match", "mismatch", "ambiguous", "not_found"] },
+        "assumption": { "type": "string", "description": "'matches under assumption X' (README section 6)." },
+        "severity": { "enum": ["critical", "high", "medium", "low"] }
+      }
+    }
+  }
+}
