@@ -11,12 +11,18 @@ change it before changing rule structure.
 |---|---|---|---|
 | `01_prohibitions.json` | General prohibitions (unconditional, Sixth Schedule) | PROH-001…006 | 6 |
 | `02_celebrity.json` | Celebrity / prominent person | CELEB-001…002 | 2 |
-| `03_disclaimers.json` | Mandatory disclaimers (verbatim `mandated_text` + fuzzy match) | DISC-001…010 | 10 |
-| `04_performance.json` | Performance (Master Circular Ch. 14) | PERF-001…009 | 9 |
+| `03_disclaimers.json` | Mandatory disclaimers (verbatim `mandated_text` + fuzzy match) | DISC-001…027 | 27 |
+| `04_performance.json` | Performance (Master Circular Ch. 14) | PERF-001…014 | 14 |
 | `05_yield_aum_anniversary.json` | Yield / AUM / anniversary | AUM-001, YLD-001…002, ANNIV-001 | 4 |
 | `06_video.json` | Video — **encoded but inactive in v1** | VID-001…003 | 3 |
+| `07_amfi.json` | AMFI guidelines | AMFI-001 | 1 |
 
-**Total: 34 rules — 31 v1-active + 3 inactive. 17 automated / 17 assisted.**
+**Total: 57 rules — 53 v1-active + 4 inactive (3 video + 1 video-only disclaimer). 34 automated / 23 assisted.**
+
+The disclaimer set mirrors the internal checklist's Disclaimer Repository nearly one-to-one
+(conditional on the content feature that requires each disclaimer). Two checklist rows — "Internal
+Disclaimer" and "Distributor Specific Disclaimer" — are intentionally excluded: they govern who may
+*see* material, not ad-code compliance of a creative.
 
 ## How the checker uses these (two-stage, README §3)
 

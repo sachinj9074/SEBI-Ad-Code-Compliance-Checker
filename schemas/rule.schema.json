@@ -134,7 +134,22 @@
         "yield_ytm",
         "prominent_person",
         "scheme_name",
-        "non_english_language"
+        "non_english_language",
+        "idcw_payout",
+        "tax_reference",
+        "fund_of_funds",
+        "elss",
+        "graph_chart",
+        "market_cap_terms",
+        "index_etf",
+        "exchange_listed",
+        "offshore_promotion",
+        "app_rating",
+        "planning_tool",
+        "asset_allocation",
+        "sip_low_ticket",
+        "small_cap_scheme",
+        "merged_scheme"
       ]
     },
     "language": {

@@ -1,0 +1,19 @@
+[
+  {
+    "rule_id": "AMFI-001",
+    "title": "13% cap on depicted future returns in tools",
+    "description": "In tools such as goal-planning calculators and return illustrations in non-scheme-related material, the higher range of the intended return depicted must not exceed 13%.",
+    "trigger": { "type": "conditional", "feature": "planning_tool" },
+    "applies_to": ["all"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "high",
+    "check_type": "automated",
+    "source_clause": "AMFI Best Practices Guidelines Circular No. 109/2023-24 (usage of illustrations for future returns)",
+    "source_date": "2023-11-01",
+    "provenance": ["amfi"],
+    "examples": {
+      "pass": { "content": "Goal calculator illustration assuming returns in the 8%-12% range.", "note": "Upper range within the 13% cap." },
+      "fail": { "content": "Goal calculator showing what your SIP could grow to at an assumed 18% annual return.", "note": "Depicted return exceeds the 13% cap." }
+    }
+  }
+]

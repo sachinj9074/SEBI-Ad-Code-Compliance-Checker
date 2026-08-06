@@ -27,6 +27,7 @@ CATEGORIES = {
     "04_performance": "Performance — Master Circular Ch. 14",
     "05_yield_aum_anniversary": "Yield · AUM · Anniversary",
     "06_video": "Video — encoded, inactive in v1",
+    "07_amfi": "AMFI guidelines",
 }
 
 CAT_SOURCE = {
@@ -36,6 +37,7 @@ CAT_SOURCE = {
     "04_performance": "MF Master Circular 2026-03-20, Chapter 14",
     "05_yield_aum_anniversary": "MC Ch.14 + internal KV/yield/anniversary checklist",
     "06_video": "Sixth Schedule (j) + internal video checkpoints",
+    "07_amfi": "AMFI Best Practices Circular 109/2023-24",
 }
 
 TOKENS = {
