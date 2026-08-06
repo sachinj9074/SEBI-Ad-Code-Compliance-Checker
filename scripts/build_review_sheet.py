@@ -128,6 +128,17 @@ def rule_card(rule: dict) -> str:
             f'<span class="mt-body">“{esc(mt["text"])}”</span></div>'
         )
 
+    subcrit = ""
+    if rule.get("sub_criteria"):
+        items = "".join(
+            f'<li><b>{esc(c["label"])}</b> — {esc(c.get("description", ""))}</li>'
+            for c in rule["sub_criteria"]
+        )
+        subcrit = (
+            '<div class="subcrit"><span class="sc-lbl">definition · a match on any one applies</span>'
+            f"<ol>{items}</ol></div>"
+        )
+
     ex = rule["examples"]
 
     def ex_block(kind, data):
@@ -147,6 +158,7 @@ def rule_card(rule: dict) -> str:
   <p class="rdesc">{esc(rule["description"])}</p>
   <p class="cite"><span class="cite-lbl">cites</span> {cite}</p>
   {mandated}
+  {subcrit}
   <div class="examples">{ex_block("pass", ex["pass"])}{ex_block("fail", ex["fail"])}</div>
 </article>"""
 
@@ -263,6 +275,11 @@ h1{{font-family:var(--f-display);font-weight:600;font-size:31px;line-height:1.12
   color:var(--accent)}}
 .mt-meta{{font-family:var(--f-mono);font-size:10px;color:var(--faint)}}
 .mt-body{{display:block;margin-top:5px;font-size:13px;color:var(--ink)}}
+.subcrit{{margin:11px 0 0;padding:10px 13px;background:var(--surface-2);border:1px solid var(--line);border-radius:8px}}
+.sc-lbl{{font-family:var(--f-mono);text-transform:uppercase;font-size:9.5px;letter-spacing:.08em;color:var(--accent)}}
+.subcrit ol{{margin:7px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:4px}}
+.subcrit li{{font-size:12.5px;color:var(--ink)}}
+.subcrit li b{{font-weight:650}}
 .examples{{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}}
 .ex{{border-radius:8px;padding:9px 11px;font-size:12.5px;border:1px solid transparent}}
 .ex-pass{{background:var(--pass-bg);border-color:var(--pass-bd)}}

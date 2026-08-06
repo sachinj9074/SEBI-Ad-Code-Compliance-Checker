@@ -169,6 +169,11 @@
         "check_type": { "enum": ["automated", "assisted"] },
         "suggested_rewrite": { "type": "string" },
         "explanation": { "type": "string" },
+        "matched_criteria": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "For rules with sub_criteria: ids/labels of the criteria that matched (e.g. celebrity definition C3)."
+        },
         "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
       }
     },

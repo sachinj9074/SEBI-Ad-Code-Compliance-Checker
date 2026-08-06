@@ -112,6 +112,20 @@
       },
       "description": "Only for disclaimer-presence rules."
     },
+    "sub_criteria": {
+      "type": "array",
+      "description": "For an assisted rule that hinges on a multi-part definition (e.g. what makes a person a 'celebrity'): the enumerated criteria. A match on any one is sufficient; each can be surfaced individually when the rule raises needs_review.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label"],
+        "properties": {
+          "id": { "type": "string", "description": "Short stable id, e.g. C1." },
+          "label": { "type": "string", "description": "Short human label." },
+          "description": { "type": "string", "description": "The full criterion text." }
+        }
+      }
+    },
     "examples": {
       "type": "object",
       "additionalProperties": false,
