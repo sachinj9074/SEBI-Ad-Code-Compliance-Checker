@@ -17,9 +17,10 @@ open decisions. If the two conflict, the README wins on product/design; this fil
 - Regulation/data come from the real, current **public** SEBI / AMFI / factsheet documents,
   versioned by date — never from memory of the rules. Record `provenance` and `source_date`
   on every rule.
-- The internal compliance checklist is the one internal artifact; it stays in `sources/` and
-  nowhere else. Test only with **generic sample copy** written for the purpose — never real
-  campaign material.
+- **This repo is a public portfolio project.** The internal compliance checklist is **local-only
+  and never committed** (gitignored). AMC-identifying content is **genericized** in every
+  committed file — see `corpus/GENERICIZATION.md`. Public SEBI/AMFI verbatim texts are kept as-is.
+  Test only with **generic sample copy** written for the purpose — never real campaign material.
 
 ## Repository layout
 - `sources/`  — inputs (internal checklist, SEBI/AMFI sources, factsheets). See `sources/SOURCES.md`.
@@ -39,6 +40,10 @@ open decisions. If the two conflict, the README wins on product/design; this fil
   calls go through one client in `src/` so the provider stays swappable. API key in `.env`.
 - **Sources = fetch from official public sites.** The missing SEBI/AMFI documents are being
   downloaded from sebi.gov.in / amfiindia.com into `sources/`. See `sources/SOURCES.md`.
+- **Repo = public + genericized** (for portfolio). Internal checklist local-only/gitignored;
+  committed corpus uses generic placeholders. See `corpus/GENERICIZATION.md`.
+  Open follow-up (Day 2): the factsheet PDFs are public but AMC-branded and ~15 MB — decide then
+  whether to keep them local-only and ship a genericized sample factsheet KB instead.
 
 ## Open decisions (confirm before writing the code that depends on them)
 - **Severity enum.** Set to `critical | high | medium | low` at setup; reconcile with the

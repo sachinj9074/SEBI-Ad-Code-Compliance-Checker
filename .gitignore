@@ -20,3 +20,7 @@ Thumbs.db
 # Scratch
 scratch/
 *.tmp
+
+# Internal / local-only source material (public+genericize policy — see corpus/GENERICIZATION.md)
+# The internal compliance checklist is NEVER committed; it lives locally only.
+sources/compliance_checklist_2026.xlsx
