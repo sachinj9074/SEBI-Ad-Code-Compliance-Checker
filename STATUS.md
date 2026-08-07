@@ -15,7 +15,7 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
   carousel; legibility + risk-o-meter + prominent-person judgments feed the rules.
 - ✅ **Gaps closed** — scheme-match (AMC-stripped token_sort_ratio); passive returns joined
   (57/105 Growth variants); image eval case (`evals/run_eval.py --image`).
-- 🔄 **Day 3 (in progress)**
+- ✅ **Day 3 — COMPLETE**
   - ✅ **Layer 3 advisory** (`src/advisory.py`) — second model pass, sets the rules aside (never
     sees Layer-1), flags misleading/exaggerated/off-tone; unscored, fenced; wired into
     `build_verdict` + CLI. Bounded to ≤8 concise notes at `max_tokens=4096` (a tight ceiling
@@ -25,7 +25,10 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
     separate sections + show-back. Display-only (calls `build_verdict`). Verified live + via
     streamlit AppTest. (`app.py` uses a sibling `import render`, not `from app import …` — under
     `streamlit run` the script itself is module `app`, so that form is a circular import.)
-  - ⬜ end-to-end test — see "Next steps" below.
+  - ✅ **End-to-end test** — three generic samples through the full pipeline:
+    clean → 0 FAIL / 0 mismatch; planted violations → 11 FAIL / 3 mismatch;
+    wrong-return → 6 FAIL / 1 mismatch. Eval re-run: 100% + image case ✅.
+    (Clean sample uses a non-"cap" scheme name — see known gaps.)
 
 ## Architecture (where things live)
 - `schemas/` — rule / verdict / factsheet_record JSON schemas (source of truth). `scripts/validate_*.py`.
@@ -55,6 +58,11 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
 - `riskometer_level` null in the KB (graphic dial, not text) — a vision pass could fill it.
 - Passive **IDCW** return variants stay null (factsheet publishes only Growth returns).
 - 2 active KB records dropped on schema-validation edge cases (163 written).
+- `market_cap_terms` feature fires on "Cap" inside a scheme *name* (e.g. "Flexi Cap Fund"),
+  activating the cap-definitions disclaimer (DISC-015) for creatives that never discuss market
+  caps. Borderline by design (flexi-cap strategies do span caps) — revisit if reviewers call it noise.
+- Advisory (Layer 3) still writes ~6 notes on clean copy — defensible nitpicks, and it is fenced
+  and unscored, but tune the prompt toward a higher bar if users find it chatty.
 
 ## Parked to-dos (do before flipping the GitHub repo to public)
 - **Portfolio-facing README.** _Parked by user 2026-08-07._ The current `README.md` reads as a
@@ -64,11 +72,13 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
   Plan: move the spec to `docs/PRODUCT_SPEC.md` (or `SPEC.md`), repoint the `CLAUDE.md` import at it,
   then make `README.md` the portfolio landing page. Keep the three-layer story front and centre.
 
-## Next steps — Day 3
+## Next steps — Day 3 ✅ COMPLETE
 1. ✅ **Layer 3 advisory** — done (`src/advisory.py`, wired into `build_verdict` + CLI).
 2. ✅ **Streamlit UI** — done (`app/app.py` + `app/render.py`).
-3. **End-to-end test** — add a **clean** sample creative; run clean / planted-violations / wrong-return
-   through the UI. Re-run `evals/run_eval.py` (+ `--image`) and record the number.
+3. ✅ **End-to-end test** — done (clean / violations / wrong-return; eval 100% + image ✅).
+
+**The 3-day build is done.** Remaining before flipping the repo public: the parked
+portfolio-README rewrite (see "Parked to-dos" above), plus optionally a UI screenshot for it.
 
 ## Commands
 ```
