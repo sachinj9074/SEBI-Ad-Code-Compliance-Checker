@@ -10,6 +10,7 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 
+from . import advisory
 from . import factcheck
 from . import features as featuremod
 from . import match, model
@@ -182,6 +183,10 @@ def build_verdict(file: str, areas: list[str], creative_type: str) -> dict:
     # Layer 2 — kept entirely separate from the Layer-1 score.
     fact_check = factcheck.run(text)
 
+    # Layer 3 — advisory, unscored. Sets the rules aside (never sees the Layer-1
+    # results) and never affects the pass/fail summary.
+    advisory_layer = advisory.run(text, vision)
+
     s = rule_layer["summary"]
     return {
         "schema_version": TOOL_VERSION,
@@ -205,13 +210,13 @@ def build_verdict(file: str, areas: list[str], creative_type: str) -> dict:
         "feature_detection": {"features": feats},
         "rule_layer": rule_layer,
         "fact_check_layer": fact_check,
-        "advisory_layer": {"notes": []},
+        "advisory_layer": advisory_layer,
         "summary_strip": {
             "rules_run": s["rules_run"],
             "passed": s["passed"],
             "failed": s["failed"],
             "needs_review": s["needs_review"],
             "fact_mismatches": fact_check["summary"]["mismatches"],
-            "advisory_notes": 0,
+            "advisory_notes": len(advisory_layer["notes"]),
         },
     }

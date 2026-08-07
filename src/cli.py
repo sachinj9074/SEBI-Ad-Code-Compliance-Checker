@@ -46,7 +46,8 @@ def _print_report(v: dict) -> None:
     print(f"  model: {v['meta']['model_used']}")
     print("=" * 68)
     print(f"  rules run {s['rules_run']} | pass {s['passed']} | FAIL {s['failed']}"
-          f" | needs-review {s['needs_review']} | fact-mismatch {s['fact_mismatches']}")
+          f" | needs-review {s['needs_review']} | fact-mismatch {s['fact_mismatches']}"
+          f" | advisory {s['advisory_notes']}")
     if not model.available():
         print("  (no API key: feature detection is heuristic; automated non-disclaimer "
               "rules deferred to needs-review)")
@@ -77,6 +78,13 @@ def _print_report(v: dict) -> None:
                 print(f"         scheme: {r['scheme_matched']}")
             if r.get("assumption"):
                 print(f"         assumption: {r['assumption']}")
+
+    adv = v["advisory_layer"]["notes"]
+    if adv:
+        print("\n— advisory (Layer 3 — unscored; does not affect the pass/fail summary) —")
+        for n in adv:
+            tag = f"[{n['area']}] " if n.get("area") else ""
+            print(f"  • {tag}{n['note']}")
 
     print("\n— show-back (extracted content, confidence "
           f"{ex['confidence']:.0%}, {ex['source_kind']}) —")

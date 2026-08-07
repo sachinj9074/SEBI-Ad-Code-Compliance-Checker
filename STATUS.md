@@ -15,7 +15,12 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
   carousel; legibility + risk-o-meter + prominent-person judgments feed the rules.
 - ✅ **Gaps closed** — scheme-match (AMC-stripped token_sort_ratio); passive returns joined
   (57/105 Growth variants); image eval case (`evals/run_eval.py --image`).
-- ⬜ **Day 3 (next)** — see "Next steps" below.
+- 🔄 **Day 3 (in progress)**
+  - ✅ **Layer 3 advisory** (`src/advisory.py`) — second model pass, sets the rules aside (never
+    sees Layer-1), flags misleading/exaggerated/off-tone; unscored, fenced; wired into
+    `build_verdict` + CLI. Bounded to ≤8 concise notes at `max_tokens=4096` (a tight ceiling
+    truncated the JSON and silently returned 0 notes — fixed).
+  - ⬜ Streamlit UI, ⬜ end-to-end test — see "Next steps" below.
 
 ## Architecture (where things live)
 - `schemas/` — rule / verdict / factsheet_record JSON schemas (source of truth). `scripts/validate_*.py`.
@@ -55,9 +60,7 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
   then make `README.md` the portfolio landing page. Keep the three-layer story front and centre.
 
 ## Next steps — Day 3
-1. **Layer 3 advisory** — `src/advisory.py`: a second model pass that sets rules aside and flags
-   misleading/exaggerated/off-tone copy. Fenced, **unscored**, never affects the pass/fail summary.
-   Wire into `checker.build_verdict` (currently `advisory_layer` is a `{"notes": []}` stub).
+1. ✅ **Layer 3 advisory** — done (`src/advisory.py`, wired into `build_verdict` + CLI).
 2. **Streamlit UI** — `app/`: upload → area multiselect + creative-type select → one-page verdict
    (summary strip · failed/needs-review grouped by trigger · fact-check section · advisory · show-back).
    Streamlit is display-only; it calls `src.checker.build_verdict`.
