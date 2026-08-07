@@ -10,6 +10,8 @@ __pycache__/
 # Secrets / environment
 .env
 .env.*
+# keep the placeholder template tracked; the real .env stays ignored above
+!.env.example
 *.key
 .streamlit/secrets.toml
 
