@@ -29,6 +29,34 @@ def _present_for(rule: dict) -> set[str]:
     return {trig["feature"]} if trig["type"] == "conditional" else set()
 
 
+def image_eval() -> bool:
+    """Vision case (README §10): the sample banner has a present-but-illegible warning.
+    Needs the vision model + a valid key. Asserts the legibility judgments fire."""
+    from src.checker import build_verdict  # local import: only needed with --image
+
+    banner = ROOT / "samples" / "sample_banner.png"
+    if not banner.exists():
+        print("\nimage eval: samples/sample_banner.png missing (run scripts/make_sample_banner.py)")
+        return True
+    if not model.available():
+        print("\nimage eval: needs a valid ANTHROPIC_API_KEY (skipped)")
+        return True
+
+    v = build_verdict(str(banner), ["mf_scheme"], "general_kv")
+    rl = {r["rule_id"]: r["verdict"] for r in v["rule_layer"]["results"]}
+    checks = [
+        ("source read as image", v["extraction"]["source_kind"] == "image"),
+        ("LEGIB-001 FAIL (disclaimer illegible)", rl.get("LEGIB-001") == "fail"),
+        ("DISC-001 needs_review (present but illegible)", rl.get("DISC-001") == "needs_review"),
+    ]
+    print("\n=== image eval (sample_banner.png — the case OCR would miss) ===")
+    ok = True
+    for label, passed in checks:
+        print(f"  [{'ok' if passed else 'FAIL'}] {label}")
+        ok = ok and passed
+    return ok
+
+
 def main() -> int:
     use_model = "--model" in sys.argv and model.available()
     rules = load_rules()
@@ -87,12 +115,15 @@ def main() -> int:
     print("-" * 60)
 
     FLOOR = 0.95
-    if acc < FLOOR:
+    det_ok = acc >= FLOOR
+    if not det_ok:
         print(f"FAIL: deterministic accuracy {acc:.1%} < floor {FLOOR:.0%}")
-        return 1
-    print(f"OK: deterministic accuracy {acc:.1%} (floor {FLOOR:.0%}); "
-          f"assisted behaviour {'clean' if assisted_ok == assisted_total else 'CHECK'}.")
-    return 0
+    else:
+        print(f"OK: deterministic accuracy {acc:.1%} (floor {FLOOR:.0%}); "
+              f"assisted behaviour {'clean' if assisted_ok == assisted_total else 'CHECK'}.")
+
+    img_ok = image_eval() if "--image" in sys.argv else True
+    return 0 if (det_ok and img_ok) else 1
 
 
 if __name__ == "__main__":

@@ -66,20 +66,20 @@
     "expense_ratio": 0.94,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -4.54,
+        "benchmark": -3.64
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 9.44,
+        "benchmark": 10.46
       },
       "5Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 9.46,
+        "benchmark": 10.53
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 11.85,
+        "benchmark": 13.01
       }
     }
   },
@@ -234,20 +234,20 @@
     "expense_ratio": 0.23,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -3.87,
+        "benchmark": -3.64
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 10.18,
+        "benchmark": 10.46
       },
       "5Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 10.29,
+        "benchmark": 10.53
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 12.71,
+        "benchmark": 13.01
       }
     }
   },
@@ -402,20 +402,20 @@
     "expense_ratio": 0.52,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -5.83,
+        "benchmark": -5.42
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 8.29,
+        "benchmark": 8.8
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 8.12,
+        "benchmark": 8.7
       }
     }
   },
@@ -570,20 +570,20 @@
     "expense_ratio": 0.2,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -5.53,
+        "benchmark": -5.42
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 8.6,
+        "benchmark": 8.8
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 8.43,
+        "benchmark": 8.7
       }
     }
   },
@@ -738,8 +738,8 @@
     "expense_ratio": 0.92,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -8.04,
+        "benchmark": -7.55
       },
       "3Y": {
         "scheme": null,
@@ -750,8 +750,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 2.53,
+        "benchmark": 3.2
       }
     }
   },
@@ -906,8 +906,8 @@
     "expense_ratio": 0.32,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -7.49,
+        "benchmark": -7.55
       },
       "3Y": {
         "scheme": null,
@@ -918,8 +918,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 3.12,
+        "benchmark": 3.2
       }
     }
   },
@@ -1074,20 +1074,20 @@
     "expense_ratio": 1.09,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 3.71,
+        "benchmark": 4.83
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 17.5,
+        "benchmark": 18.79
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 13.09,
+        "benchmark": 14.64
       }
     }
   },
@@ -1242,20 +1242,20 @@
     "expense_ratio": 0.2,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 4.62,
+        "benchmark": 4.83
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 18.36,
+        "benchmark": 18.79
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 13.87,
+        "benchmark": 14.64
       }
     }
   },
@@ -1410,20 +1410,20 @@
     "expense_ratio": 1.09,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 1.08,
+        "benchmark": 2.25
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 22.76,
+        "benchmark": 24.83
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 16.37,
+        "benchmark": 18.3
       }
     }
   },
@@ -1578,20 +1578,20 @@
     "expense_ratio": 0.31,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 1.83,
+        "benchmark": 2.25
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 23.66,
+        "benchmark": 24.83
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 17.22,
+        "benchmark": 18.3
       }
     }
   },
@@ -1746,20 +1746,20 @@
     "expense_ratio": 1.09,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 3.83,
+        "benchmark": 5.04
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 19.37,
+        "benchmark": 20.92
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 18.64,
+        "benchmark": 21.11
       }
     }
   },
@@ -1914,20 +1914,20 @@
     "expense_ratio": 0.29,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 4.62,
+        "benchmark": 5.04
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 20.25,
+        "benchmark": 20.92
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 19.53,
+        "benchmark": 21.11
       }
     }
   },
@@ -2082,8 +2082,8 @@
     "expense_ratio": 1.09,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -31.66,
+        "benchmark": -31.03
       },
       "3Y": {
         "scheme": null,
@@ -2094,8 +2094,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -3.31,
+        "benchmark": -3.34
       }
     }
   },
@@ -2250,8 +2250,8 @@
     "expense_ratio": 0.36,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -31.2,
+        "benchmark": -31.03
       },
       "3Y": {
         "scheme": null,
@@ -2262,8 +2262,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -2.66,
+        "benchmark": -3.34
       }
     }
   },
@@ -2418,8 +2418,8 @@
     "expense_ratio": 1.08,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 0.13,
+        "benchmark": 1.2
       },
       "3Y": {
         "scheme": null,
@@ -2430,8 +2430,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.67,
+        "benchmark": 8.8
       }
     }
   },
@@ -2586,8 +2586,8 @@
     "expense_ratio": 0.22,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 0.95,
+        "benchmark": 1.2
       },
       "3Y": {
         "scheme": null,
@@ -2598,8 +2598,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 8.58,
+        "benchmark": 8.8
       }
     }
   },
@@ -2754,8 +2754,8 @@
     "expense_ratio": 1.11,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -2.89,
+        "benchmark": -1.71
       },
       "3Y": {
         "scheme": null,
@@ -2766,8 +2766,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -0.46,
+        "benchmark": 0.72
       }
     }
   },
@@ -2838,8 +2838,8 @@
     "expense_ratio": 0.17,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -2.02,
+        "benchmark": -1.71
       },
       "3Y": {
         "scheme": null,
@@ -2850,8 +2850,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 0.44,
+        "benchmark": 0.72
       }
     }
   },
@@ -2922,8 +2922,8 @@
     "expense_ratio": 1.24,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 12.61,
+        "benchmark": 13.95
       },
       "3Y": {
         "scheme": null,
@@ -2934,8 +2934,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.69,
+        "benchmark": 8.93
       }
     }
   },
@@ -3006,8 +3006,8 @@
     "expense_ratio": 0.33,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 13.6,
+        "benchmark": 13.95
       },
       "3Y": {
         "scheme": null,
@@ -3018,8 +3018,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 8.64,
+        "benchmark": 8.93
       }
     }
   },
@@ -3090,8 +3090,8 @@
     "expense_ratio": 1.15,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -3.61,
+        "benchmark": -2.19
       },
       "3Y": {
         "scheme": null,
@@ -3102,8 +3102,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.01,
+        "benchmark": 8.57
       }
     }
   },
@@ -3174,8 +3174,8 @@
     "expense_ratio": 0.22,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -2.75,
+        "benchmark": -2.19
       },
       "3Y": {
         "scheme": null,
@@ -3186,8 +3186,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.96,
+        "benchmark": 8.57
       }
     }
   },
@@ -3270,8 +3270,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -0.3,
+        "benchmark": 0.91
       }
     }
   },
@@ -3354,8 +3354,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 0.43,
+        "benchmark": 0.73
       }
     }
   },
@@ -3930,20 +3930,20 @@
     "expense_ratio": 0.28,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.05,
+        "benchmark": 6.33
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.38,
+        "benchmark": 7.72
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.29,
+        "benchmark": 6.88
       }
     }
   },
@@ -4098,20 +4098,20 @@
     "expense_ratio": 0.15,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.19,
+        "benchmark": 6.33
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.53,
+        "benchmark": 7.72
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.44,
+        "benchmark": 6.88
       }
     }
   },
@@ -4581,20 +4581,20 @@
     "expense_ratio": 0.39,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 5.17,
+        "benchmark": 5.51
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.32,
+        "benchmark": 7.66
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.37,
+        "benchmark": 7.77
       }
     }
   },
@@ -4739,20 +4739,20 @@
     "expense_ratio": 0.22,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 5.35,
+        "benchmark": 5.51
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.52,
+        "benchmark": 7.66
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.57,
+        "benchmark": 7.77
       }
     }
   },
@@ -4898,20 +4898,20 @@
     "expense_ratio": 0.4,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 5.6,
+        "benchmark": 5.98
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.21,
+        "benchmark": 7.6
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.54,
+        "benchmark": 7.96
       }
     }
   },
@@ -5058,20 +5058,20 @@
     "expense_ratio": 0.15,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 5.79,
+        "benchmark": 5.98
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.41,
+        "benchmark": 7.6
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.74,
+        "benchmark": 7.96
       }
     }
   },
@@ -5221,8 +5221,8 @@
     "expense_ratio": 0.74,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.33,
+        "benchmark": 6.75
       },
       "3Y": {
         "scheme": null,
@@ -5233,8 +5233,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.39,
+        "benchmark": 7.85
       }
     }
   },
@@ -5387,8 +5387,8 @@
     "expense_ratio": 0.59,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.45,
+        "benchmark": 6.75
       },
       "3Y": {
         "scheme": null,
@@ -5399,8 +5399,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.53,
+        "benchmark": 7.85
       }
     }
   },
@@ -5553,8 +5553,8 @@
     "expense_ratio": 0.26,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.87,
+        "benchmark": 7.17
       },
       "3Y": {
         "scheme": null,
@@ -5565,8 +5565,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.72,
+        "benchmark": 6.92
       }
     }
   },
@@ -5719,8 +5719,8 @@
     "expense_ratio": 0.11,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.95,
+        "benchmark": 7.17
       },
       "3Y": {
         "scheme": null,
@@ -5731,8 +5731,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.83,
+        "benchmark": 6.92
       }
     }
   },
@@ -5885,8 +5885,8 @@
     "expense_ratio": 0.48,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.25,
+        "benchmark": 6.79
       },
       "3Y": {
         "scheme": null,
@@ -5897,8 +5897,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.46,
+        "benchmark": 8.12
       }
     }
   },
@@ -6051,8 +6051,8 @@
     "expense_ratio": 0.15,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.59,
+        "benchmark": 6.79
       },
       "3Y": {
         "scheme": null,
@@ -6063,8 +6063,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.81,
+        "benchmark": 8.12
       }
     }
   },
@@ -6217,8 +6217,8 @@
     "expense_ratio": 0.8,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.08,
+        "benchmark": 6.4
       },
       "3Y": {
         "scheme": null,
@@ -6229,8 +6229,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.48,
+        "benchmark": 7.8
       }
     }
   },
@@ -6383,8 +6383,8 @@
     "expense_ratio": 0.71,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.17,
+        "benchmark": 6.4
       },
       "3Y": {
         "scheme": null,
@@ -6395,8 +6395,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.58,
+        "benchmark": 7.8
       }
     }
   },
@@ -6553,20 +6553,20 @@
     "expense_ratio": 0.04,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -5.46,
+        "benchmark": -5.42
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 8.75,
+        "benchmark": 8.8
       },
       "5Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 9.92,
+        "benchmark": 9.98
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 12.0,
+        "benchmark": 11.98
       }
     }
   },
@@ -6640,20 +6640,20 @@
     "expense_ratio": 0.2,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 0.92,
+        "benchmark": 1.2
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 9.36,
+        "benchmark": 9.61
       },
       "5Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 11.22,
+        "benchmark": 11.46
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 16.51,
+        "benchmark": 16.18
       }
     }
   },
@@ -6727,20 +6727,20 @@
     "expense_ratio": 0.48,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -31.11,
+        "benchmark": -31.03
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -2.02,
+        "benchmark": -1.78
       },
       "5Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -0.24,
+        "benchmark": 0.0
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 2.24,
+        "benchmark": 2.89
       }
     }
   },
@@ -6814,20 +6814,20 @@
     "expense_ratio": 0.46,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 11.83,
+        "benchmark": 12.22
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 22.1,
+        "benchmark": 22.53
       },
       "5Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 13.29,
+        "benchmark": 13.66
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 14.03,
+        "benchmark": 14.66
       }
     }
   },
@@ -6902,20 +6902,20 @@
     "expense_ratio": 0.46,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -2.42,
+        "benchmark": -2.05
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 11.94,
+        "benchmark": 12.43
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 10.85,
+        "benchmark": 11.19
       }
     }
   },
@@ -6958,20 +6958,20 @@
     "expense_ratio": 0.58,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 45.44,
+        "benchmark": 47.23
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 33.14,
+        "benchmark": 34.53
       },
       "5Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 23.71,
+        "benchmark": 24.87
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 11.86,
+        "benchmark": 13.19
       }
     }
   },
@@ -7013,20 +7013,20 @@
     "expense_ratio": 0.42,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 108.96,
+        "benchmark": 112.94
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 46.98,
+        "benchmark": 48.78
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 42.87,
+        "benchmark": 44.36
       }
     }
   },
@@ -7097,20 +7097,20 @@
     "expense_ratio": 0.04,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": -7.56,
+        "benchmark": -7.55
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.87,
+        "benchmark": 6.97
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 10.29,
+        "benchmark": 10.49
       }
     }
   },
@@ -7185,8 +7185,8 @@
     "expense_ratio": 0.44,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 13.52,
+        "benchmark": 13.95
       },
       "3Y": {
         "scheme": null,
@@ -7197,8 +7197,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 23.33,
+        "benchmark": 23.05
       }
     }
   },
@@ -7246,20 +7246,20 @@
     "expense_ratio": 0.66,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 0.0,
+        "benchmark": -1.71
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 10.08,
+        "benchmark": 12.92
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 10.25,
+        "benchmark": 13.63
       }
     }
   },
@@ -7368,20 +7368,20 @@
     "expense_ratio": 0.08,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 0.5,
+        "benchmark": -1.71
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 10.49,
+        "benchmark": 12.92
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 10.59,
+        "benchmark": 13.63
       }
     }
   },
@@ -7475,20 +7475,20 @@
     "expense_ratio": 0.49,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 44.16,
+        "benchmark": 47.23
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 32.24,
+        "benchmark": 34.53
       },
       "5Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 23.01,
+        "benchmark": 24.87
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 9.98,
+        "benchmark": 12.1
       }
     }
   },
@@ -7567,20 +7567,20 @@
     "expense_ratio": 0.19,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 44.61,
+        "benchmark": 47.23
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 32.6,
+        "benchmark": 34.53
       },
       "5Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 23.32,
+        "benchmark": 24.87
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 10.53,
+        "benchmark": 12.01
       }
     }
   },
@@ -7676,8 +7676,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 5.93,
+        "benchmark": 5.75
       }
     }
   },
@@ -7778,8 +7778,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.22,
+        "benchmark": 5.75
       }
     }
   },
@@ -7863,20 +7863,20 @@
     "expense_ratio": 0.63,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 102.67,
+        "benchmark": 112.94
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 45.28,
+        "benchmark": 48.78
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 41.88,
+        "benchmark": 44.36
       }
     }
   },
@@ -7955,20 +7955,20 @@
     "expense_ratio": 0.09,
     "returns": {
       "1Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 103.76,
+        "benchmark": 112.94
       },
       "3Y": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 46.01,
+        "benchmark": 48.78
       },
       "5Y": {
         "scheme": null,
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 42.61,
+        "benchmark": 44.36
       }
     }
   },
@@ -8067,8 +8067,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 6.59,
+        "benchmark": 2.01
       }
     }
   },
@@ -8121,8 +8121,8 @@
         "benchmark": null
       },
       "since_inception": {
-        "scheme": null,
-        "benchmark": null
+        "scheme": 7.02,
+        "benchmark": 2.01
       }
     }
   }

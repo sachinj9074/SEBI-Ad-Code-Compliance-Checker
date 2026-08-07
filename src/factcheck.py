@@ -64,16 +64,26 @@ def _names(rec: dict) -> list[str]:
     return [rec["scheme_name"], *rec.get("aliases", [])]
 
 
-def find_records(scheme_name: str, kb: list[dict], threshold: int = 80) -> list[dict]:
-    """All KB records (plan/option variants) for the best-matching scheme."""
-    if not scheme_name:
+# Strip the AMC token so a generic "[AMC] Flexi Cap Fund" matches "Axis Flexi Cap Fund"
+# on the scheme-specific part rather than loosely on shared words like "Cap Fund".
+_AMC_NOISE = re.compile(r"\[amc\]|\baxis\b", re.I)
+
+
+def _norm_name(n: str) -> str:
+    n = _AMC_NOISE.sub(" ", n.lower())
+    n = re.sub(r"[^a-z0-9 ]+", " ", n)
+    return re.sub(r"\s+", " ", n).strip()
+
+
+def find_records(scheme_name: str, kb: list[dict], threshold: int = 85) -> list[dict]:
+    """All KB records (plan/option variants) for the best-matching scheme.
+    token_sort_ratio on AMC-stripped names avoids the partial-overlap false match."""
+    q = _norm_name(scheme_name)
+    if not q:
         return []
-    scored = [(max(fuzz.WRatio(scheme_name, n) for n in _names(r)), r) for r in kb]
-    if not scored:
-        return []
+    scored = [(max(fuzz.token_sort_ratio(q, _norm_name(n)) for n in _names(r)), r) for r in kb]
     scored.sort(key=lambda x: -x[0])
-    top = scored[0][0]
-    if top < threshold:
+    if not scored or scored[0][0] < threshold:
         return []
     best_name = scored[0][1]["scheme_name"]
     return [r for s, r in scored if r["scheme_name"] == best_name]

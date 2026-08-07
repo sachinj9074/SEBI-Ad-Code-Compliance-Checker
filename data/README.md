@@ -14,9 +14,10 @@ monthly by `scripts/build_factsheet_kb.py`. Committed with real data (the factsh
 - **Active** — returns (scheme + benchmark, 1Y/3Y/5Y/since-inception), AUM, top holdings, fund
   managers, benchmark, inception: all present. Two-page debt schemes have their returns captured
   from the continuation page.
-- **Passive** — details + AUM + tracking error + expense ratio + underlying index present, but
-  **returns are null**: passive returns live in a separate returns annexure (pp.42–55) this v1
-  does not yet join. Follow-up: an annexure pass merged by scheme name.
+- **Passive** — details + AUM + tracking error + expense ratio + underlying index present.
+  **Returns** are joined from the returns annexure + per-scheme "Scheme Returns" pages (pp.42–55)
+  for the **Growth** variants (57/105 records); IDCW variants stay null because the factsheet does
+  not publish separate IDCW returns. The join runs automatically on a full passive rebuild.
 - `riskometer_level` is null (it is a graphic dial on a consolidated page, not text) — a vision
   pass can fill it later.
 

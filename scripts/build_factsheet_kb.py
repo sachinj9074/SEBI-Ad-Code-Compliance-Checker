@@ -99,6 +99,29 @@ _RISK_MAP = {
     "moderately high": "moderately_high", "high": "high", "very high": "very_high",
 }
 
+# Passive returns live in a comprehensive returns annexure, not the per-scheme pages.
+_RET_ROW = {
+    "type": "object", "additionalProperties": False,
+    "required": ["scheme_name", "plan", "option", "returns"],
+    "properties": {
+        "scheme_name": {"type": "string"},
+        "plan": {"type": "string"},
+        "option": {"type": "string"},
+        "returns": _RETURNS,
+    },
+}
+_RETURNS_ANNEX_SCHEMA = {
+    "type": "object", "additionalProperties": False,
+    "required": ["rows"],
+    "properties": {"rows": {"type": "array", "items": _RET_ROW}},
+}
+_RET_SYSTEM = (
+    "This is a factsheet returns annexure listing many schemes. For every scheme + plan "
+    "(Regular/Direct) + option (Growth/IDCW) row, extract the scheme's own CAGR under 'scheme' and "
+    "the stated benchmark's CAGR under 'benchmark' for 1Y/3Y/5Y/since_inception. Use null for 'NA' "
+    "or missing values. IGNORE the 'Additional Benchmark' rows. Percentages as plain numbers."
+)
+
 
 def scheme_pages(doc: fitz.Document, fund_type: str) -> list[int]:
     """1-indexed pages that describe a single scheme."""
@@ -184,6 +207,38 @@ def to_records(ext: dict, fund_type: str, source_file: str) -> list[dict]:
     return out
 
 
+def _nkey(s: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
+
+
+def fill_passive_returns(doc: fitz.Document, records: list[dict], model_name: str) -> None:
+    """Join returns from the 'ANNEXURE FOR RETURNS OF ALL THE SCHEMES' pages into the
+    passive detail records (which carry no returns on their own pages)."""
+    # Returns live across the annexure (grouped by FM) AND the per-scheme "Scheme Returns"
+    # pages; both are the only passive pages carrying CAGR tables.
+    pages = [i + 1 for i in range(doc.page_count)
+             if "cagr" in doc[i].get_text("text").lower()]
+    if not pages:
+        return
+    index = {(_nkey(r["scheme_name"]), r.get("plan"), r.get("option")): r for r in records}
+    filled = 0
+    for p in pages:
+        text = doc[p - 1].get_text("text")
+        try:
+            out = model.structured(_RET_SYSTEM, f"Annexure page {p}:\n\"\"\"\n{text}\n\"\"\"",
+                                    _RETURNS_ANNEX_SCHEMA, max_tokens=8192, model=model_name)
+        except Exception as exc:  # noqa: BLE001
+            print(f"  returns p{p}: {type(exc).__name__}: {exc}")
+            continue
+        for row in out.get("rows", []):
+            key = (_nkey(row["scheme_name"]), _norm_plan(row.get("plan")), _norm_option(row.get("option")))
+            rec = index.get(key)
+            if rec and row.get("returns") and any(pp.get("scheme") is not None for pp in row["returns"].values()):
+                rec["returns"] = row["returns"]
+                filled += 1
+    print(f"  filled returns on {filled} records from {len(pages)} annexure page(s)")
+
+
 def build(which: str, model_name: str, pages_filter, limit) -> None:
     validator = Draft202012Validator(SCHEMA)
     OUT.mkdir(parents=True, exist_ok=True)
@@ -221,6 +276,9 @@ def build(which: str, model_name: str, pages_filter, limit) -> None:
             else:
                 records.append(rec)
         print(f"  p{p}: {ext['scheme_name']} ({len(ext.get('variants') or [])} variant(s))")
+
+    if fund_type == "passive" and not pages_filter and not limit:
+        fill_passive_returns(doc, records, model_name)
 
     out_path = OUT / f"{which}.json"
     out_path.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
