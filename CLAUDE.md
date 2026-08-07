@@ -31,6 +31,8 @@ open decisions. If the two conflict, the README wins on product/design; this fil
 - `evals/`    — the one-command eval script + case set.
 - `app/`      — Streamlit UI (Day 3).
 
+**Current build status, resolved decisions, gotchas, and next steps: see `STATUS.md`** (kept current).
+
 ## Environment
 - Windows 11, **PowerShell is the primary shell** (Bash tool also available). Python 3.12, venv at `.venv`.
 - Direct model API for all model calls (README §9). API key in `.env` (gitignored), never committed.
