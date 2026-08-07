@@ -46,6 +46,14 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
 - Passive **IDCW** return variants stay null (factsheet publishes only Growth returns).
 - 2 active KB records dropped on schema-validation edge cases (163 written).
 
+## Parked to-dos (do before flipping the GitHub repo to public)
+- **Portfolio-facing README.** _Parked by user 2026-08-07._ The current `README.md` reads as a
+  technical build spec — too dense for recruiters. Rewrite it in the style of the invoice-extractor
+  repo: problem-first, plain-language, "what it does", design highlights, screenshots/demo. **Do NOT
+  just overwrite `README.md`** — it is the product spec that `CLAUDE.md` imports via `@README.md`.
+  Plan: move the spec to `docs/PRODUCT_SPEC.md` (or `SPEC.md`), repoint the `CLAUDE.md` import at it,
+  then make `README.md` the portfolio landing page. Keep the three-layer story front and centre.
+
 ## Next steps — Day 3
 1. **Layer 3 advisory** — `src/advisory.py`: a second model pass that sets rules aside and flags
    misleading/exaggerated/off-tone copy. Fenced, **unscored**, never affects the pass/fail summary.
