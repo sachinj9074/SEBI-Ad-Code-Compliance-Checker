@@ -20,7 +20,12 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
     sees Layer-1), flags misleading/exaggerated/off-tone; unscored, fenced; wired into
     `build_verdict` + CLI. Bounded to ≤8 concise notes at `max_tokens=4096` (a tight ceiling
     truncated the JSON and silently returned 0 notes — fixed).
-  - ⬜ Streamlit UI, ⬜ end-to-end test — see "Next steps" below.
+  - ✅ **Streamlit UI** (`app/app.py` controller + `app/render.py` renderers) — upload → area
+    multiselect + creative-type select → one-page verdict with the three layers rendered as
+    separate sections + show-back. Display-only (calls `build_verdict`). Verified live + via
+    streamlit AppTest. (`app.py` uses a sibling `import render`, not `from app import …` — under
+    `streamlit run` the script itself is module `app`, so that form is a circular import.)
+  - ⬜ end-to-end test — see "Next steps" below.
 
 ## Architecture (where things live)
 - `schemas/` — rule / verdict / factsheet_record JSON schemas (source of truth). `scripts/validate_*.py`.
@@ -61,9 +66,7 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
 
 ## Next steps — Day 3
 1. ✅ **Layer 3 advisory** — done (`src/advisory.py`, wired into `build_verdict` + CLI).
-2. **Streamlit UI** — `app/`: upload → area multiselect + creative-type select → one-page verdict
-   (summary strip · failed/needs-review grouped by trigger · fact-check section · advisory · show-back).
-   Streamlit is display-only; it calls `src.checker.build_verdict`.
+2. ✅ **Streamlit UI** — done (`app/app.py` + `app/render.py`).
 3. **End-to-end test** — add a **clean** sample creative; run clean / planted-violations / wrong-return
    through the UI. Re-run `evals/run_eval.py` (+ `--image`) and record the number.
 
@@ -73,4 +76,5 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
 .venv\Scripts\python.exe evals\run_eval.py --image         # + vision case (needs key)
 .venv\Scripts\python.exe -m src.cli samples\sample_with_violations.txt --areas mf_scheme --type general_kv
 .venv\Scripts\python.exe scripts\build_factsheet_kb.py --which both   # rebuild KB (monthly)
+.venv\Scripts\python.exe -m streamlit run app\app.py                  # launch the UI (Day 3)
 ```
