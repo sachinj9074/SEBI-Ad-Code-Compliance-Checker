@@ -46,9 +46,15 @@ def _get_client():
 
 def structured(system: str, user: str, schema: dict, max_tokens: int = 4096,
                model: str | None = None) -> dict:
-    """Call the model and return JSON validated against `schema` (structured
-    outputs). `model` overrides the default (e.g. a cheaper model for batch
-    extraction). Raises RuntimeError if no API key is configured."""
+    """Text-only structured call. See structured_content for image inputs."""
+    return structured_content(system, [{"type": "text", "text": user}], schema, max_tokens, model)
+
+
+def structured_content(system: str, content: list, schema: dict, max_tokens: int = 4096,
+                       model: str | None = None) -> dict:
+    """Call the model with an arbitrary user-content list (text and/or image
+    blocks) and return JSON validated against `schema` (structured outputs).
+    `model` overrides the default. Raises RuntimeError if no API key is set."""
     if not available():
         raise RuntimeError(
             "ANTHROPIC_API_KEY is not set — copy .env.example to .env and add your key."
@@ -58,7 +64,7 @@ def structured(system: str, user: str, schema: dict, max_tokens: int = 4096,
         model=model or model_id(),
         max_tokens=max_tokens,
         system=system,
-        messages=[{"role": "user", "content": user}],
+        messages=[{"role": "user", "content": content}],
         output_config={"format": {"type": "json_schema", "schema": schema}},
     )
     if resp.stop_reason == "refusal":

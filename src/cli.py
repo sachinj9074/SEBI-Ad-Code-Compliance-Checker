@@ -80,6 +80,12 @@ def _print_report(v: dict) -> None:
 
     print("\n— show-back (extracted content, confidence "
           f"{ex['confidence']:.0%}, {ex['source_kind']}) —")
+    if ex.get("languages_detected"):
+        print("  languages: " + ", ".join(ex["languages_detected"]))
+    if ex.get("layout_notes"):
+        print("  layout: " + ex["layout_notes"][:130])
+    if ex.get("legibility_notes"):
+        print("  legibility: " + ex["legibility_notes"][:130])
     body = ex["extracted_text"].strip()
     print("  " + (body[:300] + "…" if len(body) > 300 else body or "(no text extracted)"))
     for w in ex["warnings"]:

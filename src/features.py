@@ -80,6 +80,19 @@ def detect_map(text: str) -> dict[str, bool]:
     return {f["feature"]: bool(f["present"]) for f in detect(text)}
 
 
+def from_vision(v: dict) -> list[dict]:
+    """Features that come from the visual pass rather than the text."""
+    feats = []
+    if v.get("prominent_person_present"):
+        feats.append({"feature": "prominent_person", "present": True,
+                      "evidence": v.get("prominent_person_desc", "")})
+    langs = [l.lower() for l in v.get("languages", [])]
+    if langs and any(l not in ("en", "english") for l in langs):
+        feats.append({"feature": "non_english_language", "present": True,
+                      "evidence": ", ".join(v.get("languages", []))})
+    return feats
+
+
 def _detect_model(text: str) -> list[dict]:
     prompt = (
         "Creative text:\n\"\"\"\n" + text.strip() + "\n\"\"\"\n\n"
