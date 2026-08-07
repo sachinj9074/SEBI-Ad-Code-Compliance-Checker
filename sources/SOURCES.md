@@ -8,6 +8,7 @@ All regulation and data come from **real, current, public** documents, versioned
 | File | Role | As-of / date | Notes |
 |---|---|---|---|
 | `compliance_checklist_2026.xlsx` | Internal compliance checklist (5 sheets) — ground truth for what gets flagged | 2026 | **Internal — local-only, gitignored, NEVER committed** (public+genericize policy, see `corpus/GENERICIZATION.md`). Day 1 converts its rows into the (genericized) rule schema. |
+| `Checklist - Advertisement_Dos and Don'ts List with Examples.xlsx` | Internal Dos & Don'ts list — Sixth Schedule in plain language + worked examples | 2026 | **Internal — local-only, gitignored, NEVER committed.** Genericized into PROH-007/008, XSELL-001, SUBST-001, LEGIB-001 and the CELEB-001 / DISC-010 enhancements. Its examples are earmarked for the advisory layer + eval set. |
 | `factsheet_active_2026-06-30.pdf` | Active funds factsheet (~170 pp) | 2026-06-30 | Public. Knowledge-base source (README §6). |
 | `factsheet_passive_2026-06-30.pdf` | Passive funds factsheet (~65 pp) | 2026-06-30 | Public. Knowledge-base source (README §6). |
 | `sebi_mf_regulations_1996_2026-01.pdf` | SEBI (Mutual Funds) Regulations 1996, consolidated to Jan 2026 (162 pp) | 2026-01 | Public. **Sixth Schedule = Advertisement Code** is on **pp. 126–127** [Regulation 30]. Reg. 30 (p. 43) mandates conformity with it + filing within 7 days. |

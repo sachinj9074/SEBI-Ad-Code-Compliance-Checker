@@ -100,5 +100,39 @@
       "pass": { "content": "The scheme's risk is 'Very High' as per the product risk-o-meter; refer to the SID for full details.", "note": "Consistent with disclosures." },
       "fail": { "content": "This debt fund carries absolutely no credit risk whatsoever.", "note": "Inconsistent with the scheme's disclosed risk profile." }
     }
+  },
+  {
+    "rule_id": "PROH-007",
+    "title": "No exploiting investor inexperience; avoid excessive jargon",
+    "description": "The advertisement must not be framed to exploit the lack of experience or knowledge of investors. Extensive use of technical or legal terminology, complex language, or excessive detail that may detract investors must be avoided.",
+    "trigger": { "type": "unconditional" },
+    "applies_to": ["all"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "medium",
+    "check_type": "assisted",
+    "source_clause": "Sixth Schedule (Advertisement Code) clause (f)",
+    "source_date": "2012-02-21",
+    "provenance": ["sebi"],
+    "examples": {
+      "pass": { "content": "A plain-language explanation of how an SIP works, with the key risks stated simply.", "note": "Clear; does not exploit inexperience." },
+      "fail": { "content": "Copy dense with unexplained metrics — Sharpe, Sortino, Treynor, information ratio, tracking error — used to impress rather than inform.", "note": "Excessive jargon that detracts and exploits inexperience." }
+    }
+  },
+  {
+    "rule_id": "PROH-008",
+    "title": "No forecasts or projections; commentary limits",
+    "description": "The advertisement must not present forecasts, assumed returns, or numerical forecasts of GDP or any stock metric. General market and economic commentary is permitted; stock-specific commentary is not; sector commentary is permitted only if it contains no numerical forecasts.",
+    "trigger": { "type": "unconditional" },
+    "applies_to": ["all"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "high",
+    "check_type": "assisted",
+    "source_clause": "Sixth Schedule (Advertisement Code) clause (b); internal Dos & Don'ts guidance",
+    "source_date": "2012-02-21",
+    "provenance": ["sebi", "internal_policy"],
+    "examples": {
+      "pass": { "content": "Equity markets have historically rewarded patient long-term investors across cycles.", "note": "General market commentary, no forecast." },
+      "fail": { "content": "We expect this stock to rise 20% and GDP to hit 8% next year, so the fund should return about 18%.", "note": "Numerical forecast, stock-specific call, and assumed return." }
+    }
   }
 ]

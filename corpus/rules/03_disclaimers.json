@@ -191,18 +191,19 @@
   },
   {
     "rule_id": "DISC-010",
-    "title": "SEBI registration number present",
-    "description": "The creative must display the AMC's SEBI registration number.",
+    "title": "Registered name and SEBI registration number",
+    "description": "The creative must display the AMC's registered name and SEBI registration number. For videos and other content relating to the securities market, the registered name and registration number must appear at the beginning of the content (effective 1 May 2026).",
     "trigger": { "type": "unconditional" },
     "applies_to": ["all"],
     "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
-    "severity": "low",
+    "severity": "medium",
     "check_type": "automated",
-    "source_clause": "Internal compliance checklist — Disclaimer Repository (SEBI registration number, mandatory)",
+    "source_clause": "SEBI requirement effective 2026-05-01 (registered name + registration number at the start of securities-market content); internal checklist — Disclaimer Repository (SEBI registration number, mandatory)",
+    "source_date": "2026-05-01",
     "provenance": ["sebi", "internal_policy"],
     "examples": {
-      "pass": { "content": "[AMC] | SEBI registration number: [SEBI registration no.]", "note": "SEBI registration number displayed." },
-      "fail": { "content": "[AMC] | Follow us for more updates.", "note": "SEBI registration number absent." }
+      "pass": { "content": "[AMC] (registered name) | SEBI registration number: [SEBI registration no.]", "note": "Registered name and registration number displayed (at the start, for video)." },
+      "fail": { "content": "[AMC] | Follow us for more updates.", "note": "Registered name / SEBI registration number absent (or not at the start of the video)." }
     }
   },
   {

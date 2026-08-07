@@ -27,3 +27,5 @@ review/
 # Internal / local-only source material (public+genericize policy — see corpus/GENERICIZATION.md)
 # The internal compliance checklist is NEVER committed; it lives locally only.
 sources/compliance_checklist_2026.xlsx
+# Other internal compliance material (e.g. the Dos & Don'ts list) — never committed.
+sources/*Dos and Don*.xlsx

@@ -2,7 +2,7 @@
   {
     "rule_id": "CELEB-001",
     "title": "No celebrity in the advertisement",
-    "description": "No celebrity shall form part of the advertisement. When a prominent person is detected, they must be reviewed against the celebrity definition below — a match on any single criterion makes the person a celebrity. Principle: once a celebrity, always a celebrity.",
+    "description": "No celebrity shall form part of the advertisement — whether by depiction, endorsement, or by name or reference (e.g. an article drawing an analogy to a named celebrity's discipline or routine). When a prominent person is detected or a well-known name is referenced, they must be reviewed against the celebrity definition below — a match on any single criterion makes the person a celebrity. Principle: once a celebrity, always a celebrity.",
     "trigger": { "type": "conditional", "feature": "prominent_person" },
     "applies_to": ["all"],
     "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],

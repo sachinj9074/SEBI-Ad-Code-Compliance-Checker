@@ -1,0 +1,52 @@
+[
+  {
+    "rule_id": "XSELL-001",
+    "title": "No cross-selling of other products",
+    "description": "A mutual fund advertisement must not cross-sell or promote any other product or business — for example AIF or PMS offerings, insurance, or other group products. No other business may be promoted in an MF advertisement.",
+    "trigger": { "type": "unconditional" },
+    "applies_to": ["mf_scheme"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "medium",
+    "check_type": "assisted",
+    "source_clause": "Internal Dos & Don'ts (no cross-selling of other products in an MF advertisement)",
+    "provenance": ["internal_policy"],
+    "examples": {
+      "pass": { "content": "A scheme creative that stays entirely about the mutual fund scheme.", "note": "No other product promoted." },
+      "fail": { "content": "An MF scheme creative that also pitches the AMC's PMS/AIF service and a linked insurance plan.", "note": "Cross-sells other products in an MF ad." }
+    }
+  },
+  {
+    "rule_id": "SUBST-001",
+    "title": "Statistics and charts must cite a reliable source",
+    "description": "Statistical information, charts, and graphs, when used, must be supported by their source. A reliable, preferably publicly available source must be quoted wherever data, graphs, or charts are shown, and the figures must be verifiable and correct.",
+    "trigger": { "type": "conditional", "feature": "graph_chart" },
+    "applies_to": ["mf_scheme"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "medium",
+    "check_type": "assisted",
+    "source_clause": "Internal Dos & Don'ts (statistics/charts must be source-supported); Sixth Schedule (Advertisement Code) clause (a)",
+    "source_date": "2012-02-21",
+    "provenance": ["sebi", "internal_policy"],
+    "examples": {
+      "pass": { "content": "The Nifty 50 delivered 15% over the last 1 year (Source: NSE, as on 31 July 2026).", "note": "Statistic with a reliable, dated source." },
+      "fail": { "content": "The Nifty 50 has given 15% returns in the last 1 year.", "note": "Statistic with no supporting source." }
+    }
+  },
+  {
+    "rule_id": "LEGIB-001",
+    "title": "Content and disclaimers must be legible",
+    "description": "All content of the advertisement — and especially the disclaimers and notes — must be legible and in a readable font size commensurate with the size of the other text in the creative.",
+    "trigger": { "type": "unconditional" },
+    "applies_to": ["all"],
+    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "severity": "high",
+    "check_type": "assisted",
+    "source_clause": "Sixth Schedule (Advertisement Code) clause (i) (legible fonts); internal Dos & Don'ts (legibility / commensurate font size)",
+    "source_date": "2012-02-21",
+    "provenance": ["sebi", "internal_policy"],
+    "examples": {
+      "pass": { "content": "The disclaimer is set at a font size comparable to the body copy and is clearly readable.", "note": "Legible, commensurate font." },
+      "fail": { "content": "The mandatory disclaimer is printed in tiny, low-contrast text crammed along the bottom edge.", "note": "Disclaimer not legible / not commensurate — vision layer flags." }
+    }
+  }
+]

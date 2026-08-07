@@ -28,6 +28,7 @@ CATEGORIES = {
     "05_yield_aum_anniversary": "Yield · AUM · Anniversary",
     "06_video": "Video — encoded, inactive in v1",
     "07_amfi": "AMFI guidelines",
+    "08_general": "General ad standards",
 }
 
 CAT_SOURCE = {
@@ -38,6 +39,7 @@ CAT_SOURCE = {
     "05_yield_aum_anniversary": "MC Ch.14 + internal KV/yield/anniversary checklist",
     "06_video": "Sixth Schedule (j) + internal video checkpoints",
     "07_amfi": "AMFI Best Practices Circular 109/2023-24",
+    "08_general": "Sixth Schedule (f) + internal Dos & Don'ts",
 }
 
 TOKENS = {
