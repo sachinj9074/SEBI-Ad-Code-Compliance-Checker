@@ -486,7 +486,7 @@
       "match_threshold": 0.7
     },
     "examples": {
-      "pass": { "content": "[article on SIP investing, closing with the full article disclaimer covering sources, no-advice, no-assured-returns, and the market-risk warning].", "note": "Article carries the article disclaimer." },
+      "pass": { "content": "An explainer on rupee-cost averaging through SIPs. This article has been issued on the basis of internal data, publicly available information and other sources believed to be reliable. The information contained herein is for general purposes only and not a complete disclosure of every material fact. It should not be construed as investment advice to any party. [AMC] is not guaranteeing / assuring any returns on investments. Readers shall be fully responsible / liable for any decision taken on the basis of this article. Mutual Fund investments are subject to market risks, read all scheme related documents carefully.", "note": "Article carries the article disclaimer." },
       "fail": { "content": "[article on SIP investing that ends with a call-to-action and no disclaimer].", "note": "Article missing the article disclaimer." }
     }
   },
@@ -507,7 +507,7 @@
       "match_threshold": 0.7
     },
     "examples": {
-      "pass": { "content": "[blog post ending with the blog disclaimer covering information-only, no-advice, no-assured-returns, due-caution].", "note": "Blog carries the blog disclaimer." },
+      "pass": { "content": "A blog on staying invested through market volatility. Views and opinions contained herein are for information purposes only and should not be construed as investment advice / recommendation to any party or solicitation to buy, sell or hold any security or to adopt any investment strategy. [AMC] is not guaranteeing / assuring any returns on investments. The recipient should exercise due caution and / or seek professional advice before making any decision.", "note": "Blog carries the blog disclaimer." },
       "fail": { "content": "[blog post recommending investors buy the fund now, with no disclaimer].", "note": "Blog missing the blog disclaimer (and reads as a recommendation)." }
     }
   },
@@ -528,7 +528,7 @@
       "match_threshold": 0.7
     },
     "examples": {
-      "pass": { "content": "[explainer video ending with the video disclaimer on screen].", "note": "Video carries the video disclaimer." },
+      "pass": { "content": "An explainer video on goal-based investing. This video has been prepared on the basis of internal data, publicly available information and other sources believed to be reliable. The information contained in this video is for general purposes only and not a complete disclosure of every material fact. It should not be construed as investment advice to any party. [AMC] is not guaranteeing / assuring any returns on investments. Viewers should exercise due caution and / or seek professional advice before making any decision.", "note": "Video carries the video disclaimer." },
       "fail": { "content": "[explainer video ending on a call-to-action with no disclaimer].", "note": "Video missing the video disclaimer." }
     }
   },
@@ -549,7 +549,7 @@
       "match_threshold": 0.7
     },
     "examples": {
-      "pass": { "content": "[Investor-awareness post ending with the full IAP disclaimer: KYC, deal only with registered MFs, SEBI SCORES].", "note": "IAP creative with the IAP disclaimer." },
+      "pass": { "content": "5 things to check before you invest. This is an investor education and awareness initiative by [AMC]. Investors have to complete one-time KYC process. Visit [AMC website] or contact us on [AMC email] for more information. Investors should deal only with registered Mutual Funds, details of which are available on www.sebi.gov.in - Intermediaries / Market Infrastructure Institutions section. For any grievance redressal, investors can call us on [AMC helpline] or register a complaint on the SEBI SCORES portal at https://scores.sebi.gov.in/", "note": "IAP creative with the IAP disclaimer." },
       "fail": { "content": "[Investor-awareness post with no IAP disclaimer].", "note": "IAP creative missing the IAP disclaimer." }
     }
   }
