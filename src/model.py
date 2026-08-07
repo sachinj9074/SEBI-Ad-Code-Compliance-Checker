@@ -44,16 +44,18 @@ def _get_client():
     return _client
 
 
-def structured(system: str, user: str, schema: dict, max_tokens: int = 4096) -> dict:
+def structured(system: str, user: str, schema: dict, max_tokens: int = 4096,
+               model: str | None = None) -> dict:
     """Call the model and return JSON validated against `schema` (structured
-    outputs). Raises RuntimeError if no API key is configured."""
+    outputs). `model` overrides the default (e.g. a cheaper model for batch
+    extraction). Raises RuntimeError if no API key is configured."""
     if not available():
         raise RuntimeError(
             "ANTHROPIC_API_KEY is not set — copy .env.example to .env and add your key."
         )
     client = _get_client()
     resp = client.messages.create(
-        model=model_id(),
+        model=model or model_id(),
         max_tokens=max_tokens,
         system=system,
         messages=[{"role": "user", "content": user}],

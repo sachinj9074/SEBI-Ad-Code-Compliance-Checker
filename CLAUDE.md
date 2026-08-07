@@ -42,8 +42,9 @@ open decisions. If the two conflict, the README wins on product/design; this fil
   downloaded from sebi.gov.in / amfiindia.com into `sources/`. See `sources/SOURCES.md`.
 - **Repo = public + genericized** (for portfolio). Internal checklist local-only/gitignored;
   committed corpus uses generic placeholders. See `corpus/GENERICIZATION.md`.
-  Open follow-up (Day 2): the factsheet PDFs are public but AMC-branded and ~15 MB — decide then
-  whether to keep them local-only and ship a genericized sample factsheet KB instead.
+- **Factsheets = public → committed as-is.** The factsheet PDFs are public downloads, so both the
+  raw PDFs and the generated knowledge base (`data/`) are committed with **real** data — public
+  factsheet figures are not AMC-internal material and are not genericized.
 
 ## Open decisions (confirm before writing the code that depends on them)
 - **Severity enum.** Set to `critical | high | medium | low` at setup; reconcile with the

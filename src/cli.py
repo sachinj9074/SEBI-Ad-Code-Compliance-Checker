@@ -46,7 +46,7 @@ def _print_report(v: dict) -> None:
     print(f"  model: {v['meta']['model_used']}")
     print("=" * 68)
     print(f"  rules run {s['rules_run']} | pass {s['passed']} | FAIL {s['failed']}"
-          f" | needs-review {s['needs_review']}")
+          f" | needs-review {s['needs_review']} | fact-mismatch {s['fact_mismatches']}")
     if not model.available():
         print("  (no API key: feature detection is heuristic; automated non-disclaimer "
               "rules deferred to needs-review)")
@@ -65,6 +65,18 @@ def _print_report(v: dict) -> None:
                 print(f"         {r['explanation']}")
             if r.get("suggested_rewrite"):
                 print(f"         fix: {r['suggested_rewrite'][:90]}")
+
+    fc = v["fact_check_layer"]["results"]
+    if fc:
+        print("\n— fact-check (Layer 2 — factsheet verification, separate from the compliance score) —")
+        for r in fc:
+            print(f"  [{r['verdict']}] {r['claim_text'][:66]}")
+            print(f"         claimed: {r.get('claimed_value','?')}  |  factsheet: "
+                  f"{r.get('factsheet_value','?')}  (as of {r.get('as_of_date','?')})")
+            if r.get("scheme_matched"):
+                print(f"         scheme: {r['scheme_matched']}")
+            if r.get("assumption"):
+                print(f"         assumption: {r['assumption']}")
 
     print("\n— show-back (extracted content, confidence "
           f"{ex['confidence']:.0%}, {ex['source_kind']}) —")

@@ -10,6 +10,7 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 
+from . import factcheck
 from . import features as featuremod
 from . import match, model
 from .corpus import filter_rules, load_rules
@@ -123,6 +124,9 @@ def build_verdict(file: str, areas: list[str], creative_type: str) -> dict:
     scoped = filter_rules(load_rules(), areas, creative_type)
     rule_layer = run_rules(scoped, ex["extracted_text"], present)
 
+    # Layer 2 — kept entirely separate from the Layer-1 score.
+    fact_check = factcheck.run(ex["extracted_text"])
+
     s = rule_layer["summary"]
     return {
         "schema_version": TOOL_VERSION,
@@ -142,17 +146,14 @@ def build_verdict(file: str, areas: list[str], creative_type: str) -> dict:
         },
         "feature_detection": {"features": feats},
         "rule_layer": rule_layer,
-        "fact_check_layer": {
-            "results": [],
-            "summary": {"claims_checked": 0, "matches": 0, "mismatches": 0, "ambiguous": 0, "not_found": 0},
-        },
+        "fact_check_layer": fact_check,
         "advisory_layer": {"notes": []},
         "summary_strip": {
             "rules_run": s["rules_run"],
             "passed": s["passed"],
             "failed": s["failed"],
             "needs_review": s["needs_review"],
-            "fact_mismatches": 0,
+            "fact_mismatches": fact_check["summary"]["mismatches"],
             "advisory_notes": 0,
         },
     }

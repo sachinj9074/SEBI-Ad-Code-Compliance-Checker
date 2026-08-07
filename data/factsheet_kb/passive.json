@@ -1,0 +1,8129 @@
+[
+  {
+    "scheme_name": "Axis Nifty 100 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Open Ended Index Fund",
+    "benchmark": "NIFTY 100 TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 9.11
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 7.35
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 6.52
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 4.2
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 3.62
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 3.17
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 2.88
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 2.62
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 2.15
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 2.06
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2019-10-18",
+    "underlying_index": "NIFTY 100 TRI",
+    "tracking_error": 0.05,
+    "aum": {
+      "value": 2023.81,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty 100 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.94,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty 100 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Open Ended Index Fund",
+    "benchmark": "NIFTY 100 TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 9.11
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 7.35
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 6.52
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 4.2
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 3.62
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 3.17
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 2.88
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 2.62
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 2.15
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 2.06
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2019-10-18",
+    "underlying_index": "NIFTY 100 TRI",
+    "tracking_error": 0.05,
+    "aum": {
+      "value": 2023.81,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty 100 Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.94,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty 100 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Open Ended Index Fund",
+    "benchmark": "NIFTY 100 TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 9.11
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 7.35
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 6.52
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 4.2
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 3.62
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 3.17
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 2.88
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 2.62
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 2.15
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 2.06
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2019-10-18",
+    "underlying_index": "NIFTY 100 TRI",
+    "tracking_error": 0.05,
+    "aum": {
+      "value": 2023.81,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty 100 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.23,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty 100 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Open Ended Index Fund",
+    "benchmark": "NIFTY 100 TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 9.11
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 7.35
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 6.52
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 4.2
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 3.62
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 3.17
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 2.88
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 2.62
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 2.15
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 2.06
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2019-10-18",
+    "underlying_index": "NIFTY 100 TRI",
+    "tracking_error": 0.05,
+    "aum": {
+      "value": 2023.81,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty 100 Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.23,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty 50 TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 11.13
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 8.98
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 7.96
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 5.13
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 4.42
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 3.87
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 3.52
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 3.2
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 2.52
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2021-12-03",
+    "underlying_index": "Nifty 50 TRI",
+    "tracking_error": 0.05,
+    "aum": {
+      "value": 1001.15,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty 50 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.52,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty 50 TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 11.13
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 8.98
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 7.96
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 5.13
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 4.42
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 3.87
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 3.52
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 3.2
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 2.52
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2021-12-03",
+    "underlying_index": "Nifty 50 TRI",
+    "tracking_error": 0.05,
+    "aum": {
+      "value": 1001.15,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty 50 Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.52,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty 50 TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 11.13
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 8.98
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 7.96
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 5.13
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 4.42
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 3.87
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 3.52
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 3.2
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 2.52
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2021-12-03",
+    "underlying_index": "Nifty 50 TRI",
+    "tracking_error": 0.05,
+    "aum": {
+      "value": 1001.15,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty 50 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.2,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty 50 TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 11.13
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 8.98
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 7.96
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 5.13
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 4.42
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 3.87
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 3.52
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 3.2
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 2.52
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2021-12-03",
+    "underlying_index": "Nifty 50 TRI",
+    "tracking_error": 0.05,
+    "aum": {
+      "value": 1001.15,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty 50 Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.2,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis BSE Sensex Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "BSE Sensex TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 13.37
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 10.84
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 9.62
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 6.2
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 5.32
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 4.69
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 4.23
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 3.83
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 3.18
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 3.04
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2024-02-27",
+    "underlying_index": "BSE Sensex TRI",
+    "tracking_error": 0.16,
+    "aum": {
+      "value": 54.46,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis BSE Sensex Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.92,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis BSE Sensex Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "BSE Sensex TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 13.37
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 10.84
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 9.62
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 6.2
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 5.32
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 4.69
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 4.23
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 3.83
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 3.18
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 3.04
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2024-02-27",
+    "underlying_index": "BSE Sensex TRI",
+    "tracking_error": 0.16,
+    "aum": {
+      "value": 54.46,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis BSE Sensex Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.92,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis BSE Sensex Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "BSE Sensex TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 13.37
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 10.84
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 9.62
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 6.2
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 5.32
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 4.69
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 4.23
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 3.83
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 3.18
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 3.04
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2024-02-27",
+    "underlying_index": "BSE Sensex TRI",
+    "tracking_error": 0.16,
+    "aum": {
+      "value": 54.46,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis BSE Sensex Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.32,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis BSE Sensex Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "BSE Sensex TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 13.37
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 10.84
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 9.62
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 6.2
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 5.32
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 4.69
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 4.23
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 3.83
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 3.18
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 3.04
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2024-02-27",
+    "underlying_index": "BSE Sensex TRI",
+    "tracking_error": 0.16,
+    "aum": {
+      "value": 54.46,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis BSE Sensex Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.32,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Next 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Next 50 Index TRI",
+    "top_holdings": [
+      {
+        "name": "Adani Power Limited",
+        "weight_pct": 3.79
+      },
+      {
+        "name": "Tata Motors Ltd",
+        "weight_pct": 3.61
+      },
+      {
+        "name": "Divi's Laboratories Limited",
+        "weight_pct": 3.41
+      },
+      {
+        "name": "Hindustan Aeronautics Limited",
+        "weight_pct": 3.39
+      },
+      {
+        "name": "TVS Motor Company Limited",
+        "weight_pct": 3.32
+      },
+      {
+        "name": "Cholamandalam Investment and Finance Company Ltd",
+        "weight_pct": 3.16
+      },
+      {
+        "name": "Cummins India Limited",
+        "weight_pct": 3.12
+      },
+      {
+        "name": "Avenue Supermarts Limited",
+        "weight_pct": 2.88
+      },
+      {
+        "name": "Varun Beverages Limited",
+        "weight_pct": 2.83
+      },
+      {
+        "name": "Samvardhana Motherson International Limited",
+        "weight_pct": 2.67
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2022-01-28",
+    "underlying_index": "NIFTY NEXT 50",
+    "tracking_error": 0.09,
+    "aum": {
+      "value": 509.91,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Next 50 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 1.09,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Next 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Next 50 Index TRI",
+    "top_holdings": [
+      {
+        "name": "Adani Power Limited",
+        "weight_pct": 3.79
+      },
+      {
+        "name": "Tata Motors Ltd",
+        "weight_pct": 3.61
+      },
+      {
+        "name": "Divi's Laboratories Limited",
+        "weight_pct": 3.41
+      },
+      {
+        "name": "Hindustan Aeronautics Limited",
+        "weight_pct": 3.39
+      },
+      {
+        "name": "TVS Motor Company Limited",
+        "weight_pct": 3.32
+      },
+      {
+        "name": "Cholamandalam Investment and Finance Company Ltd",
+        "weight_pct": 3.16
+      },
+      {
+        "name": "Cummins India Limited",
+        "weight_pct": 3.12
+      },
+      {
+        "name": "Avenue Supermarts Limited",
+        "weight_pct": 2.88
+      },
+      {
+        "name": "Varun Beverages Limited",
+        "weight_pct": 2.83
+      },
+      {
+        "name": "Samvardhana Motherson International Limited",
+        "weight_pct": 2.67
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2022-01-28",
+    "underlying_index": "NIFTY NEXT 50",
+    "tracking_error": 0.09,
+    "aum": {
+      "value": 509.91,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Next 50 Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 1.09,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Next 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Next 50 Index TRI",
+    "top_holdings": [
+      {
+        "name": "Adani Power Limited",
+        "weight_pct": 3.79
+      },
+      {
+        "name": "Tata Motors Ltd",
+        "weight_pct": 3.61
+      },
+      {
+        "name": "Divi's Laboratories Limited",
+        "weight_pct": 3.41
+      },
+      {
+        "name": "Hindustan Aeronautics Limited",
+        "weight_pct": 3.39
+      },
+      {
+        "name": "TVS Motor Company Limited",
+        "weight_pct": 3.32
+      },
+      {
+        "name": "Cholamandalam Investment and Finance Company Ltd",
+        "weight_pct": 3.16
+      },
+      {
+        "name": "Cummins India Limited",
+        "weight_pct": 3.12
+      },
+      {
+        "name": "Avenue Supermarts Limited",
+        "weight_pct": 2.88
+      },
+      {
+        "name": "Varun Beverages Limited",
+        "weight_pct": 2.83
+      },
+      {
+        "name": "Samvardhana Motherson International Limited",
+        "weight_pct": 2.67
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2022-01-28",
+    "underlying_index": "NIFTY NEXT 50",
+    "tracking_error": 0.09,
+    "aum": {
+      "value": 509.91,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Next 50 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.2,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Next 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Next 50 Index TRI",
+    "top_holdings": [
+      {
+        "name": "Adani Power Limited",
+        "weight_pct": 3.79
+      },
+      {
+        "name": "Tata Motors Ltd",
+        "weight_pct": 3.61
+      },
+      {
+        "name": "Divi's Laboratories Limited",
+        "weight_pct": 3.41
+      },
+      {
+        "name": "Hindustan Aeronautics Limited",
+        "weight_pct": 3.39
+      },
+      {
+        "name": "TVS Motor Company Limited",
+        "weight_pct": 3.32
+      },
+      {
+        "name": "Cholamandalam Investment and Finance Company Ltd",
+        "weight_pct": 3.16
+      },
+      {
+        "name": "Cummins India Limited",
+        "weight_pct": 3.12
+      },
+      {
+        "name": "Avenue Supermarts Limited",
+        "weight_pct": 2.88
+      },
+      {
+        "name": "Varun Beverages Limited",
+        "weight_pct": 2.83
+      },
+      {
+        "name": "Samvardhana Motherson International Limited",
+        "weight_pct": 2.67
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2022-01-28",
+    "underlying_index": "NIFTY NEXT 50",
+    "tracking_error": 0.09,
+    "aum": {
+      "value": 509.91,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Next 50 Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.2,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Smallcap 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Smallcap 50 Index TRI",
+    "top_holdings": [
+      {
+        "name": "Navin Fluorine International Limited",
+        "weight_pct": 3.72
+      },
+      {
+        "name": "Karur Vysya Bank Limited",
+        "weight_pct": 3.68
+      },
+      {
+        "name": "Sona BLW Precision Forgings Limited",
+        "weight_pct": 3.66
+      },
+      {
+        "name": "Delhivery Limited",
+        "weight_pct": 3.48
+      },
+      {
+        "name": "Piramal Finance Limited",
+        "weight_pct": 3.43
+      },
+      {
+        "name": "Central Depository Services (India) Limited",
+        "weight_pct": 3.06
+      },
+      {
+        "name": "Angel One Limited",
+        "weight_pct": 2.83
+      },
+      {
+        "name": "City Union Bank Limited",
+        "weight_pct": 2.64
+      },
+      {
+        "name": "Welspun Corp Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "Gland Pharma Limited",
+        "weight_pct": 2.62
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2022-03-10",
+    "underlying_index": "NIFTY SMALLCAP 50",
+    "tracking_error": 0.11,
+    "aum": {
+      "value": 675.7,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Smallcap 50 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 1.09,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Smallcap 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Smallcap 50 Index TRI",
+    "top_holdings": [
+      {
+        "name": "Navin Fluorine International Limited",
+        "weight_pct": 3.72
+      },
+      {
+        "name": "Karur Vysya Bank Limited",
+        "weight_pct": 3.68
+      },
+      {
+        "name": "Sona BLW Precision Forgings Limited",
+        "weight_pct": 3.66
+      },
+      {
+        "name": "Delhivery Limited",
+        "weight_pct": 3.48
+      },
+      {
+        "name": "Piramal Finance Limited",
+        "weight_pct": 3.43
+      },
+      {
+        "name": "Central Depository Services (India) Limited",
+        "weight_pct": 3.06
+      },
+      {
+        "name": "Angel One Limited",
+        "weight_pct": 2.83
+      },
+      {
+        "name": "City Union Bank Limited",
+        "weight_pct": 2.64
+      },
+      {
+        "name": "Welspun Corp Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "Gland Pharma Limited",
+        "weight_pct": 2.62
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2022-03-10",
+    "underlying_index": "NIFTY SMALLCAP 50",
+    "tracking_error": 0.11,
+    "aum": {
+      "value": 675.7,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Smallcap 50 Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 1.09,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Smallcap 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Smallcap 50 Index TRI",
+    "top_holdings": [
+      {
+        "name": "Navin Fluorine International Limited",
+        "weight_pct": 3.72
+      },
+      {
+        "name": "Karur Vysya Bank Limited",
+        "weight_pct": 3.68
+      },
+      {
+        "name": "Sona BLW Precision Forgings Limited",
+        "weight_pct": 3.66
+      },
+      {
+        "name": "Delhivery Limited",
+        "weight_pct": 3.48
+      },
+      {
+        "name": "Piramal Finance Limited",
+        "weight_pct": 3.43
+      },
+      {
+        "name": "Central Depository Services (India) Limited",
+        "weight_pct": 3.06
+      },
+      {
+        "name": "Angel One Limited",
+        "weight_pct": 2.83
+      },
+      {
+        "name": "City Union Bank Limited",
+        "weight_pct": 2.64
+      },
+      {
+        "name": "Welspun Corp Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "Gland Pharma Limited",
+        "weight_pct": 2.62
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2022-03-10",
+    "underlying_index": "NIFTY SMALLCAP 50",
+    "tracking_error": 0.11,
+    "aum": {
+      "value": 675.7,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Smallcap 50 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.31,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Smallcap 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Smallcap 50 Index TRI",
+    "top_holdings": [
+      {
+        "name": "Navin Fluorine International Limited",
+        "weight_pct": 3.72
+      },
+      {
+        "name": "Karur Vysya Bank Limited",
+        "weight_pct": 3.68
+      },
+      {
+        "name": "Sona BLW Precision Forgings Limited",
+        "weight_pct": 3.66
+      },
+      {
+        "name": "Delhivery Limited",
+        "weight_pct": 3.48
+      },
+      {
+        "name": "Piramal Finance Limited",
+        "weight_pct": 3.43
+      },
+      {
+        "name": "Central Depository Services (India) Limited",
+        "weight_pct": 3.06
+      },
+      {
+        "name": "Angel One Limited",
+        "weight_pct": 2.83
+      },
+      {
+        "name": "City Union Bank Limited",
+        "weight_pct": 2.64
+      },
+      {
+        "name": "Welspun Corp Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "Gland Pharma Limited",
+        "weight_pct": 2.62
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2022-03-10",
+    "underlying_index": "NIFTY SMALLCAP 50",
+    "tracking_error": 0.11,
+    "aum": {
+      "value": 675.7,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Smallcap 50 Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.31,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Midcap 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Midcap 50 Index TRI",
+    "top_holdings": [
+      {
+        "name": "BSE Limited",
+        "weight_pct": 7.05
+      },
+      {
+        "name": "The Federal Bank Limited",
+        "weight_pct": 3.63
+      },
+      {
+        "name": "Multi Commodity Exchange of India Limited",
+        "weight_pct": 3.23
+      },
+      {
+        "name": "Suzlon Energy Limited",
+        "weight_pct": 3.2
+      },
+      {
+        "name": "Hero MotoCorp Limited",
+        "weight_pct": 2.78
+      },
+      {
+        "name": "IndusInd Bank Limited",
+        "weight_pct": 2.72
+      },
+      {
+        "name": "Bharat Heavy Electricals Limited",
+        "weight_pct": 2.69
+      },
+      {
+        "name": "Laurus Labs Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "Lupin Limited",
+        "weight_pct": 2.62
+      },
+      {
+        "name": "AU Small Finance Bank Limited",
+        "weight_pct": 2.62
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2022-03-28",
+    "underlying_index": "Nifty Midcap 50 Index TRI",
+    "tracking_error": 0.11,
+    "aum": {
+      "value": 700.89,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Midcap 50 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 1.09,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Midcap 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Midcap 50 Index TRI",
+    "top_holdings": [
+      {
+        "name": "BSE Limited",
+        "weight_pct": 7.05
+      },
+      {
+        "name": "The Federal Bank Limited",
+        "weight_pct": 3.63
+      },
+      {
+        "name": "Multi Commodity Exchange of India Limited",
+        "weight_pct": 3.23
+      },
+      {
+        "name": "Suzlon Energy Limited",
+        "weight_pct": 3.2
+      },
+      {
+        "name": "Hero MotoCorp Limited",
+        "weight_pct": 2.78
+      },
+      {
+        "name": "IndusInd Bank Limited",
+        "weight_pct": 2.72
+      },
+      {
+        "name": "Bharat Heavy Electricals Limited",
+        "weight_pct": 2.69
+      },
+      {
+        "name": "Laurus Labs Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "Lupin Limited",
+        "weight_pct": 2.62
+      },
+      {
+        "name": "AU Small Finance Bank Limited",
+        "weight_pct": 2.62
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2022-03-28",
+    "underlying_index": "Nifty Midcap 50 Index TRI",
+    "tracking_error": 0.11,
+    "aum": {
+      "value": 700.89,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Midcap 50 Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 1.09,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Midcap 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Midcap 50 Index TRI",
+    "top_holdings": [
+      {
+        "name": "BSE Limited",
+        "weight_pct": 7.05
+      },
+      {
+        "name": "The Federal Bank Limited",
+        "weight_pct": 3.63
+      },
+      {
+        "name": "Multi Commodity Exchange of India Limited",
+        "weight_pct": 3.23
+      },
+      {
+        "name": "Suzlon Energy Limited",
+        "weight_pct": 3.2
+      },
+      {
+        "name": "Hero MotoCorp Limited",
+        "weight_pct": 2.78
+      },
+      {
+        "name": "IndusInd Bank Limited",
+        "weight_pct": 2.72
+      },
+      {
+        "name": "Bharat Heavy Electricals Limited",
+        "weight_pct": 2.69
+      },
+      {
+        "name": "Laurus Labs Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "Lupin Limited",
+        "weight_pct": 2.62
+      },
+      {
+        "name": "AU Small Finance Bank Limited",
+        "weight_pct": 2.62
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2022-03-28",
+    "underlying_index": "Nifty Midcap 50 Index TRI",
+    "tracking_error": 0.11,
+    "aum": {
+      "value": 700.89,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Midcap 50 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.29,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Midcap 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Midcap 50 Index TRI",
+    "top_holdings": [
+      {
+        "name": "BSE Limited",
+        "weight_pct": 7.05
+      },
+      {
+        "name": "The Federal Bank Limited",
+        "weight_pct": 3.63
+      },
+      {
+        "name": "Multi Commodity Exchange of India Limited",
+        "weight_pct": 3.23
+      },
+      {
+        "name": "Suzlon Energy Limited",
+        "weight_pct": 3.2
+      },
+      {
+        "name": "Hero MotoCorp Limited",
+        "weight_pct": 2.78
+      },
+      {
+        "name": "IndusInd Bank Limited",
+        "weight_pct": 2.72
+      },
+      {
+        "name": "Bharat Heavy Electricals Limited",
+        "weight_pct": 2.69
+      },
+      {
+        "name": "Laurus Labs Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "Lupin Limited",
+        "weight_pct": 2.62
+      },
+      {
+        "name": "AU Small Finance Bank Limited",
+        "weight_pct": 2.62
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2022-03-28",
+    "underlying_index": "Nifty Midcap 50 Index TRI",
+    "tracking_error": 0.11,
+    "aum": {
+      "value": 700.89,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Midcap 50 Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.29,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty IT Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "NIFTY IT TRI",
+    "top_holdings": [
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 30.46
+      },
+      {
+        "name": "Tata Consultancy Services Limited",
+        "weight_pct": 20.51
+      },
+      {
+        "name": "HCL Technologies Limited",
+        "weight_pct": 11.18
+      },
+      {
+        "name": "Tech Mahindra Limited",
+        "weight_pct": 10.86
+      },
+      {
+        "name": "Wipro Limited",
+        "weight_pct": 5.95
+      },
+      {
+        "name": "Persistent Systems Limited",
+        "weight_pct": 5.72
+      },
+      {
+        "name": "Coforge Limited",
+        "weight_pct": 4.89
+      },
+      {
+        "name": "LTM Limited",
+        "weight_pct": 4.0
+      },
+      {
+        "name": "Mphasis Limited",
+        "weight_pct": 3.48
+      },
+      {
+        "name": "Oracle Financial Services Software Limited",
+        "weight_pct": 3.13
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2023-07-14",
+    "underlying_index": "NIFTY IT TRI",
+    "tracking_error": 0.1,
+    "aum": {
+      "value": 112.02,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty IT Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 1.09,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty IT Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "NIFTY IT TRI",
+    "top_holdings": [
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 30.46
+      },
+      {
+        "name": "Tata Consultancy Services Limited",
+        "weight_pct": 20.51
+      },
+      {
+        "name": "HCL Technologies Limited",
+        "weight_pct": 11.18
+      },
+      {
+        "name": "Tech Mahindra Limited",
+        "weight_pct": 10.86
+      },
+      {
+        "name": "Wipro Limited",
+        "weight_pct": 5.95
+      },
+      {
+        "name": "Persistent Systems Limited",
+        "weight_pct": 5.72
+      },
+      {
+        "name": "Coforge Limited",
+        "weight_pct": 4.89
+      },
+      {
+        "name": "LTM Limited",
+        "weight_pct": 4.0
+      },
+      {
+        "name": "Mphasis Limited",
+        "weight_pct": 3.48
+      },
+      {
+        "name": "Oracle Financial Services Software Limited",
+        "weight_pct": 3.13
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2023-07-14",
+    "underlying_index": "NIFTY IT TRI",
+    "tracking_error": 0.1,
+    "aum": {
+      "value": 112.02,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty IT Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 1.09,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty IT Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "NIFTY IT TRI",
+    "top_holdings": [
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 30.46
+      },
+      {
+        "name": "Tata Consultancy Services Limited",
+        "weight_pct": 20.51
+      },
+      {
+        "name": "HCL Technologies Limited",
+        "weight_pct": 11.18
+      },
+      {
+        "name": "Tech Mahindra Limited",
+        "weight_pct": 10.86
+      },
+      {
+        "name": "Wipro Limited",
+        "weight_pct": 5.95
+      },
+      {
+        "name": "Persistent Systems Limited",
+        "weight_pct": 5.72
+      },
+      {
+        "name": "Coforge Limited",
+        "weight_pct": 4.89
+      },
+      {
+        "name": "LTM Limited",
+        "weight_pct": 4.0
+      },
+      {
+        "name": "Mphasis Limited",
+        "weight_pct": 3.48
+      },
+      {
+        "name": "Oracle Financial Services Software Limited",
+        "weight_pct": 3.13
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2023-07-14",
+    "underlying_index": "NIFTY IT TRI",
+    "tracking_error": 0.1,
+    "aum": {
+      "value": 112.02,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty IT Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.36,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty IT Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "NIFTY IT TRI",
+    "top_holdings": [
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 30.46
+      },
+      {
+        "name": "Tata Consultancy Services Limited",
+        "weight_pct": 20.51
+      },
+      {
+        "name": "HCL Technologies Limited",
+        "weight_pct": 11.18
+      },
+      {
+        "name": "Tech Mahindra Limited",
+        "weight_pct": 10.86
+      },
+      {
+        "name": "Wipro Limited",
+        "weight_pct": 5.95
+      },
+      {
+        "name": "Persistent Systems Limited",
+        "weight_pct": 5.72
+      },
+      {
+        "name": "Coforge Limited",
+        "weight_pct": 4.89
+      },
+      {
+        "name": "LTM Limited",
+        "weight_pct": 4.0
+      },
+      {
+        "name": "Mphasis Limited",
+        "weight_pct": 3.48
+      },
+      {
+        "name": "Oracle Financial Services Software Limited",
+        "weight_pct": 3.13
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2023-07-14",
+    "underlying_index": "NIFTY IT TRI",
+    "tracking_error": 0.1,
+    "aum": {
+      "value": 112.02,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty IT Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.36,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Bank Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Bank TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 19.22
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 14.1
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 9.98
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 9.55
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 9.27
+      },
+      {
+        "name": "The Federal Bank Limited",
+        "weight_pct": 6.64
+      },
+      {
+        "name": "IndusInd Bank Limited",
+        "weight_pct": 4.97
+      },
+      {
+        "name": "AU Small Finance Bank Limited",
+        "weight_pct": 4.62
+      },
+      {
+        "name": "IDFC First Bank Limited",
+        "weight_pct": 4.34
+      },
+      {
+        "name": "Bank of Baroda",
+        "weight_pct": 3.98
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2024-05-24",
+    "underlying_index": "Nifty Bank TRI",
+    "tracking_error": 0.07,
+    "aum": {
+      "value": 175.22,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Bank Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 1.08,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Bank Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Bank TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 19.22
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 14.1
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 9.98
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 9.55
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 9.27
+      },
+      {
+        "name": "The Federal Bank Limited",
+        "weight_pct": 6.64
+      },
+      {
+        "name": "IndusInd Bank Limited",
+        "weight_pct": 4.97
+      },
+      {
+        "name": "AU Small Finance Bank Limited",
+        "weight_pct": 4.62
+      },
+      {
+        "name": "IDFC First Bank Limited",
+        "weight_pct": 4.34
+      },
+      {
+        "name": "Bank of Baroda",
+        "weight_pct": 3.98
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2024-05-24",
+    "underlying_index": "Nifty Bank TRI",
+    "tracking_error": 0.07,
+    "aum": {
+      "value": 175.22,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Bank Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 1.08,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Bank Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Bank TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 19.22
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 14.1
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 9.98
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 9.55
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 9.27
+      },
+      {
+        "name": "The Federal Bank Limited",
+        "weight_pct": 6.64
+      },
+      {
+        "name": "IndusInd Bank Limited",
+        "weight_pct": 4.97
+      },
+      {
+        "name": "AU Small Finance Bank Limited",
+        "weight_pct": 4.62
+      },
+      {
+        "name": "IDFC First Bank Limited",
+        "weight_pct": 4.34
+      },
+      {
+        "name": "Bank of Baroda",
+        "weight_pct": 3.98
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2024-05-24",
+    "underlying_index": "Nifty Bank TRI",
+    "tracking_error": 0.07,
+    "aum": {
+      "value": 175.22,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Bank Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.22,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Bank Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Bank TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 19.22
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 14.1
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 9.98
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 9.55
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 9.27
+      },
+      {
+        "name": "The Federal Bank Limited",
+        "weight_pct": 6.64
+      },
+      {
+        "name": "IndusInd Bank Limited",
+        "weight_pct": 4.97
+      },
+      {
+        "name": "AU Small Finance Bank Limited",
+        "weight_pct": 4.62
+      },
+      {
+        "name": "IDFC First Bank Limited",
+        "weight_pct": 4.34
+      },
+      {
+        "name": "Bank of Baroda",
+        "weight_pct": 3.98
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2024-05-24",
+    "underlying_index": "Nifty Bank TRI",
+    "tracking_error": 0.07,
+    "aum": {
+      "value": 175.22,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Bank Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.22,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty 500 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Open-Ended Index Fund",
+    "benchmark": "Nifty 500 TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 6.22
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 5.02
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 4.45
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 2.87
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 2.47
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 2.16
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 1.97
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 1.79
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 1.47
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 1.41
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2024-07-12",
+    "underlying_index": "Nifty 500 TRI",
+    "tracking_error": 0.19,
+    "aum": {
+      "value": 310.0,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty 500 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 1.11,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty 500 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Open-Ended Index Fund",
+    "benchmark": "Nifty 500 TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 6.22
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 5.02
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 4.45
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 2.87
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 2.47
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 2.16
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 1.97
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 1.79
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 1.47
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 1.41
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2024-07-12",
+    "underlying_index": "Nifty 500 TRI",
+    "tracking_error": 0.19,
+    "aum": {
+      "value": 310.0,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty 500 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.17,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty500 Value 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Open-Ended Index Fund",
+    "benchmark": "NIFTY 500 Value 50 TRI",
+    "top_holdings": [
+      {
+        "name": "Tata Motors Passenger Vehicles Limited",
+        "weight_pct": 5.11
+      },
+      {
+        "name": "NTPC Limited",
+        "weight_pct": 5.07
+      },
+      {
+        "name": "Coal India Limited",
+        "weight_pct": 5.04
+      },
+      {
+        "name": "Vedanta Limited",
+        "weight_pct": 5.04
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 5.03
+      },
+      {
+        "name": "Grasim Industries Limited",
+        "weight_pct": 5.03
+      },
+      {
+        "name": "Power Grid Corporation of India Limited",
+        "weight_pct": 4.99
+      },
+      {
+        "name": "Hindalco Industries Limited",
+        "weight_pct": 4.97
+      },
+      {
+        "name": "Oil & Natural Gas Corporation Limited",
+        "weight_pct": 4.96
+      },
+      {
+        "name": "Bharat Petroleum Corporation Limited",
+        "weight_pct": 4.02
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2024-10-24",
+    "underlying_index": "NIFTY 500 Value 50 TRI",
+    "tracking_error": 0.18,
+    "aum": {
+      "value": 218.49,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty500 Value 50 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 1.24,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty500 Value 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Open-Ended Index Fund",
+    "benchmark": "NIFTY 500 Value 50 TRI",
+    "top_holdings": [
+      {
+        "name": "Tata Motors Passenger Vehicles Limited",
+        "weight_pct": 5.11
+      },
+      {
+        "name": "NTPC Limited",
+        "weight_pct": 5.07
+      },
+      {
+        "name": "Coal India Limited",
+        "weight_pct": 5.04
+      },
+      {
+        "name": "Vedanta Limited",
+        "weight_pct": 5.04
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 5.03
+      },
+      {
+        "name": "Grasim Industries Limited",
+        "weight_pct": 5.03
+      },
+      {
+        "name": "Power Grid Corporation of India Limited",
+        "weight_pct": 4.99
+      },
+      {
+        "name": "Hindalco Industries Limited",
+        "weight_pct": 4.97
+      },
+      {
+        "name": "Oil & Natural Gas Corporation Limited",
+        "weight_pct": 4.96
+      },
+      {
+        "name": "Bharat Petroleum Corporation Limited",
+        "weight_pct": 4.02
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2024-10-24",
+    "underlying_index": "NIFTY 500 Value 50 TRI",
+    "tracking_error": 0.18,
+    "aum": {
+      "value": 218.49,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty500 Value 50 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.33,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty500 Momentum 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty500 Momentum 50 TRI",
+    "top_holdings": [
+      {
+        "name": "Shriram Finance Limited",
+        "weight_pct": 5.07
+      },
+      {
+        "name": "Cummins India Limited",
+        "weight_pct": 5.05
+      },
+      {
+        "name": "Multi Commodity Exchange of India Limited",
+        "weight_pct": 4.95
+      },
+      {
+        "name": "BSE Limited",
+        "weight_pct": 4.93
+      },
+      {
+        "name": "Hindalco Industries Limited",
+        "weight_pct": 4.85
+      },
+      {
+        "name": "GE Vernova T&D India Limited",
+        "weight_pct": 4.85
+      },
+      {
+        "name": "Adani Power Limited",
+        "weight_pct": 4.83
+      },
+      {
+        "name": "Laurus Labs Limited",
+        "weight_pct": 4.64
+      },
+      {
+        "name": "The Federal Bank Limited",
+        "weight_pct": 3.62
+      },
+      {
+        "name": "Bharat Heavy Electricals Limited",
+        "weight_pct": 3.36
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2025-02-13",
+    "underlying_index": "Nifty500 Momentum 50 TRI",
+    "tracking_error": 0.34,
+    "aum": {
+      "value": 162.59,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty500 Momentum 50 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 1.15,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty500 Momentum 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty500 Momentum 50 TRI",
+    "top_holdings": [
+      {
+        "name": "Shriram Finance Limited",
+        "weight_pct": 5.07
+      },
+      {
+        "name": "Cummins India Limited",
+        "weight_pct": 5.05
+      },
+      {
+        "name": "Multi Commodity Exchange of India Limited",
+        "weight_pct": 4.95
+      },
+      {
+        "name": "BSE Limited",
+        "weight_pct": 4.93
+      },
+      {
+        "name": "Hindalco Industries Limited",
+        "weight_pct": 4.85
+      },
+      {
+        "name": "GE Vernova T&D India Limited",
+        "weight_pct": 4.85
+      },
+      {
+        "name": "Adani Power Limited",
+        "weight_pct": 4.83
+      },
+      {
+        "name": "Laurus Labs Limited",
+        "weight_pct": 4.64
+      },
+      {
+        "name": "The Federal Bank Limited",
+        "weight_pct": 3.62
+      },
+      {
+        "name": "Bharat Heavy Electricals Limited",
+        "weight_pct": 3.36
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2025-02-13",
+    "underlying_index": "Nifty500 Momentum 50 TRI",
+    "tracking_error": 0.34,
+    "aum": {
+      "value": 162.59,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty500 Momentum 50 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.22,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty500 Quality 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Open-Ended Index Fund",
+    "benchmark": "Nifty500 Quality 50 TRI",
+    "top_holdings": [
+      {
+        "name": "Tata Consultancy Services Limited",
+        "weight_pct": 4.87
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 4.79
+      },
+      {
+        "name": "BSE Limited",
+        "weight_pct": 4.54
+      },
+      {
+        "name": "Bharat Electronics Limited",
+        "weight_pct": 4.31
+      },
+      {
+        "name": "Coal India Limited",
+        "weight_pct": 3.65
+      },
+      {
+        "name": "Britannia Industries Limited",
+        "weight_pct": 3.65
+      },
+      {
+        "name": "Suzlon Energy Limited",
+        "weight_pct": 3.62
+      },
+      {
+        "name": "Colgate Palmolive (India) Limited",
+        "weight_pct": 3.37
+      },
+      {
+        "name": "Bajaj Auto Limited",
+        "weight_pct": 3.36
+      },
+      {
+        "name": "Dixon Technologies (India) Limited",
+        "weight_pct": 3.11
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2025-09-10",
+    "underlying_index": "Nifty500 Quality 50 TRI",
+    "tracking_error": 0.13,
+    "aum": {
+      "value": 77.04,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty500 Quality 50 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 1.08,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty500 Quality 50 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Open-Ended Index Fund",
+    "benchmark": "Nifty500 Quality 50 TRI",
+    "top_holdings": [
+      {
+        "name": "Tata Consultancy Services Limited",
+        "weight_pct": 4.87
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 4.79
+      },
+      {
+        "name": "BSE Limited",
+        "weight_pct": 4.54
+      },
+      {
+        "name": "Bharat Electronics Limited",
+        "weight_pct": 4.31
+      },
+      {
+        "name": "Coal India Limited",
+        "weight_pct": 3.65
+      },
+      {
+        "name": "Britannia Industries Limited",
+        "weight_pct": 3.65
+      },
+      {
+        "name": "Suzlon Energy Limited",
+        "weight_pct": 3.62
+      },
+      {
+        "name": "Colgate Palmolive (India) Limited",
+        "weight_pct": 3.37
+      },
+      {
+        "name": "Bajaj Auto Limited",
+        "weight_pct": 3.36
+      },
+      {
+        "name": "Dixon Technologies (India) Limited",
+        "weight_pct": 3.11
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2025-09-10",
+    "underlying_index": "Nifty500 Quality 50 TRI",
+    "tracking_error": 0.13,
+    "aum": {
+      "value": 77.04,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty500 Quality 50 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.16,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis BSE India Sector Leaders Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Open-Ended Index Fund",
+    "benchmark": "BSE India Sector Leaders TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 5.17
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 5.15
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 5.05
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 5.03
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 4.97
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 4.43
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 3.62
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 2.87
+      },
+      {
+        "name": "Mahindra & Mahindra Limited",
+        "weight_pct": 2.85
+      },
+      {
+        "name": "Tata Consultancy Services Limited",
+        "weight_pct": 2.14
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2026-02-11",
+    "underlying_index": "BSE India Sector Leaders TRI",
+    "tracking_error": 0.13,
+    "aum": {
+      "value": 32.28,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis BSE India Sector Leaders Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 1.15,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis BSE India Sector Leaders Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Open-Ended Index Fund",
+    "benchmark": "BSE India Sector Leaders TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 5.17
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 5.15
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 5.05
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 5.03
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 4.97
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 4.43
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 3.62
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 2.87
+      },
+      {
+        "name": "Mahindra & Mahindra Limited",
+        "weight_pct": 2.85
+      },
+      {
+        "name": "Tata Consultancy Services Limited",
+        "weight_pct": 2.14
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2026-02-11",
+    "underlying_index": "BSE India Sector Leaders TRI",
+    "tracking_error": 0.13,
+    "aum": {
+      "value": 32.28,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis BSE India Sector Leaders Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.27,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty India Defence Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty India Defence TRI",
+    "top_holdings": [
+      {
+        "name": "Hindustan Aeronautics Limited",
+        "weight_pct": 19.97
+      },
+      {
+        "name": "Bharat Electronics Limited",
+        "weight_pct": 19.83
+      },
+      {
+        "name": "Bharat Forge Limited",
+        "weight_pct": 14.5
+      },
+      {
+        "name": "Solar Industries India Limited",
+        "weight_pct": 11.56
+      },
+      {
+        "name": "Mazagon Dock Shipbuilders Limited",
+        "weight_pct": 4.81
+      },
+      {
+        "name": "MTAR Technologies Limited",
+        "weight_pct": 4.15
+      },
+      {
+        "name": "Astra Microwave Products Limited",
+        "weight_pct": 3.78
+      },
+      {
+        "name": "Data Patterns (India) Limited",
+        "weight_pct": 3.44
+      },
+      {
+        "name": "Cochin Shipyard Limited",
+        "weight_pct": 3.24
+      },
+      {
+        "name": "Bharat Dynamics Limited",
+        "weight_pct": 3.2
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2026-04-29",
+    "underlying_index": "Nifty India Defence TRI",
+    "tracking_error": 0.33,
+    "aum": {
+      "value": 290.15,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty India Defence Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 2.49,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty India Defence Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty India Defence TRI",
+    "top_holdings": [
+      {
+        "name": "Hindustan Aeronautics Limited",
+        "weight_pct": 19.97
+      },
+      {
+        "name": "Bharat Electronics Limited",
+        "weight_pct": 19.83
+      },
+      {
+        "name": "Bharat Forge Limited",
+        "weight_pct": 14.5
+      },
+      {
+        "name": "Solar Industries India Limited",
+        "weight_pct": 11.56
+      },
+      {
+        "name": "Mazagon Dock Shipbuilders Limited",
+        "weight_pct": 4.81
+      },
+      {
+        "name": "MTAR Technologies Limited",
+        "weight_pct": 4.15
+      },
+      {
+        "name": "Astra Microwave Products Limited",
+        "weight_pct": 3.78
+      },
+      {
+        "name": "Data Patterns (India) Limited",
+        "weight_pct": 3.44
+      },
+      {
+        "name": "Cochin Shipyard Limited",
+        "weight_pct": 3.24
+      },
+      {
+        "name": "Bharat Dynamics Limited",
+        "weight_pct": 3.2
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2026-04-29",
+    "underlying_index": "Nifty India Defence TRI",
+    "tracking_error": 0.33,
+    "aum": {
+      "value": 290.15,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty India Defence Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 1.69,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Capital Markets Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Capital Markets TRI",
+    "top_holdings": [
+      {
+        "name": "BSE Limited",
+        "weight_pct": 19.98
+      },
+      {
+        "name": "Multi Commodity Exchange of India Limited",
+        "weight_pct": 16.55
+      },
+      {
+        "name": "HDFC Asset Management Company Limited",
+        "weight_pct": 12.37
+      },
+      {
+        "name": "360 One WAM Limited",
+        "weight_pct": 6.37
+      },
+      {
+        "name": "Central Depository Services (India) Limited",
+        "weight_pct": 5.32
+      },
+      {
+        "name": "Angel One Limited",
+        "weight_pct": 4.91
+      },
+      {
+        "name": "Nippon Life India Asset Management Limited",
+        "weight_pct": 4.76
+      },
+      {
+        "name": "Computer Age Management Services Limited",
+        "weight_pct": 4.38
+      },
+      {
+        "name": "Anand Rathi Wealth Limited",
+        "weight_pct": 4.03
+      },
+      {
+        "name": "ICICI Prudential Asset Management Company Limited",
+        "weight_pct": 3.71
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2026-05-20",
+    "underlying_index": "Nifty Capital Markets TRI",
+    "tracking_error": 0.27,
+    "aum": {
+      "value": 99.52,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Capital Markets Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 4.99,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty Capital Markets Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "Nifty Capital Markets TRI",
+    "top_holdings": [
+      {
+        "name": "BSE Limited",
+        "weight_pct": 19.98
+      },
+      {
+        "name": "Multi Commodity Exchange of India Limited",
+        "weight_pct": 16.55
+      },
+      {
+        "name": "HDFC Asset Management Company Limited",
+        "weight_pct": 12.37
+      },
+      {
+        "name": "360 One WAM Limited",
+        "weight_pct": 6.37
+      },
+      {
+        "name": "Central Depository Services (India) Limited",
+        "weight_pct": 5.32
+      },
+      {
+        "name": "Angel One Limited",
+        "weight_pct": 4.91
+      },
+      {
+        "name": "Nippon Life India Asset Management Limited",
+        "weight_pct": 4.76
+      },
+      {
+        "name": "Computer Age Management Services Limited",
+        "weight_pct": 4.38
+      },
+      {
+        "name": "Anand Rathi Wealth Limited",
+        "weight_pct": 4.03
+      },
+      {
+        "name": "ICICI Prudential Asset Management Company Limited",
+        "weight_pct": 3.71
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2026-05-20",
+    "underlying_index": "Nifty Capital Markets TRI",
+    "tracking_error": 0.27,
+    "aum": {
+      "value": 99.52,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty Capital Markets Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 4.2,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL IBX SDL May 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL IBX SDL Index – May 2027",
+    "top_holdings": [
+      {
+        "name": "7.51% Maharashtra SDL (MD 24/05/2027)",
+        "weight_pct": 27.26
+      },
+      {
+        "name": "7.52% Gujarat SDL (MD 24/05/2027)",
+        "weight_pct": 18.26
+      },
+      {
+        "name": "7.52% Tamilnadu SDL (MD 24/05/2027)",
+        "weight_pct": 10.22
+      },
+      {
+        "name": "7.53% Haryana SDL (MD 24/05/2027)",
+        "weight_pct": 7.83
+      },
+      {
+        "name": "7.92% West Bangal SDL (MD 15/03/2027)",
+        "weight_pct": 6.25
+      },
+      {
+        "name": "6.72% Kerala SDL (MD 24/03/2027)",
+        "weight_pct": 3.94
+      },
+      {
+        "name": "7.52% Uttar Pradesh SDL (MD 24/05/2027)",
+        "weight_pct": 3.33
+      },
+      {
+        "name": "7.88% Chattisgarh SDL (MD 15/03/2027)",
+        "weight_pct": 3.18
+      },
+      {
+        "name": "6.58% Gujarat SDL (MD 31/03/2027)",
+        "weight_pct": 2.89
+      },
+      {
+        "name": "7.51% Rajasthan SDL (MD 24/05/2027)",
+        "weight_pct": 2.65
+      }
+    ],
+    "fund_managers": [
+      "Mr. Hardik Shah",
+      "Mr. Aditya Pagaria"
+    ],
+    "inception_date": "2022-02-23",
+    "underlying_index": "CRISIL IBX SDL Index – May 2027",
+    "tracking_error": -0.59,
+    "aum": {
+      "value": 1915.77,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL IBX SDL May 2027 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.28,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL IBX SDL May 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL IBX SDL Index – May 2027",
+    "top_holdings": [
+      {
+        "name": "7.51% Maharashtra SDL (MD 24/05/2027)",
+        "weight_pct": 27.26
+      },
+      {
+        "name": "7.52% Gujarat SDL (MD 24/05/2027)",
+        "weight_pct": 18.26
+      },
+      {
+        "name": "7.52% Tamilnadu SDL (MD 24/05/2027)",
+        "weight_pct": 10.22
+      },
+      {
+        "name": "7.53% Haryana SDL (MD 24/05/2027)",
+        "weight_pct": 7.83
+      },
+      {
+        "name": "7.92% West Bangal SDL (MD 15/03/2027)",
+        "weight_pct": 6.25
+      },
+      {
+        "name": "6.72% Kerala SDL (MD 24/03/2027)",
+        "weight_pct": 3.94
+      },
+      {
+        "name": "7.52% Uttar Pradesh SDL (MD 24/05/2027)",
+        "weight_pct": 3.33
+      },
+      {
+        "name": "7.88% Chattisgarh SDL (MD 15/03/2027)",
+        "weight_pct": 3.18
+      },
+      {
+        "name": "6.58% Gujarat SDL (MD 31/03/2027)",
+        "weight_pct": 2.89
+      },
+      {
+        "name": "7.51% Rajasthan SDL (MD 24/05/2027)",
+        "weight_pct": 2.65
+      }
+    ],
+    "fund_managers": [
+      "Mr. Hardik Shah",
+      "Mr. Aditya Pagaria"
+    ],
+    "inception_date": "2022-02-23",
+    "underlying_index": "CRISIL IBX SDL Index – May 2027",
+    "tracking_error": -0.59,
+    "aum": {
+      "value": 1915.77,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL IBX SDL May 2027 Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.28,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL IBX SDL May 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL IBX SDL Index – May 2027",
+    "top_holdings": [
+      {
+        "name": "7.51% Maharashtra SDL (MD 24/05/2027)",
+        "weight_pct": 27.26
+      },
+      {
+        "name": "7.52% Gujarat SDL (MD 24/05/2027)",
+        "weight_pct": 18.26
+      },
+      {
+        "name": "7.52% Tamilnadu SDL (MD 24/05/2027)",
+        "weight_pct": 10.22
+      },
+      {
+        "name": "7.53% Haryana SDL (MD 24/05/2027)",
+        "weight_pct": 7.83
+      },
+      {
+        "name": "7.92% West Bangal SDL (MD 15/03/2027)",
+        "weight_pct": 6.25
+      },
+      {
+        "name": "6.72% Kerala SDL (MD 24/03/2027)",
+        "weight_pct": 3.94
+      },
+      {
+        "name": "7.52% Uttar Pradesh SDL (MD 24/05/2027)",
+        "weight_pct": 3.33
+      },
+      {
+        "name": "7.88% Chattisgarh SDL (MD 15/03/2027)",
+        "weight_pct": 3.18
+      },
+      {
+        "name": "6.58% Gujarat SDL (MD 31/03/2027)",
+        "weight_pct": 2.89
+      },
+      {
+        "name": "7.51% Rajasthan SDL (MD 24/05/2027)",
+        "weight_pct": 2.65
+      }
+    ],
+    "fund_managers": [
+      "Mr. Hardik Shah",
+      "Mr. Aditya Pagaria"
+    ],
+    "inception_date": "2022-02-23",
+    "underlying_index": "CRISIL IBX SDL Index – May 2027",
+    "tracking_error": -0.59,
+    "aum": {
+      "value": 1915.77,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL IBX SDL May 2027 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.15,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL IBX SDL May 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL IBX SDL Index – May 2027",
+    "top_holdings": [
+      {
+        "name": "7.51% Maharashtra SDL (MD 24/05/2027)",
+        "weight_pct": 27.26
+      },
+      {
+        "name": "7.52% Gujarat SDL (MD 24/05/2027)",
+        "weight_pct": 18.26
+      },
+      {
+        "name": "7.52% Tamilnadu SDL (MD 24/05/2027)",
+        "weight_pct": 10.22
+      },
+      {
+        "name": "7.53% Haryana SDL (MD 24/05/2027)",
+        "weight_pct": 7.83
+      },
+      {
+        "name": "7.92% West Bangal SDL (MD 15/03/2027)",
+        "weight_pct": 6.25
+      },
+      {
+        "name": "6.72% Kerala SDL (MD 24/03/2027)",
+        "weight_pct": 3.94
+      },
+      {
+        "name": "7.52% Uttar Pradesh SDL (MD 24/05/2027)",
+        "weight_pct": 3.33
+      },
+      {
+        "name": "7.88% Chattisgarh SDL (MD 15/03/2027)",
+        "weight_pct": 3.18
+      },
+      {
+        "name": "6.58% Gujarat SDL (MD 31/03/2027)",
+        "weight_pct": 2.89
+      },
+      {
+        "name": "7.51% Rajasthan SDL (MD 24/05/2027)",
+        "weight_pct": 2.65
+      }
+    ],
+    "fund_managers": [
+      "Mr. Hardik Shah",
+      "Mr. Aditya Pagaria"
+    ],
+    "inception_date": "2022-02-23",
+    "underlying_index": "CRISIL IBX SDL Index – May 2027",
+    "tracking_error": -0.59,
+    "aum": {
+      "value": 1915.77,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL IBX SDL May 2027 Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.15,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty SDL September 2026",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Debt Index Fund",
+    "benchmark": "Nifty SDL Sep 2026 Index",
+    "top_holdings": [
+      {
+        "name": "7.38% Rajasthan SDL (MD 14/09/2026)",
+        "weight_pct": 42.83
+      },
+      {
+        "name": "6.24% Maharashtra SDL (MD 11/08/2026)",
+        "weight_pct": 12.21
+      },
+      {
+        "name": "7.6% Gujarat SDL (MD 09/08/2026)",
+        "weight_pct": 12.13
+      },
+      {
+        "name": "7.17% Rajasthan SDL (MD 28/09/2026)",
+        "weight_pct": 7.65
+      },
+      {
+        "name": "7.61% Kerala SDL (MD 09/08/2026)",
+        "weight_pct": 7.64
+      },
+      {
+        "name": "8.72% Tamilnadu SDL (MD 19/09/2026)",
+        "weight_pct": 6.22
+      },
+      {
+        "name": "7.58% Maharashtra SDL(MD 24/08/2026)",
+        "weight_pct": 3.06
+      },
+      {
+        "name": "7.69% Tamilnadu SDL (MD 27/07/2026)",
+        "weight_pct": 3.05
+      },
+      {
+        "name": "7.16% Maharashtra SDL (MD 28/09/2026)",
+        "weight_pct": 2.53
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria",
+      "Sachin Jain"
+    ],
+    "inception_date": "2022-11-22",
+    "underlying_index": "Nifty SDL Sep 2026 Index",
+    "tracking_error": -0.3,
+    "aum": {
+      "value": 65.59,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty SDL September 2026|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.31,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty SDL September 2026",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Debt Index Fund",
+    "benchmark": "Nifty SDL Sep 2026 Index",
+    "top_holdings": [
+      {
+        "name": "7.38% Rajasthan SDL (MD 14/09/2026)",
+        "weight_pct": 42.83
+      },
+      {
+        "name": "6.24% Maharashtra SDL (MD 11/08/2026)",
+        "weight_pct": 12.21
+      },
+      {
+        "name": "7.6% Gujarat SDL (MD 09/08/2026)",
+        "weight_pct": 12.13
+      },
+      {
+        "name": "7.17% Rajasthan SDL (MD 28/09/2026)",
+        "weight_pct": 7.65
+      },
+      {
+        "name": "7.61% Kerala SDL (MD 09/08/2026)",
+        "weight_pct": 7.64
+      },
+      {
+        "name": "8.72% Tamilnadu SDL (MD 19/09/2026)",
+        "weight_pct": 6.22
+      },
+      {
+        "name": "7.58% Maharashtra SDL(MD 24/08/2026)",
+        "weight_pct": 3.06
+      },
+      {
+        "name": "7.69% Tamilnadu SDL (MD 27/07/2026)",
+        "weight_pct": 3.05
+      },
+      {
+        "name": "7.16% Maharashtra SDL (MD 28/09/2026)",
+        "weight_pct": 2.53
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria",
+      "Sachin Jain"
+    ],
+    "inception_date": "2022-11-22",
+    "underlying_index": "Nifty SDL Sep 2026 Index",
+    "tracking_error": -0.3,
+    "aum": {
+      "value": 65.59,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty SDL September 2026|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.31,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty SDL September 2026",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Debt Index Fund",
+    "benchmark": "Nifty SDL Sep 2026 Index",
+    "top_holdings": [
+      {
+        "name": "7.38% Rajasthan SDL (MD 14/09/2026)",
+        "weight_pct": 42.83
+      },
+      {
+        "name": "6.24% Maharashtra SDL (MD 11/08/2026)",
+        "weight_pct": 12.21
+      },
+      {
+        "name": "7.6% Gujarat SDL (MD 09/08/2026)",
+        "weight_pct": 12.13
+      },
+      {
+        "name": "7.17% Rajasthan SDL (MD 28/09/2026)",
+        "weight_pct": 7.65
+      },
+      {
+        "name": "7.61% Kerala SDL (MD 09/08/2026)",
+        "weight_pct": 7.64
+      },
+      {
+        "name": "8.72% Tamilnadu SDL (MD 19/09/2026)",
+        "weight_pct": 6.22
+      },
+      {
+        "name": "7.58% Maharashtra SDL(MD 24/08/2026)",
+        "weight_pct": 3.06
+      },
+      {
+        "name": "7.69% Tamilnadu SDL (MD 27/07/2026)",
+        "weight_pct": 3.05
+      },
+      {
+        "name": "7.16% Maharashtra SDL (MD 28/09/2026)",
+        "weight_pct": 2.53
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria",
+      "Sachin Jain"
+    ],
+    "inception_date": "2022-11-22",
+    "underlying_index": "Nifty SDL Sep 2026 Index",
+    "tracking_error": -0.3,
+    "aum": {
+      "value": 65.59,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty SDL September 2026|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.16,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty SDL September 2026",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Debt Index Fund",
+    "benchmark": "Nifty SDL Sep 2026 Index",
+    "top_holdings": [
+      {
+        "name": "7.38% Rajasthan SDL (MD 14/09/2026)",
+        "weight_pct": 42.83
+      },
+      {
+        "name": "6.24% Maharashtra SDL (MD 11/08/2026)",
+        "weight_pct": 12.21
+      },
+      {
+        "name": "7.6% Gujarat SDL (MD 09/08/2026)",
+        "weight_pct": 12.13
+      },
+      {
+        "name": "7.17% Rajasthan SDL (MD 28/09/2026)",
+        "weight_pct": 7.65
+      },
+      {
+        "name": "7.61% Kerala SDL (MD 09/08/2026)",
+        "weight_pct": 7.64
+      },
+      {
+        "name": "8.72% Tamilnadu SDL (MD 19/09/2026)",
+        "weight_pct": 6.22
+      },
+      {
+        "name": "7.58% Maharashtra SDL(MD 24/08/2026)",
+        "weight_pct": 3.06
+      },
+      {
+        "name": "7.69% Tamilnadu SDL (MD 27/07/2026)",
+        "weight_pct": 3.05
+      },
+      {
+        "name": "7.16% Maharashtra SDL (MD 28/09/2026)",
+        "weight_pct": 2.53
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria",
+      "Sachin Jain"
+    ],
+    "inception_date": "2022-11-22",
+    "underlying_index": "Nifty SDL Sep 2026 Index",
+    "tracking_error": -0.3,
+    "aum": {
+      "value": 65.59,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty SDL September 2026|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.16,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL IBX 50:50 Gilt Plus SDL June 2028 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL IBX 50:50 Gilt Plus SDL Index June 2028",
+    "top_holdings": [
+      {
+        "name": "7.06% GOI (MD 10/04/2028)",
+        "weight_pct": 36.23
+      },
+      {
+        "name": "8.05% Tamilnadu SDL (MD 18/04/2028)",
+        "weight_pct": 32.17
+      },
+      {
+        "name": "8.09% West Bengal SDL (MD 27/03/2028)",
+        "weight_pct": 14.06
+      },
+      {
+        "name": "7.18% Gujarat SDL (MD 07/06/2028)",
+        "weight_pct": 9.06
+      },
+      {
+        "name": "8.44% Rajasthan SDL (MD 07/03/2028)",
+        "weight_pct": 1.54
+      },
+      {
+        "name": "8.16% Rajasthan SDL (MD 09/05/2028)",
+        "weight_pct": 1.53
+      },
+      {
+        "name": "8% Kerala SDL (MD 11/04/2028)",
+        "weight_pct": 1.53
+      },
+      {
+        "name": "8.15% Tamil Nadu SDL (MD 09/05/2028)",
+        "weight_pct": 1.1
+      },
+      {
+        "name": "6.73% Kerala SDL (MD 10/06/2028)",
+        "weight_pct": 0.6
+      }
+    ],
+    "fund_managers": [
+      "Mr. Hardik Shah"
+    ],
+    "inception_date": "2023-01-24",
+    "underlying_index": "CRISIL IBX 50:50 Gilt Plus SDL Index June 2028",
+    "tracking_error": -0.4,
+    "aum": {
+      "value": 334.46,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL IBX 50:50 Gilt Plus SDL June 2028 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.39,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL IBX 50:50 Gilt Plus SDL June 2028 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL IBX 50:50 Gilt Plus SDL Index June 2028",
+    "top_holdings": [
+      {
+        "name": "7.06% GOI (MD 10/04/2028)",
+        "weight_pct": 36.23
+      },
+      {
+        "name": "8.05% Tamilnadu SDL (MD 18/04/2028)",
+        "weight_pct": 32.17
+      },
+      {
+        "name": "8.09% West Bengal SDL (MD 27/03/2028)",
+        "weight_pct": 14.06
+      },
+      {
+        "name": "7.18% Gujarat SDL (MD 07/06/2028)",
+        "weight_pct": 9.06
+      },
+      {
+        "name": "8.44% Rajasthan SDL (MD 07/03/2028)",
+        "weight_pct": 1.54
+      },
+      {
+        "name": "8.16% Rajasthan SDL (MD 09/05/2028)",
+        "weight_pct": 1.53
+      },
+      {
+        "name": "8% Kerala SDL (MD 11/04/2028)",
+        "weight_pct": 1.53
+      },
+      {
+        "name": "8.15% Tamil Nadu SDL (MD 09/05/2028)",
+        "weight_pct": 1.1
+      },
+      {
+        "name": "6.73% Kerala SDL (MD 10/06/2028)",
+        "weight_pct": 0.6
+      }
+    ],
+    "fund_managers": [
+      "Mr. Hardik Shah"
+    ],
+    "inception_date": "2023-01-24",
+    "underlying_index": "CRISIL IBX 50:50 Gilt Plus SDL Index June 2028",
+    "tracking_error": -0.4,
+    "aum": {
+      "value": 334.46,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL IBX 50:50 Gilt Plus SDL June 2028 Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.39,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL IBX 50:50 Gilt Plus SDL June 2028 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL IBX 50:50 Gilt Plus SDL Index June 2028",
+    "top_holdings": [
+      {
+        "name": "7.06% GOI (MD 10/04/2028)",
+        "weight_pct": 36.23
+      },
+      {
+        "name": "8.05% Tamilnadu SDL (MD 18/04/2028)",
+        "weight_pct": 32.17
+      },
+      {
+        "name": "8.09% West Bengal SDL (MD 27/03/2028)",
+        "weight_pct": 14.06
+      },
+      {
+        "name": "7.18% Gujarat SDL (MD 07/06/2028)",
+        "weight_pct": 9.06
+      },
+      {
+        "name": "8.44% Rajasthan SDL (MD 07/03/2028)",
+        "weight_pct": 1.54
+      },
+      {
+        "name": "8.16% Rajasthan SDL (MD 09/05/2028)",
+        "weight_pct": 1.53
+      },
+      {
+        "name": "8% Kerala SDL (MD 11/04/2028)",
+        "weight_pct": 1.53
+      },
+      {
+        "name": "8.15% Tamil Nadu SDL (MD 09/05/2028)",
+        "weight_pct": 1.1
+      },
+      {
+        "name": "6.73% Kerala SDL (MD 10/06/2028)",
+        "weight_pct": 0.6
+      }
+    ],
+    "fund_managers": [
+      "Mr. Hardik Shah"
+    ],
+    "inception_date": "2023-01-24",
+    "underlying_index": "CRISIL IBX 50:50 Gilt Plus SDL Index June 2028",
+    "tracking_error": -0.4,
+    "aum": {
+      "value": 334.46,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL IBX 50:50 Gilt Plus SDL June 2028 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.22,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL IBX 50:50 Gilt Plus SDL June 2028 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL IBX 50:50 Gilt Plus SDL Index June 2028",
+    "top_holdings": [
+      {
+        "name": "7.06% GOI (MD 10/04/2028)",
+        "weight_pct": 36.23
+      },
+      {
+        "name": "8.05% Tamilnadu SDL (MD 18/04/2028)",
+        "weight_pct": 32.17
+      },
+      {
+        "name": "8.09% West Bengal SDL (MD 27/03/2028)",
+        "weight_pct": 14.06
+      },
+      {
+        "name": "7.18% Gujarat SDL (MD 07/06/2028)",
+        "weight_pct": 9.06
+      },
+      {
+        "name": "8.44% Rajasthan SDL (MD 07/03/2028)",
+        "weight_pct": 1.54
+      },
+      {
+        "name": "8.16% Rajasthan SDL (MD 09/05/2028)",
+        "weight_pct": 1.53
+      },
+      {
+        "name": "8% Kerala SDL (MD 11/04/2028)",
+        "weight_pct": 1.53
+      },
+      {
+        "name": "8.15% Tamil Nadu SDL (MD 09/05/2028)",
+        "weight_pct": 1.1
+      },
+      {
+        "name": "6.73% Kerala SDL (MD 10/06/2028)",
+        "weight_pct": 0.6
+      }
+    ],
+    "fund_managers": [
+      "Mr. Hardik Shah"
+    ],
+    "inception_date": "2023-01-24",
+    "underlying_index": "CRISIL IBX 50:50 Gilt Plus SDL Index June 2028",
+    "tracking_error": -0.4,
+    "aum": {
+      "value": 334.46,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL IBX 50:50 Gilt Plus SDL June 2028 Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.22,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL IBX 50:50 Gilt Plus SDL September 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Target Maturity Debt Index Fund",
+    "benchmark": "CRISIL IBX 50:50 Gilt Plus SDL Index – September 2027",
+    "top_holdings": [
+      {
+        "name": "7.38% GOI (MD 20/06/2027)",
+        "weight_pct": 48.03
+      },
+      {
+        "name": "7.33% Maharashtra SDL (MD 13/09/2027)",
+        "weight_pct": 28.13
+      },
+      {
+        "name": "7.23% Tamilnadu SDL (MD 14/06/2027)",
+        "weight_pct": 7.04
+      },
+      {
+        "name": "7.24% Tamil Nadu SDL (MD 28/06/2027)",
+        "weight_pct": 2.82
+      },
+      {
+        "name": "7.45% Rajasthan SDL (MD 27/09/2027)",
+        "weight_pct": 2.82
+      },
+      {
+        "name": "7.27% Tamilnadu SDL (MD 12/07/2027)",
+        "weight_pct": 2.81
+      },
+      {
+        "name": "6.38% Maharashtra SDL (MD 25/08/2027)",
+        "weight_pct": 2.4
+      },
+      {
+        "name": "7.2% Maharashtra SDL (MD 09/08/2027)",
+        "weight_pct": 1.4
+      },
+      {
+        "name": "7.18% Tamilnadu SDL (MD 26/07/2027)",
+        "weight_pct": 1.4
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria",
+      "Sachin Jain"
+    ],
+    "inception_date": "2023-02-27",
+    "underlying_index": "CRISIL IBX 50:50 Gilt Plus SDL Index – September 2027",
+    "tracking_error": -0.43,
+    "aum": {
+      "value": 35.96,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL IBX 50:50 Gilt Plus SDL September 2027 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.4,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL IBX 50:50 Gilt Plus SDL September 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Target Maturity Debt Index Fund",
+    "benchmark": "CRISIL IBX 50:50 Gilt Plus SDL Index – September 2027",
+    "top_holdings": [
+      {
+        "name": "7.38% GOI (MD 20/06/2027)",
+        "weight_pct": 48.03
+      },
+      {
+        "name": "7.33% Maharashtra SDL (MD 13/09/2027)",
+        "weight_pct": 28.13
+      },
+      {
+        "name": "7.23% Tamilnadu SDL (MD 14/06/2027)",
+        "weight_pct": 7.04
+      },
+      {
+        "name": "7.24% Tamil Nadu SDL (MD 28/06/2027)",
+        "weight_pct": 2.82
+      },
+      {
+        "name": "7.45% Rajasthan SDL (MD 27/09/2027)",
+        "weight_pct": 2.82
+      },
+      {
+        "name": "7.27% Tamilnadu SDL (MD 12/07/2027)",
+        "weight_pct": 2.81
+      },
+      {
+        "name": "6.38% Maharashtra SDL (MD 25/08/2027)",
+        "weight_pct": 2.4
+      },
+      {
+        "name": "7.2% Maharashtra SDL (MD 09/08/2027)",
+        "weight_pct": 1.4
+      },
+      {
+        "name": "7.18% Tamilnadu SDL (MD 26/07/2027)",
+        "weight_pct": 1.4
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria",
+      "Sachin Jain"
+    ],
+    "inception_date": "2023-02-27",
+    "underlying_index": "CRISIL IBX 50:50 Gilt Plus SDL Index – September 2027",
+    "tracking_error": -0.43,
+    "aum": {
+      "value": 35.96,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL IBX 50:50 Gilt Plus SDL September 2027 Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.4,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL IBX 50:50 Gilt Plus SDL September 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Target Maturity Debt Index Fund",
+    "benchmark": "CRISIL IBX 50:50 Gilt Plus SDL Index – September 2027",
+    "top_holdings": [
+      {
+        "name": "7.38% GOI (MD 20/06/2027)",
+        "weight_pct": 48.03
+      },
+      {
+        "name": "7.33% Maharashtra SDL (MD 13/09/2027)",
+        "weight_pct": 28.13
+      },
+      {
+        "name": "7.23% Tamilnadu SDL (MD 14/06/2027)",
+        "weight_pct": 7.04
+      },
+      {
+        "name": "7.24% Tamil Nadu SDL (MD 28/06/2027)",
+        "weight_pct": 2.82
+      },
+      {
+        "name": "7.45% Rajasthan SDL (MD 27/09/2027)",
+        "weight_pct": 2.82
+      },
+      {
+        "name": "7.27% Tamilnadu SDL (MD 12/07/2027)",
+        "weight_pct": 2.81
+      },
+      {
+        "name": "6.38% Maharashtra SDL (MD 25/08/2027)",
+        "weight_pct": 2.4
+      },
+      {
+        "name": "7.2% Maharashtra SDL (MD 09/08/2027)",
+        "weight_pct": 1.4
+      },
+      {
+        "name": "7.18% Tamilnadu SDL (MD 26/07/2027)",
+        "weight_pct": 1.4
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria",
+      "Sachin Jain"
+    ],
+    "inception_date": "2023-02-27",
+    "underlying_index": "CRISIL IBX 50:50 Gilt Plus SDL Index – September 2027",
+    "tracking_error": -0.43,
+    "aum": {
+      "value": 35.96,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL IBX 50:50 Gilt Plus SDL September 2027 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.15,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL IBX 50:50 Gilt Plus SDL September 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Target Maturity Debt Index Fund",
+    "benchmark": "CRISIL IBX 50:50 Gilt Plus SDL Index – September 2027",
+    "top_holdings": [
+      {
+        "name": "7.38% GOI (MD 20/06/2027)",
+        "weight_pct": 48.03
+      },
+      {
+        "name": "7.33% Maharashtra SDL (MD 13/09/2027)",
+        "weight_pct": 28.13
+      },
+      {
+        "name": "7.23% Tamilnadu SDL (MD 14/06/2027)",
+        "weight_pct": 7.04
+      },
+      {
+        "name": "7.24% Tamil Nadu SDL (MD 28/06/2027)",
+        "weight_pct": 2.82
+      },
+      {
+        "name": "7.45% Rajasthan SDL (MD 27/09/2027)",
+        "weight_pct": 2.82
+      },
+      {
+        "name": "7.27% Tamilnadu SDL (MD 12/07/2027)",
+        "weight_pct": 2.81
+      },
+      {
+        "name": "6.38% Maharashtra SDL (MD 25/08/2027)",
+        "weight_pct": 2.4
+      },
+      {
+        "name": "7.2% Maharashtra SDL (MD 09/08/2027)",
+        "weight_pct": 1.4
+      },
+      {
+        "name": "7.18% Tamilnadu SDL (MD 26/07/2027)",
+        "weight_pct": 1.4
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria",
+      "Sachin Jain"
+    ],
+    "inception_date": "2023-02-27",
+    "underlying_index": "CRISIL IBX 50:50 Gilt Plus SDL Index – September 2027",
+    "tracking_error": -0.43,
+    "aum": {
+      "value": 35.96,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL IBX 50:50 Gilt Plus SDL September 2027 Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.15,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX AAA Bond NBFC-HFC - Jun 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL-IBX AAA NBFC-HFC Index – Jun 2027",
+    "top_holdings": [
+      {
+        "name": "Poonawalla Fincorp Limited",
+        "weight_pct": 13.6
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "weight_pct": 11.74
+      },
+      {
+        "name": "Sundaram Finance Limited",
+        "weight_pct": 11.73
+      },
+      {
+        "name": "L&T Finance Limited",
+        "weight_pct": 7.83
+      },
+      {
+        "name": "Tata Capital Limited",
+        "weight_pct": 7.82
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services Limited",
+        "weight_pct": 7.82
+      },
+      {
+        "name": "Tata Capital Housing Finance Limited",
+        "weight_pct": 7.82
+      },
+      {
+        "name": "Bajaj Housing Finance Limited",
+        "weight_pct": 7.8
+      },
+      {
+        "name": "Kotak Mahindra Investments Limited",
+        "weight_pct": 3.92
+      },
+      {
+        "name": "HDB Financial Services Limited",
+        "weight_pct": 3.91
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria"
+    ],
+    "inception_date": "2024-12-11",
+    "underlying_index": "CRISIL-IBX AAA NBFC-HFC Index – Jun 2027",
+    "tracking_error": -0.46,
+    "aum": {
+      "value": 12.85,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX AAA Bond NBFC-HFC - Jun 2027 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.74,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX AAA Bond NBFC-HFC - Jun 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL-IBX AAA NBFC-HFC Index – Jun 2027",
+    "top_holdings": [
+      {
+        "name": "Poonawalla Fincorp Limited",
+        "weight_pct": 13.6
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "weight_pct": 11.74
+      },
+      {
+        "name": "Sundaram Finance Limited",
+        "weight_pct": 11.73
+      },
+      {
+        "name": "L&T Finance Limited",
+        "weight_pct": 7.83
+      },
+      {
+        "name": "Tata Capital Limited",
+        "weight_pct": 7.82
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services Limited",
+        "weight_pct": 7.82
+      },
+      {
+        "name": "Tata Capital Housing Finance Limited",
+        "weight_pct": 7.82
+      },
+      {
+        "name": "Bajaj Housing Finance Limited",
+        "weight_pct": 7.8
+      },
+      {
+        "name": "Kotak Mahindra Investments Limited",
+        "weight_pct": 3.92
+      },
+      {
+        "name": "HDB Financial Services Limited",
+        "weight_pct": 3.91
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria"
+    ],
+    "inception_date": "2024-12-11",
+    "underlying_index": "CRISIL-IBX AAA NBFC-HFC Index – Jun 2027",
+    "tracking_error": -0.46,
+    "aum": {
+      "value": 12.85,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX AAA Bond NBFC-HFC - Jun 2027 Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.74,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX AAA Bond NBFC-HFC - Jun 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL-IBX AAA NBFC-HFC Index – Jun 2027",
+    "top_holdings": [
+      {
+        "name": "Poonawalla Fincorp Limited",
+        "weight_pct": 13.6
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "weight_pct": 11.74
+      },
+      {
+        "name": "Sundaram Finance Limited",
+        "weight_pct": 11.73
+      },
+      {
+        "name": "L&T Finance Limited",
+        "weight_pct": 7.83
+      },
+      {
+        "name": "Tata Capital Limited",
+        "weight_pct": 7.82
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services Limited",
+        "weight_pct": 7.82
+      },
+      {
+        "name": "Tata Capital Housing Finance Limited",
+        "weight_pct": 7.82
+      },
+      {
+        "name": "Bajaj Housing Finance Limited",
+        "weight_pct": 7.8
+      },
+      {
+        "name": "Kotak Mahindra Investments Limited",
+        "weight_pct": 3.92
+      },
+      {
+        "name": "HDB Financial Services Limited",
+        "weight_pct": 3.91
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria"
+    ],
+    "inception_date": "2024-12-11",
+    "underlying_index": "CRISIL-IBX AAA NBFC-HFC Index – Jun 2027",
+    "tracking_error": -0.46,
+    "aum": {
+      "value": 12.85,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX AAA Bond NBFC-HFC - Jun 2027 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.59,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX AAA Bond NBFC-HFC - Jun 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL-IBX AAA NBFC-HFC Index – Jun 2027",
+    "top_holdings": [
+      {
+        "name": "Poonawalla Fincorp Limited",
+        "weight_pct": 13.6
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "weight_pct": 11.74
+      },
+      {
+        "name": "Sundaram Finance Limited",
+        "weight_pct": 11.73
+      },
+      {
+        "name": "L&T Finance Limited",
+        "weight_pct": 7.83
+      },
+      {
+        "name": "Tata Capital Limited",
+        "weight_pct": 7.82
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services Limited",
+        "weight_pct": 7.82
+      },
+      {
+        "name": "Tata Capital Housing Finance Limited",
+        "weight_pct": 7.82
+      },
+      {
+        "name": "Bajaj Housing Finance Limited",
+        "weight_pct": 7.8
+      },
+      {
+        "name": "Kotak Mahindra Investments Limited",
+        "weight_pct": 3.92
+      },
+      {
+        "name": "HDB Financial Services Limited",
+        "weight_pct": 3.91
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria"
+    ],
+    "inception_date": "2024-12-11",
+    "underlying_index": "CRISIL-IBX AAA NBFC-HFC Index – Jun 2027",
+    "tracking_error": -0.46,
+    "aum": {
+      "value": 12.85,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX AAA Bond NBFC-HFC - Jun 2027 Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.59,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX Financial Services 3-6 Months Debt Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Debt Index Fund",
+    "benchmark": "CRISIL-IBX Financial Services 3-6 Months Debt Index",
+    "top_holdings": [
+      {
+        "name": "Tata Capital Housing Finance Limited",
+        "weight_pct": 10.39
+      },
+      {
+        "name": "LIC Housing Finance Limited",
+        "weight_pct": 10.37
+      },
+      {
+        "name": "Power Finance Corporation Limited",
+        "weight_pct": 10.26
+      },
+      {
+        "name": "Small Industries Dev Bank of India",
+        "weight_pct": 10.12
+      },
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 10.06
+      },
+      {
+        "name": "Indian Bank",
+        "weight_pct": 9.98
+      },
+      {
+        "name": "Punjab National Bank",
+        "weight_pct": 9.97
+      },
+      {
+        "name": "Canara Bank",
+        "weight_pct": 9.97
+      },
+      {
+        "name": "National Bank For Agriculture and Rural Development",
+        "weight_pct": 9.96
+      },
+      {
+        "name": "Tata Capital Limited",
+        "weight_pct": 2.83
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria"
+    ],
+    "inception_date": "2025-09-24",
+    "underlying_index": "CRISIL-IBX Financial Services 3-6 Months Debt Index",
+    "tracking_error": -0.2,
+    "aum": {
+      "value": 241.19,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX Financial Services 3-6 Months Debt Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.26,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX Financial Services 3-6 Months Debt Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Debt Index Fund",
+    "benchmark": "CRISIL-IBX Financial Services 3-6 Months Debt Index",
+    "top_holdings": [
+      {
+        "name": "Tata Capital Housing Finance Limited",
+        "weight_pct": 10.39
+      },
+      {
+        "name": "LIC Housing Finance Limited",
+        "weight_pct": 10.37
+      },
+      {
+        "name": "Power Finance Corporation Limited",
+        "weight_pct": 10.26
+      },
+      {
+        "name": "Small Industries Dev Bank of India",
+        "weight_pct": 10.12
+      },
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 10.06
+      },
+      {
+        "name": "Indian Bank",
+        "weight_pct": 9.98
+      },
+      {
+        "name": "Punjab National Bank",
+        "weight_pct": 9.97
+      },
+      {
+        "name": "Canara Bank",
+        "weight_pct": 9.97
+      },
+      {
+        "name": "National Bank For Agriculture and Rural Development",
+        "weight_pct": 9.96
+      },
+      {
+        "name": "Tata Capital Limited",
+        "weight_pct": 2.83
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria"
+    ],
+    "inception_date": "2025-09-24",
+    "underlying_index": "CRISIL-IBX Financial Services 3-6 Months Debt Index",
+    "tracking_error": -0.2,
+    "aum": {
+      "value": 241.19,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX Financial Services 3-6 Months Debt Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.26,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX Financial Services 3-6 Months Debt Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Debt Index Fund",
+    "benchmark": "CRISIL-IBX Financial Services 3-6 Months Debt Index",
+    "top_holdings": [
+      {
+        "name": "Tata Capital Housing Finance Limited",
+        "weight_pct": 10.39
+      },
+      {
+        "name": "LIC Housing Finance Limited",
+        "weight_pct": 10.37
+      },
+      {
+        "name": "Power Finance Corporation Limited",
+        "weight_pct": 10.26
+      },
+      {
+        "name": "Small Industries Dev Bank of India",
+        "weight_pct": 10.12
+      },
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 10.06
+      },
+      {
+        "name": "Indian Bank",
+        "weight_pct": 9.98
+      },
+      {
+        "name": "Punjab National Bank",
+        "weight_pct": 9.97
+      },
+      {
+        "name": "Canara Bank",
+        "weight_pct": 9.97
+      },
+      {
+        "name": "National Bank For Agriculture and Rural Development",
+        "weight_pct": 9.96
+      },
+      {
+        "name": "Tata Capital Limited",
+        "weight_pct": 2.83
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria"
+    ],
+    "inception_date": "2025-09-24",
+    "underlying_index": "CRISIL-IBX Financial Services 3-6 Months Debt Index",
+    "tracking_error": -0.2,
+    "aum": {
+      "value": 241.19,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX Financial Services 3-6 Months Debt Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.11,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX Financial Services 3-6 Months Debt Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Debt Index Fund",
+    "benchmark": "CRISIL-IBX Financial Services 3-6 Months Debt Index",
+    "top_holdings": [
+      {
+        "name": "Tata Capital Housing Finance Limited",
+        "weight_pct": 10.39
+      },
+      {
+        "name": "LIC Housing Finance Limited",
+        "weight_pct": 10.37
+      },
+      {
+        "name": "Power Finance Corporation Limited",
+        "weight_pct": 10.26
+      },
+      {
+        "name": "Small Industries Dev Bank of India",
+        "weight_pct": 10.12
+      },
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 10.06
+      },
+      {
+        "name": "Indian Bank",
+        "weight_pct": 9.98
+      },
+      {
+        "name": "Punjab National Bank",
+        "weight_pct": 9.97
+      },
+      {
+        "name": "Canara Bank",
+        "weight_pct": 9.97
+      },
+      {
+        "name": "National Bank For Agriculture and Rural Development",
+        "weight_pct": 9.96
+      },
+      {
+        "name": "Tata Capital Limited",
+        "weight_pct": 2.83
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria"
+    ],
+    "inception_date": "2025-09-24",
+    "underlying_index": "CRISIL-IBX Financial Services 3-6 Months Debt Index",
+    "tracking_error": -0.2,
+    "aum": {
+      "value": 241.19,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX Financial Services 3-6 Months Debt Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.11,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX AAA Bond NBFC - Jun 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Target Maturity Index Fund",
+    "benchmark": "CRISIL-IBX AAA NBFC Index Jun 2027",
+    "top_holdings": [
+      {
+        "name": "Bajaj Finance Limited",
+        "weight_pct": 14.63
+      },
+      {
+        "name": "HDB Financial Services Limited",
+        "weight_pct": 13.94
+      },
+      {
+        "name": "Kotak Mahindra Prime Limited",
+        "weight_pct": 13.02
+      },
+      {
+        "name": "Tata Capital Limited",
+        "weight_pct": 11.09
+      },
+      {
+        "name": "L&T Finance Limited",
+        "weight_pct": 10.97
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services Limited",
+        "weight_pct": 10.7
+      },
+      {
+        "name": "Sundaram Finance Limited",
+        "weight_pct": 9.06
+      },
+      {
+        "name": "Sundaram Finance Limited",
+        "weight_pct": 5.56
+      },
+      {
+        "name": "Kotak Mahindra Investments Limited",
+        "weight_pct": 3.67
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "weight_pct": 3.44
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria"
+    ],
+    "inception_date": "2024-09-24",
+    "underlying_index": "CRISIL-IBX AAA NBFC Index Jun 2027",
+    "tracking_error": -0.66,
+    "aum": {
+      "value": 1957.23,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX AAA Bond NBFC - Jun 2027 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.48,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX AAA Bond NBFC - Jun 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Target Maturity Index Fund",
+    "benchmark": "CRISIL-IBX AAA NBFC Index Jun 2027",
+    "top_holdings": [
+      {
+        "name": "Bajaj Finance Limited",
+        "weight_pct": 14.63
+      },
+      {
+        "name": "HDB Financial Services Limited",
+        "weight_pct": 13.94
+      },
+      {
+        "name": "Kotak Mahindra Prime Limited",
+        "weight_pct": 13.02
+      },
+      {
+        "name": "Tata Capital Limited",
+        "weight_pct": 11.09
+      },
+      {
+        "name": "L&T Finance Limited",
+        "weight_pct": 10.97
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services Limited",
+        "weight_pct": 10.7
+      },
+      {
+        "name": "Sundaram Finance Limited",
+        "weight_pct": 9.06
+      },
+      {
+        "name": "Sundaram Finance Limited",
+        "weight_pct": 5.56
+      },
+      {
+        "name": "Kotak Mahindra Investments Limited",
+        "weight_pct": 3.67
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "weight_pct": 3.44
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria"
+    ],
+    "inception_date": "2024-09-24",
+    "underlying_index": "CRISIL-IBX AAA NBFC Index Jun 2027",
+    "tracking_error": -0.66,
+    "aum": {
+      "value": 1957.23,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX AAA Bond NBFC - Jun 2027 Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.48,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX AAA Bond NBFC - Jun 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Target Maturity Index Fund",
+    "benchmark": "CRISIL-IBX AAA NBFC Index Jun 2027",
+    "top_holdings": [
+      {
+        "name": "Bajaj Finance Limited",
+        "weight_pct": 14.63
+      },
+      {
+        "name": "HDB Financial Services Limited",
+        "weight_pct": 13.94
+      },
+      {
+        "name": "Kotak Mahindra Prime Limited",
+        "weight_pct": 13.02
+      },
+      {
+        "name": "Tata Capital Limited",
+        "weight_pct": 11.09
+      },
+      {
+        "name": "L&T Finance Limited",
+        "weight_pct": 10.97
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services Limited",
+        "weight_pct": 10.7
+      },
+      {
+        "name": "Sundaram Finance Limited",
+        "weight_pct": 9.06
+      },
+      {
+        "name": "Sundaram Finance Limited",
+        "weight_pct": 5.56
+      },
+      {
+        "name": "Kotak Mahindra Investments Limited",
+        "weight_pct": 3.67
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "weight_pct": 3.44
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria"
+    ],
+    "inception_date": "2024-09-24",
+    "underlying_index": "CRISIL-IBX AAA NBFC Index Jun 2027",
+    "tracking_error": -0.66,
+    "aum": {
+      "value": 1957.23,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX AAA Bond NBFC - Jun 2027 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.15,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX AAA Bond NBFC - Jun 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Target Maturity Index Fund",
+    "benchmark": "CRISIL-IBX AAA NBFC Index Jun 2027",
+    "top_holdings": [
+      {
+        "name": "Bajaj Finance Limited",
+        "weight_pct": 14.63
+      },
+      {
+        "name": "HDB Financial Services Limited",
+        "weight_pct": 13.94
+      },
+      {
+        "name": "Kotak Mahindra Prime Limited",
+        "weight_pct": 13.02
+      },
+      {
+        "name": "Tata Capital Limited",
+        "weight_pct": 11.09
+      },
+      {
+        "name": "L&T Finance Limited",
+        "weight_pct": 10.97
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services Limited",
+        "weight_pct": 10.7
+      },
+      {
+        "name": "Sundaram Finance Limited",
+        "weight_pct": 9.06
+      },
+      {
+        "name": "Sundaram Finance Limited",
+        "weight_pct": 5.56
+      },
+      {
+        "name": "Kotak Mahindra Investments Limited",
+        "weight_pct": 3.67
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "weight_pct": 3.44
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria"
+    ],
+    "inception_date": "2024-09-24",
+    "underlying_index": "CRISIL-IBX AAA NBFC Index Jun 2027",
+    "tracking_error": -0.66,
+    "aum": {
+      "value": 1957.23,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX AAA Bond NBFC - Jun 2027 Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.15,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX AAA Bond Financial Services - Sep 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL IBX AAA Financial Services Index Sep 2027",
+    "top_holdings": [
+      {
+        "name": "Bajaj Housing Finance Limited",
+        "weight_pct": 12.16
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "weight_pct": 12.14
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services Limited",
+        "weight_pct": 12.1
+      },
+      {
+        "name": "Power Finance Corporation Limited",
+        "weight_pct": 12.07
+      },
+      {
+        "name": "LIC Housing Finance Limited",
+        "weight_pct": 6.07
+      },
+      {
+        "name": "National Bank For Agriculture and Rural Development",
+        "weight_pct": 6.07
+      },
+      {
+        "name": "Small Industries Dev Bank of India",
+        "weight_pct": 6.06
+      },
+      {
+        "name": "REC Limited",
+        "weight_pct": 6.06
+      },
+      {
+        "name": "Tata Capital Housing Finance Limited",
+        "weight_pct": 6.06
+      },
+      {
+        "name": "HDB Financial Services Limited",
+        "weight_pct": 6.03
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria"
+    ],
+    "inception_date": "2024-11-22",
+    "underlying_index": "CRISIL-IBX AAA Financial Services Index-Sep 2027",
+    "tracking_error": -0.32,
+    "aum": {
+      "value": 8.28,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX AAA Bond Financial Services - Sep 2027 Index Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.8,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX AAA Bond Financial Services - Sep 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL IBX AAA Financial Services Index Sep 2027",
+    "top_holdings": [
+      {
+        "name": "Bajaj Housing Finance Limited",
+        "weight_pct": 12.16
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "weight_pct": 12.14
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services Limited",
+        "weight_pct": 12.1
+      },
+      {
+        "name": "Power Finance Corporation Limited",
+        "weight_pct": 12.07
+      },
+      {
+        "name": "LIC Housing Finance Limited",
+        "weight_pct": 6.07
+      },
+      {
+        "name": "National Bank For Agriculture and Rural Development",
+        "weight_pct": 6.07
+      },
+      {
+        "name": "Small Industries Dev Bank of India",
+        "weight_pct": 6.06
+      },
+      {
+        "name": "REC Limited",
+        "weight_pct": 6.06
+      },
+      {
+        "name": "Tata Capital Housing Finance Limited",
+        "weight_pct": 6.06
+      },
+      {
+        "name": "HDB Financial Services Limited",
+        "weight_pct": 6.03
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria"
+    ],
+    "inception_date": "2024-11-22",
+    "underlying_index": "CRISIL-IBX AAA Financial Services Index-Sep 2027",
+    "tracking_error": -0.32,
+    "aum": {
+      "value": 8.28,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX AAA Bond Financial Services - Sep 2027 Index Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.8,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX AAA Bond Financial Services - Sep 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL IBX AAA Financial Services Index Sep 2027",
+    "top_holdings": [
+      {
+        "name": "Bajaj Housing Finance Limited",
+        "weight_pct": 12.16
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "weight_pct": 12.14
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services Limited",
+        "weight_pct": 12.1
+      },
+      {
+        "name": "Power Finance Corporation Limited",
+        "weight_pct": 12.07
+      },
+      {
+        "name": "LIC Housing Finance Limited",
+        "weight_pct": 6.07
+      },
+      {
+        "name": "National Bank For Agriculture and Rural Development",
+        "weight_pct": 6.07
+      },
+      {
+        "name": "Small Industries Dev Bank of India",
+        "weight_pct": 6.06
+      },
+      {
+        "name": "REC Limited",
+        "weight_pct": 6.06
+      },
+      {
+        "name": "Tata Capital Housing Finance Limited",
+        "weight_pct": 6.06
+      },
+      {
+        "name": "HDB Financial Services Limited",
+        "weight_pct": 6.03
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria"
+    ],
+    "inception_date": "2024-11-22",
+    "underlying_index": "CRISIL-IBX AAA Financial Services Index-Sep 2027",
+    "tracking_error": -0.32,
+    "aum": {
+      "value": 8.28,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX AAA Bond Financial Services - Sep 2027 Index Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.71,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis CRISIL-IBX AAA Bond Financial Services - Sep 2027 Index Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Index Fund",
+    "benchmark": "CRISIL IBX AAA Financial Services Index Sep 2027",
+    "top_holdings": [
+      {
+        "name": "Bajaj Housing Finance Limited",
+        "weight_pct": 12.16
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "weight_pct": 12.14
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services Limited",
+        "weight_pct": 12.1
+      },
+      {
+        "name": "Power Finance Corporation Limited",
+        "weight_pct": 12.07
+      },
+      {
+        "name": "LIC Housing Finance Limited",
+        "weight_pct": 6.07
+      },
+      {
+        "name": "National Bank For Agriculture and Rural Development",
+        "weight_pct": 6.07
+      },
+      {
+        "name": "Small Industries Dev Bank of India",
+        "weight_pct": 6.06
+      },
+      {
+        "name": "REC Limited",
+        "weight_pct": 6.06
+      },
+      {
+        "name": "Tata Capital Housing Finance Limited",
+        "weight_pct": 6.06
+      },
+      {
+        "name": "HDB Financial Services Limited",
+        "weight_pct": 6.03
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria"
+    ],
+    "inception_date": "2024-11-22",
+    "underlying_index": "CRISIL-IBX AAA Financial Services Index-Sep 2027",
+    "tracking_error": -0.32,
+    "aum": {
+      "value": 8.28,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis CRISIL-IBX AAA Bond Financial Services - Sep 2027 Index Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.71,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis NIFTY 50 ETF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "aliases": [
+      "AXISNIFTY"
+    ],
+    "category": "Open Ended Scheme - Index Fund",
+    "benchmark": "Nifty 50 TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 11.14
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 8.98
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 7.97
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 5.13
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 4.42
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 3.87
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 3.52
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 3.2
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 2.63
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 2.52
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2017-07-03",
+    "underlying_index": "Nifty 50",
+    "tracking_error": 0.03,
+    "aum": {
+      "value": 1277.9,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis NIFTY 50 ETF|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.04,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis NIFTY Bank ETF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "aliases": [
+      "AXISBNKETF"
+    ],
+    "category": "An open ended equity scheme replicating / tracking NIFTY Bank TRI",
+    "benchmark": "Nifty Bank TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 19.2
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 14.08
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 9.97
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 9.54
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 9.26
+      },
+      {
+        "name": "The Federal Bank Limited",
+        "weight_pct": 6.63
+      },
+      {
+        "name": "IndusInd Bank Limited",
+        "weight_pct": 4.96
+      },
+      {
+        "name": "AU Small Finance Bank Limited",
+        "weight_pct": 4.61
+      },
+      {
+        "name": "IDFC First Bank Limited",
+        "weight_pct": 4.33
+      },
+      {
+        "name": "Bank of Baroda",
+        "weight_pct": 3.98
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2020-11-03",
+    "underlying_index": "Nifty Bank",
+    "tracking_error": 0.04,
+    "aum": {
+      "value": 332.72,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis NIFTY Bank ETF|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.2,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis NIFTY IT ETF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "aliases": [
+      "AXISTECETF"
+    ],
+    "category": "Exchange Traded Fund",
+    "benchmark": "Nifty IT TRI",
+    "top_holdings": [
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 30.4
+      },
+      {
+        "name": "Tata Consultancy Services Limited",
+        "weight_pct": 20.47
+      },
+      {
+        "name": "HCL Technologies Limited",
+        "weight_pct": 11.15
+      },
+      {
+        "name": "Tech Mahindra Limited",
+        "weight_pct": 10.84
+      },
+      {
+        "name": "Wipro Limited",
+        "weight_pct": 5.94
+      },
+      {
+        "name": "Persistent Systems Limited",
+        "weight_pct": 5.71
+      },
+      {
+        "name": "Coforge Limited",
+        "weight_pct": 4.88
+      },
+      {
+        "name": "LTM Limited",
+        "weight_pct": 3.99
+      },
+      {
+        "name": "Mphasis Limited",
+        "weight_pct": 3.48
+      },
+      {
+        "name": "Oracle Financial Services Software Limited",
+        "weight_pct": 3.12
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2021-03-25",
+    "underlying_index": "Nifty IT",
+    "tracking_error": 0.07,
+    "aum": {
+      "value": 142.8,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis NIFTY IT ETF|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.48,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis NIFTY Healthcare ETF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "aliases": [
+      "AXISHCETF"
+    ],
+    "category": "Open Ended Exchange Traded Fund",
+    "benchmark": "Nifty Healthcare TRI",
+    "top_holdings": [
+      {
+        "name": "Sun Pharmaceutical Industries Limited",
+        "weight_pct": 18.12
+      },
+      {
+        "name": "Apollo Hospitals Enterprise Limited",
+        "weight_pct": 8.21
+      },
+      {
+        "name": "Max Healthcare Institute Limited",
+        "weight_pct": 7.72
+      },
+      {
+        "name": "Divi's Laboratories Limited",
+        "weight_pct": 7.68
+      },
+      {
+        "name": "Dr. Reddy's Laboratories Limited",
+        "weight_pct": 7.6
+      },
+      {
+        "name": "Cipla Limited",
+        "weight_pct": 7.58
+      },
+      {
+        "name": "Laurus Labs Limited",
+        "weight_pct": 5.42
+      },
+      {
+        "name": "Lupin Limited",
+        "weight_pct": 5.4
+      },
+      {
+        "name": "Fortis Healthcare Limited",
+        "weight_pct": 4.58
+      },
+      {
+        "name": "Torrent Pharmaceuticals Limited",
+        "weight_pct": 4.45
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2021-05-17",
+    "underlying_index": "Nifty Healthcare",
+    "tracking_error": 0.02,
+    "aum": {
+      "value": 23.87,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis NIFTY Healthcare ETF|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.46,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis NIFTY India Consumption ETF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "aliases": [
+      "AXISCETF",
+      "CONSUMAXIS"
+    ],
+    "category": "ETF",
+    "benchmark": "Nifty India Consumption TRI",
+    "top_holdings": [
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 9.82
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 8.29
+      },
+      {
+        "name": "Mahindra & Mahindra Limited",
+        "weight_pct": 8.21
+      },
+      {
+        "name": "Eternal Limited",
+        "weight_pct": 5.73
+      },
+      {
+        "name": "Hindustan Unilever Limited",
+        "weight_pct": 5.63
+      },
+      {
+        "name": "Maruti Suzuki India Limited",
+        "weight_pct": 5.52
+      },
+      {
+        "name": "Titan Company Limited",
+        "weight_pct": 5.45
+      },
+      {
+        "name": "InterGlobe Aviation Limited",
+        "weight_pct": 3.64
+      },
+      {
+        "name": "Asian Paints Limited",
+        "weight_pct": 3.57
+      },
+      {
+        "name": "Trent Limited",
+        "weight_pct": 3.27
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2021-09-17",
+    "underlying_index": "NIFTY India Consumption",
+    "tracking_error": 0.03,
+    "aum": {
+      "value": 13.66,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis NIFTY India Consumption ETF|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.46,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Gold ETF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "aliases": [
+      "AXISGOLD",
+      "533570"
+    ],
+    "category": "Gold ETF",
+    "benchmark": "Domestic price of Gold",
+    "top_holdings": [
+      {
+        "name": "Gold",
+        "weight_pct": 97.76
+      },
+      {
+        "name": "Debt, Cash & other current assets",
+        "weight_pct": 2.24
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria",
+      "Mr. Pratik Tibrewal"
+    ],
+    "inception_date": "2010-11-10",
+    "underlying_index": "Price of Gold",
+    "tracking_error": 0.74,
+    "aum": {
+      "value": 5026.12,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Gold ETF|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.58,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Silver ETF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "aliases": [
+      "AXISILVER"
+    ],
+    "category": "ETF",
+    "benchmark": "Domestic Price of Physical Silver (based on LBMA Silver daily spot AM fixing price)",
+    "top_holdings": [
+      {
+        "name": "Silver",
+        "weight_pct": 98.01
+      },
+      {
+        "name": "Debt, Cash & other current assets",
+        "weight_pct": 1.99
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria",
+      "Mr. Pratik Tibrewal"
+    ],
+    "inception_date": "2022-09-21",
+    "underlying_index": "Price of Silver",
+    "tracking_error": 0.95,
+    "aum": {
+      "value": 1860.75,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Silver ETF|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.42,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis BSE SENSEX ETF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Exchange Traded Fund",
+    "benchmark": "BSE Sensex TRI",
+    "top_holdings": [
+      {
+        "name": "HDFC Bank Limited",
+        "weight_pct": 13.37
+      },
+      {
+        "name": "ICICI Bank Limited",
+        "weight_pct": 10.84
+      },
+      {
+        "name": "Reliance Industries Limited",
+        "weight_pct": 9.62
+      },
+      {
+        "name": "Bharti Airtel Limited",
+        "weight_pct": 6.2
+      },
+      {
+        "name": "Larsen & Toubro Limited",
+        "weight_pct": 5.32
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 4.69
+      },
+      {
+        "name": "Axis Bank Limited",
+        "weight_pct": 4.23
+      },
+      {
+        "name": "Infosys Limited",
+        "weight_pct": 3.83
+      },
+      {
+        "name": "Kotak Mahindra Bank Limited",
+        "weight_pct": 3.18
+      },
+      {
+        "name": "ITC Limited",
+        "weight_pct": 3.04
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2023-03-24",
+    "underlying_index": "BSE Sensex",
+    "tracking_error": 0.03,
+    "aum": {
+      "value": 126.92,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis BSE SENSEX ETF|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.04,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Nifty500 Value 50 ETF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "aliases": [
+      "AXISVALUE",
+      "544382"
+    ],
+    "category": "Exchange Traded Fund",
+    "benchmark": "Nifty500 Value 50 TRI",
+    "top_holdings": [
+      {
+        "name": "Tata Motors Passenger Vehicles Limited",
+        "weight_pct": 5.08
+      },
+      {
+        "name": "NTPC Limited",
+        "weight_pct": 5.04
+      },
+      {
+        "name": "Coal India Limited",
+        "weight_pct": 5.02
+      },
+      {
+        "name": "Vedanta Limited",
+        "weight_pct": 5.02
+      },
+      {
+        "name": "State Bank of India",
+        "weight_pct": 5.01
+      },
+      {
+        "name": "Grasim Industries Limited",
+        "weight_pct": 5.0
+      },
+      {
+        "name": "Power Grid Corporation of India Limited",
+        "weight_pct": 4.97
+      },
+      {
+        "name": "Hindalco Industries Limited",
+        "weight_pct": 4.94
+      },
+      {
+        "name": "Oil & Natural Gas Corporation Limited",
+        "weight_pct": 4.94
+      },
+      {
+        "name": "Bharat Petroleum Corporation Limited",
+        "weight_pct": 4.0
+      }
+    ],
+    "fund_managers": [
+      "Mr. Nandik Malik",
+      "Mr. Rohit Gautam"
+    ],
+    "inception_date": "2025-03-13",
+    "underlying_index": "Nifty500 Value 50",
+    "tracking_error": 0.12,
+    "aum": {
+      "value": 34.3,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Nifty500 Value 50 ETF|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.44,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Multi Factor Passive FoF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "aliases": [
+      "Axis Equity ETFs Fund of Fund"
+    ],
+    "category": "Fund of Funds",
+    "benchmark": "Nifty 500 TRI",
+    "top_holdings": [
+      {
+        "name": "Axis Nifty500 Value 50 ETF",
+        "weight_pct": 25.31
+      },
+      {
+        "name": "ICICI Prudential Nifty 200 Momentum 30 ETF",
+        "weight_pct": 24.64
+      },
+      {
+        "name": "ICICI Prudential Nifty 100 Low Volatility 30 ETF",
+        "weight_pct": 23.42
+      },
+      {
+        "name": "SBI Nifty 200 Quality 30 ETF",
+        "weight_pct": 22.64
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2022-02-24",
+    "aum": {
+      "value": 36.08,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Multi Factor Passive FoF|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.66,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Multi Factor Passive FoF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "aliases": [
+      "Axis Equity ETFs Fund of Fund"
+    ],
+    "category": "Fund of Funds",
+    "benchmark": "Nifty 500 TRI",
+    "top_holdings": [
+      {
+        "name": "Axis Nifty500 Value 50 ETF",
+        "weight_pct": 25.31
+      },
+      {
+        "name": "ICICI Prudential Nifty 200 Momentum 30 ETF",
+        "weight_pct": 24.64
+      },
+      {
+        "name": "ICICI Prudential Nifty 100 Low Volatility 30 ETF",
+        "weight_pct": 23.42
+      },
+      {
+        "name": "SBI Nifty 200 Quality 30 ETF",
+        "weight_pct": 22.64
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2022-02-24",
+    "aum": {
+      "value": 36.08,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Multi Factor Passive FoF|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.66,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Multi Factor Passive FoF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "aliases": [
+      "Axis Equity ETFs Fund of Fund"
+    ],
+    "category": "Fund of Funds",
+    "benchmark": "Nifty 500 TRI",
+    "top_holdings": [
+      {
+        "name": "Axis Nifty500 Value 50 ETF",
+        "weight_pct": 25.31
+      },
+      {
+        "name": "ICICI Prudential Nifty 200 Momentum 30 ETF",
+        "weight_pct": 24.64
+      },
+      {
+        "name": "ICICI Prudential Nifty 100 Low Volatility 30 ETF",
+        "weight_pct": 23.42
+      },
+      {
+        "name": "SBI Nifty 200 Quality 30 ETF",
+        "weight_pct": 22.64
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2022-02-24",
+    "aum": {
+      "value": 36.08,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Multi Factor Passive FoF|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.08,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Multi Factor Passive FoF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "aliases": [
+      "Axis Equity ETFs Fund of Fund"
+    ],
+    "category": "Fund of Funds",
+    "benchmark": "Nifty 500 TRI",
+    "top_holdings": [
+      {
+        "name": "Axis Nifty500 Value 50 ETF",
+        "weight_pct": 25.31
+      },
+      {
+        "name": "ICICI Prudential Nifty 200 Momentum 30 ETF",
+        "weight_pct": 24.64
+      },
+      {
+        "name": "ICICI Prudential Nifty 100 Low Volatility 30 ETF",
+        "weight_pct": 23.42
+      },
+      {
+        "name": "SBI Nifty 200 Quality 30 ETF",
+        "weight_pct": 22.64
+      }
+    ],
+    "fund_managers": [
+      "Nandik Malik",
+      "Rohit Gautam"
+    ],
+    "inception_date": "2022-02-24",
+    "aum": {
+      "value": 36.08,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Multi Factor Passive FoF|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.08,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Gold Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Fund",
+    "benchmark": "Domestic price of Gold",
+    "top_holdings": [
+      {
+        "name": "Axis Gold ETF",
+        "weight_pct": 100.07
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria",
+      "Mr. Pratik Tibrewal"
+    ],
+    "inception_date": "2011-10-20",
+    "aum": {
+      "value": 2827.67,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Gold Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.49,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Gold Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Fund",
+    "benchmark": "Domestic price of Gold",
+    "top_holdings": [
+      {
+        "name": "Axis Gold ETF",
+        "weight_pct": 100.07
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria",
+      "Mr. Pratik Tibrewal"
+    ],
+    "inception_date": "2011-10-20",
+    "aum": {
+      "value": 2827.67,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Gold Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.49,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Gold Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Fund",
+    "benchmark": "Domestic price of Gold",
+    "top_holdings": [
+      {
+        "name": "Axis Gold ETF",
+        "weight_pct": 100.07
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria",
+      "Mr. Pratik Tibrewal"
+    ],
+    "inception_date": "2011-10-20",
+    "aum": {
+      "value": 2827.67,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Gold Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.19,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Gold Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Fund",
+    "benchmark": "Domestic price of Gold",
+    "top_holdings": [
+      {
+        "name": "Axis Gold ETF",
+        "weight_pct": 100.07
+      }
+    ],
+    "fund_managers": [
+      "Mr. Aditya Pagaria",
+      "Mr. Pratik Tibrewal"
+    ],
+    "inception_date": "2011-10-20",
+    "aum": {
+      "value": 2827.67,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Gold Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.19,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Income Plus Arbitrage Passive FOF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Funds",
+    "benchmark": "65% NIFTY Short Duration Debt Index + 35% Nifty 50 Arbitrage TRI",
+    "top_holdings": [
+      {
+        "name": "Axis CRISIL-IBX AAA Bond NBFC - Jun 2027 Index Fund - Direct Plan - Growth Option",
+        "weight_pct": 62.77
+      },
+      {
+        "name": "Axis Arbitrage Fund - Direct Plan - Growth Option",
+        "weight_pct": 35.58
+      }
+    ],
+    "fund_managers": [
+      "Mr. Devang Shah",
+      "Mr. Aditya Pagaria",
+      "Mr. Hardik Satra"
+    ],
+    "inception_date": "2025-11-12",
+    "aum": {
+      "value": 103.58,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Income Plus Arbitrage Passive FOF|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.41,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Income Plus Arbitrage Passive FOF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Funds",
+    "benchmark": "65% NIFTY Short Duration Debt Index + 35% Nifty 50 Arbitrage TRI",
+    "top_holdings": [
+      {
+        "name": "Axis CRISIL-IBX AAA Bond NBFC - Jun 2027 Index Fund - Direct Plan - Growth Option",
+        "weight_pct": 62.77
+      },
+      {
+        "name": "Axis Arbitrage Fund - Direct Plan - Growth Option",
+        "weight_pct": 35.58
+      }
+    ],
+    "fund_managers": [
+      "Mr. Devang Shah",
+      "Mr. Aditya Pagaria",
+      "Mr. Hardik Satra"
+    ],
+    "inception_date": "2025-11-12",
+    "aum": {
+      "value": 103.58,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Income Plus Arbitrage Passive FOF|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.41,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Income Plus Arbitrage Passive FOF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Funds",
+    "benchmark": "65% NIFTY Short Duration Debt Index + 35% Nifty 50 Arbitrage TRI",
+    "top_holdings": [
+      {
+        "name": "Axis CRISIL-IBX AAA Bond NBFC - Jun 2027 Index Fund - Direct Plan - Growth Option",
+        "weight_pct": 62.77
+      },
+      {
+        "name": "Axis Arbitrage Fund - Direct Plan - Growth Option",
+        "weight_pct": 35.58
+      }
+    ],
+    "fund_managers": [
+      "Mr. Devang Shah",
+      "Mr. Aditya Pagaria",
+      "Mr. Hardik Satra"
+    ],
+    "inception_date": "2025-11-12",
+    "aum": {
+      "value": 103.58,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Income Plus Arbitrage Passive FOF|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.06,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Income Plus Arbitrage Passive FOF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Funds",
+    "benchmark": "65% NIFTY Short Duration Debt Index + 35% Nifty 50 Arbitrage TRI",
+    "top_holdings": [
+      {
+        "name": "Axis CRISIL-IBX AAA Bond NBFC - Jun 2027 Index Fund - Direct Plan - Growth Option",
+        "weight_pct": 62.77
+      },
+      {
+        "name": "Axis Arbitrage Fund - Direct Plan - Growth Option",
+        "weight_pct": 35.58
+      }
+    ],
+    "fund_managers": [
+      "Mr. Devang Shah",
+      "Mr. Aditya Pagaria",
+      "Mr. Hardik Satra"
+    ],
+    "inception_date": "2025-11-12",
+    "aum": {
+      "value": 103.58,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Income Plus Arbitrage Passive FOF|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.06,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Silver Fund of Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Fund",
+    "benchmark": "Domestic Price of Physical Silver (based on LBMA Silver daily spot AM fixing price)",
+    "top_holdings": [
+      {
+        "name": "Axis Silver ETF",
+        "weight_pct": 100.1
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria",
+      "Pratik Tibrewal"
+    ],
+    "inception_date": "2022-09-21",
+    "aum": {
+      "value": 1148.03,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Silver Fund of Fund|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.63,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Silver Fund of Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Fund",
+    "benchmark": "Domestic Price of Physical Silver (based on LBMA Silver daily spot AM fixing price)",
+    "top_holdings": [
+      {
+        "name": "Axis Silver ETF",
+        "weight_pct": 100.1
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria",
+      "Pratik Tibrewal"
+    ],
+    "inception_date": "2022-09-21",
+    "aum": {
+      "value": 1148.03,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Silver Fund of Fund|regular|idcw",
+    "plan": "regular",
+    "option": "idcw",
+    "expense_ratio": 0.63,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Silver Fund of Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Fund",
+    "benchmark": "Domestic Price of Physical Silver (based on LBMA Silver daily spot AM fixing price)",
+    "top_holdings": [
+      {
+        "name": "Axis Silver ETF",
+        "weight_pct": 100.1
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria",
+      "Pratik Tibrewal"
+    ],
+    "inception_date": "2022-09-21",
+    "aum": {
+      "value": 1148.03,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Silver Fund of Fund|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.09,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Silver Fund of Fund",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Fund",
+    "benchmark": "Domestic Price of Physical Silver (based on LBMA Silver daily spot AM fixing price)",
+    "top_holdings": [
+      {
+        "name": "Axis Silver ETF",
+        "weight_pct": 100.1
+      }
+    ],
+    "fund_managers": [
+      "Aditya Pagaria",
+      "Pratik Tibrewal"
+    ],
+    "inception_date": "2022-09-21",
+    "aum": {
+      "value": 1148.03,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Silver Fund of Fund|direct|idcw",
+    "plan": "direct",
+    "option": "idcw",
+    "expense_ratio": 0.09,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Gold and Silver Passive FoF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Funds",
+    "benchmark": "Domestic Price of Gold and Domestic Price of Silver (50:50)",
+    "top_holdings": [
+      {
+        "name": "Axis Gold ETF",
+        "weight_pct": 57.46
+      },
+      {
+        "name": "Axis Silver ETF",
+        "weight_pct": 42.46
+      },
+      {
+        "name": "Debt, Cash & other current assets",
+        "weight_pct": 0.07
+      }
+    ],
+    "fund_managers": [
+      "Pratik Tibrewal",
+      "Aditya Pagaria"
+    ],
+    "inception_date": "2025-12-29",
+    "aum": {
+      "value": 524.33,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Gold and Silver Passive FoF|regular|growth",
+    "plan": "regular",
+    "option": "growth",
+    "expense_ratio": 0.54,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  },
+  {
+    "scheme_name": "Axis Gold and Silver Passive FoF",
+    "fund_type": "passive",
+    "as_of_date": "2026-06-30",
+    "source_file": "factsheet_passive_2026-06-30.pdf",
+    "category": "Fund of Funds",
+    "benchmark": "Domestic Price of Gold and Domestic Price of Silver (50:50)",
+    "top_holdings": [
+      {
+        "name": "Axis Gold ETF",
+        "weight_pct": 57.46
+      },
+      {
+        "name": "Axis Silver ETF",
+        "weight_pct": 42.46
+      },
+      {
+        "name": "Debt, Cash & other current assets",
+        "weight_pct": 0.07
+      }
+    ],
+    "fund_managers": [
+      "Pratik Tibrewal",
+      "Aditya Pagaria"
+    ],
+    "inception_date": "2025-12-29",
+    "aum": {
+      "value": 524.33,
+      "unit": "INR_crore",
+      "as_of_date": "2026-06-30"
+    },
+    "record_id": "Axis Gold and Silver Passive FoF|direct|growth",
+    "plan": "direct",
+    "option": "growth",
+    "expense_ratio": 0.12,
+    "returns": {
+      "1Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "3Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "5Y": {
+        "scheme": null,
+        "benchmark": null
+      },
+      "since_inception": {
+        "scheme": null,
+        "benchmark": null
+      }
+    }
+  }
+]
