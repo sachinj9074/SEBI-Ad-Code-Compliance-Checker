@@ -40,6 +40,15 @@ CTYPE_LABELS = {
 }
 UPLOAD_TYPES = ["docx", "pdf", "txt", "png", "jpg", "jpeg", "webp"]
 
+# Bundled generic samples so the tool is self-serve (no file needed to try it).
+NO_SAMPLE = "— none —"
+SAMPLES = {
+    "Clean creative (compliant)": "sample_clean.txt",
+    "Planted violations": "sample_with_violations.txt",
+    "Wrong return figure": "sample_wrong_return.txt",
+    "Banner image (illegible disclaimer)": "sample_banner.png",
+}
+
 st.set_page_config(page_title="SEBI Ad-Code Compliance Checker", page_icon="🛡️", layout="wide")
 
 
@@ -74,12 +83,18 @@ with st.sidebar:
         "Upload creative (DOCX, PDF, image; multiple images = carousel)",
         type=UPLOAD_TYPES, accept_multiple_files=True,
     )
+    sample_choice = st.selectbox(
+        "…or try a bundled sample", [NO_SAMPLE, *SAMPLES],
+        help="Generic sample creatives written for this tool — no upload needed.",
+    )
     areas = st.multiselect(
         "Business area(s)", options=list(AREA_LABELS),
         default=["mf_scheme"], format_func=lambda a: AREA_LABELS[a],
     )
+    _ctype_opts = sorted(ACTIVE_CREATIVE_TYPES)
     ctype = st.selectbox(
-        "Creative type", options=sorted(ACTIVE_CREATIVE_TYPES),
+        "Creative type", options=_ctype_opts,
+        index=_ctype_opts.index("general_kv") if "general_kv" in _ctype_opts else 0,
         format_func=lambda c: CTYPE_LABELS.get(c, c),
     )
     run = st.button("Run compliance check", type="primary", use_container_width=True)
@@ -88,14 +103,17 @@ if not run:
     st.info("⬅ Upload a creative, pick the business area(s) and creative type, then run the check.")
     st.stop()
 
-if not uploads:
-    st.error("Please upload at least one file.")
+if not uploads and sample_choice == NO_SAMPLE:
+    st.error("Please upload a file or pick a bundled sample.")
     st.stop()
 if not areas:
     st.error("Please select at least one business area.")
     st.stop()
 
-path = _stage_uploads(uploads)
+if uploads:
+    path = _stage_uploads(uploads)
+else:
+    path = str(ROOT / "samples" / SAMPLES[sample_choice])
 with st.spinner("Extracting and checking…"):
     try:
         verdict = build_verdict(path, areas, ctype)
