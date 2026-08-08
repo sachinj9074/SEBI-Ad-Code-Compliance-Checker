@@ -74,6 +74,8 @@ st.caption(
 
 with st.sidebar:
     st.header("Check a creative")
+    st.caption("1 · Upload a creative (or pick a bundled sample)  •  2 · Choose the business area(s) and creative type  •  3 · Run. "
+               "You'll get a plain-language verdict: what to fix, what a human should check, and factual mismatches.")
     if model.available():
         st.success(f"Model: {model.model_id()}")
     else:
@@ -122,6 +124,7 @@ with st.spinner("Extracting and checking…"):
         st.stop()
 
 st.divider()
+render.headline(verdict)
 render.summary_strip(verdict)
 render.features(verdict)
 render.showback(verdict)
