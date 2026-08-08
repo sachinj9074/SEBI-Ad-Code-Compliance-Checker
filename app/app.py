@@ -67,9 +67,10 @@ def _stage_uploads(files) -> str:
 # ---- page -------------------------------------------------------------------
 st.title("🛡️ SEBI Ad-Code Compliance Checker")
 st.caption(
-    "Screens a mutual-fund creative against the SEBI ad code, AMFI guidelines and the internal "
-    "checklist. Three separated layers: **scored rule checks**, **factsheet fact-check**, and an "
-    "**advisory** read. It flags issues to resolve — it is not a compliance sign-off."
+    "A first-pass compliance self-check for the people who make the creatives — marketing, product, design — "
+    "to run **before** sending anything to the compliance team. It screens against the SEBI ad code, AMFI "
+    "guidelines and the internal checklist in three separated layers (rule checks · factsheet fact-check · "
+    "advisory) and tells you what to change. It flags issues to resolve — it is **not** a compliance sign-off."
 )
 
 with st.sidebar:

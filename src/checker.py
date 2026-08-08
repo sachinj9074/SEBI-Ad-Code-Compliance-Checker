@@ -27,16 +27,24 @@ _JUDGE_SCHEMA = {
         "verdict": {"enum": ["pass", "fail", "needs_review"]},
         "offending_text": {"type": "string"},
         "explanation": {"type": "string"},
+        "suggested_fix": {"type": "string"},
     },
 }
 
 
 def _judge(rule: dict, text: str) -> dict:
-    """Model judgment for an automated rule that has no verbatim mandated_text."""
+    """Model judgment for an automated rule that has no verbatim mandated_text.
+    Explanations/fixes are written for a marketing or product person doing a
+    first-pass self-check — plain English, no clause numbers or jargon."""
     system = (
-        "You check one SEBI mutual-fund advertisement rule against a creative. "
-        "Return 'pass' if the creative complies, 'fail' if it clearly violates the "
-        "rule, or 'needs_review' if you cannot tell. Quote the offending text on a fail."
+        "You check ONE SEBI mutual-fund advertisement rule against a creative, on behalf of a "
+        "marketing / product person running a first-pass self-check before compliance review — "
+        "they are not a compliance expert. "
+        "Return 'pass' if the creative complies, 'fail' if it clearly breaks the rule, or "
+        "'needs_review' only if you genuinely cannot tell from the text. "
+        "On a fail: 'explanation' is ONE plain-English sentence saying what is wrong and why it "
+        "matters (no clause numbers, no jargon); 'offending_text' quotes the exact words from the "
+        "creative; 'suggested_fix' is the specific edit to make — add, remove, or reword what."
     )
     prompt = (
         f"Rule: {rule['description']}\n"
@@ -58,6 +66,7 @@ def _decide(rule: dict, text: str, present: set[str]) -> dict:
 
     res = {
         "rule_id": rule["rule_id"],
+        "title": rule["title"],              # short headline for the UI card
         "description": rule["description"],  # plain-language: what this rule checks
         "triggered_by": triggered_by,
         "severity": rule["severity"],
@@ -78,8 +87,9 @@ def _decide(rule: dict, text: str, present: set[str]) -> dict:
         res["verdict"] = "pass" if found else "fail"
         res["confidence"] = score
         if not found:
-            res["explanation"] = f"Required disclaimer not found (best match {score:.0%})."
-            res["suggested_rewrite"] = f"Add the required disclaimer: “{mt['text']}”"
+            res["explanation"] = ("A disclaimer this creative must carry is missing (or its wording "
+                                  f"differs too much from the mandated text — closest match {score:.0%}).")
+            res["suggested_rewrite"] = f"Add this exact text: “{mt['text']}”"
         return res
 
     # Human-judgment rules always raise a flag.
@@ -99,6 +109,8 @@ def _decide(rule: dict, text: str, present: set[str]) -> dict:
                 res["offending_text"] = j["offending_text"]
             if j.get("explanation"):
                 res["explanation"] = j["explanation"]
+            if j["verdict"] == "fail" and j.get("suggested_fix"):
+                res["suggested_rewrite"] = j["suggested_fix"]
         except Exception as exc:  # invalid key, rate limit, etc. — never crash the run
             res["verdict"] = "needs_review"
             res["explanation"] = f"Automated check unavailable ({type(exc).__name__}); flagged for review."
