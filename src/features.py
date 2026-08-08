@@ -45,7 +45,11 @@ _SCHEMA = {
 _SYSTEM = (
     "You detect content features in a mutual-fund marketing creative for a SEBI "
     "advertisement-code compliance check. For each feature, decide if it is present "
-    "and quote the shortest supporting evidence. Be precise; do not over-flag."
+    "and quote the shortest supporting evidence. Be precise; do not over-flag. "
+    "'market_cap_terms' means the creative actually classifies holdings or strategy by "
+    "market capitalisation (large-cap / mid-cap / small-cap) — NOT merely a fund's proper "
+    "name that contains the word 'cap' (e.g. 'Flexi Cap Fund' or 'Large & Mid Cap Fund' as "
+    "a scheme name is not, by itself, use of market-cap terms)."
 )
 
 # Keyword heuristics for the keyless fallback (deliberately conservative).
@@ -99,7 +103,7 @@ def _detect_model(text: str) -> list[dict]:
         "Return, for each feature you assess, whether it is present.\n"
         "Features: " + ", ".join(FEATURES)
     )
-    out = model.structured(_SYSTEM, prompt, _SCHEMA)
+    out = model.structured(_SYSTEM, prompt, _SCHEMA, model=model.fast_model_id())
     return out.get("features", [])
 
 

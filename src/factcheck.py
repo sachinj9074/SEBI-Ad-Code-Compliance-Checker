@@ -181,7 +181,8 @@ def run(creative_text: str, kb: list[dict] | None = None) -> dict:
     results: list[dict] = []
     if creative_text.strip() and model.available():
         try:
-            out = model.structured(_CLAIM_SYSTEM, creative_text, _CLAIM_SCHEMA)
+            out = model.structured(_CLAIM_SYSTEM, creative_text, _CLAIM_SCHEMA,
+                                   model=model.fast_model_id())
             for claim in out.get("claims", []):
                 results.append(check_claim(claim, kb))
         except Exception:  # noqa: BLE001 — never break the run on a model error

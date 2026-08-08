@@ -19,13 +19,25 @@ try:  # load .env if python-dotenv is present; harmless if the file is absent
 except Exception:  # pragma: no cover
     pass
 
-# Default per the claude-api guidance; override on cost via ANTHROPIC_MODEL
-# (feature detection / claim extraction are simple classification tasks).
-DEFAULT_MODEL = "claude-opus-5"
+# Tiered on cost (README §9 — the intelligence is in the corpus, so model choice
+# is a cost decision). JUDGMENT is the nuanced tier: rule judgment, advisory, and
+# vision/legibility. FAST is the cheap classification tier: feature detection and
+# claim extraction. Both overridable via env for a one-line swap.
+JUDGMENT_MODEL = "claude-sonnet-5"   # ~40% cheaper than Opus 5, near-Opus quality
+FAST_MODEL = "claude-haiku-4-5"      # ~80% cheaper; simple classification only
+
+# Back-compat alias — model_id() is the judgment/default tier.
+DEFAULT_MODEL = JUDGMENT_MODEL
 
 
 def model_id() -> str:
-    return os.environ.get("ANTHROPIC_MODEL", DEFAULT_MODEL)
+    """The judgment/default model (rule judgment, advisory, vision)."""
+    return os.environ.get("ANTHROPIC_MODEL", JUDGMENT_MODEL)
+
+
+def fast_model_id() -> str:
+    """The cheap classification model (feature detection, claim extraction)."""
+    return os.environ.get("ANTHROPIC_FAST_MODEL", FAST_MODEL)
 
 
 def available() -> bool:

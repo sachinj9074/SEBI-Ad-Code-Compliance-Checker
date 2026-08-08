@@ -7,7 +7,7 @@
     "applies_to": ["mf_scheme"],
     "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
     "severity": "medium",
-    "check_type": "assisted",
+    "check_type": "automated",
     "source_clause": "Internal Dos & Don'ts (no cross-selling of other products in an MF advertisement)",
     "provenance": ["internal_policy"],
     "examples": {
@@ -23,7 +23,7 @@
     "applies_to": ["mf_scheme"],
     "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
     "severity": "medium",
-    "check_type": "assisted",
+    "check_type": "automated",
     "source_clause": "Internal Dos & Don'ts (statistics/charts must be source-supported); Sixth Schedule (Advertisement Code) clause (a)",
     "source_date": "2012-02-21",
     "provenance": ["sebi", "internal_policy"],

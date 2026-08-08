@@ -58,6 +58,7 @@ def _decide(rule: dict, text: str, present: set[str]) -> dict:
 
     res = {
         "rule_id": rule["rule_id"],
+        "description": rule["description"],  # plain-language: what this rule checks
         "triggered_by": triggered_by,
         "severity": rule["severity"],
         "source_clause": rule["source_clause"],
@@ -110,9 +111,15 @@ def _decide(rule: dict, text: str, present: set[str]) -> dict:
 def _apply_vision(res: dict, rule: dict, vision: dict | None) -> None:
     """Let the visual pass drive the rules OCR can't (README §5): legibility of the
     mandatory warning, risk-o-meter presence/legibility, prominent-person context."""
-    if not vision:
-        return
     rid = rule["rule_id"]
+    if not vision:
+        # Legibility is a purely visual property; on a text / DOCX / text-PDF creative
+        # there is nothing to judge, so mark it not_applicable rather than raising a
+        # noisy needs_review the user can't action.
+        if rid == "LEGIB-001" and res.get("verdict") == "needs_review":
+            res["verdict"] = "not_applicable"
+            res.pop("explanation", None)
+        return
     leg = vision.get("disclaimer_legibility")
 
     # Standard warnings present but not legibly sized -> a text 'pass' becomes needs_review.

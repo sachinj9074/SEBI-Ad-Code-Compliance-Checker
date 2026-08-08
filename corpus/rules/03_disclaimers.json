@@ -192,13 +192,13 @@
   {
     "rule_id": "DISC-010",
     "title": "Registered name and SEBI registration number",
-    "description": "The creative must display the AMC's registered name and SEBI registration number. For videos and other content relating to the securities market, the registered name and registration number must appear at the beginning of the content (effective 1 May 2026).",
+    "description": "The creative must display the AMC's registered name and SEBI registration number. In video and audio (audio-visual) content they must appear at the beginning of the content (effective 1 May 2026); in static creatives (print, image, key visual) prominent display — for example a footer — satisfies the requirement.",
     "trigger": { "type": "unconditional" },
     "applies_to": ["all"],
     "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
     "severity": "medium",
     "check_type": "automated",
-    "source_clause": "SEBI requirement effective 2026-05-01 (registered name + registration number at the start of securities-market content); internal checklist — Disclaimer Repository (SEBI registration number, mandatory)",
+    "source_clause": "SEBI requirement effective 2026-05-01 (registered name + registration number at the start of audio-visual securities-market content; prominent display on static creatives); internal checklist — Disclaimer Repository (SEBI registration number, mandatory)",
     "source_date": "2026-05-01",
     "provenance": ["sebi", "internal_policy"],
     "examples": {
@@ -319,7 +319,7 @@
     "applies_to": ["mf_scheme"],
     "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
     "severity": "medium",
-    "check_type": "assisted",
+    "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Index/ETF index-licensing disclaimers)",
     "provenance": ["internal_policy"],
     "examples": {
@@ -335,7 +335,7 @@
     "applies_to": ["mf_scheme"],
     "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
     "severity": "medium",
-    "check_type": "assisted",
+    "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (NSE/BSE listing disclaimers)",
     "provenance": ["internal_policy"],
     "examples": {

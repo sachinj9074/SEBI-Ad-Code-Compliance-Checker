@@ -156,6 +156,7 @@
       "required": ["rule_id", "verdict"],
       "properties": {
         "rule_id": { "type": "string" },
+        "description": { "type": "string", "description": "Plain-language statement of what the rule checks (shown to the user)." },
         "verdict": { "enum": ["pass", "fail", "needs_review", "not_applicable"] },
         "triggered_by": { "type": "string", "description": "feature name or 'unconditional'." },
         "offending_text": { "type": "string" },

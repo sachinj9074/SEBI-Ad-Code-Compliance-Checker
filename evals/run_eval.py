@@ -90,7 +90,11 @@ def main() -> int:
         elif rule["check_type"] == "assisted":
             pass_v, fail_v = verdicts(rule)
             assisted_total += 2
-            assisted_ok += (pass_v == "needs_review") + (fail_v == "needs_review")
+            # The tool must never pretend to decide an assisted rule: needs_review,
+            # or not_applicable for the vision-only ones (e.g. LEGIB-001) when run on
+            # text with no image to judge.
+            ok = {"needs_review", "not_applicable"}
+            assisted_ok += (pass_v in ok) + (fail_v in ok)
         else:
             model_required += 1  # automated, no mandated_text
             if use_model:
