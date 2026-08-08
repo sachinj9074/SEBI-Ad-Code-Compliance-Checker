@@ -25,10 +25,20 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
     separate sections + show-back. Display-only (calls `build_verdict`). Verified live + via
     streamlit AppTest. (`app.py` uses a sibling `import render`, not `from app import …` — under
     `streamlit run` the script itself is module `app`, so that form is a circular import.)
-  - ✅ **End-to-end test** — three generic samples through the full pipeline:
-    clean → 0 FAIL / 0 mismatch; planted violations → 11 FAIL / 3 mismatch;
-    wrong-return → 6 FAIL / 1 mismatch. Eval re-run: 100% + image case ✅.
-    (Clean sample uses a non-"cap" scheme name — see known gaps.)
+  - ✅ **End-to-end test** — three generic samples through the full pipeline;
+    self-serve sample picker added to the UI. Eval: 100% + image case ✅.
+- ✅ **Refinements (2026-08-08, on user feedback from the live UI)**
+  - Tiered models (Haiku + Sonnet) — see Resolved decisions.
+  - Reclassified 13 model-judgeable rules `assisted`→`automated` so the model screens them:
+    clean-sample needs-review **12 → 2**, advisory **6 → 0**; violations FAIL 11 → 16,
+    needs-review 19 → 10, advisory 8 → 3. Kept 12 truly un-decidable rules human-only.
+  - Plain-language rule `description` on every result (verdict schema + checker + UI).
+  - Advisory: high-bar rewrite (material investor harm only; excludes NFO urgency, low-ticket
+    SIP, puffery, upbeat tone).
+  - UI overhaul: headline verdict, Must-fix / Human-check labels, leaner show-back.
+  - Precision: `market_cap_terms` no longer fires on "Cap" in a scheme name; DISC-010 start-
+    placement scoped to audio-visual; LEGIB-001 → not_applicable on text.
+  - Eval re-run: 100% deterministic (44/44); 98.9% with `--model` (Sonnet judging 24 rules).
 
 ## Architecture (where things live)
 - `schemas/` — rule / verdict / factsheet_record JSON schemas (source of truth). `scripts/validate_*.py`.
@@ -40,8 +50,11 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
 - `samples/` — generic test creatives (violations, wrong-return, banner). `app/` — Streamlit (Day 3, TBD).
 
 ## Resolved decisions
-- **Model = Anthropic Claude.** Default `claude-opus-5`; factsheet **batch** extraction uses
-  `claude-haiku-4-5` (cost). Configurable via `ANTHROPIC_MODEL`. All model calls go through `src/model.py`.
+- **Model = Anthropic Claude, tiered on cost** (changed 2026-08-08 on user feedback — Opus 5 was
+  too costly). `src/model.py`: **FAST = `claude-haiku-4-5`** for feature detection + claim extraction;
+  **JUDGMENT = `claude-sonnet-5`** for rule judgment, advisory, and vision. Factsheet **batch**
+  extraction also Haiku. Overridable via `ANTHROPIC_FAST_MODEL` / `ANTHROPIC_MODEL`. All calls go
+  through `src/model.py`.
 - **Public + genericize repo.** Internal checklist is local-only/gitignored; committed corpus uses
   `[AMC]`/`[Sponsor Bank]` placeholders (`corpus/GENERICIZATION.md`). **Factsheets are public → KB
   committed with real data.**
@@ -58,11 +71,6 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
 - `riskometer_level` null in the KB (graphic dial, not text) — a vision pass could fill it.
 - Passive **IDCW** return variants stay null (factsheet publishes only Growth returns).
 - 2 active KB records dropped on schema-validation edge cases (163 written).
-- `market_cap_terms` feature fires on "Cap" inside a scheme *name* (e.g. "Flexi Cap Fund"),
-  activating the cap-definitions disclaimer (DISC-015) for creatives that never discuss market
-  caps. Borderline by design (flexi-cap strategies do span caps) — revisit if reviewers call it noise.
-- Advisory (Layer 3) still writes ~6 notes on clean copy — defensible nitpicks, and it is fenced
-  and unscored, but tune the prompt toward a higher bar if users find it chatty.
 
 ## Parked to-dos (do before flipping the GitHub repo to public)
 - **Portfolio-facing README.** _Parked by user 2026-08-07._ The current `README.md` reads as a

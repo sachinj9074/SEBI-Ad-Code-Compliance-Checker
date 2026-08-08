@@ -26,3 +26,4 @@ Run the eval after any corpus or prompt change and add a line here.
 | 2026-08-07 | **100.0%** (44/44) | assisted rules raise `needs_review` on 50/50 examples; 11 automated non-disclaimer rules await the model |
 | 2026-08-07 | image case ✅ | `--image`: banner read as image; LEGIB-001 FAIL + DISC-001 needs_review on the illegible warning |
 | 2026-08-07 | **100.0%** (44/44) + image ✅ | Day 3 complete (advisory layer + UI added — both outside the scored layer, no change expected or seen). E2E: clean sample 0 FAIL / 0 mismatch; violations 11 FAIL / 3 mismatch; wrong-return 6 FAIL / 1 mismatch |
+| 2026-08-08 | **100.0%** (44/44) det.; **98.9%** (91/92) with `--model` | Feedback refinements: 13 rules reclassified `assisted`→`automated` (now Sonnet-judged), tiered models. Assisted behaviour clean (24/24). Clean sample: needs-review 12→2, advisory 6→0. 1 borderline model miss out of 48 model-scored cases (>95% floor). |

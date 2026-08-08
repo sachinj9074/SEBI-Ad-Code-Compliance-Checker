@@ -40,6 +40,8 @@ open decisions. If the two conflict, the README wins on product/design; this fil
 ## Resolved decisions
 - **Model provider = Anthropic Claude** (native vision, Devanagari, structured output). All model
   calls go through one client in `src/` so the provider stays swappable. API key in `.env`.
+  **Tiered on cost** (see STATUS.md): Haiku 4.5 for feature detection + claim extraction, Sonnet 5
+  for rule judgment / advisory / vision (`ANTHROPIC_FAST_MODEL` / `ANTHROPIC_MODEL`).
 - **Sources = fetch from official public sites.** The missing SEBI/AMFI documents are being
   downloaded from sebi.gov.in / amfiindia.com into `sources/`. See `sources/SOURCES.md`.
 - **Repo = public + genericized** (for portfolio). Internal checklist local-only/gitignored;
