@@ -1,12 +1,15 @@
 # CLAUDE.md — SEBI Ad Code Compliance Checker
 
-@README.md
+@docs/PRODUCT_SPEC.md
 
-The README above is the single source of truth for **what** we are building and **why**.
-This file adds the standing **working rules** for every session, plus environment notes and
-open decisions. If the two conflict, the README wins on product/design; this file wins on process.
+The **product spec** above (`docs/PRODUCT_SPEC.md`, formerly the repo's `README.md`) is the single
+source of truth for **what** we are building and **why**. `README.md` is now a plain-English
+**portfolio overview** for recruiters — not the spec. This file adds the standing **working rules**
+for every session, plus environment notes and open decisions. If they conflict, the product spec
+wins on product/design; this file wins on process. (Code/docstring references to `README §N` mean
+the product-spec section numbers, which are preserved.)
 
-## Standing working rules (README §10)
+## Standing working rules (product spec §10)
 - **Never merge the three layers** (rules-as-checklist / factsheet fact-check / advisory) into
   one prompt, one score, or one report section. The merge looks like a simplification; it
   destroys the design.

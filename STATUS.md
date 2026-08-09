@@ -73,12 +73,27 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
 - 2 active KB records dropped on schema-validation edge cases (163 written).
 
 ## Parked to-dos (do before flipping the GitHub repo to public)
-- **Portfolio-facing README.** _Parked by user 2026-08-07._ The current `README.md` reads as a
-  technical build spec — too dense for recruiters. Rewrite it in the style of the invoice-extractor
-  repo: problem-first, plain-language, "what it does", design highlights, screenshots/demo. **Do NOT
-  just overwrite `README.md`** — it is the product spec that `CLAUDE.md` imports via `@README.md`.
-  Plan: move the spec to `docs/PRODUCT_SPEC.md` (or `SPEC.md`), repoint the `CLAUDE.md` import at it,
-  then make `README.md` the portfolio landing page. Keep the three-layer story front and centre.
+- ✅ **Portfolio-facing README** — done 2026-08-08. Spec moved to `docs/PRODUCT_SPEC.md` (CLAUDE.md
+  import repointed); `README.md` is now a plain-English portfolio overview (problem → what it does →
+  why → mermaid architecture → worked example → tech → limitations → responsible-data → setup).
+- ⬜ **Public demo + API-cost control** — _parked by user 2026-08-08._ Worry: a public Streamlit demo
+  that calls the Anthropic API can rack up cost if a recruiter (or anyone) hammers it. User also feels
+  a working **demo lands better with recruiters than a README**. Key constraint: a GitHub repo is
+  all-or-nothing public/private — you can't make *parts* of one repo public; the levers are the demo
+  deployment + gating, not partial-repo visibility (splitting into public-code + private-secrets repos
+  is possible but overkill). Options to weigh when we pick this up:
+  1. **Cached "demo mode" (recommended).** Public demo runs the bundled samples from pre-generated
+     verdicts committed as JSON — **zero API calls, zero cost**, fully public, still shows the whole UX.
+     Live upload either requires the visitor to paste their own key ("bring your own key") or is off in
+     demo mode. Best cost/safety.
+  2. **Access-gated live demo.** Deploy on Streamlit Community Cloud behind a password/access code
+     (`st.secrets`); share the code with recruiters. Uses your key, but only for invited users.
+  3. **Hard cost cap + cheap tier.** Spend limit on the key, force Haiku everywhere in the demo,
+     per-session rate limit. Simple but still exposed.
+  4. **Private repo + read access on request.** Keep the repo private, grant recruiters read access,
+     do a live walkthrough. No public exposure at all.
+  Likely direction: (1) cached demo-mode public site + optional gated "live" mode; repo public with the
+  README as the shop window and the demo as the closer.
 
 ## Next steps — Day 3 ✅ COMPLETE
 1. ✅ **Layer 3 advisory** — done (`src/advisory.py`, wired into `build_verdict` + CLI).
