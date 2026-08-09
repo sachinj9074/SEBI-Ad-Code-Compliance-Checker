@@ -76,9 +76,11 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
 - ✅ **Portfolio-facing README** — done 2026-08-08. Spec moved to `docs/PRODUCT_SPEC.md` (CLAUDE.md
   import repointed); `README.md` is now a plain-English portfolio overview (problem → what it does →
   why → mermaid architecture → worked example → tech → limitations → responsible-data → setup).
-- ⬜ **Public demo + API-cost control** — _parked by user 2026-08-08._ Worry: a public Streamlit demo
-  that calls the Anthropic API can rack up cost if a recruiter (or anyone) hammers it. User also feels
-  a working **demo lands better with recruiters than a README**. Key constraint: a GitHub repo is
+- ⬜ **Access-controlled hosted demo + API-cost control** — _user wants this actually built, 2026-08-09_
+  (elevated from "parked": they intend to stand up a real gated live demo, not leave it as a roadmap
+  line). Worry: a public Streamlit demo that calls the Anthropic API can rack up cost if a recruiter
+  (or anyone) hammers it. User also feels a working **demo lands better with recruiters than a README**.
+  Key constraint: a GitHub repo is
   all-or-nothing public/private — you can't make *parts* of one repo public; the levers are the demo
   deployment + gating, not partial-repo visibility (splitting into public-code + private-secrets repos
   is possible but overkill). Options to weigh when we pick this up:
@@ -94,6 +96,20 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
      do a live walkthrough. No public exposure at all.
   Likely direction: (1) cached demo-mode public site + optional gated "live" mode; repo public with the
   README as the shop window and the demo as the closer.
+- ⬜ **Real-world evaluation set** — _user to source, 2026-08-09._ Current eval set is the corpus'
+  built-in pass/fail examples only. User will seek labelled, reviewed marketing material from internal
+  teams to build a genuine eval file; hold a slot for it. Now a README roadmap item too.
+- ⬜ **RBAC / accounts / rule-management + maker-checker** — new roadmap items (README). Login, role-based
+  access, a UI to add/edit rules without touching code, and maker-checker approval on any rule-set change.
+
+## Writing/README conventions (2026-08-09)
+- **No em dashes** in any generated content, ever (README, docs, commits, code comments, chat). Use
+  colons/commas/parens/periods. Standing rule across all sessions.
+- **README does not disclose** internal-checklist provenance, `[AMC]`/`[Sponsor Bank]` genericization, or
+  "tested only with synthetic copy" (user plans to demo real material). Corpus framed as public SEBI/AMFI
+  sources. Actual repo data-handling per CLAUDE.md is unchanged.
+- README now carries a **"What it improves"** business-impact section (TAT, rework, bandwidth) with
+  numbers framed as levers to measure, not invented figures.
 
 ## Next steps — Day 3 ✅ COMPLETE
 1. ✅ **Layer 3 advisory** — done (`src/advisory.py`, wired into `build_verdict` + CLI).
