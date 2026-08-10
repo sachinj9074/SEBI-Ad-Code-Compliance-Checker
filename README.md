@@ -145,11 +145,13 @@ streamlit run app/app.py
 
 ## Demo
 
-An access-controlled hosted demo is being set up, so it can be shared without leaving an open, billable endpoint exposed. In the meantime I'm happy to give a **live walkthrough** or **private demo access on request**.
+**Live app:** https://sebi-ad-code-compliance-checker-k5vvaxocy8kvez3cpqdtxq.streamlit.app/
+
+Open it and pick a **bundled sample** from the sidebar to see a full, real verdict straight away. The bundled samples run from pre-computed results, so exploring the demo is instant and costs nothing. To run a live check on your own creative, an access code is available on request.
 
 ## Roadmap
 
-- **Access-controlled hosted demo** (in progress) and a short screen-recording walkthrough
+- **A short screen-recording walkthrough** of the demo
 - **User accounts and role-based access control (RBAC)** for teams
 - **A rule-management interface** so compliance can add and edit rules without touching code
 - **Maker-checker approval** (under RBAC) for changes to the rule set, so new or edited rules are reviewed before they go live
