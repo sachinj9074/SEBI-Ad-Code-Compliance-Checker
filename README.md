@@ -149,6 +149,10 @@ streamlit run app/app.py
 
 Open it and pick a **bundled sample** from the sidebar to see a full, real verdict straight away. The bundled samples run from pre-computed results, so exploring the demo is instant and costs nothing. To run a live check on your own creative, an access code is available on request.
 
+![The one-page verdict for a sample with planted violations: a plain-language "not ready to send yet" headline, a clickable summary dashboard (must-fix, human-check, fact issues, advisory), the features the tool detected, and the fixes grouped below.](docs/img/demo-verdict.png)
+
+![The home screen: pick a bundled sample or upload a creative, choose the business area and creative type, and run the check.](docs/img/demo-home.png)
+
 ## Roadmap
 
 - **A short screen-recording walkthrough** of the demo
