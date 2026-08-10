@@ -76,11 +76,19 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
 - ✅ **Portfolio-facing README** — done 2026-08-08. Spec moved to `docs/PRODUCT_SPEC.md` (CLAUDE.md
   import repointed); `README.md` is now a plain-English portfolio overview (problem → what it does →
   why → mermaid architecture → worked example → tech → limitations → responsible-data → setup).
-- ⬜ **Access-controlled hosted demo + API-cost control** — _user wants this actually built, 2026-08-09_
-  (elevated from "parked": they intend to stand up a real gated live demo, not leave it as a roadmap
-  line). Worry: a public Streamlit demo that calls the Anthropic API can rack up cost if a recruiter
-  (or anyone) hammers it. User also feels a working **demo lands better with recruiters than a README**.
-  Key constraint: a GitHub repo is
+- 🟡 **Access-controlled hosted demo + API-cost control** — _code-complete 2026-08-10; awaiting user's
+  dashboard steps._ **Decided (user, 2026-08-10): cached public demo + password-gated live mode; repo
+  public.** Built: `scripts/build_demo_cache.py` + committed `demo_cache/*.json` (pre-computed verdicts
+  for the 4 bundled samples, incl. the vision banner); `app/app.py` DEMO_MODE (samples load from cache,
+  zero API) + LIVE_PASSWORD gate + per-session run cap; `.streamlit/config.toml`,
+  `.streamlit/secrets.toml.example`, `docs/DEPLOY.md`. Headless AppTest confirms cached render needs no
+  key and the gate appears. **Remaining (user-only, in their dashboards):** (1) set an Anthropic monthly
+  spend cap; (2) flip repo to Public; (3) deploy on Streamlit Community Cloud (`app/app.py`) and paste
+  secrets (key, `DEMO_MODE="true"`, a `LIVE_PASSWORD`). Regenerate cache after any corpus/prompt/sample
+  change: `.venv\Scripts\python.exe scripts\build_demo_cache.py`.
+  Original framing (kept for context): a public Streamlit demo that calls the Anthropic API can rack up
+  cost if anyone hammers it; a working demo lands better with recruiters than a README. Key constraint:
+  a GitHub repo is
   all-or-nothing public/private — you can't make *parts* of one repo public; the levers are the demo
   deployment + gating, not partial-repo visibility (splitting into public-code + private-secrets repos
   is possible but overkill). Options to weigh when we pick this up:

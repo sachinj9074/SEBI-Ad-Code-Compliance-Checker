@@ -1,0 +1,12 @@
+# Streamlit app configuration (committed; safe, no secrets here).
+[server]
+# Keep uploads small as a light abuse guardrail on the hosted demo.
+maxUploadSize = 10
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#2563eb"

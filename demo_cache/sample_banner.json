@@ -1,0 +1,945 @@
+{
+  "schema_version": "0.1.0",
+  "meta": {
+    "source_filename": "sample_banner.png",
+    "areas_selected": [
+      "mf_scheme"
+    ],
+    "creative_type": "general_kv",
+    "run_at": "2026-08-10T15:53:29.121054+00:00",
+    "model_used": "claude-sonnet-5",
+    "tool_version": "0.1.0",
+    "demo_cached": true
+  },
+  "extraction": {
+    "extracted_text": "[AMC] Flexi Cap Fund\nAn open-ended dynamic equity scheme\n\n5-Year CAGR: 12.4%\n\nStart a SIP today.\n\nRISK-O-METER\nVERY HIGH\n\nMutual Fund investments are subject to market risks, read all scheme related documents carefully. Past performance may or may not be sustained in future.",
+    "confidence": 0.93,
+    "source_kind": "image",
+    "warnings": [
+      "Mandatory market-risk warning present but not legibly sized (vision)"
+    ],
+    "languages_detected": [
+      "English"
+    ],
+    "layout_notes": "Clean white background layout. Bold black headline top-left with fund name, followed by a gray subtitle line describing the scheme. Mid-left area highlights a large green CAGR statistic, with a call-to-action line below it in black. To the right, a bordered orange-outlined box contains the Risk-o-meter label and 'VERY HIGH' rating in bold orange/red text. The mandatory disclaimer text is placed at the very bottom-left corner in extremely small gray font, disproportionate to the rest of the body text on the creative. No images, photos, or persons are present anywhere in the creative.",
+    "legibility_notes": "The mandatory 14-word market risk disclaimer is present but rendered in a very small font size (appears to be roughly 6-7px equivalent) with low-contrast light gray coloring against the white background, making it very difficult to read compared to the large, bold body text and headlines used elsewhere in the creative. This is a classic 'present but illegible' compliance issue."
+  },
+  "feature_detection": {
+    "features": [
+      {
+        "feature": "performance",
+        "present": true,
+        "evidence": "5-Year CAGR: 12.4%"
+      },
+      {
+        "feature": "named_stocks",
+        "present": false
+      },
+      {
+        "feature": "named_sectors",
+        "present": false
+      },
+      {
+        "feature": "sip_reference",
+        "present": true,
+        "evidence": "Start a SIP today."
+      },
+      {
+        "feature": "aum_figure",
+        "present": false
+      },
+      {
+        "feature": "yield_ytm",
+        "present": false
+      },
+      {
+        "feature": "prominent_person",
+        "present": false
+      },
+      {
+        "feature": "scheme_name",
+        "present": true,
+        "evidence": "Flexi Cap Fund"
+      },
+      {
+        "feature": "non_english_language",
+        "present": false
+      },
+      {
+        "feature": "idcw_payout",
+        "present": false
+      },
+      {
+        "feature": "tax_reference",
+        "present": false
+      },
+      {
+        "feature": "fund_of_funds",
+        "present": false
+      },
+      {
+        "feature": "elss",
+        "present": false
+      },
+      {
+        "feature": "graph_chart",
+        "present": false
+      },
+      {
+        "feature": "market_cap_terms",
+        "present": false
+      },
+      {
+        "feature": "index_etf",
+        "present": false
+      },
+      {
+        "feature": "exchange_listed",
+        "present": false
+      },
+      {
+        "feature": "offshore_promotion",
+        "present": false
+      },
+      {
+        "feature": "app_rating",
+        "present": false
+      },
+      {
+        "feature": "planning_tool",
+        "present": false
+      },
+      {
+        "feature": "asset_allocation",
+        "present": false
+      },
+      {
+        "feature": "sip_low_ticket",
+        "present": false
+      },
+      {
+        "feature": "small_cap_scheme",
+        "present": false
+      },
+      {
+        "feature": "merged_scheme",
+        "present": false
+      }
+    ]
+  },
+  "rule_layer": {
+    "results": [
+      {
+        "rule_id": "PROH-001",
+        "title": "No assured or guaranteed returns",
+        "description": "The creative must not state, imply, or suggest assured, guaranteed, protected, risk-free, or fixed returns for any mutual fund scheme.",
+        "triggered_by": "unconditional",
+        "severity": "critical",
+        "source_clause": "SEBI (Mutual Funds) Regulations 1996, Sixth Schedule (Advertisement Code) clause (b); MF Master Circular 2026-03-20, Chapter 14",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "pass",
+        "explanation": "The creative shows historical CAGR performance data with proper risk disclosures and does not claim or imply any guaranteed, assured, or fixed returns."
+      },
+      {
+        "rule_id": "PROH-002",
+        "title": "No false, misleading, or deceptive statements",
+        "description": "The creative must not contain statements that are false, misleading, biased, or deceptive, based on assumptions or projections, and must not mislead directly, by implication, or by omission.",
+        "triggered_by": "unconditional",
+        "severity": "critical",
+        "source_clause": "Sixth Schedule (Advertisement Code) clauses (a), (b), (c)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "fail",
+        "offending_text": "5-Year CAGR: 12.4%",
+        "explanation": "Showing only one selected return figure with no benchmark comparison, no as-of date, and no other time periods lets readers assume the fund is a strong, low-risk performer without the context needed to judge it fairly, which is misleading by omission.",
+        "suggested_rewrite": "Add the corresponding benchmark index return for the same 5-year period, the 'as-of' date for the CAGR figure, and returns for other standard periods (1-year, 3-year, since inception) alongside the risk-o-meter, so the performance claim is balanced and not cherry-picked."
+      },
+      {
+        "rule_id": "PROH-003",
+        "title": "No exaggerated or unwarranted slogans",
+        "description": "The creative must not carry any slogan that is exaggerated or unwarranted, or that is inconsistent with or unrelated to the nature, risk, and return profile of the product, including unsubstantiated superlatives.",
+        "triggered_by": "unconditional",
+        "severity": "high",
+        "source_clause": "Sixth Schedule (Advertisement Code) clause (d)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "pass",
+        "explanation": "The creative contains no slogans, superlatives, or exaggerated claims, only factual performance data and standard disclosures."
+      },
+      {
+        "rule_id": "PROH-004",
+        "title": "No testimonials or rankings",
+        "description": "The creative must not contain any testimonials or any ranking based on any criteria.",
+        "triggered_by": "unconditional",
+        "severity": "high",
+        "source_clause": "Sixth Schedule (Advertisement Code) clause (b)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "pass",
+        "explanation": "The creative only shows the fund's own performance figure and risk meter without any customer testimonials or comparative rankings against other funds."
+      },
+      {
+        "rule_id": "PROH-005",
+        "title": "No discrediting or unfair comparisons",
+        "description": "The creative must not directly or indirectly discredit other advertisements or make unfair comparisons.",
+        "triggered_by": "unconditional",
+        "severity": "medium",
+        "source_clause": "Sixth Schedule (Advertisement Code) clause (h)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "pass",
+        "explanation": "The creative contains no mention or comparison to other advertisements or funds, so it cannot be discrediting anything."
+      },
+      {
+        "rule_id": "PROH-006",
+        "title": "Consistent with SID/SAI/KIM",
+        "description": "The creative must contain information that is timely and consistent with the disclosures made in the Scheme Information Document, Statement of Additional Information, and Key Information Memorandum; it must not claim features beyond those disclosures.",
+        "triggered_by": "unconditional",
+        "severity": "medium",
+        "source_clause": "Sixth Schedule (Advertisement Code) clause (g)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "assisted",
+        "verdict": "needs_review",
+        "explanation": "Assisted rule — requires a human check."
+      },
+      {
+        "rule_id": "PROH-007",
+        "title": "No exploiting investor inexperience; avoid excessive jargon",
+        "description": "The advertisement must not be framed to exploit the lack of experience or knowledge of investors. Extensive use of technical or legal terminology, complex language, or excessive detail that may detract investors must be avoided.",
+        "triggered_by": "unconditional",
+        "severity": "medium",
+        "source_clause": "Sixth Schedule (Advertisement Code) clause (f)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "pass",
+        "explanation": "The creative uses simple, plain language and standard fund terms without excessive jargon or complexity that would confuse an ordinary investor."
+      },
+      {
+        "rule_id": "PROH-008",
+        "title": "No forecasts or projections; commentary limits",
+        "description": "The advertisement must not present forecasts, assumed returns, or numerical forecasts of GDP or any stock metric. General market and economic commentary is permitted; stock-specific commentary is not; sector commentary is permitted only if it contains no numerical forecasts.",
+        "triggered_by": "unconditional",
+        "severity": "high",
+        "source_clause": "Sixth Schedule (Advertisement Code) clause (b); internal Dos & Don'ts guidance",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "pass",
+        "explanation": "The creative only shows a historical 5-year CAGR figure with the required past-performance disclaimer, and contains no forward-looking return, GDP, or stock-specific numerical forecasts."
+      },
+      {
+        "rule_id": "CELEB-001",
+        "title": "No celebrity in the advertisement",
+        "description": "No celebrity shall form part of the advertisement — whether by depiction, endorsement, or by name or reference (e.g. an article drawing an analogy to a named celebrity's discipline or routine). When a prominent person is detected or a well-known name is referenced, they must be reviewed against the celebrity definition below — a match on any single criterion makes the person a celebrity. Principle: once a celebrity, always a celebrity.",
+        "triggered_by": "prominent_person",
+        "severity": "high",
+        "source_clause": "Sixth Schedule (Advertisement Code) clause (e); internal celebrity checklist (7-part definition)",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "assisted",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "CELEB-002",
+        "title": "No caricatures, avatars, or memes of cine personalities",
+        "description": "The creative must not use caricatures, avatars, or memes of popular cine actors, movie posters, movie or series scenes, or 'filmi' dialogues in promotional material, especially on social media.",
+        "triggered_by": "prominent_person",
+        "severity": "medium",
+        "source_clause": "Internal celebrity checklist item 8; Sixth Schedule (Advertisement Code) clause (e)",
+        "provenance": [
+          "internal_policy",
+          "sebi"
+        ],
+        "check_type": "assisted",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-001",
+        "title": "Standard 14-word market-risk warning (verbatim)",
+        "description": "The creative must carry the standard warning in legible font, verbatim, with no addition or deletion of words.",
+        "triggered_by": "unconditional",
+        "severity": "critical",
+        "source_clause": "Sixth Schedule (Advertisement Code) clause (i)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "needs_review",
+        "confidence": 1.0,
+        "offending_element": "disclaimer (present but illegible)",
+        "explanation": "Warning text is present but flagged as not legibly sized (vision)."
+      },
+      {
+        "rule_id": "DISC-002",
+        "title": "Vernacular (Hindi) standard warning",
+        "description": "When the creative is in a vernacular language, it must carry the standard warning in that language. A Hindi creative must carry the Hindi standard warning verbatim.",
+        "triggered_by": "non_english_language",
+        "severity": "critical",
+        "source_clause": "Sixth Schedule (Advertisement Code) clause (ia)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-003",
+        "title": "Sponsor liability disclaimer",
+        "description": "Scheme creatives must carry the sponsor liability disclaimer stating the sponsor is not liable or responsible for any loss or shortfall resulting from the operation of the scheme.",
+        "triggered_by": "unconditional",
+        "severity": "high",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (Sponsor/Statutory disclaimer)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "fail",
+        "confidence": 0.422,
+        "explanation": "A disclaimer this creative must carry is missing (or its wording differs too much from the mandated text — closest match 42%).",
+        "suggested_rewrite": "Add this exact text: “The Sponsor - [Sponsor Bank], is not liable or responsible for any loss or shortfall resulting from the operation of the scheme.”"
+      },
+      {
+        "rule_id": "DISC-004",
+        "title": "Product suitability disclaimer",
+        "description": "Scheme creatives must carry the product suitability statement advising investors to consult their financial advisers if in doubt about whether the product is suitable for them.",
+        "triggered_by": "unconditional",
+        "severity": "medium",
+        "source_clause": "MF Master Circular 2026-03-20 (product labelling / product suitability); internal checklist (KV requirements)",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "fail",
+        "confidence": 0.436,
+        "explanation": "A disclaimer this creative must carry is missing (or its wording differs too much from the mandated text — closest match 44%).",
+        "suggested_rewrite": "Add this exact text: “Investors should consult their financial advisers if in doubt about whether the product is suitable for them.”"
+      },
+      {
+        "rule_id": "DISC-005",
+        "title": "Product labelling and risk-o-meter",
+        "description": "Scheme creatives must include the product label with the scheme and benchmark risk-o-meter (and the Potential Risk Class matrix for debt schemes), displayed legibly.",
+        "triggered_by": "unconditional",
+        "severity": "high",
+        "source_clause": "MF Master Circular 2026-03-20 (product labelling); internal checklist (KV requirements)",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "assisted",
+        "verdict": "pass",
+        "explanation": "Risk-o-meter present and legible (vision) — Very High."
+      },
+      {
+        "rule_id": "DISC-006",
+        "title": "Past-performance disclaimer when performance shown",
+        "description": "When performance of any scheme, category, index, or benchmark is shown, the creative must carry the standard performance disclaimer that past performance may or may not be sustained in future.",
+        "triggered_by": "performance",
+        "severity": "high",
+        "source_clause": "MF Master Circular 2026-03-20, Chapter 14; internal Performance checklist item 11",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "pass",
+        "confidence": 1.0
+      },
+      {
+        "rule_id": "DISC-007",
+        "title": "Stock disclaimer when stocks are named",
+        "description": "When individual stocks are named, the creative must carry the stock disclaimer clarifying that the stocks are used to explain the concept, are for illustration only, are not investment advice, and may or may not be part of the portfolio.",
+        "triggered_by": "named_stocks",
+        "severity": "medium",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (Stock disclaimer)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-008",
+        "title": "Sector disclaimer when sectors are named",
+        "description": "When sectors are named, the creative must carry the sector disclaimer clarifying that the sectors are for general assessment only, not a complete disclosure, not investment advice, and that the schemes may or may not have investments in those sectors.",
+        "triggered_by": "named_sectors",
+        "severity": "medium",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (Sector disclaimer)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-010",
+        "title": "Registered name and SEBI registration number",
+        "description": "The creative must display the AMC's registered name and SEBI registration number. In video and audio (audio-visual) content they must appear at the beginning of the content (effective 1 May 2026); in static creatives (print, image, key visual) prominent display — for example a footer — satisfies the requirement.",
+        "triggered_by": "unconditional",
+        "severity": "medium",
+        "source_clause": "SEBI requirement effective 2026-05-01 (registered name + registration number at the start of audio-visual securities-market content; prominent display on static creatives); internal checklist — Disclaimer Repository (SEBI registration number, mandatory)",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "fail",
+        "offending_text": "[AMC] Flexi Cap Fund",
+        "explanation": "The ad only shows a placeholder for the AMC name and never states the full registered AMC name or its SEBI registration number, which must be clearly shown.",
+        "suggested_rewrite": "Add a footer (or opening frame if video) with the AMC's full registered name and its SEBI registration number, e.g. 'ABC Mutual Fund, SEBI Reg. No. XXXXX'."
+      },
+      {
+        "rule_id": "DISC-011",
+        "title": "Taxation disclaimer when tax implications are mentioned",
+        "description": "When tax benefits or tax implications are mentioned, the creative must carry the taxation disclaimer advising investors to consult their tax advisors.",
+        "triggered_by": "tax_reference",
+        "severity": "medium",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (Taxation disclaimer)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-012",
+        "title": "Fund-of-Funds recurring-expenses disclaimer",
+        "description": "For Fund of Funds schemes, the creative must disclose that investors bear the recurring expenses of the scheme in addition to the expenses of the underlying schemes.",
+        "triggered_by": "fund_of_funds",
+        "severity": "medium",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (FOF Schemes disclaimer)",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-013",
+        "title": "ELSS lock-in and tax-benefit disclaimer",
+        "description": "For ELSS / tax-saver schemes, the creative must disclose the 3-year lock-in and the Section 80C eligibility, and advise investors to consult their own tax consultant.",
+        "triggered_by": "elss",
+        "severity": "medium",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (ELSS disclaimer)",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-014",
+        "title": "Graph illustration disclaimer",
+        "description": "When a graph is shown, the creative must carry the graph disclaimer clarifying it is for illustration only, not for developing or implementing an investment strategy, and that past performance may or may not be sustained.",
+        "triggered_by": "graph_chart",
+        "severity": "low",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (Graph disclaimer)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-015",
+        "title": "Market-cap definitions when cap terms are used",
+        "description": "When large-cap / mid-cap / small-cap terms are used, the creative must include the SEBI market-capitalisation definitions.",
+        "triggered_by": "market_cap_terms",
+        "severity": "low",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (Market Cap definitions)",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-016",
+        "title": "Index-provider licensing disclaimer",
+        "description": "For index funds / ETFs based on an NSE or BSE index, the creative must carry the applicable index-provider (NSE Indices / AIPL-BSE) licensing disclaimer stating the scheme is not sponsored, endorsed, or promoted by the index provider.",
+        "triggered_by": "index_etf",
+        "severity": "medium",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (Index/ETF index-licensing disclaimers)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-017",
+        "title": "Exchange-listing disclaimer",
+        "description": "For ETFs and close-ended schemes listed on NSE / BSE, the creative must carry the exchange's disclaimer that the permission given by the exchange does not imply approval of the SID or scheme.",
+        "triggered_by": "exchange_listed",
+        "severity": "medium",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (NSE/BSE listing disclaimers)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-018",
+        "title": "Offshore-promotion disclaimer",
+        "description": "When domestic schemes are promoted to offshore investors, the creative must carry the offshore disclaimer clarifying it is not a solicitation or offer to offshore investors and that the product is meant for investors based in India.",
+        "triggered_by": "offshore_promotion",
+        "severity": "medium",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (offshore-investor advertisement disclaimer)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-019",
+        "title": "App-rating disclaimer",
+        "description": "When an app-store rating is displayed, the creative must clarify that the rating is not for the schemes of the AMC.",
+        "triggered_by": "app_rating",
+        "severity": "low",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (App Rating disclaimer)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-020",
+        "title": "Risk-profiler / goal-planner tool disclaimer",
+        "description": "When a risk profiler, goal planner, or similar planning tool is presented, the creative must carry the tool disclaimer that it is only an aid based on the investor's inputs and that investors are responsible for their own decisions.",
+        "triggered_by": "planning_tool",
+        "severity": "medium",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (Risk Profiler / Goal Planner disclaimer)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-021",
+        "title": "Asset-allocation / investment-strategy disclaimer",
+        "description": "When current portfolio allocation or investment strategy is shown, the creative must state that it is based on current market conditions and subject to change per the fund manager's view, and refer to the SID.",
+        "triggered_by": "asset_allocation",
+        "severity": "low",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (Asset Allocation & Investment Strategy disclaimer)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-022",
+        "title": "SIP low-ticket availability disclaimer",
+        "description": "When a SIP as low as ₹100 or ₹10 is advertised, the creative must clarify that not all schemes offer this feature.",
+        "triggered_by": "sip_low_ticket",
+        "severity": "low",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (SIP as low as 100/10)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "DISC-023",
+        "title": "Small-cap SIP/STP registration restriction disclaimer",
+        "description": "For small-cap schemes, where a per-instalment SIP/STP restriction applies, the creative must disclose the applicable registration limit.",
+        "triggered_by": "small_cap_scheme",
+        "severity": "low",
+        "source_clause": "Internal compliance checklist — Disclaimer Repository (Small Cap disclaimer)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "PERF-001",
+        "title": "CAGR for 1Y / 3Y / 5Y / since inception",
+        "description": "Performance must be advertised in terms of CAGR for at least the past 1 year, 3 years, 5 years, and since inception.",
+        "triggered_by": "performance",
+        "severity": "high",
+        "source_clause": "MF Master Circular 2026-03-20, para 14.2.1(a)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "fail",
+        "offending_text": "5-Year CAGR: 12.4%",
+        "explanation": "The ad only shows the 5-year return but SEBI requires showing performance for 1 year, 3 years, 5 years, and since inception all together, so viewers can't see the fund's full track record.",
+        "suggested_rewrite": "Add CAGR figures for 1-year, 3-year, and since-inception periods alongside the existing 5-year CAGR, e.g. '1-Year CAGR: X% | 3-Year CAGR: X% | 5-Year CAGR: 12.4% | Since Inception CAGR: X%'."
+      },
+      {
+        "rule_id": "PERF-002",
+        "title": "Point-to-point return on ₹10,000",
+        "description": "Point-to-point returns on a standard investment of Rs. 10,000 must also be provided alongside CAGR.",
+        "triggered_by": "performance",
+        "severity": "medium",
+        "source_clause": "MF Master Circular 2026-03-20, para 14.2.1(b)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "fail",
+        "offending_text": "5-Year CAGR: 12.4%",
+        "explanation": "The ad shows only the CAGR growth rate but doesn't show what a real Rs. 10,000 investment would have actually grown to, which investors need to understand the real rupee impact of the returns.",
+        "suggested_rewrite": "Add a line such as 'Value of Rs. 10,000 invested 5 years ago: Rs. [X]' next to the CAGR figure."
+      },
+      {
+        "rule_id": "PERF-003",
+        "title": "Plan stated + different-expense-structure footnote",
+        "description": "It must be specifically mentioned whether the performance shown is of the Direct or Regular plan, along with a footnote stating that different plans have a different expense structure.",
+        "triggered_by": "performance",
+        "severity": "medium",
+        "source_clause": "MF Master Circular 2026-03-20, para 14.2.1(d)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "fail",
+        "offending_text": "5-Year CAGR: 12.4%",
+        "explanation": "The ad shows a performance number but never says whether it's for the Direct or Regular plan, and doesn't include the required footnote explaining that these plans have different expense structures and therefore different returns.",
+        "suggested_rewrite": "Add a label next to the return figure such as '5-Year CAGR: 12.4% (Direct Plan)' or '(Regular Plan)', and add a footnote like 'Direct Plan and Regular Plan have different expense structures; returns shown are for the [Direct/Regular] Plan.'"
+      },
+      {
+        "rule_id": "PERF-004",
+        "title": "Data as of last day of preceding month-end",
+        "description": "Performance information must be based on the period computed from the last day of the month-end preceding the date of the advertisement.",
+        "triggered_by": "performance",
+        "severity": "medium",
+        "source_clause": "MF Master Circular 2026-03-20, para 14.2.1(c)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "fail",
+        "offending_text": "5-Year CAGR: 12.4%",
+        "explanation": "The ad shows a performance number without stating the 'as on' date it was calculated from, so there's no way to confirm it's based on the required month-end-before-the-ad-date period.",
+        "suggested_rewrite": "Add an explicit 'as on DD/MM/YYYY' date next to the CAGR figure, where that date is the last day of the month prior to when the ad is released, e.g. '5-Year CAGR: 12.4% (as on 31 Jan 2026)'."
+      },
+      {
+        "rule_id": "PERF-005",
+        "title": "Fund-manager-change footnote",
+        "description": "If the scheme has not been managed by the same fund manager for the full period of the performance shown, that must be disclosed in a footnote.",
+        "triggered_by": "performance",
+        "severity": "low",
+        "source_clause": "MF Master Circular 2026-03-20, paras 14.2.1(e), 14.2.6(c)",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "assisted",
+        "verdict": "needs_review",
+        "explanation": "Assisted rule — requires a human check."
+      },
+      {
+        "rule_id": "PERF-006",
+        "title": "Short-track-record performance limits",
+        "description": "Where the scheme has been in existence for less than six months, past performance must not be provided; if in existence for more than six months but less than one year, only the simple annualised growth rate (past 6 months and since inception) may be shown.",
+        "triggered_by": "performance",
+        "severity": "high",
+        "source_clause": "MF Master Circular 2026-03-20, para 14.2.2",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "assisted",
+        "verdict": "needs_review",
+        "explanation": "Assisted rule — requires a human check."
+      },
+      {
+        "rule_id": "PERF-007",
+        "title": "Scheme and benchmark risk-o-meter when performance shown",
+        "description": "When the performance of a scheme or benchmark is displayed, the risk-o-meter of both the scheme and the benchmark must be given.",
+        "triggered_by": "performance",
+        "severity": "medium",
+        "source_clause": "Internal Performance checklist item 12; MF Master Circular 2026-03-20 (product labelling)",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "assisted",
+        "verdict": "needs_review",
+        "explanation": "Assisted rule — requires a human check."
+      },
+      {
+        "rule_id": "PERF-008",
+        "title": "SIP performance requires lumpsum, cash-flow detail, and XIRR note",
+        "description": "When SIP performance is shown, the corresponding scheme lumpsum performance must also be shown, the SIP instalment periodicity must be stated, and an XIRR note must be given for the SIP returns.",
+        "triggered_by": "sip_reference",
+        "severity": "medium",
+        "source_clause": "Internal Performance checklist items 16-17; MF Master Circular 2026-03-20, Chapter 14",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "pass",
+        "explanation": "The creative only shows lumpsum 5-year CAGR performance and does not display any SIP returns figures, so the SIP-specific disclosure requirements (lumpsum comparison, instalment periodicity, XIRR note) are not triggered."
+      },
+      {
+        "rule_id": "PERF-009",
+        "title": "Other schemes managed by the same fund manager",
+        "description": "When a scheme's performance is advertised, performance of the other schemes managed by the same fund manager must be included (1Y/3Y/5Y CAGR with benchmarks); if the fund manager manages more than six schemes, disclose the total number and the top-3 and bottom-3 schemes.",
+        "triggered_by": "performance",
+        "severity": "medium",
+        "source_clause": "MF Master Circular 2026-03-20, para 14.2.6",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "assisted",
+        "verdict": "needs_review",
+        "explanation": "Assisted rule — requires a human check."
+      },
+      {
+        "rule_id": "PERF-010",
+        "title": "IDCW payout disclosures",
+        "description": "While advertising IDCW payouts, the IDCW declared or paid must be shown in rupees per unit along with the face value and the prevailing NAV at declaration; and immediately below any pay-out figure it must be stated that the NAV falls to the extent of the payout and statutory levy.",
+        "triggered_by": "idcw_payout",
+        "severity": "medium",
+        "source_clause": "MF Master Circular 2026-03-20, paras 14.1.1-14.1.3",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "PERF-011",
+        "title": "Short-horizon fund annualised yields",
+        "description": "For Overnight, Liquid, and Money Market funds, performance may be advertised by simple annualisation of yields only if a figure is available for at least 7, 15, and 30 calendar days, and provided it does not present an unrealistic or misleading picture.",
+        "triggered_by": "performance",
+        "severity": "medium",
+        "source_clause": "MF Master Circular 2026-03-20, para 14.2.3",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "assisted",
+        "verdict": "needs_review",
+        "explanation": "Assisted rule — requires a human check."
+      },
+      {
+        "rule_id": "PERF-012",
+        "title": "Additional benchmark disclosure",
+        "description": "Performance must also show the prescribed additional benchmark for the scheme category (e.g. Sensex/Nifty for equity, 1-year T-Bill for short-duration debt/arbitrage, 10-year GOI security for other debt), in INR and as CAGR, alongside the scheme benchmark.",
+        "triggered_by": "performance",
+        "severity": "medium",
+        "source_clause": "MF Master Circular 2026-03-20, para 14.2.4",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "assisted",
+        "verdict": "needs_review",
+        "explanation": "Assisted rule — requires a human check."
+      },
+      {
+        "rule_id": "PERF-013",
+        "title": "Period-specific performance labelling",
+        "description": "Any disclosure of quarterly, half-yearly, or yearly performance must pertain to the respective calendar quarter, half-year, or year only.",
+        "triggered_by": "performance",
+        "severity": "low",
+        "source_clause": "MF Master Circular 2026-03-20, para 14.2.5",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "pass",
+        "explanation": "The creative only shows a 5-year CAGR figure and doesn't present any quarterly, half-yearly, or yearly performance data, so the calendar-period rule doesn't apply here."
+      },
+      {
+        "rule_id": "PERF-014",
+        "title": "Post-merger performance disclosure",
+        "description": "Where performance is shown for a scheme that resulted from a merger, the correct surviving-scheme rule must be applied: weighted-average performance when both schemes had identical features, the retained scheme's performance when its features are retained, and no past performance when a new scheme emerges.",
+        "triggered_by": "merged_scheme",
+        "severity": "medium",
+        "source_clause": "MF Master Circular 2026-03-20, para 14.3",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "assisted",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "AUM-001",
+        "title": "AUM figure requires link to AUM breakdown",
+        "description": "Where AUM figures are included, a link to the report on AUM by geography and asset class on the website must be given.",
+        "triggered_by": "aum_figure",
+        "severity": "medium",
+        "source_clause": "Internal Performance checklist item 18; MF Master Circular 2026-03-20, Chapter 14",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "YLD-001",
+        "title": "Yield creative required fields",
+        "description": "A creative showing yield must display the scheme name and description, the annualised Portfolio YTM (semi-annualised YTM to be annualised), the Macaulay Duration, the Residual Maturity, and the 'as on' date, in addition to the applicable product label, risk-o-meter, and standard disclaimers.",
+        "triggered_by": "yield_ytm",
+        "severity": "medium",
+        "source_clause": "Internal checklist (Yield creative requirements); MF Master Circular 2026-03-20, Chapter 14",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "YLD-002",
+        "title": "No indicative portfolio or yield",
+        "description": "Mutual Funds, AMCs, and distributors must not offer any indicative portfolio or indicative yield, and no communication in this regard shall be issued (for open-ended schemes).",
+        "triggered_by": "unconditional",
+        "severity": "high",
+        "source_clause": "MF Master Circular 2026-03-20, para 14.4.1",
+        "provenance": [
+          "sebi"
+        ],
+        "check_type": "automated",
+        "verdict": "pass",
+        "explanation": "The creative only shows a past 5-year CAGR figure with standard disclaimers and does not present any indicative portfolio or indicative yield/return promise."
+      },
+      {
+        "rule_id": "AMFI-001",
+        "title": "13% cap on depicted future returns in tools",
+        "description": "In tools such as goal-planning calculators and return illustrations in non-scheme-related material, the higher range of the intended return depicted must not exceed 13%.",
+        "triggered_by": "planning_tool",
+        "severity": "high",
+        "source_clause": "AMFI Best Practices Guidelines Circular No. 109/2023-24 (usage of illustrations for future returns)",
+        "provenance": [
+          "amfi"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "XSELL-001",
+        "title": "No cross-selling of other products",
+        "description": "A mutual fund advertisement must not cross-sell or promote any other product or business — for example AIF or PMS offerings, insurance, or other group products. No other business may be promoted in an MF advertisement.",
+        "triggered_by": "unconditional",
+        "severity": "medium",
+        "source_clause": "Internal Dos & Don'ts (no cross-selling of other products in an MF advertisement)",
+        "provenance": [
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "pass"
+      },
+      {
+        "rule_id": "SUBST-001",
+        "title": "Statistics and charts must cite a reliable source",
+        "description": "Statistical information, charts, and graphs, when used, must be supported by their source. A reliable, preferably publicly available source must be quoted wherever data, graphs, or charts are shown, and the figures must be verifiable and correct.",
+        "triggered_by": "graph_chart",
+        "severity": "medium",
+        "source_clause": "Internal Dos & Don'ts (statistics/charts must be source-supported); Sixth Schedule (Advertisement Code) clause (a)",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "automated",
+        "verdict": "not_applicable"
+      },
+      {
+        "rule_id": "LEGIB-001",
+        "title": "Content and disclaimers must be legible",
+        "description": "All content of the advertisement — and especially the disclaimers and notes — must be legible and in a readable font size commensurate with the size of the other text in the creative.",
+        "triggered_by": "unconditional",
+        "severity": "high",
+        "source_clause": "Sixth Schedule (Advertisement Code) clause (i) (legible fonts); internal Dos & Don'ts (legibility / commensurate font size)",
+        "provenance": [
+          "sebi",
+          "internal_policy"
+        ],
+        "check_type": "assisted",
+        "verdict": "fail",
+        "explanation": "The mandatory 14-word market risk disclaimer is present but rendered in a very small font size (appears to be roughly 6-7px equivalent) with low-contrast light gray coloring against the white background, making it very difficult to read compared to the large, bold body text and headlines used elsewhere in the creative. This is a classic 'present but illegible' compliance issue.",
+        "offending_element": "disclaimer (illegible)"
+      }
+    ],
+    "summary": {
+      "rules_run": 53,
+      "passed": 12,
+      "failed": 9,
+      "needs_review": 8,
+      "not_applicable": 24
+    }
+  },
+  "fact_check_layer": {
+    "results": [
+      {
+        "claim_text": "5-Year CAGR: 12.4%",
+        "verdict": "mismatch",
+        "claim_field": "returns",
+        "claimed_value": "12.4%",
+        "scheme_matched": "Axis Flexi Cap Fund",
+        "as_of_date": "2026-06-30",
+        "source_file": "factsheet_active_2026-06-30.pdf",
+        "plan": "regular",
+        "option": "growth",
+        "factsheet_value": "10.06%",
+        "assumption": "plan=regular; option=growth"
+      },
+      {
+        "claim_text": "RISK-O-METER VERY HIGH",
+        "verdict": "not_found",
+        "claim_field": "riskometer",
+        "claimed_value": "VERY HIGH",
+        "scheme_matched": "Axis Flexi Cap Fund",
+        "as_of_date": "2026-06-30",
+        "source_file": "factsheet_active_2026-06-30.pdf",
+        "plan": "regular",
+        "option": "growth",
+        "factsheet_value": "(not in KB)",
+        "assumption": "plan=regular; option=growth"
+      }
+    ],
+    "summary": {
+      "claims_checked": 2,
+      "matches": 0,
+      "mismatches": 1,
+      "ambiguous": 0,
+      "not_found": 1
+    }
+  },
+  "advisory_layer": {
+    "notes": [
+      {
+        "note": "The 5-Year CAGR of 12.4% is shown as a single standalone number in large green text with no benchmark comparison or context (e.g., category average, index return), which could lead an investor to assume this is an unusually strong or guaranteed-like return without any frame of reference.",
+        "area": "5-Year CAGR: 12.4%"
+      }
+    ]
+  },
+  "summary_strip": {
+    "rules_run": 53,
+    "passed": 12,
+    "failed": 9,
+    "needs_review": 8,
+    "fact_mismatches": 1,
+    "advisory_notes": 1
+  }
+}
