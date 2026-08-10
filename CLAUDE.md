@@ -16,6 +16,10 @@ the product-spec section numbers, which are preserved.)
 - **Schemas in `/schemas` are the source of truth.** Rule, verdict, and factsheet-record shapes
   are defined there. Change the schema first, then the code.
 - **Run the eval script after any corpus or prompt change** and record the accuracy number.
+- **Regenerate the demo cache after any pipeline, corpus, or prompt change.** Run
+  `scripts/build_demo_cache.py` and recommit `demo_cache/*.json`, then remind the user, so the hosted
+  demo's pre-computed sample results never drift from the live pipeline. (The hosted demo is a cached
+  public mode plus a password-gated live path; see `docs/DEPLOY.md`.)
 - **Commit after every working step** with a clear message.
 - Regulation/data come from the real, current **public** SEBI / AMFI / factsheet documents,
   versioned by date — never from memory of the rules. Record `provenance` and `source_date`
