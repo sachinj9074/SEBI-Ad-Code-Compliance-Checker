@@ -188,70 +188,78 @@ with st.sidebar:
         st.caption("IAP creatives take no creative-type input; the IAP and mandatory rules run.")
     run = st.button("Run compliance check", type="primary", use_container_width=True)
 
-if not run:
-    st.info("⬅ Upload a creative, pick the business area(s) and creative type, then run the check.")
-    st.stop()
+# ---- run: compute (or load cached) and persist in session state --------------
+# The verdict lives in st.session_state so the results survive every widget
+# interaction (section switching, acknowledgements, the report gate). A new run
+# replaces it and bumps run_id, which namespaces the per-run widget keys.
+if run:
+    if not uploads and sample_choice == NO_SAMPLE:
+        st.error("Please upload a file or pick a bundled sample.")
+        st.stop()
+    if area != "iap" and not ctypes:
+        st.error("Please select at least one creative type.")
+        st.stop()
 
-if not uploads and sample_choice == NO_SAMPLE:
-    st.error("Please upload a file or pick a bundled sample.")
-    st.stop()
-if area != "iap" and not ctypes:
-    st.error("Please select at least one creative type.")
-    st.stop()
+    # Decide the source and whether this is a zero-cost cached run or a live one.
+    use_cache = False
+    cache_file: Path | None = None
+    if uploads:
+        path = _stage_uploads(uploads)
+    else:
+        sample_filename = SAMPLES[sample_choice]
+        path = str(ROOT / "samples" / sample_filename)
+        cache_file = _cache_path(sample_filename)
+        if DEMO_MODE and cache_file.exists():
+            use_cache = True
 
-# Decide the source and whether this is a zero-cost cached run or a live one.
-use_cache = False
-cache_file: Path | None = None
-if uploads:
-    path = _stage_uploads(uploads)
-else:
-    sample_filename = SAMPLES[sample_choice]
-    path = str(ROOT / "samples" / sample_filename)
-    cache_file = _cache_path(sample_filename)
-    if DEMO_MODE and cache_file.exists():
-        use_cache = True
+    # Gate live runs in the demo.
+    if not use_cache and not _live_allowed():
+        st.warning(
+            "Live runs are gated in this demo to keep API cost controlled. "
+            "Pick a **bundled sample** to see full results instantly, or enter the **access code** "
+            "in the sidebar to run your own upload live."
+        )
+        st.stop()
+    if not use_cache and DEMO_MODE and st.session_state.get("live_runs", 0) >= MAX_LIVE_RUNS:
+        st.warning("You've reached the live-run limit for this session. Reload the page to reset, "
+                   "or explore the bundled samples.")
+        st.stop()
 
-# Gate live runs in the demo.
-if not use_cache and not _live_allowed():
-    st.warning(
-        "Live runs are gated in this demo to keep API cost controlled. "
-        "Pick a **bundled sample** to see full results instantly, or enter the **access code** "
-        "in the sidebar to run your own upload live."
-    )
+    if use_cache:
+        verdict = json.loads(cache_file.read_text(encoding="utf-8"))
+        from_cache = True
+    else:
+        with st.spinner("Extracting and checking…"):
+            try:
+                verdict = build_verdict(path, area, ctypes)
+            except Exception as exc:  # noqa: BLE001 — surface, never a blank page
+                st.error(f"Could not process the creative: {type(exc).__name__}: {exc}")
+                st.stop()
+        st.session_state["live_runs"] = st.session_state.get("live_runs", 0) + 1
+        from_cache = False
+
+    st.session_state["run_id"] = st.session_state.get("run_id", 0) + 1
+    st.session_state["verdict"] = verdict
+    st.session_state["verdict_from_cache"] = from_cache
+
+# ---- results (rendered from session state on every rerun) --------------------
+verdict = st.session_state.get("verdict")
+if verdict is None:
+    st.info("⬅ Upload a creative (or pick a bundled sample), choose the business area and "
+            "creative type(s), then run the check.")
     st.stop()
-
-if not use_cache and DEMO_MODE and st.session_state.get("live_runs", 0) >= MAX_LIVE_RUNS:
-    st.warning("You've reached the live-run limit for this session. Reload the page to reset, "
-               "or explore the bundled samples.")
-    st.stop()
-
-# Produce the verdict.
-if use_cache:
-    verdict = json.loads(cache_file.read_text(encoding="utf-8"))
-    st.caption("Showing a pre-computed demo result for this bundled sample (no API call). "
-               "It reflects the default business area and creative type.")
-else:
-    with st.spinner("Extracting and checking…"):
-        try:
-            verdict = build_verdict(path, area, ctypes)
-        except Exception as exc:  # noqa: BLE001 — surface, never a blank page
-            st.error(f"Could not process the creative: {type(exc).__name__}: {exc}")
-            st.stop()
-    st.session_state["live_runs"] = st.session_state.get("live_runs", 0) + 1
+run_id = st.session_state["run_id"]
 
 st.divider()
-for _w in verdict["meta"].get("selection_warnings", []):
-    st.warning(f"⚠️ {_w}")
+if st.session_state.get("verdict_from_cache"):
+    st.caption("Showing a pre-computed demo result for this bundled sample (no API call). "
+               "It reflects the default business area and creative type.")
+render.selection_warnings(verdict)
 render.headline(verdict)
-render.summary_strip(verdict)
 render.features(verdict)
 render.showback(verdict)
 st.divider()
-render.rule_layer(verdict)
-st.divider()
-render.fact_layer(verdict)
-st.divider()
-render.advisory_layer(verdict)
+render.results(verdict, run_id)
 
 with st.expander("Full verdict JSON (for debugging / export)"):
     st.json(verdict)

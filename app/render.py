@@ -1,11 +1,16 @@
-"""Render helpers for the Streamlit UI — one function per layer.
+"""Render helpers for the Streamlit UI.
 
 Built for the primary user: a marketing / product person running a creative
-through a FIRST-PASS self-check before handing it to the compliance team. So the
-rule section leads with "what to change to pass", not with rules or clauses.
+through a FIRST-PASS self-check before handing it to the compliance team.
 
-Pure display: each takes the verdict dict and writes to the page. The three
-layers stay separate and are never merged (README §3). Kept apart from `app.py`
+Attention is channelled in priority order — fix failures first, then factual
+mismatches, then the human checks, then advisory. One section is shown at a
+time; the summary dashboard doubles as the section switcher, so a heavy verdict
+never becomes a long scroll. The three layers stay separate and are never
+merged (README §3).
+
+Pure display: each function takes the verdict dict (and the run id for
+widget-state namespacing) and writes to the page. Kept apart from `app.py`
 (page flow) so they can be smoke-tested headlessly with streamlit's AppTest.
 """
 from __future__ import annotations
@@ -27,8 +32,44 @@ _TONE = {
     "neutral": ("rgba(128,128,128,0.10)", "rgba(128,128,128,0.30)"),
 }
 
+# Section registry in PRIORITY ORDER: fixing failures is the user's primary
+# responsibility, the fact-check second, human checks + advisory after that.
+_SECTIONS = ["must_fix", "facts", "human", "advisory", "passed"]
+_SECTION_META = {
+    "must_fix": ("🔴", "Fix these"),
+    "facts": ("🧾", "Fact check"),
+    "human": ("🟠", "Human check"),
+    "advisory": ("💡", "Advisory"),
+    "passed": ("✅", "Passed"),
+}
 
-# ---- headline + clickable dashboard -----------------------------------------
+
+# ---- small accessors ---------------------------------------------------------
+def _fails(v):
+    return [r for r in v["rule_layer"]["results"] if r["verdict"] == "fail"]
+
+
+def _checks(v):
+    return [r for r in v["rule_layer"]["results"] if r["verdict"] == "needs_review"]
+
+
+def _counts(v: dict) -> dict:
+    s = v["summary_strip"]
+    return {
+        "must_fix": s["failed"],
+        "facts": s["fact_mismatches"],
+        "human": s["needs_review"],
+        "advisory": s["advisory_notes"],
+        "passed": s["passed"],
+    }
+
+
+def ack_keys(run_id: int) -> tuple[str, str]:
+    """Session-state keys for the two acknowledgement checkboxes (per run)."""
+    return f"ack_human_{run_id}", f"ack_advisory_{run_id}"
+
+
+# ---- headline + selection warnings ------------------------------------------
 def headline(v: dict) -> None:
     s = v["summary_strip"]
     fails, review, facts = s["failed"], s["needs_review"], s["fact_mismatches"]
@@ -48,31 +89,9 @@ def headline(v: dict) -> None:
                    "your compliance team still gives the final OK — but you've caught the common issues.")
 
 
-def _stat_card(label: str, n: int, anchor: str | None, tone: str) -> str:
-    bg, bd = _TONE[tone]
-    inner = (f'<div style="font-size:1.7rem;font-weight:700;line-height:1.1;">{n}</div>'
-             f'<div style="font-size:0.78rem;opacity:0.85;">{label}</div>')
-    style = (f'display:block;min-width:92px;padding:10px 14px;border-radius:10px;'
-             f'background:{bg};border:1px solid {bd};text-align:center;color:inherit;text-decoration:none;')
-    if anchor and n:  # only a live jump-link when there is something to jump to
-        return f'<a href="#{anchor}" style="{style}">{inner}</a>'
-    return f'<div style="{style}opacity:0.9;">{inner}</div>'
-
-
-def summary_strip(v: dict) -> None:
-    s = v["summary_strip"]
-    items = [
-        ("Rules run", s["rules_run"], None, "neutral"),
-        ("Passed", s["passed"], None, "green"),
-        ("Must fix", s["failed"], "must-fix", "red"),
-        ("Human check", s["needs_review"], "human-check", "amber"),
-        ("Fact issues", s["fact_mismatches"], "fact-issues", "red"),
-        ("Advisory", s["advisory_notes"], "advisory", "slate"),
-    ]
-    cards = "".join(_stat_card(*i) for i in items)
-    st.markdown(f'<div style="display:flex;gap:10px;flex-wrap:wrap;margin:0.25rem 0;">{cards}</div>',
-                unsafe_allow_html=True)
-    st.caption("Click **Must fix**, **Human check**, **Fact issues** or **Advisory** to jump straight to that section.")
+def selection_warnings(v: dict) -> None:
+    for w in v["meta"].get("selection_warnings", []):
+        st.warning(f"⚠️ {w}")
 
 
 def features(v: dict) -> None:
@@ -98,7 +117,42 @@ def showback(v: dict) -> None:
                      height=140, disabled=True, label_visibility="collapsed")
 
 
-# ---- Layer 1: rule checks (creator-first action cards) -----------------------
+# ---- the navigator (dashboard = section switcher) ----------------------------
+def _default_section(counts: dict) -> str:
+    for name in _SECTIONS[:-1]:  # first non-empty in priority order
+        if counts[name]:
+            return name
+    return "passed"
+
+
+def results(v: dict, run_id: int) -> None:
+    """Dashboard-switcher + the active section. One section at a time."""
+    counts = _counts(v)
+    state_key = f"section_{run_id}"
+    active = st.session_state.get(state_key) or _default_section(counts)
+
+    s = v["summary_strip"]
+    st.caption(f"**{s['rules_run']}** rules ran for your selection. Work top priority first — "
+               "the buttons below are in order of importance.")
+    cols = st.columns(len(_SECTIONS))
+    clicked = None
+    for col, name in zip(cols, _SECTIONS):
+        icon, label = _SECTION_META[name]
+        n = counts[name]
+        if col.button(f"{icon} {label} · {n}", key=f"nav_{name}_{run_id}",
+                      use_container_width=True,
+                      type="primary" if name == active else "secondary",
+                      disabled=(n == 0 and name != "passed")):
+            clicked = name
+    if clicked and clicked != active:
+        st.session_state[state_key] = clicked
+        st.rerun()  # repaint so the active button styling matches
+
+    {"must_fix": _sec_must_fix, "facts": _sec_facts, "human": _sec_human,
+     "advisory": _sec_advisory, "passed": _sec_passed}[active](v, run_id)
+
+
+# ---- Layer-1 cards -----------------------------------------------------------
 def _details(r: dict) -> str:
     """Rule id + clause + flagged text, hidden behind a native ℹ️ disclosure."""
     parts = [f"Rule {_esc(r['rule_id'])}"]
@@ -144,54 +198,30 @@ def _check_card(r: dict) -> str:
     return _shell("rgba(217,119,6,0.75)", body)
 
 
-def rule_layer(v: dict) -> None:
-    results = v["rule_layer"]["results"]
-    fails = [r for r in results if r["verdict"] == "fail"]
-    checks = [r for r in results if r["verdict"] == "needs_review"]
-    passed = sum(1 for r in results if r["verdict"] == "pass")
-    na = sum(1 for r in results if r["verdict"] == "not_applicable")
-
-    st.markdown("### 1 · Compliance checks")
-    st.caption("Your first-pass self-check before compliance review. **Fix** the red items so the creative "
-               "passes; the amber items are calls only a person can make — send those to your compliance team.")
-
-    st.subheader(f"🔴 Fix these to pass · {len(fails)}", anchor="must-fix")
+# ---- sections (one visible at a time) ---------------------------------------
+def _sec_must_fix(v: dict, run_id: int) -> None:
+    fails = _fails(v)
+    st.markdown(f"#### 🔴 Fix these to pass · {len(fails)}")
+    st.caption("Layer 1 · rule checks. Your primary job: make each edit below, then re-run the check.")
     if not fails:
-        st.success("Nothing to fix — no rule failures for the selected areas and creative type.")
-    else:
-        st.markdown("".join(_fix_card(r) for r in fails), unsafe_allow_html=True)
-
-    st.subheader(f"🟠 Send these to compliance to check · {len(checks)}", anchor="human-check")
-    st.caption("Not failures — the tool can tell the rule applies but can't make the call, so a person confirms.")
-    if not checks:
-        st.success("Nothing needs a manual check.")
-    else:
-        st.markdown("".join(_check_card(r) for r in checks), unsafe_allow_html=True)
-
-    st.caption(f"✅ {passed} checks passed  ·  ⚪ {na} not applicable to this creative.")
+        st.success("Nothing to fix — no rule failures for your selection. 🎉  Move on to **Fact check**.")
+        return
+    st.markdown("".join(_fix_card(r) for r in fails), unsafe_allow_html=True)
 
 
-# ---- Layer 2: fact-check -----------------------------------------------------
-_FACT = {
-    "mismatch": ("🔴", "Doesn't match the factsheet"),
-    "ambiguous": ("🟠", "Can't confirm"),
-    "not_found": ("⚪", "Not in the factsheet"),
-    "match": ("🟢", "Matches the factsheet"),
-}
-
-
-def fact_layer(v: dict) -> None:
-    st.subheader("2 · Factsheet fact-check", anchor="fact-issues")
-    st.caption("The numbers in your creative, checked against the published factsheet. "
-               "A separate layer — **never** part of the compliance score above.")
-    results = v["fact_check_layer"]["results"]
-    if not results:
+def _sec_facts(v: dict, run_id: int) -> None:
+    st.markdown("#### 🧾 Factsheet fact-check")
+    st.caption("Layer 2 · the numbers in your creative, checked against the published factsheet. "
+               "A separate layer — **never** part of the compliance score.")
+    results_ = v["fact_check_layer"]["results"]
+    if not results_:
         if not model.available():
             st.info("Fact-check needs the model (no API key set).")
         else:
             st.success("No checkable factual claims found in the creative.")
         return
-    for r in results:
+    order = {"mismatch": 0, "ambiguous": 1, "not_found": 2, "match": 3}
+    for r in sorted(results_, key=lambda r: order.get(r["verdict"], 9)):
         icon, label = _FACT.get(r["verdict"], ("•", r["verdict"]))
         with st.container(border=True):
             st.markdown(f"{icon} **{label}** — “{r['claim_text']}”")
@@ -206,14 +236,38 @@ def fact_layer(v: dict) -> None:
                 st.caption("Comparison assumes: " + r["assumption"])
 
 
-# ---- Layer 3: advisory -------------------------------------------------------
-def advisory_layer(v: dict) -> None:
-    st.subheader("3 · Advisory", anchor="advisory")
+_FACT = {
+    "mismatch": ("🔴", "Doesn't match the factsheet"),
+    "ambiguous": ("🟠", "Can't confirm"),
+    "not_found": ("⚪", "Not in the factsheet"),
+    "match": ("🟢", "Matches the factsheet"),
+}
+
+
+def _sec_human(v: dict, run_id: int) -> None:
+    checks = _checks(v)
+    st.markdown(f"#### 🟠 Human check · {len(checks)}")
+    st.caption("Layer 1 · rule checks the tool can't decide alone: it can tell the rule applies but "
+               "a person makes the call. Review each one (with your compliance team where needed).")
+    ack_human, _ = ack_keys(run_id)
+    if not checks:
+        st.success("Nothing needs a manual check for this creative.")
+        return
+    st.markdown("".join(_check_card(r) for r in checks), unsafe_allow_html=True)
+    st.checkbox(
+        "I confirm that each item above has been manually reviewed.",
+        key=ack_human,
+        help="Required before a clearance report can be generated.",
+    )
+
+
+def _sec_advisory(v: dict, run_id: int) -> None:
+    st.markdown("#### 💡 Advisory")
     notes = v["advisory_layer"]["notes"]
+    _, ack_adv = ack_keys(run_id)
     with st.container(border=True):
-        st.caption("A second read that sets the rules aside. **Unscored — not a verdict, and it does not affect "
-                   "the summary above.** A 'you may also want to look at this' list, kept to things that could "
-                   "materially mislead a reader.")
+        st.caption("Layer 3 · a second read that sets the rules aside. **Unscored — not a verdict, and it "
+                   "does not affect the summary.** Kept to things that could materially mislead a reader.")
         if not notes:
             if not model.available():
                 st.info("Advisory needs the model (no API key set).")
@@ -223,3 +277,23 @@ def advisory_layer(v: dict) -> None:
         for n in notes:
             tag = f"**[{n['area']}]** " if n.get("area") else ""
             st.markdown(f"- {tag}{n['note']}")
+    st.checkbox(
+        "I confirm the advisory points above have been read and considered.",
+        key=ack_adv,
+        help="Required before a clearance report can be generated.",
+    )
+
+
+def _sec_passed(v: dict, run_id: int) -> None:
+    results_ = v["rule_layer"]["results"]
+    passed = [r for r in results_ if r["verdict"] == "pass"]
+    na = sum(1 for r in results_ if r["verdict"] == "not_applicable")
+    st.markdown(f"#### ✅ Passed · {len(passed)}")
+    st.caption(f"Rules this creative already satisfies (plus {na} not applicable to it).")
+    if passed:
+        items = "".join(
+            f'<div style="padding:3px 0;font-size:0.9rem;">✅ {_esc(r.get("title") or r["rule_id"])}'
+            f'<span style="font-size:0.72rem;opacity:0.5;"> · {_esc(r["rule_id"])}</span></div>'
+            for r in passed)
+        st.markdown(f'<div style="column-width:320px;column-gap:28px;">{items}</div>',
+                    unsafe_allow_html=True)
