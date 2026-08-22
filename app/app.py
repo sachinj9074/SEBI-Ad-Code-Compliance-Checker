@@ -16,6 +16,7 @@ Run:  .venv\\Scripts\\python.exe -m streamlit run app/app.py
 """
 from __future__ import annotations
 
+import importlib
 import json
 import os
 import sys
@@ -32,6 +33,11 @@ from src import model  # noqa: E402
 from src.checker import build_verdict  # noqa: E402
 from src.corpus import AREAS, AREA_CTYPE_OPTIONS  # noqa: E402
 import render  # noqa: E402  (sibling module; not `from app import ...` because the script itself is module 'app')
+# The sibling `render` is imported via a sys.path hack, so Streamlit's file
+# watcher may not reload it after a redeploy, leaving a stale module in memory
+# (new app.py, old render). Force it fresh on every run; render.py holds only
+# functions/constants, so reloading is cheap and side-effect free.
+render = importlib.reload(render)
 
 DEMO_CACHE = ROOT / "demo_cache"
 
