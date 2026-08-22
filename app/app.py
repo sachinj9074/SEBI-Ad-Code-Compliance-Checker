@@ -125,9 +125,9 @@ def _live_allowed() -> bool:
 st.title("🛡️ SEBI Ad-Code Compliance Checker")
 st.caption(
     "A first-pass compliance self-check for the people who make the creatives (marketing, product, design) "
-    "to run **before** sending anything to the compliance team. It screens against the SEBI ad code, AMFI "
-    "guidelines and the internal checklist in three separated layers (rule checks · factsheet fact-check · "
-    "advisory) and tells you what to change. It flags issues to resolve; it is **not** a compliance sign-off."
+    "to run **before** sending anything to the compliance team. It screens against the SEBI ad code and AMFI "
+    "guidelines in three separated layers (rule checks · factsheet fact-check · advisory) and tells you what "
+    "to change. It flags issues to resolve; it is **not** a compliance sign-off."
 )
 
 with st.sidebar:
@@ -151,7 +151,7 @@ with st.sidebar:
         elif LIVE_PASSWORD and st.session_state.get("live_ok", False):
             st.success("Live mode unlocked, you can upload your own creatives.")
 
-    st.caption("1 · Upload a creative (or pick a bundled sample)  •  2 · Choose the business area(s) and creative type  •  3 · Run. "
+    st.caption("1 · Upload a creative (or pick a bundled sample)  •  2 · Choose the business area, then the creative type(s)  •  3 · Run. "
                "You'll get a plain-language verdict: what to fix, what a human should check, and factual mismatches.")
 
     if not DEMO_MODE:
