@@ -9,7 +9,7 @@
     "creative_type": [
       "key_visual"
     ],
-    "run_at": "2026-08-22T16:08:42.715731+00:00",
+    "run_at": "2026-08-22T16:53:47.776587+00:00",
     "model_used": "claude-sonnet-5",
     "tool_version": "0.1.0",
     "demo_cached": true
@@ -112,7 +112,7 @@
       {
         "feature": "sip_low_ticket",
         "present": true,
-        "evidence": "as little as Rs. 100"
+        "evidence": "Start a SIP today for as little as Rs. 100"
       },
       {
         "feature": "small_cap_scheme",
@@ -139,8 +139,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "get GUARANTEED 12% annual returns — capital fully protected!",
-        "explanation": "The ad promises a fixed, guaranteed return and capital protection for an equity fund, which is misleading since mutual fund returns are always market-linked and never assured.",
-        "suggested_rewrite": "Remove the phrase 'GUARANTEED 12% annual returns — capital fully protected!' and instead state that returns are subject to market risk with no assurance of returns, along with the standard risk disclaimer."
+        "explanation": "Mutual fund returns depend on market performance and can never be promised or guaranteed, so claiming a fixed 12% return with capital protection is misleading and against the rules.",
+        "suggested_rewrite": "Remove the phrase 'get GUARANTEED 12% annual returns — capital fully protected!' entirely and replace with factual past performance data along with a standard disclaimer that mutual fund investments are subject to market risk and past performance is not indicative of future returns."
       },
       {
         "rule_id": "PROH-002",
@@ -154,9 +154,9 @@
         ],
         "check_type": "automated",
         "verdict": "fail",
-        "offending_text": "GUARANTEED 12% annual returns — capital fully protected!",
-        "explanation": "A mutual fund investment is subject to market risk and can never promise a guaranteed return or protected capital, so this claim is false and misleading to investors.",
-        "suggested_rewrite": "Remove the guaranteed return and capital protection claim entirely, and replace with the standard disclosure that mutual fund investments are subject to market risks and past performance is not indicative of future returns."
+        "offending_text": "Invest in [AMC] Flexi Cap Fund and get GUARANTEED 12% annual returns — capital fully protected!",
+        "explanation": "A mutual fund's returns are market-linked and can never be guaranteed or capital-protected, so this claim is false and misleading to investors.",
+        "suggested_rewrite": "Remove all guarantee and capital protection claims and instead state that returns are market-linked and subject to risk, along with the standard 'mutual fund investments are subject to market risk' disclaimer."
       },
       {
         "rule_id": "PROH-003",
@@ -170,9 +170,9 @@
         ],
         "check_type": "automated",
         "verdict": "fail",
-        "offending_text": "GUARANTEED 12% annual returns — capital fully protected! Our unbeatable, #1 fund",
-        "explanation": "A flexi cap equity fund cannot promise guaranteed returns or capital protection, and calling it 'unbeatable' and '#1' are unsubstantiated superlative claims that misrepresent the fund's actual market-linked risk and return profile.",
-        "suggested_rewrite": "Remove all guarantee, capital-protection, and superlative claims (e.g., 'GUARANTEED', 'capital fully protected', 'unbeatable', '#1', 'sure winner') and replace with factual, substantiated performance data along with the standard mutual fund risk disclaimer."
+        "offending_text": "Our unbeatable, #1 fund has delivered stellar performance",
+        "explanation": "Calling the fund 'unbeatable' and '#1' is an exaggerated, unsubstantiated superlative that isn't backed by any ranking data or disclosure and misleads investors about the fund's actual risk-return nature.",
+        "suggested_rewrite": "Remove the words 'unbeatable' and '#1' and replace with factual, substantiated language, e.g. 'This fund has delivered the following historical performance:' followed by the CAGR figures with proper disclaimers."
       },
       {
         "rule_id": "PROH-004",
@@ -187,8 +187,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "Our unbeatable, #1 fund has delivered stellar performance",
-        "explanation": "Calling the fund '#1' or 'unbeatable' is a ranking claim, which isn't allowed unless it's a proper independent ranking with required disclosures, and here it's just a bare boast.",
-        "suggested_rewrite": "Remove the phrase 'unbeatable, #1 fund' and simply state the fund's performance figures without any ranking or superiority claim."
+        "explanation": "Calling the fund '#1' is a ranking claim, which this rule bans regardless of what criteria it's based on.",
+        "suggested_rewrite": "Remove the '#1' and 'unbeatable' ranking language and simply state the fund's performance figures without claiming superiority or rank."
       },
       {
         "rule_id": "PROH-005",
@@ -201,8 +201,10 @@
           "sebi"
         ],
         "check_type": "automated",
-        "verdict": "pass",
-        "explanation": "The creative does not mention, discredit, or unfairly compare itself against any other advertisement; the comparison to the Nifty 50 index is a benchmark reference, not a comparison to another ad."
+        "verdict": "fail",
+        "offending_text": "Our unbeatable, #1 fund has delivered stellar performance",
+        "explanation": "Calling the fund 'unbeatable' and '#1' makes an unsubstantiated superiority claim over all other funds, which counts as an unfair comparison without any basis or comparable parameters shown.",
+        "suggested_rewrite": "Remove the words 'unbeatable' and '#1' and instead state performance facts with proper benchmark comparison and disclaimers, without claiming superiority over unnamed competitors."
       },
       {
         "rule_id": "PROH-006",
@@ -230,9 +232,9 @@
         ],
         "check_type": "automated",
         "verdict": "fail",
-        "offending_text": "get GUARANTEED 12% annual returns — capital fully protected! ... this fund is a sure winner",
-        "explanation": "Claiming guaranteed returns, full capital protection, and a 'sure winner' fund preys on investors who don't know that mutual funds are market-linked and carry risk, misleading the less experienced into a false sense of safety.",
-        "suggested_rewrite": "Remove all guarantee/protection/sure-winner language and replace with a factual, risk-appropriate statement such as past performance figures alongside the standard 'mutual fund investments are subject to market risks' disclaimer."
+        "offending_text": "get GUARANTEED 12% annual returns — capital fully protected!",
+        "explanation": "Claiming guaranteed returns and full capital protection preys on investors who may not know that mutual fund returns are market-linked and can never be guaranteed.",
+        "suggested_rewrite": "Remove the words 'GUARANTEED' and 'capital fully protected' and replace with a standard disclosure that returns are market-linked and not assured, e.g. 'Mutual fund investments are subject to market risks; past performance is not indicative of future returns.'"
       },
       {
         "rule_id": "PROH-008",
@@ -248,8 +250,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "get GUARANTEED 12% annual returns — capital fully protected!",
-        "explanation": "The ad promises a guaranteed future return, but mutual fund returns can never be guaranteed and stating an assumed number misleads investors into thinking there's no risk.",
-        "suggested_rewrite": "Remove the guaranteed return claim entirely and replace with a standard risk disclosure, e.g., 'Mutual fund investments are subject to market risks; returns are not guaranteed and past performance is not indicative of future results.'"
+        "explanation": "The ad promises a guaranteed future return, which is an assumed/forecasted return that mutual funds are not allowed to promise since actual returns can vary and no capital protection is guaranteed.",
+        "suggested_rewrite": "Remove the guaranteed return and capital protection claim entirely, and instead state that returns are market-linked and not guaranteed, e.g., 'Mutual fund investments are subject to market risk; returns are not guaranteed.'"
       },
       {
         "rule_id": "CELEB-001",
@@ -412,8 +414,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "Invest in [AMC] Flexi Cap Fund and get GUARANTEED 12% annual returns — capital fully protected!",
-        "explanation": "The ad never shows the AMC's full registered company name or its SEBI registration number anywhere, such as in a footer, which is required so investors know who is legally offering the fund.",
-        "suggested_rewrite": "Add a footer (or closing line) with the AMC's full registered legal name and its SEBI registration number, e.g., 'XYZ Asset Management Company Limited | SEBI Reg. No. INXXXXXXXXX'."
+        "explanation": "The ad never shows the AMC's full registered name or its SEBI registration number anywhere, such as in a footer, so readers can't verify who is offering the fund or that it's a SEBI-registered entity.",
+        "suggested_rewrite": "Add a footer (or opening frame if this becomes a video) stating the AMC's full registered legal name and its SEBI registration number, e.g. 'XYZ Asset Management Company Ltd. | SEBI Reg. No. INxxxxxxxxx'."
       },
       {
         "rule_id": "DISC-011",
@@ -603,8 +605,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "CAGR — 1Y: 18% | 3Y: 22% | 5Y: 20%.",
-        "explanation": "The performance data leaves out the 'since inception' return, which must always be shown along with the 1, 3, and 5 year numbers.",
-        "suggested_rewrite": "Add the fund's since-inception CAGR to the performance line, e.g., 'CAGR — 1Y: 18% | 3Y: 22% | 5Y: 20% | Since Inception: X%.'"
+        "explanation": "The ad shows returns for 1, 3, and 5 years but leaves out the since-inception CAGR that must always be included so investors can see the fund's full track record.",
+        "suggested_rewrite": "Add the fund's since-inception CAGR figure alongside the 1Y, 3Y, and 5Y numbers, e.g. 'CAGR — 1Y: 18% | 3Y: 22% | 5Y: 20% | Since Inception: X%'."
       },
       {
         "rule_id": "PERF-002",
@@ -619,8 +621,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "CAGR — 1Y: 18% | 3Y: 22% | 5Y: 20%.",
-        "explanation": "The ad shows only annualized (CAGR) returns but never shows what a standard Rs. 10,000 investment would actually have grown to, which investors need to understand real rupee returns.",
-        "suggested_rewrite": "Add a point-to-point returns table next to the CAGR figures, e.g. 'Value of Rs. 10,000 invested: 1Y: Rs. 11,800 | 3Y: Rs. 18,170 | 5Y: Rs. 24,880' alongside the existing CAGR numbers."
+        "explanation": "The ad only shows the annualized (CAGR) returns but leaves out the actual rupee growth of a standard Rs. 10,000 investment over the same periods, which investors need to see alongside CAGR.",
+        "suggested_rewrite": "Add a line showing point-to-point returns, e.g., 'Value of Rs. 10,000 invested: 1Y: Rs. 11,800 | 3Y: Rs. 18,170 | 5Y: Rs. 24,880' next to the CAGR figures."
       },
       {
         "rule_id": "PERF-003",
@@ -635,8 +637,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "CAGR — 1Y: 18% | 3Y: 22% | 5Y: 20%.",
-        "explanation": "The ad shows fund return figures but never says whether these are Direct or Regular plan returns, nor includes the required footnote about different plans having different expense structures, which could mislead investors comparing returns.",
-        "suggested_rewrite": "Add a label to the performance line specifying 'Regular Plan' or 'Direct Plan' returns, and add a footnote such as: 'Direct and Regular plans have different expense ratios; returns shown are for the [Direct/Regular] plan.'"
+        "explanation": "The performance numbers don't say whether they are for the Direct or Regular plan, and there's no note explaining that different plans have different costs which affect returns.",
+        "suggested_rewrite": "Add a label such as 'CAGR (Regular Plan) — 1Y: 18% | 3Y: 22% | 5Y: 20%' and include a footnote like 'Direct Plan has a different expense ratio and returns will vary accordingly.'"
       },
       {
         "rule_id": "PERF-004",
@@ -651,8 +653,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "CAGR — 1Y: 18% | 3Y: 22% | 5Y: 20%.",
-        "explanation": "The performance numbers are shown without stating the 'as on' date they are calculated from, so there is no way to confirm they are based on the most recent month-end before the ad, as required.",
-        "suggested_rewrite": "Add a clear 'Performance as on [last month-end date]' line next to the CAGR figures so the reference period is explicit and matches the month-end preceding the ad's release."
+        "explanation": "The return figures are shown without stating the 'as on' date, so there's no way to confirm the performance is calculated up to the last month-end before the ad's release, which SEBI requires for fair comparison.",
+        "suggested_rewrite": "Add a clear 'Performance as on [last month-end date]' line right above or below the CAGR figures so readers know the exact reference period used."
       },
       {
         "rule_id": "PERF-005",
@@ -710,7 +712,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative only shows lumpsum CAGR figures and merely invites investors to start a SIP, without displaying any SIP-based return figures, so the rule requiring lumpsum comparison, SIP periodicity, and XIRR note does not apply here."
+        "explanation": "The creative mentions starting a SIP but does not display any SIP-specific return figures (like SIP CAGR or SIP XIRR), so the rule requiring lumpsum comparison, periodicity, and an XIRR note for SIP performance does not apply here."
       },
       {
         "rule_id": "PERF-009",
@@ -779,9 +781,9 @@
         ],
         "check_type": "automated",
         "verdict": "fail",
-        "offending_text": "CAGR — 1Y: 18% | 3Y: 22% | 5Y: 20%",
-        "explanation": "The returns shown are trailing (rolling) period figures rather than being tied to actual calendar years, quarters, or half-years, which is what the rule requires so investors aren't misled by cherry-picked time windows.",
-        "suggested_rewrite": "Replace the trailing 1Y/3Y/5Y CAGR figures with performance stated for actual calendar years (e.g., 'CY2023: X%, CY2022: Y%, CY2021: Z%') or clearly label them as calendar-year returns."
+        "offending_text": "CAGR — 1Y: 18% | 3Y: 22% | 5Y: 20%.",
+        "explanation": "The performance figures are shown as trailing 1/3/5-year returns instead of being tied to actual calendar years, which the rule requires so investors aren't misled by cherry-picked time windows.",
+        "suggested_rewrite": "Replace the trailing-period CAGR figures with performance for specific calendar years (e.g., 'CY2023: X%, CY2022: Y%, CY2021: Z%') as required by the disclosure rule."
       },
       {
         "rule_id": "PERF-014",
@@ -836,9 +838,9 @@
         ],
         "check_type": "automated",
         "verdict": "fail",
-        "offending_text": "get GUARANTEED 12% annual returns — capital fully protected!",
-        "explanation": "The ad promises a fixed guaranteed return and capital protection for an open-ended equity fund, which is exactly the kind of indicative yield promise that is not allowed since mutual fund returns are market-linked and can't be guaranteed.",
-        "suggested_rewrite": "Remove the guaranteed return and capital protection claim entirely and replace with a standard disclaimer such as 'Mutual fund investments are subject to market risks; returns are not guaranteed and past performance is not indicative of future results.'"
+        "offending_text": "GUARANTEED 12% annual returns — capital fully protected!",
+        "explanation": "This fund promises a fixed guaranteed return and capital protection, but mutual funds are not allowed to state or imply any predicted yield since actual returns can vary and are never guaranteed.",
+        "suggested_rewrite": "Remove the guaranteed return and capital protection claim entirely, and replace it with a standard disclaimer that mutual fund returns are market-linked and not guaranteed."
       },
       {
         "rule_id": "AMFI-001",
@@ -865,7 +867,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative does not mention or promote any other product, business, AIF, PMS, insurance, or group offering besides the mutual fund itself."
+        "explanation": "The creative only discusses the mutual fund itself and does not mention or promote any other product or business like AIF, PMS, or insurance."
       },
       {
         "rule_id": "SUBST-001",
@@ -898,8 +900,8 @@
     ],
     "summary": {
       "rules_run": 53,
-      "passed": 3,
-      "failed": 18,
+      "passed": 2,
+      "failed": 19,
       "needs_review": 8,
       "not_applicable": 24
     }
@@ -907,7 +909,32 @@
   "fact_check_layer": {
     "results": [
       {
-        "claim_text": "CAGR 1Y: 18%",
+        "claim_text": "GUARANTEED 12% annual returns",
+        "verdict": "ambiguous",
+        "claim_field": "returns",
+        "claimed_value": "12%",
+        "scheme_matched": "Axis Flexi Cap Fund",
+        "as_of_date": "2026-06-30",
+        "source_file": "factsheet_active_2026-06-30.pdf",
+        "plan": "regular",
+        "option": "growth",
+        "factsheet_value": "(period unspecified)",
+        "assumption": "plan=regular; option=growth; period unspecified"
+      },
+      {
+        "claim_text": "capital fully protected",
+        "verdict": "ambiguous",
+        "claim_field": "other",
+        "claimed_value": "fully protected",
+        "scheme_matched": "Axis Flexi Cap Fund",
+        "as_of_date": "2026-06-30",
+        "source_file": "factsheet_active_2026-06-30.pdf",
+        "plan": "regular",
+        "option": "growth",
+        "factsheet_value": "(field not auto-verified in v1)"
+      },
+      {
+        "claim_text": "1Y CAGR: 18%",
         "verdict": "mismatch",
         "claim_field": "returns",
         "claimed_value": "18%",
@@ -920,7 +947,7 @@
         "assumption": "plan=regular; option=growth"
       },
       {
-        "claim_text": "CAGR 3Y: 22%",
+        "claim_text": "3Y CAGR: 22%",
         "verdict": "mismatch",
         "claim_field": "returns",
         "claimed_value": "22%",
@@ -933,7 +960,7 @@
         "assumption": "plan=regular; option=growth"
       },
       {
-        "claim_text": "CAGR 5Y: 20%",
+        "claim_text": "5Y CAGR: 20%",
         "verdict": "mismatch",
         "claim_field": "returns",
         "claimed_value": "20%",
@@ -954,39 +981,35 @@
       }
     ],
     "summary": {
-      "claims_checked": 4,
+      "claims_checked": 6,
       "matches": 0,
       "mismatches": 3,
-      "ambiguous": 0,
+      "ambiguous": 2,
       "not_found": 1
     }
   },
   "advisory_layer": {
     "notes": [
       {
-        "note": "The phrase 'GUARANTEED 12% annual returns — capital fully protected!' directly contradicts the nature of a market-linked Flexi Cap fund and could lead investors to believe there is no risk of loss, when in fact returns and capital are both subject to market fluctuation.",
-        "area": "Guaranteed returns / capital protection claim"
+        "note": "The ad states 'GUARANTEED 12% annual returns — capital fully protected' for a Flexi Cap Fund, which is a market-linked equity product with no principal or return guarantee; this directly misrepresents the risk profile and could lead investors to believe they cannot lose money.",
+        "area": "guaranteed returns claim"
       },
       {
-        "note": "Calling the fund 'unbeatable, #1' without specifying the ranking source, category, time period, or ranking agency is an unsupported factual claim that could mislead investors into thinking it is objectively verified as the top-performing fund.",
-        "area": "Unsupported '#1 fund' claim"
+        "note": "The phrase 'sure winner' compounds the guarantee language by implying certainty of future success for a market-linked fund, which is factually unsupportable.",
+        "area": "implied certainty of performance"
       },
       {
-        "note": "The comparison 'Nifty 50 gave 15% last year, so this fund is a sure winner' cherry-picks a single one-year data point to declare guaranteed superiority, ignoring that 3Y/5Y comparisons to the same benchmark are absent, which could give a false impression of consistent outperformance.",
-        "area": "Cherry-picked benchmark comparison"
-      },
-      {
-        "note": "The word 'sure winner' implies certainty of future outperformance based on past one-year data, which overstates confidence in an inherently variable, market-linked product.",
-        "area": "Overstated certainty of future performance"
+        "note": "Comparing the fund's 1-year return (18%) to the Nifty 50's 15% implies the fund reliably beats the index, but a single-year comparison for a flexi-cap fund (which can hold mid/small caps and cash) against a large-cap index is not a fair like-for-like benchmark and cherry-picks a favorable period.",
+        "area": "misleading performance comparison"
       }
     ]
   },
   "summary_strip": {
     "rules_run": 53,
-    "passed": 3,
-    "failed": 18,
+    "passed": 2,
+    "failed": 19,
     "needs_review": 8,
     "fact_mismatches": 3,
-    "advisory_notes": 4
+    "advisory_notes": 3
   }
 }

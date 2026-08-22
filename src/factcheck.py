@@ -110,10 +110,24 @@ def check_claim(claim: dict, kb: list[dict]) -> dict:
 
     plan = claim.get("plan") or None
     option = claim.get("option") or None
-    cand = [r for r in recs if (not plan or r.get("plan") == plan) and (not option or r.get("option") == option)]
+    field = claim.get("field")
+    # Plan/option only change plan-specific figures (returns, IDCW). AUM,
+    # riskometer and benchmark are shared across a scheme's plan/option variants,
+    # so picking a variant for them is arbitrary and must NOT raise an assumption.
+    plan_relevant = field in ("returns",)
+
     assumptions = []
-    if not cand:
-        cand = recs
+    cand = recs
+    if plan_relevant:
+        filtered = [r for r in recs
+                    if (not plan or r.get("plan") == plan) and (not option or r.get("option") == option)]
+        if filtered:
+            cand = filtered
+        else:
+            # a plan/option was named but the KB has no such variant: fall back and say so
+            if plan and any(r.get("plan") for r in recs):
+                assumptions.append(f"{plan} plan not in the factsheet; compared to {recs[0].get('plan')}")
+            cand = recs
     rec = cand[0]
     res["scheme_matched"] = rec["scheme_name"]
     res["as_of_date"] = rec.get("as_of_date")
@@ -122,12 +136,12 @@ def check_claim(claim: dict, kb: list[dict]) -> dict:
         res["plan"] = rec["plan"]
     if rec.get("option"):
         res["option"] = rec["option"]
-    if not plan and rec.get("plan"):
-        assumptions.append(f"plan={rec['plan']}")
-    if not option and rec.get("option"):
-        assumptions.append(f"option={rec['option']}")
+    if plan_relevant:
+        if not plan and rec.get("plan"):
+            assumptions.append(f"plan={rec['plan']}")
+        if not option and rec.get("option"):
+            assumptions.append(f"option={rec['option']}")
 
-    field = claim.get("field")
     fv = None  # factsheet value (for comparison)
     if field == "returns":
         period = claim.get("period") or None

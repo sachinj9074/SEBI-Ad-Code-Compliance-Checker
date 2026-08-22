@@ -122,12 +122,15 @@ def _live_allowed() -> bool:
 
 
 # ---- page -------------------------------------------------------------------
-st.title("🛡️ SEBI Ad-Code Compliance Checker")
-st.caption(
-    "A first-pass compliance self-check for the people who make the creatives (marketing, product, design) "
-    "to run **before** sending anything to the compliance team. It screens against the SEBI ad code and AMFI "
-    "guidelines in three separated layers (rule checks · factsheet fact-check · advisory) and tells you what "
-    "to change. It flags issues to resolve; it is **not** a compliance sign-off."
+# The full description lives in the title tooltip (the ⓘ next to the heading) to
+# keep the results area high on the page.
+st.title(
+    "🛡️ SEBI Ad-Code Compliance Checker",
+    help=("A first-pass compliance self-check for the people who make the creatives (marketing, "
+          "product, design), to run before sending anything to the compliance team. It screens "
+          "against the SEBI ad code and AMFI guidelines in three separated layers (rule checks, "
+          "factsheet fact-check, advisory) and tells you what to change. It flags issues to resolve; "
+          "it is not a compliance sign-off."),
 )
 
 with st.sidebar:
@@ -149,43 +152,43 @@ with st.sidebar:
                     else:
                         st.error("Incorrect code.")
         elif LIVE_PASSWORD and st.session_state.get("live_ok", False):
-            st.success("Live mode unlocked, you can upload your own creatives.")
+            st.success("Live mode unlocked — you can upload your own creatives.")
+    elif not model.available():
+        st.warning("No API key: deterministic checks only (fact-check and advisory are empty).")
 
-    st.caption("1 · Upload a creative (or pick a bundled sample)  •  2 · Choose the business area, then the creative type(s)  •  3 · Run. "
-               "You'll get a plain-language verdict: what to fix, what a human should check, and factual mismatches.")
-
-    if not DEMO_MODE:
-        if model.available():
-            st.success(f"Model: {model.model_id()}")
-        else:
-            st.warning("No API key. Deterministic checks only: feature detection is heuristic; "
-                       "automated rules defer to needs-review; fact-check and advisory are empty.")
-
+    # Step 1: the creative.
+    st.markdown("**1 · Your creative**")
     uploads = st.file_uploader(
-        "Upload creative (DOCX, PDF, image; multiple images = carousel)",
+        "Upload a creative",
         type=UPLOAD_TYPES, accept_multiple_files=True,
-        help=("Live uploads are gated in the demo. Enter the access code above, or pick a bundled sample."
-              if DEMO_MODE else None),
+        help=("DOCX, PDF, or image (multiple images = carousel). Live uploads are gated in the demo — "
+              "enter the access code, or pick a bundled sample."
+              if DEMO_MODE else "DOCX, PDF, or image (multiple images = carousel)."),
     )
     sample_choice = st.selectbox(
         "…or try a bundled sample", [NO_SAMPLE, *SAMPLES],
-        help="Generic sample creatives written for this tool, no upload needed.",
+        help="Generic sample creatives written for this tool — no upload needed.",
     )
-    area = st.radio(
-        "Business area", options=AREAS,
-        format_func=lambda a: AREA_LABELS[a],
-    )
+
+    st.divider()
+
+    # Step 2: the scope (area, then conditional creative type(s)).
+    st.markdown("**2 · What is it?**")
+    area = st.radio("Business area", options=AREAS, format_func=lambda a: AREA_LABELS[a])
     _ctype_opts = AREA_CTYPE_OPTIONS[area]
     if _ctype_opts:
+        # No default (#9): force a conscious choice so the input is never skipped.
         ctypes = st.multiselect(
-            "Creative type(s)", options=_ctype_opts,
-            default=["key_visual"] if "key_visual" in _ctype_opts else [],
+            "Creative type(s)", options=_ctype_opts, default=[],
             format_func=lambda c: CTYPE_LABELS.get(c, c),
+            placeholder="Choose one or more…",
             help="Pick every type that applies; the matching rules are added together.",
         )
     else:
         ctypes = []
-        st.caption("IAP creatives take no creative-type input; the IAP and mandatory rules run.")
+        st.caption("IAP takes no creative-type input; the IAP and mandatory rules run.")
+
+    st.divider()
     run = st.button("Run compliance check", type="primary", use_container_width=True)
 
 # ---- run: compute (or load cached) and persist in session state --------------
@@ -195,9 +198,6 @@ with st.sidebar:
 if run:
     if not uploads and sample_choice == NO_SAMPLE:
         st.error("Please upload a file or pick a bundled sample.")
-        st.stop()
-    if area != "iap" and not ctypes:
-        st.error("Please select at least one creative type.")
         st.stop()
 
     # Decide the source and whether this is a zero-cost cached run or a live one.
@@ -211,6 +211,12 @@ if run:
         cache_file = _cache_path(sample_filename)
         if DEMO_MODE and cache_file.exists():
             use_cache = True
+
+    # Creative type is required only for a LIVE run (it filters the rules). A
+    # cached demo sample shows a pre-computed result, so it needs no selection.
+    if not use_cache and area != "iap" and not ctypes:
+        st.error("Please select at least one creative type.")
+        st.stop()
 
     # Gate live runs in the demo.
     if not use_cache and not _live_allowed():
@@ -253,14 +259,13 @@ run_id = st.session_state["run_id"]
 st.divider()
 if st.session_state.get("verdict_from_cache"):
     st.caption("Showing a pre-computed demo result for this bundled sample (no API call). "
-               "It reflects the default business area and creative type.")
+               "It reflects the Scheme-related / Key visual selection.")
 render.selection_warnings(verdict)
 render.headline(verdict)
 render.features(verdict)
 render.showback(verdict)
 st.divider()
 render.results(verdict, run_id)
-render.clearance(verdict, run_id)
 
 with st.expander("Full verdict JSON (for debugging / export)"):
     st.json(verdict)
