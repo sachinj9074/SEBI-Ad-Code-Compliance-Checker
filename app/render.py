@@ -33,6 +33,7 @@ _TONE = {
     "neutral": ("rgba(128,128,128,0.10)", "rgba(128,128,128,0.30)"),
 }
 _SEV_ORDER = {"critical": 0, "high": 1, "medium": 2, "low": 3}
+_SEV_TINT = {"critical": "red", "high": "amber", "medium": "slate", "low": "neutral"}
 
 # Sections in PRIORITY ORDER. 'report' is the end goal and sits last.
 _SECTIONS = ["must_fix", "facts", "human", "advisory", "passed", "report"]
@@ -186,12 +187,16 @@ def results(v: dict, run_id: int) -> None:
 
 
 # ---- card primitives ---------------------------------------------------------
-def _grid(cards: list[str], min_px: int = 340) -> None:
-    """Responsive card grid: two-up on a wide layout, one-up when narrow."""
-    inner = "".join(cards)
-    st.markdown(
-        f'<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax({min_px}px,1fr));'
-        f'gap:10px;align-items:start;">{inner}</div>', unsafe_allow_html=True)
+def _stack(cards: list[str]) -> None:
+    """Single-column stack of full-width cards. Chosen over a grid because the
+    cards vary a lot in height, and a grid leaves ragged, uneven rows."""
+    st.markdown("".join(cards), unsafe_allow_html=True)
+
+
+def _sev_chip(sev: str) -> str:
+    bg, bd = _TONE.get(_SEV_TINT.get(sev, "neutral"), _TONE["neutral"])
+    return (f'<span style="font-size:0.72rem;padding:1px 8px;border-radius:10px;'
+            f'background:{bg};border:1px solid {bd};white-space:nowrap;">{_esc(sev or "—")}</span>')
 
 
 def _details(r: dict) -> str:
@@ -210,7 +215,7 @@ def _details(r: dict) -> str:
 
 def _shell(accent: str, body: str) -> str:
     return (f'<div style="border:1px solid rgba(128,128,128,0.22);border-left:4px solid {accent};'
-            f'border-radius:8px;padding:10px 12px;">{body}</div>')
+            f'border-radius:8px;padding:10px 12px;margin:8px 0;">{body}</div>')
 
 
 def _fix_card(r: dict) -> str:
@@ -238,14 +243,6 @@ def _check_card(r: dict) -> str:
     return _shell("rgba(217,119,6,0.75)", body)
 
 
-def _pass_card(r: dict) -> str:
-    title = _esc(r.get("title") or r["rule_id"])
-    sev = _esc(r.get("severity", ""))
-    return _shell("rgba(22,163,74,0.65)",
-                  f'<div style="font-size:0.9rem;">✅ {title}'
-                  f'<span style="font-size:0.7rem;opacity:0.5;"> · {_esc(r["rule_id"])} · {sev}</span></div>')
-
-
 def _adv_card(n: dict) -> str:
     tag = (f'<span style="font-size:0.7rem;opacity:0.6;">[{_esc(n["area"])}]</span> ' if n.get("area") else "")
     return _shell("rgba(100,116,139,0.7)", f'<div style="font-size:0.92rem;">💡 {tag}{_esc(n.get("note", ""))}</div>')
@@ -259,7 +256,7 @@ def _sec_must_fix(v: dict, run_id: int) -> None:
     if not fails:
         st.success("Nothing to fix — no rule failures for your selection. Move on to **Fact check**.")
         return
-    _grid([_fix_card(r) for r in sorted(fails, key=lambda r: _SEV_ORDER.get(r.get("severity"), 9))])
+    _stack([_fix_card(r) for r in sorted(fails, key=lambda r: _SEV_ORDER.get(r.get("severity"), 9))])
 
 
 def _sec_facts(v: dict, run_id: int) -> None:
@@ -296,7 +293,7 @@ def _sec_human(v: dict, run_id: int) -> None:
     if not checks:
         st.success("Nothing needs a manual check for this creative.")
         return
-    _grid([_check_card(r) for r in checks])
+    _stack([_check_card(r) for r in checks])
     st.write("")
     _persist_checkbox("I confirm each item above has been reviewed by our team.",
                       ack_human, f"ack_human_cb_{run_id}",
@@ -313,7 +310,7 @@ def _sec_advisory(v: dict, run_id: int) -> None:
         st.info("Advisory needs the model (no API key set)." if not model.available()
                 else "Nothing flagged — the copy reads fair on a second pass.")
         return
-    _grid([_adv_card(n) for n in notes])
+    _stack([_adv_card(n) for n in notes])
     st.write("")
     _persist_checkbox("I confirm the advisory points above have been read and considered.",
                       ack_adv, f"ack_advisory_cb_{run_id}",
@@ -328,8 +325,22 @@ def _sec_passed(v: dict, run_id: int) -> None:
     if not passed:
         st.info("No scored rules passed yet — work the **Fix these** list first.")
         return
-    _grid([_pass_card(r) for r in sorted(passed, key=lambda r: (_SEV_ORDER.get(r.get("severity"), 9),
-                                                                r["rule_id"]))], min_px=260)
+    # A table reads better than cards for this terse content: Rule | Requirement | Severity.
+    rows = "".join(
+        '<tr style="border-bottom:1px solid rgba(128,128,128,0.15);">'
+        f'<td style="padding:7px 12px;font-family:ui-monospace,Consolas,monospace;'
+        f'white-space:nowrap;vertical-align:top;color:rgba(22,163,74,0.95);">{_esc(r["rule_id"])}</td>'
+        f'<td style="padding:7px 12px;vertical-align:top;">{_esc(r.get("title") or "")}</td>'
+        f'<td style="padding:7px 12px;vertical-align:top;white-space:nowrap;">{_sev_chip(r.get("severity",""))}</td>'
+        '</tr>'
+        for r in sorted(passed, key=lambda r: (_SEV_ORDER.get(r.get("severity"), 9), r["rule_id"])))
+    st.markdown(
+        '<div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:0.9rem;">'
+        '<thead><tr style="text-align:left;border-bottom:1px solid rgba(128,128,128,0.35);">'
+        '<th style="padding:7px 12px;width:118px;opacity:0.6;font-weight:600;">Rule</th>'
+        '<th style="padding:7px 12px;opacity:0.6;font-weight:600;">Requirement it satisfies</th>'
+        '<th style="padding:7px 12px;width:92px;opacity:0.6;font-weight:600;">Severity</th>'
+        f'</tr></thead><tbody>{rows}</tbody></table></div>', unsafe_allow_html=True)
 
 
 # ---- report section (gate + download) ---------------------------------------
