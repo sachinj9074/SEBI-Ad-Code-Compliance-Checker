@@ -23,6 +23,7 @@
       "properties": {
         "creative_id": { "type": "string" },
         "source_filename": { "type": "string" },
+        "content_sha256": { "type": "string", "description": "SHA-256 of the uploaded creative, for the clearance report's identity block." },
         "areas_selected": { "type": "array", "items": { "type": "string" } },
         "creative_type": {
           "type": "array",
@@ -36,7 +37,8 @@
         },
         "run_at": { "type": "string", "format": "date-time" },
         "model_used": { "type": "string" },
-        "tool_version": { "type": "string" }
+        "tool_version": { "type": "string" },
+        "demo_cached": { "type": "boolean", "description": "True when this verdict was served from the pre-computed demo cache (no live model call)." }
       }
     },
     "extraction": {

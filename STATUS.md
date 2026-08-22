@@ -39,6 +39,27 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
   - Precision: `market_cap_terms` no longer fires on "Cap" in a scheme name; DISC-010 start-
     placement scoped to audio-visual; LEGIB-001 → not_applicable on text.
   - Eval re-run: 100% deterministic (44/44); 98.9% with `--model` (Sonnet judging 24 rules).
+- ✅ **Taxonomy + report + output UI (2026-08-22, on user request)**
+  - **New rule mapping.** Area is single-select: `scheme_related` / `iap` / `others_media`
+    (+ `all` baseline, never user-facing). Creative type is a conditional multi-select:
+    Scheme-related -> nfo/key_visual/yield; Others & Media -> social_post/article/blog/anniversary;
+    IAP -> none. Schemas first (rule enums + verdict `meta.creative_type` now an array). All 62 rules
+    retagged; `article_blog` split into `article` + `blog`; judgment cases: DISC-009 ct=nfo,
+    ANNIV-001/DISC-024/DISC-025 -> others_media, AUM-001/SUBST-001 -> area `all`. `build_verdict(file,
+    area, creative_types)`. Scope logic centralised in `src/corpus.py` (`AREAS`, `AREA_CTYPE_OPTIONS`);
+    SEGMENTS/segments-matrix generators now import it (no drift).
+  - **Warn-only scheme net** (user decision): scheme name / performance detected under a non-scheme
+    area -> `meta.selection_warnings`, shown in app + CLI + report. Scheme rules still stay off.
+  - **Output UI.** Verdict persisted in `st.session_state` (survives every interaction). Dashboard is
+    now a one-section-at-a-time switcher in priority order: Fix these -> Fact check -> Human check ->
+    Advisory -> Passed. Human/Advisory carry acknowledgement checkboxes backed by durable session keys
+    (survive section navigation).
+  - **Clearance report** (`src/report.py`, fpdf2). Gate: 0 failures + 0 fact mismatches (ambiguous /
+    assumption-matches clear but are listed) + human & advisory acks (when present) + required reviewer
+    name. PDF states it is a first-pass check, not a sign-off; includes creative identity (name +
+    SHA-256), scope + warnings, acknowledgements, passed rules, fact-check (assumptions listed),
+    human-review + advisory items. `meta.content_sha256` added to the verdict.
+  - Deterministic eval still 100% (44/44); scope + report + UI covered by headless AppTests.
 
 ## Architecture (where things live)
 - `schemas/` — rule / verdict / factsheet_record JSON schemas (source of truth). `scripts/validate_*.py`.

@@ -2,18 +2,21 @@
   "schema_version": "0.1.0",
   "meta": {
     "source_filename": "sample_banner.png",
+    "content_sha256": "977f2a8c5575e5c02e6d8bd420c31ccfb538c920b1ec0253a917d134f99a8bf5",
     "areas_selected": [
-      "mf_scheme"
+      "scheme_related"
     ],
-    "creative_type": "general_kv",
-    "run_at": "2026-08-10T15:53:29.121054+00:00",
+    "creative_type": [
+      "key_visual"
+    ],
+    "run_at": "2026-08-22T16:11:07.450795+00:00",
     "model_used": "claude-sonnet-5",
     "tool_version": "0.1.0",
     "demo_cached": true
   },
   "extraction": {
     "extracted_text": "[AMC] Flexi Cap Fund\nAn open-ended dynamic equity scheme\n\n5-Year CAGR: 12.4%\n\nStart a SIP today.\n\nRISK-O-METER\nVERY HIGH\n\nMutual Fund investments are subject to market risks, read all scheme related documents carefully. Past performance may or may not be sustained in future.",
-    "confidence": 0.93,
+    "confidence": 0.9,
     "source_kind": "image",
     "warnings": [
       "Mandatory market-risk warning present but not legibly sized (vision)"
@@ -21,8 +24,8 @@
     "languages_detected": [
       "English"
     ],
-    "layout_notes": "Clean white background layout. Bold black headline top-left with fund name, followed by a gray subtitle line describing the scheme. Mid-left area highlights a large green CAGR statistic, with a call-to-action line below it in black. To the right, a bordered orange-outlined box contains the Risk-o-meter label and 'VERY HIGH' rating in bold orange/red text. The mandatory disclaimer text is placed at the very bottom-left corner in extremely small gray font, disproportionate to the rest of the body text on the creative. No images, photos, or persons are present anywhere in the creative.",
-    "legibility_notes": "The mandatory 14-word market risk disclaimer is present but rendered in a very small font size (appears to be roughly 6-7px equivalent) with low-contrast light gray coloring against the white background, making it very difficult to read compared to the large, bold body text and headlines used elsewhere in the creative. This is a classic 'present but illegible' compliance issue."
+    "layout_notes": "Clean white background, left-aligned headline and body text in black/gray, green highlighted CAGR figure, bordered risk-o-meter box on the right side with orange border, disclaimer text placed at the very bottom in extremely small gray font relative to all other text elements on the page.",
+    "legibility_notes": "The mandatory market risk warning is present at the bottom but rendered in a font size drastically smaller than all other text on the creative (headline, CAGR, CTA), with low contrast light gray coloring, making it very difficult to read without zooming in significantly."
   },
   "feature_detection": {
     "features": [
@@ -59,7 +62,7 @@
       {
         "feature": "scheme_name",
         "present": true,
-        "evidence": "Flexi Cap Fund"
+        "evidence": "[AMC] Flexi Cap Fund"
       },
       {
         "feature": "non_english_language",
@@ -141,7 +144,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative shows historical CAGR performance data with proper risk disclosures and does not claim or imply any guaranteed, assured, or fixed returns."
+        "explanation": "The creative only cites historical CAGR performance with proper risk disclosures and does not promise or imply any guaranteed, fixed, or risk-free returns."
       },
       {
         "rule_id": "PROH-002",
@@ -156,8 +159,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "5-Year CAGR: 12.4%",
-        "explanation": "Showing only one selected return figure with no benchmark comparison, no as-of date, and no other time periods lets readers assume the fund is a strong, low-risk performer without the context needed to judge it fairly, which is misleading by omission.",
-        "suggested_rewrite": "Add the corresponding benchmark index return for the same 5-year period, the 'as-of' date for the CAGR figure, and returns for other standard periods (1-year, 3-year, since inception) alongside the risk-o-meter, so the performance claim is balanced and not cherry-picked."
+        "explanation": "Showing the fund's return figure alone without stating the date it is calculated as on or comparing it to its benchmark index makes the performance look better than it may actually be, which can mislead investors by omission.",
+        "suggested_rewrite": "Add the 'as on [date]' reference next to the CAGR figure and include the corresponding benchmark index return for the same period, e.g., '5-Year CAGR: 12.4% (as on DD/MM/YYYY) vs Benchmark: X%'."
       },
       {
         "rule_id": "PROH-003",
@@ -171,7 +174,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative contains no slogans, superlatives, or exaggerated claims, only factual performance data and standard disclosures."
+        "explanation": "The creative sticks to factual scheme details and standard disclosures without using any exaggerated slogans or unsubstantiated superlative claims."
       },
       {
         "rule_id": "PROH-004",
@@ -185,7 +188,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative only shows the fund's own performance figure and risk meter without any customer testimonials or comparative rankings against other funds."
+        "explanation": "The creative only shows the fund's own CAGR performance and risk meter without any customer testimonials or comparative rankings against other funds."
       },
       {
         "rule_id": "PROH-005",
@@ -199,7 +202,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative contains no mention or comparison to other advertisements or funds, so it cannot be discrediting anything."
+        "explanation": "The creative only presents its own fund's performance data without referencing, criticizing, or comparing itself to any other advertisement or scheme."
       },
       {
         "rule_id": "PROH-006",
@@ -227,7 +230,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative uses simple, plain language and standard fund terms without excessive jargon or complexity that would confuse an ordinary investor."
+        "explanation": "The creative uses simple, plain language without heavy jargon or overly technical/legal detail that could confuse an inexperienced investor."
       },
       {
         "rule_id": "PROH-008",
@@ -241,8 +244,7 @@
           "internal_policy"
         ],
         "check_type": "automated",
-        "verdict": "pass",
-        "explanation": "The creative only shows a historical 5-year CAGR figure with the required past-performance disclaimer, and contains no forward-looking return, GDP, or stock-specific numerical forecasts."
+        "verdict": "pass"
       },
       {
         "rule_id": "CELEB-001",
@@ -403,8 +405,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "[AMC] Flexi Cap Fund",
-        "explanation": "The ad only shows a placeholder for the AMC name and never states the full registered AMC name or its SEBI registration number, which must be clearly shown.",
-        "suggested_rewrite": "Add a footer (or opening frame if video) with the AMC's full registered name and its SEBI registration number, e.g. 'ABC Mutual Fund, SEBI Reg. No. XXXXX'."
+        "explanation": "The ad never states the fund house's full registered name or its SEBI registration number, which must be prominently shown (e.g., in a footer) on every static creative.",
+        "suggested_rewrite": "Add a footer line with the AMC's full registered legal name and its SEBI registration number, e.g., 'XYZ Asset Management Company Ltd. | SEBI Regn. No. INXXXXXXXXX'."
       },
       {
         "rule_id": "DISC-011",
@@ -591,8 +593,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "5-Year CAGR: 12.4%",
-        "explanation": "The ad only shows the 5-year return but SEBI requires showing performance for 1 year, 3 years, 5 years, and since inception all together, so viewers can't see the fund's full track record.",
-        "suggested_rewrite": "Add CAGR figures for 1-year, 3-year, and since-inception periods alongside the existing 5-year CAGR, e.g. '1-Year CAGR: X% | 3-Year CAGR: X% | 5-Year CAGR: 12.4% | Since Inception CAGR: X%'."
+        "explanation": "The ad shows only the 5-year return but leaves out the required 1-year, 3-year, and since-inception CAGR figures, so investors can't see the full performance picture.",
+        "suggested_rewrite": "Add the fund's CAGR for 1 year, 3 years, and since inception alongside the existing 5-year CAGR, e.g. '1-Year CAGR: X% | 3-Year CAGR: X% | 5-Year CAGR: 12.4% | Since Inception CAGR: X%'."
       },
       {
         "rule_id": "PERF-002",
@@ -607,8 +609,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "5-Year CAGR: 12.4%",
-        "explanation": "The ad shows only the CAGR growth rate but doesn't show what a real Rs. 10,000 investment would have actually grown to, which investors need to understand the real rupee impact of the returns.",
-        "suggested_rewrite": "Add a line such as 'Value of Rs. 10,000 invested 5 years ago: Rs. [X]' next to the CAGR figure."
+        "explanation": "The ad shows only the annualized return (CAGR) without also showing what a flat Rs. 10,000 investment would have actually grown to over the same period, which regulations require so investors see returns in plain rupee terms too.",
+        "suggested_rewrite": "Add a line next to the CAGR showing point-to-point returns, e.g., 'Value of Rs. 10,000 invested 5 years ago: Rs. [X] (12.4% CAGR)'."
       },
       {
         "rule_id": "PERF-003",
@@ -623,8 +625,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "5-Year CAGR: 12.4%",
-        "explanation": "The ad shows a performance number but never says whether it's for the Direct or Regular plan, and doesn't include the required footnote explaining that these plans have different expense structures and therefore different returns.",
-        "suggested_rewrite": "Add a label next to the return figure such as '5-Year CAGR: 12.4% (Direct Plan)' or '(Regular Plan)', and add a footnote like 'Direct Plan and Regular Plan have different expense structures; returns shown are for the [Direct/Regular] Plan.'"
+        "explanation": "The ad shows a performance return without saying whether it's for the Direct or Regular plan or noting that these plans have different expense structures and thus different returns.",
+        "suggested_rewrite": "Add a label next to the return, e.g. '5-Year CAGR: 12.4% (Regular Plan)', and include a footnote such as 'Direct Plan has a different expense ratio and its returns will differ from the Regular Plan shown above.'"
       },
       {
         "rule_id": "PERF-004",
@@ -639,8 +641,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "5-Year CAGR: 12.4%",
-        "explanation": "The ad shows a performance number without stating the 'as on' date it was calculated from, so there's no way to confirm it's based on the required month-end-before-the-ad-date period.",
-        "suggested_rewrite": "Add an explicit 'as on DD/MM/YYYY' date next to the CAGR figure, where that date is the last day of the month prior to when the ad is released, e.g. '5-Year CAGR: 12.4% (as on 31 Jan 2026)'."
+        "explanation": "The performance figure doesn't state the 'as on' date, so there's no way to confirm it's calculated up to the last completed month before this ad ran.",
+        "suggested_rewrite": "Add the specific reference date, e.g., '5-Year CAGR: 12.4% (as on 31 Jan 2026)', using the month-end immediately preceding the ad's release date."
       },
       {
         "rule_id": "PERF-005",
@@ -698,7 +700,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative only shows lumpsum 5-year CAGR performance and does not display any SIP returns figures, so the SIP-specific disclosure requirements (lumpsum comparison, instalment periodicity, XIRR note) are not triggered."
+        "explanation": "The ad only shows lumpsum CAGR performance and a generic call-to-action to start a SIP, but does not display any actual SIP return figures, so the SIP-specific disclosure requirements don't apply."
       },
       {
         "rule_id": "PERF-009",
@@ -767,7 +769,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative only shows a 5-year CAGR figure and doesn't present any quarterly, half-yearly, or yearly performance data, so the calendar-period rule doesn't apply here."
+        "explanation": "The creative only shows a 5-year CAGR figure, not any quarterly, half-yearly, or yearly performance figure, so the calendar-period matching rule doesn't apply here."
       },
       {
         "rule_id": "PERF-014",
@@ -822,7 +824,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative only shows a past 5-year CAGR figure with standard disclaimers and does not present any indicative portfolio or indicative yield/return promise."
+        "explanation": "The creative only shows actual past 5-year CAGR performance with the required disclaimer, and does not mention any indicative portfolio or projected/indicative yield."
       },
       {
         "rule_id": "AMFI-001",
@@ -848,7 +850,8 @@
           "internal_policy"
         ],
         "check_type": "automated",
-        "verdict": "pass"
+        "verdict": "pass",
+        "explanation": "The ad only talks about the Flexi Cap mutual fund itself and does not mention or promote any other product or business."
       },
       {
         "rule_id": "SUBST-001",
@@ -877,7 +880,7 @@
         ],
         "check_type": "assisted",
         "verdict": "fail",
-        "explanation": "The mandatory 14-word market risk disclaimer is present but rendered in a very small font size (appears to be roughly 6-7px equivalent) with low-contrast light gray coloring against the white background, making it very difficult to read compared to the large, bold body text and headlines used elsewhere in the creative. This is a classic 'present but illegible' compliance issue.",
+        "explanation": "The mandatory market risk warning is present at the bottom but rendered in a font size drastically smaller than all other text on the creative (headline, CAGR, CTA), with low contrast light gray coloring, making it very difficult to read without zooming in significantly.",
         "offending_element": "disclaimer (illegible)"
       }
     ],
@@ -929,8 +932,12 @@
   "advisory_layer": {
     "notes": [
       {
-        "note": "The 5-Year CAGR of 12.4% is shown as a single standalone number in large green text with no benchmark comparison or context (e.g., category average, index return), which could lead an investor to assume this is an unusually strong or guaranteed-like return without any frame of reference.",
-        "area": "5-Year CAGR: 12.4%"
+        "note": "Showing only the 5-Year CAGR in isolation, without a benchmark or category average alongside it, lets the number look like a standalone achievement rather than a comparative result, which can mislead an investor into overestimating relative performance.",
+        "area": "Performance Claim"
+      },
+      {
+        "note": "Highlighting the CAGR in green with no accompanying range of past returns (e.g., 1-year, 3-year) or volatility context understates that this is a Very High risk flexi-cap product where short-term outcomes could differ sharply from the 5-year figure shown.",
+        "area": "Risk Presentation"
       }
     ]
   },
@@ -940,6 +947,6 @@
     "failed": 9,
     "needs_review": 8,
     "fact_mismatches": 1,
-    "advisory_notes": 1
+    "advisory_notes": 2
   }
 }

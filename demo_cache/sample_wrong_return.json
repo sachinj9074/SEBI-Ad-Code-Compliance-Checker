@@ -2,11 +2,14 @@
   "schema_version": "0.1.0",
   "meta": {
     "source_filename": "sample_wrong_return.txt",
+    "content_sha256": "1695332a0ecd14403a84f3b53fb4edc3c5be61780ebf5a633371617b75134c66",
     "areas_selected": [
-      "mf_scheme"
+      "scheme_related"
     ],
-    "creative_type": "general_kv",
-    "run_at": "2026-08-10T15:51:50.326455+00:00",
+    "creative_type": [
+      "key_visual"
+    ],
+    "run_at": "2026-08-22T16:09:53.166128+00:00",
     "model_used": "claude-sonnet-5",
     "tool_version": "0.1.0",
     "demo_cached": true
@@ -80,8 +83,7 @@
       },
       {
         "feature": "market_cap_terms",
-        "present": true,
-        "evidence": "Large Cap Fund classifies strategy by market capitalisation"
+        "present": false
       },
       {
         "feature": "index_etf",
@@ -135,7 +137,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative only cites a past 1-year return figure with the required disclaimers and does not promise or imply any guaranteed, fixed, or risk-free future returns."
+        "explanation": "The creative only states a past return figure with the required disclaimers and does not promise or imply any guaranteed, fixed, or risk-free future return."
       },
       {
         "rule_id": "PROH-002",
@@ -150,8 +152,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "delivered an impressive 15% return over the last 1 year",
-        "explanation": "Calling the return 'impressive' and showing only a single one-year figure without the benchmark comparison or longer-term (3-year, 5-year, since-inception) performance gives a one-sided, potentially misleading picture of how the fund has actually performed.",
-        "suggested_rewrite": "Remove the subjective word 'impressive' and present the return as plain compounded annualized figures for 1-year, 3-year, 5-year and since-inception periods alongside the corresponding benchmark returns for the same periods."
+        "explanation": "Calling the return 'impressive' is a subjective, promotional judgment rather than a neutral fact, which can bias investors' perception of past performance.",
+        "suggested_rewrite": "Remove the word 'impressive' and simply state the factual figure, e.g., 'delivered a 15% return over the last 1 year.'"
       },
       {
         "rule_id": "PROH-003",
@@ -166,8 +168,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "delivered an impressive 15% return over the last 1 year",
-        "explanation": "Calling the return 'impressive' is a subjective superlative that isn't backed by any comparison to a benchmark or peer performance, which can mislead investors about how good the return really is.",
-        "suggested_rewrite": "Remove the word 'impressive' and simply state the factual return, e.g., 'delivered a 15% return over the last 1 year,' optionally adding the benchmark's return for context."
+        "explanation": "Calling the return 'impressive' is a subjective, unsubstantiated superlative that isn't backed by any comparison or context and could mislead investors about the fund's true risk-return profile.",
+        "suggested_rewrite": "Remove the word 'impressive' and simply state the factual figure, e.g., 'delivered a 15% return over the last 1 year', letting the performance data speak for itself."
       },
       {
         "rule_id": "PROH-004",
@@ -194,7 +196,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative only talks about its own fund's performance and details without mentioning or comparing to any other advertisement or scheme."
+        "explanation": "The creative only presents the fund's own performance and facts without mentioning, discrediting, or comparing itself to other advertisements or competing funds."
       },
       {
         "rule_id": "PROH-006",
@@ -221,7 +223,8 @@
           "sebi"
         ],
         "check_type": "automated",
-        "verdict": "pass"
+        "verdict": "pass",
+        "explanation": "The creative uses plain, standard mutual fund terms (returns, AUM, risk-o-meter, expense structure) without dense jargon or misleading complexity that would confuse an inexperienced investor."
       },
       {
         "rule_id": "PROH-008",
@@ -394,8 +397,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "Axis Large Cap Fund — Direct Plan (Growth) delivered an impressive 15% return over the last 1 year.",
-        "explanation": "The ad never states the AMC's full registered name or its SEBI registration number anywhere, including a footer, so viewers can't verify who is behind the fund.",
-        "suggested_rewrite": "Add a footer line such as 'Axis Asset Management Company Limited | SEBI Registration No. [XXXXXXX]' prominently displayed on the creative."
+        "explanation": "The ad never states the AMC's full registered company name or its SEBI registration number, which investors need to verify the fund house's identity and regulatory status.",
+        "suggested_rewrite": "Add a footer line with the AMC's full registered name (e.g., 'Axis Asset Management Company Limited') and its SEBI registration number (e.g., 'SEBI Regn. No. INXXXXXXXXX')."
       },
       {
         "rule_id": "DISC-011",
@@ -463,10 +466,7 @@
           "internal_policy"
         ],
         "check_type": "automated",
-        "verdict": "fail",
-        "confidence": 0.409,
-        "explanation": "A disclaimer this creative must carry is missing (or its wording differs too much from the mandated text — closest match 41%).",
-        "suggested_rewrite": "Add this exact text: “Large Cap: 1st-100th company in terms of full market capitalisation. Mid Cap: 101st-250th company in terms of full market capitalisation. Small Cap: 251st company onwards in terms of full market capitalisation.”"
+        "verdict": "not_applicable"
       },
       {
         "rule_id": "DISC-016",
@@ -585,8 +585,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "delivered an impressive 15% return over the last 1 year.",
-        "explanation": "The ad only shows the 1-year return but leaves out the 3-year, 5-year, and since-inception performance figures that must always be shown together so investors get the full picture.",
-        "suggested_rewrite": "Add the fund's CAGR figures for 3 years, 5 years, and since inception alongside the existing 1-year return, e.g. '1 Year: 15% | 3 Years: X% CAGR | 5 Years: X% CAGR | Since Inception: X% CAGR'."
+        "explanation": "The ad only shows the 1-year return but leaves out the required 3-year, 5-year, and since-inception performance figures, which could mislead investors about the fund's long-term track record.",
+        "suggested_rewrite": "Add the fund's CAGR figures for 3 years, 5 years, and since inception alongside the existing 1-year return, e.g., '15% (1 year), X% (3 years), Y% (5 years), Z% (since inception)'."
       },
       {
         "rule_id": "PERF-002",
@@ -601,8 +601,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "delivered an impressive 15% return over the last 1 year",
-        "explanation": "The ad only shows the percentage return but doesn't show what that means in actual rupee terms for a standard Rs. 10,000 investment, which investors need to understand the real money impact.",
-        "suggested_rewrite": "Add a line such as 'Value of Rs. 10,000 invested 1 year ago would be approximately Rs. 11,500 (CAGR: 15%)' alongside the return figure."
+        "explanation": "The ad only states a percentage return but never shows what a standard Rs. 10,000 investment would have grown to, which investors need to understand the actual money impact.",
+        "suggested_rewrite": "Add a line such as 'A Rs. 10,000 investment made 1 year ago would be worth approximately Rs. X today (CAGR: 15%)' next to the return figure."
       },
       {
         "rule_id": "PERF-003",
@@ -615,8 +615,7 @@
           "sebi"
         ],
         "check_type": "automated",
-        "verdict": "pass",
-        "explanation": "The creative clearly states the return is for the Direct Plan and includes the required footnote that different plans have different expense structures."
+        "verdict": "pass"
       },
       {
         "rule_id": "PERF-004",
@@ -631,8 +630,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "delivered an impressive 15% return over the last 1 year",
-        "explanation": "The ad doesn't state the specific date the 15% return is calculated as of, so there's no way to confirm it's based on the required month-end-before-publish period.",
-        "suggested_rewrite": "Add an explicit 'as on [month-end date]' reference next to the return figure, e.g., 'delivered a 15% return over the last 1 year (as on 30 Jun 2025)', where that date is the last day of the month preceding the ad's release."
+        "explanation": "The ad shows a return figure without stating the 'as on' date it was calculated from, so there's no way to confirm it uses the month-end date just before the ad's release as required.",
+        "suggested_rewrite": "Add the specific reference date, e.g., 'delivered a 15% return over the last 1 year as on [last month-end date before ad release]', so the performance period is clearly tied to the correct month-end cutoff."
       },
       {
         "rule_id": "PERF-005",
@@ -759,8 +758,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "delivered an impressive 15% return over the last 1 year",
-        "explanation": "The return is shown for a rolling 'last 1 year' period instead of an actual calendar year, quarter, or half-year, which the rule requires for such performance disclosures.",
-        "suggested_rewrite": "Change the performance figure to reflect a specific calendar year (e.g., 'returned 15% in calendar year 2025') instead of a trailing 12-month period."
+        "explanation": "The return is shown for a rolling 'last 1 year' period instead of an actual calendar year, which the rule requires so investors aren't misled by cherry-picked time windows.",
+        "suggested_rewrite": "Change the performance disclosure to reflect the return for the actual calendar year (e.g., 'returned 15% in calendar year 2025') instead of a trailing 12-month figure."
       },
       {
         "rule_id": "PERF-014",
@@ -789,8 +788,8 @@
         "check_type": "automated",
         "verdict": "fail",
         "offending_text": "with a link to AUM by geography at [AMC website]/aum",
-        "explanation": "The link only mentions AUM by geography but the rule requires a link to a report that also breaks down AUM by asset class, so investors can't see the full required breakdown.",
-        "suggested_rewrite": "Change the link description to something like 'with a link to the AUM by geography and asset class report at [AMC website]/aum' and ensure the linked page actually contains both breakdowns."
+        "explanation": "The rule requires the AUM link to point to a report showing AUM broken down by both geography and asset class, but the ad only mentions geography, leaving out the asset-class breakdown investors need.",
+        "suggested_rewrite": "Change the text to 'with a link to the report on AUM by geography and asset class at [AMC website]/aum' and ensure the linked page actually shows both breakdowns."
       },
       {
         "rule_id": "YLD-001",
@@ -817,7 +816,8 @@
           "sebi"
         ],
         "check_type": "automated",
-        "verdict": "pass"
+        "verdict": "pass",
+        "explanation": "The creative only states the fund's actual historical 1-year return and AUM figures, not any projected or indicative yield or portfolio, so it does not violate this rule."
       },
       {
         "rule_id": "AMFI-001",
@@ -844,7 +844,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative only discusses the mutual fund itself and does not mention or promote any other product, service, or business."
+        "explanation": "The creative only talks about the Axis Large Cap Fund itself and doesn't mention or promote any other product, service, or business like insurance, PMS, or AIF."
       },
       {
         "rule_id": "SUBST-001",
@@ -878,9 +878,9 @@
     "summary": {
       "rules_run": 53,
       "passed": 10,
-      "failed": 11,
+      "failed": 10,
       "needs_review": 8,
-      "not_applicable": 24
+      "not_applicable": 25
     }
   },
   "fact_check_layer": {
@@ -922,15 +922,15 @@
   "advisory_layer": {
     "notes": [
       {
-        "note": "The ad highlights only the 1-year return (15%) and calls it 'impressive' without showing longer-term (3/5-year) returns or how it compares to the benchmark or category average — a reader could assume this single-year number reflects typical or superior fund performance when 1-year returns can be volatile and not representative.",
-        "area": "performance framing"
+        "note": "Highlighting only the 1-year return as 'impressive' without showing the benchmark's 1-year return or the fund's 3/5-year figures lets a reader assume this single data point represents consistent skill, when a large-cap fund's one-year number can be driven by market timing rather than manager performance.",
+        "area": "performance claim"
       }
     ]
   },
   "summary_strip": {
     "rules_run": 53,
     "passed": 10,
-    "failed": 11,
+    "failed": 10,
     "needs_review": 8,
     "fact_mismatches": 1,
     "advisory_notes": 1

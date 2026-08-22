@@ -8,7 +8,9 @@ Verdict rules:
 """
 from __future__ import annotations
 
+import hashlib
 from datetime import datetime, timezone
+from pathlib import Path
 
 from . import advisory
 from . import factcheck
@@ -18,6 +20,22 @@ from .corpus import filter_rules, load_rules
 from .extract import extract
 
 TOOL_VERSION = "0.1.0"
+
+
+def _content_hash(file: str) -> str:
+    """SHA-256 of the creative, for the clearance report's identity block. A
+    directory (carousel) is hashed over its files in name order. Never raises."""
+    try:
+        p = Path(file)
+        h = hashlib.sha256()
+        paths = sorted(p.rglob("*")) if p.is_dir() else [p]
+        for fp in paths:
+            if fp.is_file():
+                h.update(fp.name.encode("utf-8"))
+                h.update(fp.read_bytes())
+        return h.hexdigest()
+    except Exception:  # noqa: BLE001 — identity is best-effort, never fatal
+        return "not recorded"
 
 _JUDGE_SCHEMA = {
     "type": "object",
@@ -230,7 +248,8 @@ def build_verdict(file: str, area: str, creative_types: list[str]) -> dict:
     return {
         "schema_version": TOOL_VERSION,
         "meta": {
-            "source_filename": file,
+            "source_filename": Path(file).name,
+            "content_sha256": _content_hash(file),
             "areas_selected": [area],
             "creative_type": creative_types,
             "run_at": datetime.now(timezone.utc).isoformat(),

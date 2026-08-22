@@ -19,7 +19,7 @@ import html
 
 import streamlit as st
 
-from src import model
+from src import model, report
 
 _esc = html.escape
 
@@ -65,8 +65,26 @@ def _counts(v: dict) -> dict:
 
 
 def ack_keys(run_id: int) -> tuple[str, str]:
-    """Session-state keys for the two acknowledgement checkboxes (per run)."""
-    return f"ack_human_{run_id}", f"ack_advisory_{run_id}"
+    """DURABLE session-state keys holding the two acknowledgement values (per run).
+
+    These are plain keys we manage ourselves, NOT widget keys, so they survive
+    even when their checkbox is not currently rendered (the results show one
+    section at a time). The clearance gate reads these.
+    """
+    return f"ack_human_val_{run_id}", f"ack_advisory_val_{run_id}"
+
+
+def _persist_checkbox(label: str, val_key: str, widget_key: str, help: str | None = None) -> None:
+    """A checkbox whose value survives navigating away from its section. The
+    widget writes to a durable `val_key` via on_change; on re-render the widget
+    is re-seeded from that durable value."""
+    st.session_state.setdefault(val_key, False)
+    if widget_key not in st.session_state:
+        st.session_state[widget_key] = st.session_state[val_key]
+    st.checkbox(
+        label, key=widget_key, help=help,
+        on_change=lambda: st.session_state.__setitem__(val_key, st.session_state[widget_key]),
+    )
 
 
 # ---- headline + selection warnings ------------------------------------------
@@ -254,9 +272,9 @@ def _sec_human(v: dict, run_id: int) -> None:
         st.success("Nothing needs a manual check for this creative.")
         return
     st.markdown("".join(_check_card(r) for r in checks), unsafe_allow_html=True)
-    st.checkbox(
+    _persist_checkbox(
         "I confirm that each item above has been manually reviewed.",
-        key=ack_human,
+        ack_human, f"ack_human_cb_{run_id}",
         help="Required before a clearance report can be generated.",
     )
 
@@ -277,9 +295,9 @@ def _sec_advisory(v: dict, run_id: int) -> None:
         for n in notes:
             tag = f"**[{n['area']}]** " if n.get("area") else ""
             st.markdown(f"- {tag}{n['note']}")
-    st.checkbox(
+    _persist_checkbox(
         "I confirm the advisory points above have been read and considered.",
-        key=ack_adv,
+        ack_adv, f"ack_advisory_cb_{run_id}",
         help="Required before a clearance report can be generated.",
     )
 
@@ -297,3 +315,56 @@ def _sec_passed(v: dict, run_id: int) -> None:
             for r in passed)
         st.markdown(f'<div style="column-width:320px;column-gap:28px;">{items}</div>',
                     unsafe_allow_html=True)
+
+
+# ---- clearance report (gate + download) -------------------------------------
+def _prereq(done: bool, text: str) -> None:
+    st.markdown(f"{'✅' if done else '⬜'} {text}")
+
+
+def clearance(v: dict, run_id: int) -> None:
+    st.divider()
+    st.markdown("### 4 · Clearance report")
+    st.caption("Once the automated checks and fact-checks are clean and you've reviewed the human-check "
+               "and advisory items, download a report to attach when you hand this creative to compliance. "
+               "It records a first-pass check; it is **not** a compliance sign-off.")
+
+    counts = _counts(v)
+    ok_auto, _ = report.automated_clear(v)
+    ack_human_key, ack_adv_key = ack_keys(run_id)
+    need_human, need_adv = counts["human"] > 0, counts["advisory"] > 0
+    ack_human = (not need_human) or bool(st.session_state.get(ack_human_key))
+    ack_adv = (not need_adv) or bool(st.session_state.get(ack_adv_key))
+
+    _prereq(counts["must_fix"] == 0, f"No rule failures  ·  {counts['must_fix']} to fix")
+    _prereq(counts["facts"] == 0, f"No factual mismatches  ·  {counts['facts']} to resolve")
+    if need_human:
+        _prereq(ack_human, "Human-check items reviewed  ·  tick the box in the **🟠 Human check** section")
+    if need_adv:
+        _prereq(ack_adv, "Advisory points considered  ·  tick the box in the **💡 Advisory** section")
+
+    if not ok_auto:
+        st.info("Resolve the failures / mismatches above and re-run the check to unlock the report.")
+        return
+    if not (ack_human and ack_adv):
+        st.info("Open the sections noted above and tick their confirmations to unlock the report.")
+        return
+
+    c1, c2 = st.columns(2)
+    name = c1.text_input("Your name (required)", key=f"rep_name_{run_id}")
+    team = c2.text_input("Team / designation (optional)", key=f"rep_team_{run_id}")
+    if not name.strip():
+        st.info("Enter your name to generate the clearance report.")
+        return
+
+    try:
+        pdf = report.build_clearance_pdf(v, name.strip(), team.strip(), ack_human, ack_adv)
+    except Exception as exc:  # noqa: BLE001 — never crash the page on a report error
+        st.error(f"Could not build the report: {type(exc).__name__}: {exc}")
+        return
+
+    stem = (v["meta"].get("source_filename") or "creative").rsplit(".", 1)[0]
+    fname = f"clearance_{stem}_{run_id}.pdf"
+    st.success("All prerequisites met. The report is ready to download.")
+    st.download_button("⬇ Download clearance report (PDF)", data=pdf, file_name=fname,
+                       mime="application/pdf", type="primary")

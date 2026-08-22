@@ -2,11 +2,14 @@
   "schema_version": "0.1.0",
   "meta": {
     "source_filename": "sample_clean.txt",
+    "content_sha256": "961876a983975be7e5716b462164d564e5de298cf487715f24538bd289c4e596",
     "areas_selected": [
-      "mf_scheme"
+      "scheme_related"
     ],
-    "creative_type": "general_kv",
-    "run_at": "2026-08-10T15:48:21.226851+00:00",
+    "creative_type": [
+      "key_visual"
+    ],
+    "run_at": "2026-08-22T16:07:11.406035+00:00",
     "model_used": "claude-sonnet-5",
     "tool_version": "0.1.0",
     "demo_cached": true
@@ -131,7 +134,8 @@
           "sebi"
         ],
         "check_type": "automated",
-        "verdict": "pass"
+        "verdict": "pass",
+        "explanation": "The creative does not use any words or phrasing that state or imply assured, guaranteed, protected, risk-free, or fixed returns; it explicitly discloses high risk and disclaimers."
       },
       {
         "rule_id": "PROH-002",
@@ -145,7 +149,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative sticks to factual, generic descriptions of the fund and its risk without making unverifiable claims, guarantees, or performance projections that could mislead an investor."
+        "explanation": "The creative sticks to factual descriptions of the fund's structure, process, and required risk/disclaimer language without making false, exaggerated, or projection-based claims."
       },
       {
         "rule_id": "PROH-003",
@@ -159,7 +163,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative does not contain any exaggerated slogan or unsubstantiated superlative; its descriptive statements are consistent with the fund's actual nature, risk, and return profile."
+        "explanation": "The creative uses factual, measured descriptions of the fund's strategy and risk profile without any exaggerated slogans or unsubstantiated superlatives."
       },
       {
         "rule_id": "PROH-004",
@@ -172,7 +176,8 @@
           "sebi"
         ],
         "check_type": "automated",
-        "verdict": "pass"
+        "verdict": "pass",
+        "explanation": "The creative contains no customer testimonials or performance/ranking claims, just generic scheme features and standard disclosures."
       },
       {
         "rule_id": "PROH-005",
@@ -186,7 +191,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative makes no reference to or comparison with other funds, schemes, or advertisements, so there is nothing that discredits or unfairly compares against competitors."
+        "explanation": "The creative does not mention or compare itself to any other advertisement, fund, or competitor, so there is nothing that could discredit others."
       },
       {
         "rule_id": "PROH-006",
@@ -214,7 +219,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative uses plain, straightforward language without excessive technical jargon or complexity that could confuse or exploit inexperienced investors, and it includes appropriate risk disclosures and advice to consult a financial adviser."
+        "explanation": "The creative uses plain, simple language without heavy jargon or overwhelming detail, and does not appear to exploit investor inexperience."
       },
       {
         "rule_id": "PROH-008",
@@ -229,7 +234,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative contains no numerical forecasts, assumed returns, or GDP/stock predictions, and no stock-specific commentary, so it complies with the rule."
+        "explanation": "The creative contains no numerical forecasts, assumed returns, or GDP/stock-specific predictions; it only describes the fund's approach and standard disclosures."
       },
       {
         "rule_id": "CELEB-001",
@@ -381,7 +386,8 @@
           "internal_policy"
         ],
         "check_type": "automated",
-        "verdict": "pass"
+        "verdict": "pass",
+        "explanation": "The ad is a static creative and it clearly shows the AMC's registered name and SEBI registration number in a footer, which meets the requirement for static content."
       },
       {
         "rule_id": "DISC-011",
@@ -779,7 +785,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative does not mention any specific indicative portfolio composition or promise a specific yield/return figure for this open-ended scheme."
+        "explanation": "The creative does not mention any specific portfolio holdings, allocation percentages, or expected/indicative returns or yield figures."
       },
       {
         "rule_id": "AMFI-001",
@@ -806,7 +812,7 @@
         ],
         "check_type": "automated",
         "verdict": "pass",
-        "explanation": "The creative only promotes the mutual fund scheme itself and does not mention or advertise any other product, business, AIF, PMS, insurance, or group offering."
+        "explanation": "The creative only talks about the mutual fund scheme itself and does not mention or promote any other product, business, or affiliate offering."
       },
       {
         "rule_id": "SUBST-001",

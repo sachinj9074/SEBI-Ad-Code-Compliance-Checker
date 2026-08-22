@@ -260,6 +260,7 @@ render.features(verdict)
 render.showback(verdict)
 st.divider()
 render.results(verdict, run_id)
+render.clearance(verdict, run_id)
 
 with st.expander("Full verdict JSON (for debugging / export)"):
     st.json(verdict)
