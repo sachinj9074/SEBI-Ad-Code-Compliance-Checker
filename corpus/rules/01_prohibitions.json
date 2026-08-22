@@ -3,136 +3,249 @@
     "rule_id": "PROH-001",
     "title": "No assured or guaranteed returns",
     "description": "The creative must not state, imply, or suggest assured, guaranteed, protected, risk-free, or fixed returns for any mutual fund scheme.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "critical",
     "check_type": "automated",
     "source_clause": "SEBI (Mutual Funds) Regulations 1996, Sixth Schedule (Advertisement Code) clause (b); MF Master Circular 2026-03-20, Chapter 14",
     "source_date": "2012-02-21",
-    "provenance": ["sebi"],
+    "provenance": [
+      "sebi"
+    ],
     "examples": {
-      "pass": { "content": "Mutual fund investments are subject to market risks. Past performance may or may not be sustained in future.", "note": "Makes no assurance of returns." },
-      "fail": { "content": "Invest now and get guaranteed 12% annual returns, capital fully protected!", "note": "'guaranteed' and 'capital fully protected' assert assured returns." }
+      "pass": {
+        "content": "Mutual fund investments are subject to market risks. Past performance may or may not be sustained in future.",
+        "note": "Makes no assurance of returns."
+      },
+      "fail": {
+        "content": "Invest now and get guaranteed 12% annual returns, capital fully protected!",
+        "note": "'guaranteed' and 'capital fully protected' assert assured returns."
+      }
     }
   },
   {
     "rule_id": "PROH-002",
     "title": "No false, misleading, or deceptive statements",
     "description": "The creative must not contain statements that are false, misleading, biased, or deceptive, based on assumptions or projections, and must not mislead directly, by implication, or by omission.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "critical",
     "check_type": "automated",
     "source_clause": "Sixth Schedule (Advertisement Code) clauses (a), (b), (c)",
     "source_date": "2012-02-21",
-    "provenance": ["sebi"],
+    "provenance": [
+      "sebi"
+    ],
     "examples": {
-      "pass": { "content": "An open-ended equity scheme investing across market capitalisations. Returns are market-linked and not assured.", "note": "Accurate, not misleading." },
-      "fail": { "content": "This fund never loses money and always beats the market.", "note": "False/deceptive absolute claim." }
+      "pass": {
+        "content": "An open-ended equity scheme investing across market capitalisations. Returns are market-linked and not assured.",
+        "note": "Accurate, not misleading."
+      },
+      "fail": {
+        "content": "This fund never loses money and always beats the market.",
+        "note": "False/deceptive absolute claim."
+      }
     }
   },
   {
     "rule_id": "PROH-003",
     "title": "No exaggerated or unwarranted slogans",
     "description": "The creative must not carry any slogan that is exaggerated or unwarranted, or that is inconsistent with or unrelated to the nature, risk, and return profile of the product, including unsubstantiated superlatives.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "high",
     "check_type": "automated",
     "source_clause": "Sixth Schedule (Advertisement Code) clause (d)",
     "source_date": "2012-02-21",
-    "provenance": ["sebi"],
+    "provenance": [
+      "sebi"
+    ],
     "examples": {
-      "pass": { "content": "A diversified equity fund designed for long-term financial goals.", "note": "Measured, tied to product nature." },
-      "fail": { "content": "India's #1 unbeatable fund — get rich beyond your dreams!", "note": "Exaggerated, unsubstantiated superlative slogan." }
+      "pass": {
+        "content": "A diversified equity fund designed for long-term financial goals.",
+        "note": "Measured, tied to product nature."
+      },
+      "fail": {
+        "content": "India's #1 unbeatable fund — get rich beyond your dreams!",
+        "note": "Exaggerated, unsubstantiated superlative slogan."
+      }
     }
   },
   {
     "rule_id": "PROH-004",
     "title": "No testimonials or rankings",
     "description": "The creative must not contain any testimonials or any ranking based on any criteria.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "high",
     "check_type": "automated",
     "source_clause": "Sixth Schedule (Advertisement Code) clause (b)",
     "source_date": "2012-02-21",
-    "provenance": ["sebi"],
+    "provenance": [
+      "sebi"
+    ],
     "examples": {
-      "pass": { "content": "The scheme follows a bottom-up stock selection process.", "note": "No testimonial or ranking." },
-      "fail": { "content": "“This fund made me a millionaire!” — Rajesh, Mumbai. Ranked #1 by a leading portal.", "note": "Testimonial plus ranking." }
+      "pass": {
+        "content": "The scheme follows a bottom-up stock selection process.",
+        "note": "No testimonial or ranking."
+      },
+      "fail": {
+        "content": "“This fund made me a millionaire!” — Rajesh, Mumbai. Ranked #1 by a leading portal.",
+        "note": "Testimonial plus ranking."
+      }
     }
   },
   {
     "rule_id": "PROH-005",
     "title": "No discrediting or unfair comparisons",
     "description": "The creative must not directly or indirectly discredit other advertisements or make unfair comparisons.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Sixth Schedule (Advertisement Code) clause (h)",
     "source_date": "2012-02-21",
-    "provenance": ["sebi"],
+    "provenance": [
+      "sebi"
+    ],
     "examples": {
-      "pass": { "content": "Compare schemes on the basis of their disclosed risk-o-meter and investment objective.", "note": "No disparagement." },
-      "fail": { "content": "Unlike other AMCs' underperforming funds, ours is simply far superior.", "note": "Unfair comparison / discrediting others." }
+      "pass": {
+        "content": "Compare schemes on the basis of their disclosed risk-o-meter and investment objective.",
+        "note": "No disparagement."
+      },
+      "fail": {
+        "content": "Unlike other AMCs' underperforming funds, ours is simply far superior.",
+        "note": "Unfair comparison / discrediting others."
+      }
     }
   },
   {
     "rule_id": "PROH-006",
     "title": "Consistent with SID/SAI/KIM",
     "description": "The creative must contain information that is timely and consistent with the disclosures made in the Scheme Information Document, Statement of Additional Information, and Key Information Memorandum; it must not claim features beyond those disclosures.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "assisted",
     "source_clause": "Sixth Schedule (Advertisement Code) clause (g)",
     "source_date": "2012-02-21",
-    "provenance": ["sebi"],
+    "provenance": [
+      "sebi"
+    ],
     "examples": {
-      "pass": { "content": "The scheme's risk is 'Very High' as per the product risk-o-meter; refer to the SID for full details.", "note": "Consistent with disclosures." },
-      "fail": { "content": "This debt fund carries absolutely no credit risk whatsoever.", "note": "Inconsistent with the scheme's disclosed risk profile." }
+      "pass": {
+        "content": "The scheme's risk is 'Very High' as per the product risk-o-meter; refer to the SID for full details.",
+        "note": "Consistent with disclosures."
+      },
+      "fail": {
+        "content": "This debt fund carries absolutely no credit risk whatsoever.",
+        "note": "Inconsistent with the scheme's disclosed risk profile."
+      }
     }
   },
   {
     "rule_id": "PROH-007",
     "title": "No exploiting investor inexperience; avoid excessive jargon",
     "description": "The advertisement must not be framed to exploit the lack of experience or knowledge of investors. Extensive use of technical or legal terminology, complex language, or excessive detail that may detract investors must be avoided.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Sixth Schedule (Advertisement Code) clause (f)",
     "source_date": "2012-02-21",
-    "provenance": ["sebi"],
+    "provenance": [
+      "sebi"
+    ],
     "examples": {
-      "pass": { "content": "A plain-language explanation of how an SIP works, with the key risks stated simply.", "note": "Clear; does not exploit inexperience." },
-      "fail": { "content": "Copy dense with unexplained metrics — Sharpe, Sortino, Treynor, information ratio, tracking error — used to impress rather than inform.", "note": "Excessive jargon that detracts and exploits inexperience." }
+      "pass": {
+        "content": "A plain-language explanation of how an SIP works, with the key risks stated simply.",
+        "note": "Clear; does not exploit inexperience."
+      },
+      "fail": {
+        "content": "Copy dense with unexplained metrics — Sharpe, Sortino, Treynor, information ratio, tracking error — used to impress rather than inform.",
+        "note": "Excessive jargon that detracts and exploits inexperience."
+      }
     }
   },
   {
     "rule_id": "PROH-008",
     "title": "No forecasts or projections; commentary limits",
     "description": "The advertisement must not present forecasts, assumed returns, or numerical forecasts of GDP or any stock metric. General market and economic commentary is permitted; stock-specific commentary is not; sector commentary is permitted only if it contains no numerical forecasts.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "high",
     "check_type": "automated",
     "source_clause": "Sixth Schedule (Advertisement Code) clause (b); internal Dos & Don'ts guidance",
     "source_date": "2012-02-21",
-    "provenance": ["sebi", "internal_policy"],
+    "provenance": [
+      "sebi",
+      "internal_policy"
+    ],
     "examples": {
-      "pass": { "content": "Equity markets have historically rewarded patient long-term investors across cycles.", "note": "General market commentary, no forecast." },
-      "fail": { "content": "We expect this stock to rise 20% and GDP to hit 8% next year, so the fund should return about 18%.", "note": "Numerical forecast, stock-specific call, and assumed return." }
+      "pass": {
+        "content": "Equity markets have historically rewarded patient long-term investors across cycles.",
+        "note": "General market commentary, no forecast."
+      },
+      "fail": {
+        "content": "We expect this stock to rise 20% and GDP to hit 8% next year, so the fund should return about 18%.",
+        "note": "Numerical forecast, stock-specific call, and assumed return."
+      }
     }
   }
 ]

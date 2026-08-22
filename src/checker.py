@@ -184,8 +184,12 @@ def run_rules(rules: list[dict], text: str, present: set[str], vision: dict | No
     return {"results": results, "summary": summary}
 
 
-def build_verdict(file: str, areas: list[str], creative_type: str) -> dict:
-    """Full Layer-1 verdict for one creative. Layers 2 & 3 are stubbed for now."""
+def build_verdict(file: str, area: str, creative_types: list[str]) -> dict:
+    """Full Layer-1 verdict for one creative.
+
+    `area` is the single selected business area; `creative_types` the selected
+    creative types (empty for IAP, which takes no creative-type input).
+    """
     ex = extract(file)
     text = ex["extracted_text"]
     vision = ex.get("vision")
@@ -196,7 +200,23 @@ def build_verdict(file: str, areas: list[str], creative_type: str) -> dict:
         feats += [f for f in featuremod.from_vision(vision) if f["feature"] not in seen]
     present = {f["feature"] for f in feats if f["present"]}
 
-    scoped = filter_rules(load_rules(), areas, creative_type)
+    # Warn-only scheme-content check (user decision 2026-08-22): under a
+    # non-scheme area the scheme-related rules stay off, but if the creative
+    # names a scheme or shows performance we say so loudly rather than let a
+    # false-clean result pass silently. The warning also goes on any report.
+    selection_warnings: list[str] = []
+    if area != "scheme_related" and present & {"scheme_name", "performance"}:
+        what = " and ".join(sorted(
+            {"scheme_name": "a scheme name", "performance": "performance figures"}[f]
+            for f in present & {"scheme_name", "performance"}))
+        selection_warnings.append(
+            f"This creative contains {what}, but the selected business area is not "
+            f"'Scheme-related', so the scheme-specific rules (sponsor/suitability "
+            f"disclaimers, risk-o-meter, performance requirements) were NOT checked. "
+            f"If it promotes a specific scheme, re-run it under Scheme-related."
+        )
+
+    scoped = filter_rules(load_rules(), area, creative_types)
     rule_layer = run_rules(scoped, text, present, vision)
 
     # Layer 2 — kept entirely separate from the Layer-1 score.
@@ -211,11 +231,12 @@ def build_verdict(file: str, areas: list[str], creative_type: str) -> dict:
         "schema_version": TOOL_VERSION,
         "meta": {
             "source_filename": file,
-            "areas_selected": areas,
-            "creative_type": creative_type,
+            "areas_selected": [area],
+            "creative_type": creative_types,
             "run_at": datetime.now(timezone.utc).isoformat(),
             "model_used": model.model_id() if model.available() else "none (deterministic only)",
             "tool_version": TOOL_VERSION,
+            **({"selection_warnings": selection_warnings} if selection_warnings else {}),
         },
         "extraction": {
             "extracted_text": text,

@@ -3,67 +3,127 @@
     "rule_id": "AUM-001",
     "title": "AUM figure requires link to AUM breakdown",
     "description": "Where AUM figures are included, a link to the report on AUM by geography and asset class on the website must be given.",
-    "trigger": { "type": "conditional", "feature": "aum_figure" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "aum_figure"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal Performance checklist item 18; MF Master Circular 2026-03-20, Chapter 14",
     "source_date": "2026-03-20",
-    "provenance": ["sebi", "internal_policy"],
+    "provenance": [
+      "sebi",
+      "internal_policy"
+    ],
     "examples": {
-      "pass": { "content": "Total AUM: ₹8,421 cr. AUM by geography and asset class: [AMC website]/aum.", "note": "AUM figure with the breakdown link." },
-      "fail": { "content": "We've crossed ₹8,421 cr in AUM — thank you, investors!", "note": "AUM figure without the AUM-breakdown link." }
+      "pass": {
+        "content": "Total AUM: ₹8,421 cr. AUM by geography and asset class: [AMC website]/aum.",
+        "note": "AUM figure with the breakdown link."
+      },
+      "fail": {
+        "content": "We've crossed ₹8,421 cr in AUM — thank you, investors!",
+        "note": "AUM figure without the AUM-breakdown link."
+      }
     }
   },
   {
     "rule_id": "YLD-001",
     "title": "Yield creative required fields",
     "description": "A creative showing yield must display the scheme name and description, the annualised Portfolio YTM (semi-annualised YTM to be annualised), the Macaulay Duration, the Residual Maturity, and the 'as on' date, in addition to the applicable product label, risk-o-meter, and standard disclaimers.",
-    "trigger": { "type": "conditional", "feature": "yield_ytm" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "yield_ytm"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal checklist (Yield creative requirements); MF Master Circular 2026-03-20, Chapter 14",
     "source_date": "2026-03-20",
-    "provenance": ["sebi", "internal_policy"],
+    "provenance": [
+      "sebi",
+      "internal_policy"
+    ],
     "examples": {
-      "pass": { "content": "[AMC] Corporate Bond Fund — Annualised Portfolio YTM: 7.4% | Macaulay Duration: 2.1 yrs | Residual Maturity: 2.6 yrs. Data as on 31 July 2026.", "note": "All yield fields present." },
-      "fail": { "content": "Lock in an attractive Portfolio YTM of 7.4%!", "note": "YTM shown without Macaulay Duration, Residual Maturity, or as-on date." }
+      "pass": {
+        "content": "[AMC] Corporate Bond Fund — Annualised Portfolio YTM: 7.4% | Macaulay Duration: 2.1 yrs | Residual Maturity: 2.6 yrs. Data as on 31 July 2026.",
+        "note": "All yield fields present."
+      },
+      "fail": {
+        "content": "Lock in an attractive Portfolio YTM of 7.4%!",
+        "note": "YTM shown without Macaulay Duration, Residual Maturity, or as-on date."
+      }
     }
   },
   {
     "rule_id": "YLD-002",
     "title": "No indicative portfolio or yield",
     "description": "Mutual Funds, AMCs, and distributors must not offer any indicative portfolio or indicative yield, and no communication in this regard shall be issued (for open-ended schemes).",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "high",
     "check_type": "automated",
     "source_clause": "MF Master Circular 2026-03-20, para 14.4.1",
     "source_date": "2026-03-20",
-    "provenance": ["sebi"],
+    "provenance": [
+      "sebi"
+    ],
     "examples": {
-      "pass": { "content": "The scheme invests in high-quality debt; yields are market-linked and not indicated in advance.", "note": "No indicative yield offered." },
-      "fail": { "content": "Expected indicative yield of ~9% p.a. based on our target portfolio.", "note": "Offers an indicative yield." }
+      "pass": {
+        "content": "The scheme invests in high-quality debt; yields are market-linked and not indicated in advance.",
+        "note": "No indicative yield offered."
+      },
+      "fail": {
+        "content": "Expected indicative yield of ~9% p.a. based on our target portfolio.",
+        "note": "Offers an indicative yield."
+      }
     }
   },
   {
     "rule_id": "ANNIV-001",
     "title": "Anniversary creative required disclosures",
     "description": "An anniversary post must disclose the Scheme AUM or MF AUM with a link to AUM by geography and asset class, the count of live folios (in line with the MCR), the data 'as on' date, and the date of inception.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["anniversary"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "others_media"
+    ],
+    "creative_type": [
+      "anniversary"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal checklist (Anniversary post requirements)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "examples": {
-      "pass": { "content": "Celebrating 5 years. Scheme AUM: ₹8,421 cr (AUM by geography/asset class: [AMC website]/aum). Live folios: 1,20,540. Data as on 31 July 2026. Inception: 10 May 2013.", "note": "AUM link + folio count + as-on date + inception all present." },
-      "fail": { "content": "Celebrating 5 amazing years with you — here's to many more!", "note": "Missing AUM link, folio count, as-on date, and inception date." }
+      "pass": {
+        "content": "Celebrating 5 years. Scheme AUM: ₹8,421 cr (AUM by geography/asset class: [AMC website]/aum). Live folios: 1,20,540. Data as on 31 July 2026. Inception: 10 May 2013.",
+        "note": "AUM link + folio count + as-on date + inception all present."
+      },
+      "fail": {
+        "content": "Celebrating 5 amazing years with you — here's to many more!",
+        "note": "Missing AUM link, folio count, as-on date, and inception date."
+      }
     }
   }
 ]

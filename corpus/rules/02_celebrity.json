@@ -3,43 +3,103 @@
     "rule_id": "CELEB-001",
     "title": "No celebrity in the advertisement",
     "description": "No celebrity shall form part of the advertisement — whether by depiction, endorsement, or by name or reference (e.g. an article drawing an analogy to a named celebrity's discipline or routine). When a prominent person is detected or a well-known name is referenced, they must be reviewed against the celebrity definition below — a match on any single criterion makes the person a celebrity. Principle: once a celebrity, always a celebrity.",
-    "trigger": { "type": "conditional", "feature": "prominent_person" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "prominent_person"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "high",
     "check_type": "assisted",
     "source_clause": "Sixth Schedule (Advertisement Code) clause (e); internal celebrity checklist (7-part definition)",
     "source_date": "2012-02-21",
-    "provenance": ["sebi", "internal_policy"],
+    "provenance": [
+      "sebi",
+      "internal_policy"
+    ],
     "sub_criteria": [
-      { "id": "C1", "label": "Celebrity-index top 50", "description": "Features in the Top 50 rankings of any celebrity index published by a national publication of repute and publicly available (latest, or at most one year old)." },
-      { "id": "C2", "label": "Lead film/TV/OTT role", "description": "Has played a lead role or one of the lead roles in any mainstream/prominent/popular movie, TV serial, TV show, or web series on any OTT platform." },
-      { "id": "C3", "label": "Influencer >10 lakh followers", "description": "Is an influencer with more than 10 lakh followers/subscribers on social media (checked at onboarding, at release, at each new shoot/release, and on any re-release)." },
-      { "id": "C4", "label": "National/international sportsperson", "description": "A sportsperson who has been part of the national team, represented the country, or participated in international tournaments (Olympics, Asian Games, Commonwealth Games) or popular televised sports events (kabaddi, Cricket IPL, etc.)." },
-      { "id": "C5", "label": "TV host/anchor", "description": "Has been a host or anchor for TV programs (quiz, cooking, news, comedy, dance, song, award functions, etc.) for at least one season or a minimum of 10 episodes." },
-      { "id": "C6", "label": "Competition winner/runner-up", "description": "Was a winner or runner-up in any prominent/popular competitive program aired on TV/OTT, or a prominent personality who progressed through qualifying, quarter-final, semi-final, or final rounds." },
-      { "id": "C7", "label": "Influential virtual character", "description": "A virtual character (fictional computer-generated person or avatar with realistic human characteristics) that influences its audience/followers." }
+      {
+        "id": "C1",
+        "label": "Celebrity-index top 50",
+        "description": "Features in the Top 50 rankings of any celebrity index published by a national publication of repute and publicly available (latest, or at most one year old)."
+      },
+      {
+        "id": "C2",
+        "label": "Lead film/TV/OTT role",
+        "description": "Has played a lead role or one of the lead roles in any mainstream/prominent/popular movie, TV serial, TV show, or web series on any OTT platform."
+      },
+      {
+        "id": "C3",
+        "label": "Influencer >10 lakh followers",
+        "description": "Is an influencer with more than 10 lakh followers/subscribers on social media (checked at onboarding, at release, at each new shoot/release, and on any re-release)."
+      },
+      {
+        "id": "C4",
+        "label": "National/international sportsperson",
+        "description": "A sportsperson who has been part of the national team, represented the country, or participated in international tournaments (Olympics, Asian Games, Commonwealth Games) or popular televised sports events (kabaddi, Cricket IPL, etc.)."
+      },
+      {
+        "id": "C5",
+        "label": "TV host/anchor",
+        "description": "Has been a host or anchor for TV programs (quiz, cooking, news, comedy, dance, song, award functions, etc.) for at least one season or a minimum of 10 episodes."
+      },
+      {
+        "id": "C6",
+        "label": "Competition winner/runner-up",
+        "description": "Was a winner or runner-up in any prominent/popular competitive program aired on TV/OTT, or a prominent personality who progressed through qualifying, quarter-final, semi-final, or final rounds."
+      },
+      {
+        "id": "C7",
+        "label": "Influential virtual character",
+        "description": "A virtual character (fictional computer-generated person or avatar with realistic human characteristics) that influences its audience/followers."
+      }
     ],
     "examples": {
-      "pass": { "content": "Creative featuring an anonymous everyday-investor model with no public persona.", "note": "No celebrity; a person appears but is not a public figure." },
-      "fail": { "content": "Creative featuring a well-known film actor endorsing the scheme.", "note": "Prominent person detected — raise needs_review to confirm celebrity status." }
+      "pass": {
+        "content": "Creative featuring an anonymous everyday-investor model with no public persona.",
+        "note": "No celebrity; a person appears but is not a public figure."
+      },
+      "fail": {
+        "content": "Creative featuring a well-known film actor endorsing the scheme.",
+        "note": "Prominent person detected — raise needs_review to confirm celebrity status."
+      }
     }
   },
   {
     "rule_id": "CELEB-002",
     "title": "No caricatures, avatars, or memes of cine personalities",
     "description": "The creative must not use caricatures, avatars, or memes of popular cine actors, movie posters, movie or series scenes, or 'filmi' dialogues in promotional material, especially on social media.",
-    "trigger": { "type": "conditional", "feature": "prominent_person" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "prominent_person"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "assisted",
     "source_clause": "Internal celebrity checklist item 8; Sixth Schedule (Advertisement Code) clause (e)",
     "source_date": "2012-02-21",
-    "provenance": ["internal_policy", "sebi"],
+    "provenance": [
+      "internal_policy",
+      "sebi"
+    ],
     "examples": {
-      "pass": { "content": "An original illustrated character created for the campaign.", "note": "No reference to a cine personality." },
-      "fail": { "content": "A meme built on a famous movie scene with a well-known 'filmi' dialogue, used to promote the SIP.", "note": "Meme of a movie scene / dialogue." }
+      "pass": {
+        "content": "An original illustrated character created for the campaign.",
+        "note": "No reference to a cine personality."
+      },
+      "fail": {
+        "content": "A meme built on a famous movie scene with a well-known 'filmi' dialogue, used to promote the SIP.",
+        "note": "Meme of a movie scene / dialogue."
+      }
     }
   }
 ]

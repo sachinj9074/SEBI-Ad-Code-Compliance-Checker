@@ -58,18 +58,18 @@
       "minItems": 1,
       "uniqueItems": true,
       "items": {
-        "enum": ["all", "mf_scheme", "iap", "non_iap", "nfo", "aif", "pms", "branding", "social_media"]
+        "enum": ["all", "scheme_related", "iap", "others_media"]
       },
-      "description": "Business-area tags. v1 populates only all, mf_scheme, nfo."
+      "description": "Business-area tags. 'all' marks mandatory rules that run for every area and is never a user-facing option."
     },
     "creative_type": {
       "type": "array",
       "minItems": 1,
       "uniqueItems": true,
       "items": {
-        "enum": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"]
+        "enum": ["all", "nfo", "key_visual", "yield", "social_post", "article", "blog", "anniversary", "video"]
       },
-      "description": "Creative-type tags. video rules are encoded but inactive in v1."
+      "description": "Creative-type tags. 'all' marks rules that run for every creative type (never a user-facing option). Scheme-related offers nfo/key_visual/yield; Others & Media offers social_post/article/blog/anniversary; IAP takes no creative-type input. video rules are encoded but inactive in v1."
     },
     "severity": {
       "enum": ["critical", "high", "medium", "low"],

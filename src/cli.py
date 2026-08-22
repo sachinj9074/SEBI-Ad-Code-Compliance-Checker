@@ -1,6 +1,6 @@
 """Pass-one checker CLI.
 
-    python -m src.cli <creative-file> --areas mf_scheme --type general_kv [--json out.json]
+    python -m src.cli <creative-file> --area scheme_related --types key_visual [--json out.json]
 
 Prints the summary strip, failed / needs-review rules grouped by trigger, and
 the show-back (extracted text + confidence). DOCX / text-PDF in v1.
@@ -13,22 +13,21 @@ import sys
 
 from . import model
 from .checker import build_verdict
-from .corpus import ACTIVE_CREATIVE_TYPES
-
-AREAS = ["all", "mf_scheme", "nfo", "iap"]
+from .corpus import ACTIVE_CREATIVE_TYPES, AREAS
 
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description="SEBI ad-code pass-one checker")
     ap.add_argument("file", help="creative file (.docx, .pdf, .txt)")
-    ap.add_argument("--areas", nargs="+", default=["mf_scheme"], choices=AREAS,
-                    help="business area(s) the creative relates to")
-    ap.add_argument("--type", dest="creative_type", default="general_kv",
-                    choices=sorted(ACTIVE_CREATIVE_TYPES), help="creative type")
+    ap.add_argument("--area", default="scheme_related", choices=AREAS,
+                    help="the business area the creative relates to")
+    ap.add_argument("--types", dest="creative_types", nargs="*", default=["key_visual"],
+                    choices=sorted(ACTIVE_CREATIVE_TYPES),
+                    help="creative type(s); pass none for IAP")
     ap.add_argument("--json", dest="json_out", help="also write the full verdict JSON here")
     args = ap.parse_args(argv)
 
-    verdict = build_verdict(args.file, args.areas, args.creative_type)
+    verdict = build_verdict(args.file, args.area, args.creative_types)
     _print_report(verdict)
     if args.json_out:
         with open(args.json_out, "w", encoding="utf-8") as fh:
@@ -42,9 +41,11 @@ def _print_report(v: dict) -> None:
     ex = v["extraction"]
     print("=" * 68)
     print(f"  {v['meta']['source_filename']}  [{', '.join(v['meta']['areas_selected'])}"
-          f" / {v['meta']['creative_type']}]")
+          f" / {', '.join(v['meta']['creative_type']) or 'no creative type (IAP)'}]")
     print(f"  model: {v['meta']['model_used']}")
     print("=" * 68)
+    for w in v["meta"].get("selection_warnings", []):
+        print(f"  !! {w}")
     print(f"  rules run {s['rules_run']} | pass {s['passed']} | FAIL {s['failed']}"
           f" | needs-review {s['needs_review']} | fact-mismatch {s['fact_mismatches']}"
           f" | advisory {s['advisory_notes']}")

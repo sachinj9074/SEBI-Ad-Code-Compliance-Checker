@@ -21,7 +21,7 @@ RULES_DIR = ROOT / "corpus" / "rules"
 SCHEMA = ROOT / "schemas" / "rule.schema.json"
 
 # Creative types the v1 checker actually offers (video is encoded but inactive).
-ACTIVE_CREATIVE_TYPES = {"general_kv", "anniversary", "yield", "article_blog", "social_post"}
+ACTIVE_CREATIVE_TYPES = {"all", "nfo", "key_visual", "yield", "social_post", "article", "blog", "anniversary"}
 
 
 def load(path: Path):

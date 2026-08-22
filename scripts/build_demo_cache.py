@@ -24,8 +24,8 @@ sys.path.insert(0, str(ROOT))
 from src import model  # noqa: E402
 from src.checker import build_verdict  # noqa: E402
 
-AREAS = ["mf_scheme"]
-CTYPE = "general_kv"
+AREA = "scheme_related"
+CTYPES = ["key_visual"]
 
 SAMPLES = [
     "sample_clean.txt",
@@ -50,7 +50,7 @@ def main() -> int:
             print(f"skip (missing sample): {name}")
             continue
         print(f"generating: {name} ...", flush=True)
-        verdict = build_verdict(str(src), AREAS, CTYPE)
+        verdict = build_verdict(str(src), AREA, CTYPES)
         # Stamp as pre-computed and strip any local temp path from the filename.
         verdict.setdefault("meta", {})["demo_cached"] = True
         verdict["meta"]["source_filename"] = name

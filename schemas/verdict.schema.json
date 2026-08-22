@@ -24,7 +24,16 @@
         "creative_id": { "type": "string" },
         "source_filename": { "type": "string" },
         "areas_selected": { "type": "array", "items": { "type": "string" } },
-        "creative_type": { "type": "string" },
+        "creative_type": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Creative types selected for the run (multi-select; empty for IAP, which takes no creative-type input)."
+        },
+        "selection_warnings": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Warnings about the run's scoping, e.g. scheme content detected while a non-scheme area was selected (so the scheme-related rules did not run)."
+        },
         "run_at": { "type": "string", "format": "date-time" },
         "model_used": { "type": "string" },
         "tool_version": { "type": "string" }

@@ -3,554 +3,958 @@
     "rule_id": "DISC-001",
     "title": "Standard 14-word market-risk warning (verbatim)",
     "description": "The creative must carry the standard warning in legible font, verbatim, with no addition or deletion of words.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "critical",
     "check_type": "automated",
     "source_clause": "Sixth Schedule (Advertisement Code) clause (i)",
     "source_date": "2012-02-21",
-    "provenance": ["sebi"],
+    "provenance": [
+      "sebi"
+    ],
     "mandated_text": {
       "text": "Mutual Fund investments are subject to market risks, read all scheme related documents carefully.",
       "language": "en",
       "match_threshold": 0.92
     },
     "examples": {
-      "pass": { "content": "Invest in [AMC] Flexi Cap Fund. Mutual Fund investments are subject to market risks, read all scheme related documents carefully.", "note": "Warning present, verbatim." },
-      "fail": { "content": "Invest in [AMC] Flexi Cap Fund for long-term wealth. Start a SIP today!", "note": "Standard warning absent." }
+      "pass": {
+        "content": "Invest in [AMC] Flexi Cap Fund. Mutual Fund investments are subject to market risks, read all scheme related documents carefully.",
+        "note": "Warning present, verbatim."
+      },
+      "fail": {
+        "content": "Invest in [AMC] Flexi Cap Fund for long-term wealth. Start a SIP today!",
+        "note": "Standard warning absent."
+      }
     }
   },
   {
     "rule_id": "DISC-002",
     "title": "Vernacular (Hindi) standard warning",
     "description": "When the creative is in a vernacular language, it must carry the standard warning in that language. A Hindi creative must carry the Hindi standard warning verbatim.",
-    "trigger": { "type": "conditional", "feature": "non_english_language" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "non_english_language"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "critical",
     "check_type": "automated",
     "source_clause": "Sixth Schedule (Advertisement Code) clause (ia)",
     "source_date": "2021-03-05",
-    "provenance": ["sebi"],
+    "provenance": [
+      "sebi"
+    ],
     "mandated_text": {
       "text": "म्यूचुअल फंड निवेश बाज़ार जोखिमों के अधीन हैं, योजना से जुड़े सभी दस्तावेज़ों को ध्यान से पढ़ें |",
       "language": "hi",
       "match_threshold": 0.85
     },
     "examples": {
-      "pass": { "content": "[AMC] फ्लेक्सी कैप फंड में निवेश करें। म्यूचुअल फंड निवेश बाज़ार जोखिमों के अधीन हैं, योजना से जुड़े सभी दस्तावेज़ों को ध्यान से पढ़ें |", "note": "Hindi creative with the Hindi warning." },
-      "fail": { "content": "[AMC] फ्लेक्सी कैप फंड में निवेश करें। आज ही SIP शुरू करें।", "note": "Hindi creative missing the Hindi warning." }
+      "pass": {
+        "content": "[AMC] फ्लेक्सी कैप फंड में निवेश करें। म्यूचुअल फंड निवेश बाज़ार जोखिमों के अधीन हैं, योजना से जुड़े सभी दस्तावेज़ों को ध्यान से पढ़ें |",
+        "note": "Hindi creative with the Hindi warning."
+      },
+      "fail": {
+        "content": "[AMC] फ्लेक्सी कैप फंड में निवेश करें। आज ही SIP शुरू करें।",
+        "note": "Hindi creative missing the Hindi warning."
+      }
     }
   },
   {
     "rule_id": "DISC-003",
     "title": "Sponsor liability disclaimer",
     "description": "Scheme creatives must carry the sponsor liability disclaimer stating the sponsor is not liable or responsible for any loss or shortfall resulting from the operation of the scheme.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "high",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Sponsor/Statutory disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "The Sponsor - [Sponsor Bank], is not liable or responsible for any loss or shortfall resulting from the operation of the scheme.",
       "language": "en",
       "match_threshold": 0.8
     },
     "examples": {
-      "pass": { "content": "The Sponsor - [Sponsor Bank], is not liable or responsible for any loss or shortfall resulting from the operation of the scheme.", "note": "Sponsor disclaimer present." },
-      "fail": { "content": "Backed by a strong parent, [AMC] Flexi Cap Fund invests for the long term.", "note": "Sponsor liability disclaimer absent." }
+      "pass": {
+        "content": "The Sponsor - [Sponsor Bank], is not liable or responsible for any loss or shortfall resulting from the operation of the scheme.",
+        "note": "Sponsor disclaimer present."
+      },
+      "fail": {
+        "content": "Backed by a strong parent, [AMC] Flexi Cap Fund invests for the long term.",
+        "note": "Sponsor liability disclaimer absent."
+      }
     }
   },
   {
     "rule_id": "DISC-004",
     "title": "Product suitability disclaimer",
     "description": "Scheme creatives must carry the product suitability statement advising investors to consult their financial advisers if in doubt about whether the product is suitable for them.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "MF Master Circular 2026-03-20 (product labelling / product suitability); internal checklist (KV requirements)",
     "source_date": "2026-03-20",
-    "provenance": ["sebi", "internal_policy"],
+    "provenance": [
+      "sebi",
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "Investors should consult their financial advisers if in doubt about whether the product is suitable for them.",
       "language": "en",
       "match_threshold": 0.85
     },
     "examples": {
-      "pass": { "content": "Investors should consult their financial advisers if in doubt about whether the product is suitable for them.", "note": "Suitability line present." },
-      "fail": { "content": "This scheme is perfect for every single investor, no questions needed.", "note": "Suitability disclaimer absent (and overreaching)." }
+      "pass": {
+        "content": "Investors should consult their financial advisers if in doubt about whether the product is suitable for them.",
+        "note": "Suitability line present."
+      },
+      "fail": {
+        "content": "This scheme is perfect for every single investor, no questions needed.",
+        "note": "Suitability disclaimer absent (and overreaching)."
+      }
     }
   },
   {
     "rule_id": "DISC-005",
     "title": "Product labelling and risk-o-meter",
     "description": "Scheme creatives must include the product label with the scheme and benchmark risk-o-meter (and the Potential Risk Class matrix for debt schemes), displayed legibly.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "high",
     "check_type": "assisted",
     "source_clause": "MF Master Circular 2026-03-20 (product labelling); internal checklist (KV requirements)",
     "source_date": "2026-03-20",
-    "provenance": ["sebi", "internal_policy"],
+    "provenance": [
+      "sebi",
+      "internal_policy"
+    ],
     "examples": {
-      "pass": { "content": "Creative showing the scheme risk-o-meter and the benchmark risk-o-meter, both legible.", "note": "Product labelling present." },
-      "fail": { "content": "Creative showing performance but no scheme or benchmark risk-o-meter.", "note": "Product labelling missing — raise for legibility/presence review." }
+      "pass": {
+        "content": "Creative showing the scheme risk-o-meter and the benchmark risk-o-meter, both legible.",
+        "note": "Product labelling present."
+      },
+      "fail": {
+        "content": "Creative showing performance but no scheme or benchmark risk-o-meter.",
+        "note": "Product labelling missing — raise for legibility/presence review."
+      }
     }
   },
   {
     "rule_id": "DISC-006",
     "title": "Past-performance disclaimer when performance shown",
     "description": "When performance of any scheme, category, index, or benchmark is shown, the creative must carry the standard performance disclaimer that past performance may or may not be sustained in future.",
-    "trigger": { "type": "conditional", "feature": "performance" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "performance"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "high",
     "check_type": "automated",
     "source_clause": "MF Master Circular 2026-03-20, Chapter 14; internal Performance checklist item 11",
     "source_date": "2026-03-20",
-    "provenance": ["sebi"],
+    "provenance": [
+      "sebi"
+    ],
     "mandated_text": {
       "text": "Past performance may or may not be sustained in future.",
       "language": "en",
       "match_threshold": 0.85
     },
     "examples": {
-      "pass": { "content": "1Y 12.4% | 3Y 15.2% | 5Y 13.8%. Past performance may or may not be sustained in future.", "note": "Performance shown with the disclaimer." },
-      "fail": { "content": "1Y 12.4% | 3Y 15.2% | 5Y 13.8%. Invest today!", "note": "Performance shown without the past-performance disclaimer." }
+      "pass": {
+        "content": "1Y 12.4% | 3Y 15.2% | 5Y 13.8%. Past performance may or may not be sustained in future.",
+        "note": "Performance shown with the disclaimer."
+      },
+      "fail": {
+        "content": "1Y 12.4% | 3Y 15.2% | 5Y 13.8%. Invest today!",
+        "note": "Performance shown without the past-performance disclaimer."
+      }
     }
   },
   {
     "rule_id": "DISC-007",
     "title": "Stock disclaimer when stocks are named",
     "description": "When individual stocks are named, the creative must carry the stock disclaimer clarifying that the stocks are used to explain the concept, are for illustration only, are not investment advice, and may or may not be part of the portfolio.",
-    "trigger": { "type": "conditional", "feature": "named_stocks" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "named_stocks"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Stock disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "The stocks mentioned are used to explain the concept and are for illustration purpose only and should not be construed as investment advice. The stocks may or may not be part of the portfolio/strategy/schemes.",
       "language": "en",
       "match_threshold": 0.75
     },
     "examples": {
-      "pass": { "content": "For illustration, consider companies such as Sample Bank Ltd. The stocks mentioned are used to explain the concept and are for illustration purpose only and should not be construed as investment advice. The stocks may or may not be part of the portfolio/strategy/schemes.", "note": "Stocks named with the stock disclaimer." },
-      "fail": { "content": "Our fund holds winners like Sample Bank Ltd and Sample Energy Ltd — buy now!", "note": "Stocks named without the stock disclaimer (and reads as a recommendation)." }
+      "pass": {
+        "content": "For illustration, consider companies such as Sample Bank Ltd. The stocks mentioned are used to explain the concept and are for illustration purpose only and should not be construed as investment advice. The stocks may or may not be part of the portfolio/strategy/schemes.",
+        "note": "Stocks named with the stock disclaimer."
+      },
+      "fail": {
+        "content": "Our fund holds winners like Sample Bank Ltd and Sample Energy Ltd — buy now!",
+        "note": "Stocks named without the stock disclaimer (and reads as a recommendation)."
+      }
     }
   },
   {
     "rule_id": "DISC-008",
     "title": "Sector disclaimer when sectors are named",
     "description": "When sectors are named, the creative must carry the sector disclaimer clarifying that the sectors are for general assessment only, not a complete disclosure, not investment advice, and that the schemes may or may not have investments in those sectors.",
-    "trigger": { "type": "conditional", "feature": "named_sectors" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "named_sectors"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Sector disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "The sectors mentioned are for general assessment purpose only and not a complete disclosure of every material fact. It should not be construed as investment advice. The schemes may or may not have any investments in these sectors.",
       "language": "en",
       "match_threshold": 0.75
     },
     "examples": {
-      "pass": { "content": "The scheme may take exposure to sectors such as financials and energy. The sectors mentioned are for general assessment purpose only and not a complete disclosure of every material fact. It should not be construed as investment advice. The schemes may or may not have any investments in these sectors.", "note": "Sectors named with the sector disclaimer." },
-      "fail": { "content": "We're betting big on the financials and energy sectors this year.", "note": "Sectors named without the sector disclaimer." }
+      "pass": {
+        "content": "The scheme may take exposure to sectors such as financials and energy. The sectors mentioned are for general assessment purpose only and not a complete disclosure of every material fact. It should not be construed as investment advice. The schemes may or may not have any investments in these sectors.",
+        "note": "Sectors named with the sector disclaimer."
+      },
+      "fail": {
+        "content": "We're betting big on the financials and energy sectors this year.",
+        "note": "Sectors named without the sector disclaimer."
+      }
     }
   },
   {
     "rule_id": "DISC-009",
     "title": "NFO product-labelling disclaimer",
     "description": "For New Fund Offer creatives, the product-labelling NFO disclaimer must be present, stating that the product labelling assigned during the NFO is based on internal assessment of scheme characteristics or model portfolio and may vary post-NFO when actual investments are made.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["nfo"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "nfo"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "MF Master Circular 2026-03-20 (product labelling for NFO); internal checklist (NFO KV requirement)",
     "source_date": "2026-03-20",
-    "provenance": ["sebi", "internal_policy"],
+    "provenance": [
+      "sebi",
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "The product labelling assigned during the New Fund Offer is based on internal assessment of the scheme characteristics or model portfolio and the same may vary post NFO when actual investments are made.",
       "language": "en",
       "match_threshold": 0.8
     },
     "examples": {
-      "pass": { "content": "New Fund Offer open now. The product labelling assigned during the New Fund Offer is based on internal assessment of the scheme characteristics or model portfolio and the same may vary post NFO when actual investments are made.", "note": "NFO creative with the NFO labelling disclaimer." },
-      "fail": { "content": "New Fund Offer open now — invest at ₹10 and lock in the growth!", "note": "NFO creative missing the NFO labelling disclaimer." }
+      "pass": {
+        "content": "New Fund Offer open now. The product labelling assigned during the New Fund Offer is based on internal assessment of the scheme characteristics or model portfolio and the same may vary post NFO when actual investments are made.",
+        "note": "NFO creative with the NFO labelling disclaimer."
+      },
+      "fail": {
+        "content": "New Fund Offer open now — invest at ₹10 and lock in the growth!",
+        "note": "NFO creative missing the NFO labelling disclaimer."
+      }
     }
   },
   {
     "rule_id": "DISC-010",
     "title": "Registered name and SEBI registration number",
     "description": "The creative must display the AMC's registered name and SEBI registration number. In video and audio (audio-visual) content they must appear at the beginning of the content (effective 1 May 2026); in static creatives (print, image, key visual) prominent display — for example a footer — satisfies the requirement.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "SEBI requirement effective 2026-05-01 (registered name + registration number at the start of audio-visual securities-market content; prominent display on static creatives); internal checklist — Disclaimer Repository (SEBI registration number, mandatory)",
     "source_date": "2026-05-01",
-    "provenance": ["sebi", "internal_policy"],
+    "provenance": [
+      "sebi",
+      "internal_policy"
+    ],
     "examples": {
-      "pass": { "content": "[AMC] (registered name) | SEBI registration number: [SEBI registration no.]", "note": "Registered name and registration number displayed (at the start, for video)." },
-      "fail": { "content": "[AMC] | Follow us for more updates.", "note": "Registered name / SEBI registration number absent (or not at the start of the video)." }
+      "pass": {
+        "content": "[AMC] (registered name) | SEBI registration number: [SEBI registration no.]",
+        "note": "Registered name and registration number displayed (at the start, for video)."
+      },
+      "fail": {
+        "content": "[AMC] | Follow us for more updates.",
+        "note": "Registered name / SEBI registration number absent (or not at the start of the video)."
+      }
     }
   },
   {
     "rule_id": "DISC-011",
     "title": "Taxation disclaimer when tax implications are mentioned",
     "description": "When tax benefits or tax implications are mentioned, the creative must carry the taxation disclaimer advising investors to consult their tax advisors.",
-    "trigger": { "type": "conditional", "feature": "tax_reference" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "tax_reference"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Taxation disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "For individual nature of tax implications, investors are requested to consult their tax advisors before investing.",
       "language": "en",
       "match_threshold": 0.8
     },
     "examples": {
-      "pass": { "content": "Save tax under Section 80C. For individual nature of tax implications, investors are requested to consult their tax advisors before investing.", "note": "Tax mentioned with the taxation disclaimer." },
-      "fail": { "content": "Invest and save up to ₹46,800 in taxes every year!", "note": "Tax benefit claimed without the taxation disclaimer." }
+      "pass": {
+        "content": "Save tax under Section 80C. For individual nature of tax implications, investors are requested to consult their tax advisors before investing.",
+        "note": "Tax mentioned with the taxation disclaimer."
+      },
+      "fail": {
+        "content": "Invest and save up to ₹46,800 in taxes every year!",
+        "note": "Tax benefit claimed without the taxation disclaimer."
+      }
     }
   },
   {
     "rule_id": "DISC-012",
     "title": "Fund-of-Funds recurring-expenses disclaimer",
     "description": "For Fund of Funds schemes, the creative must disclose that investors bear the recurring expenses of the scheme in addition to the expenses of the underlying schemes.",
-    "trigger": { "type": "conditional", "feature": "fund_of_funds" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "fund_of_funds"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (FOF Schemes disclaimer)",
-    "provenance": ["sebi", "internal_policy"],
+    "provenance": [
+      "sebi",
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "Investors will be bearing the recurring expenses of the scheme in addition to the expenses of the other schemes in which the Fund of Funds scheme makes investment.",
       "language": "en",
       "match_threshold": 0.8
     },
     "examples": {
-      "pass": { "content": "[AMC] Multi Asset FoF. Investors will be bearing the recurring expenses of the scheme in addition to the expenses of the other schemes in which the Fund of Funds scheme makes investment.", "note": "FoF creative with the recurring-expenses disclaimer." },
-      "fail": { "content": "[AMC] Multi Asset FoF — one fund, diversified exposure. Invest now.", "note": "FoF creative missing the recurring-expenses disclaimer." }
+      "pass": {
+        "content": "[AMC] Multi Asset FoF. Investors will be bearing the recurring expenses of the scheme in addition to the expenses of the other schemes in which the Fund of Funds scheme makes investment.",
+        "note": "FoF creative with the recurring-expenses disclaimer."
+      },
+      "fail": {
+        "content": "[AMC] Multi Asset FoF — one fund, diversified exposure. Invest now.",
+        "note": "FoF creative missing the recurring-expenses disclaimer."
+      }
     }
   },
   {
     "rule_id": "DISC-013",
     "title": "ELSS lock-in and tax-benefit disclaimer",
     "description": "For ELSS / tax-saver schemes, the creative must disclose the 3-year lock-in and the Section 80C eligibility, and advise investors to consult their own tax consultant.",
-    "trigger": { "type": "conditional", "feature": "elss" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "elss"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (ELSS disclaimer)",
-    "provenance": ["sebi", "internal_policy"],
+    "provenance": [
+      "sebi",
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "Investments in [ELSS scheme] are subject to a 3-year lock-in period and are eligible for tax benefit under Section 80C of the Income Tax Act, 1961 (old regime). Investors are advised to consult their own tax consultant with respect to the specific amount of tax and other implications arising out of their participation.",
       "language": "en",
       "match_threshold": 0.75
     },
     "examples": {
-      "pass": { "content": "[ELSS scheme]: Investments are subject to a 3-year lock-in period and are eligible for tax benefit under Section 80C of the Income Tax Act, 1961 (old regime). Investors are advised to consult their own tax consultant.", "note": "ELSS creative with lock-in and 80C disclaimer." },
-      "fail": { "content": "[ELSS scheme] — save tax and grow your wealth. Invest today!", "note": "ELSS creative missing lock-in / 80C disclaimer." }
+      "pass": {
+        "content": "[ELSS scheme]: Investments are subject to a 3-year lock-in period and are eligible for tax benefit under Section 80C of the Income Tax Act, 1961 (old regime). Investors are advised to consult their own tax consultant.",
+        "note": "ELSS creative with lock-in and 80C disclaimer."
+      },
+      "fail": {
+        "content": "[ELSS scheme] — save tax and grow your wealth. Invest today!",
+        "note": "ELSS creative missing lock-in / 80C disclaimer."
+      }
     }
   },
   {
     "rule_id": "DISC-014",
     "title": "Graph illustration disclaimer",
     "description": "When a graph is shown, the creative must carry the graph disclaimer clarifying it is for illustration only, not for developing or implementing an investment strategy, and that past performance may or may not be sustained.",
-    "trigger": { "type": "conditional", "feature": "graph_chart" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "graph_chart"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "low",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Graph disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "The above graph is used to explain the concept and is for illustration purpose only and should not be used for development or implementation of an investment strategy. Past performance may or may not be sustained in future.",
       "language": "en",
       "match_threshold": 0.78
     },
     "examples": {
-      "pass": { "content": "[growth-of-10k chart]. The above graph is used to explain the concept and is for illustration purpose only and should not be used for development or implementation of an investment strategy. Past performance may or may not be sustained in future.", "note": "Graph shown with the graph disclaimer." },
-      "fail": { "content": "See how your money would have grown — [chart]. Start investing!", "note": "Graph shown without the graph disclaimer." }
+      "pass": {
+        "content": "[growth-of-10k chart]. The above graph is used to explain the concept and is for illustration purpose only and should not be used for development or implementation of an investment strategy. Past performance may or may not be sustained in future.",
+        "note": "Graph shown with the graph disclaimer."
+      },
+      "fail": {
+        "content": "See how your money would have grown — [chart]. Start investing!",
+        "note": "Graph shown without the graph disclaimer."
+      }
     }
   },
   {
     "rule_id": "DISC-015",
     "title": "Market-cap definitions when cap terms are used",
     "description": "When large-cap / mid-cap / small-cap terms are used, the creative must include the SEBI market-capitalisation definitions.",
-    "trigger": { "type": "conditional", "feature": "market_cap_terms" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "market_cap_terms"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "low",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Market Cap definitions)",
-    "provenance": ["sebi", "internal_policy"],
+    "provenance": [
+      "sebi",
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "Large Cap: 1st-100th company in terms of full market capitalisation. Mid Cap: 101st-250th company in terms of full market capitalisation. Small Cap: 251st company onwards in terms of full market capitalisation.",
       "language": "en",
       "match_threshold": 0.8
     },
     "examples": {
-      "pass": { "content": "A large-cap fund. Large Cap: 1st-100th company in terms of full market capitalisation. Mid Cap: 101st-250th. Small Cap: 251st company onwards.", "note": "Cap term used with the definitions." },
-      "fail": { "content": "A large-cap fund for stability and a small-cap kicker for growth.", "note": "Cap terms used without the market-cap definitions." }
+      "pass": {
+        "content": "A large-cap fund. Large Cap: 1st-100th company in terms of full market capitalisation. Mid Cap: 101st-250th. Small Cap: 251st company onwards.",
+        "note": "Cap term used with the definitions."
+      },
+      "fail": {
+        "content": "A large-cap fund for stability and a small-cap kicker for growth.",
+        "note": "Cap terms used without the market-cap definitions."
+      }
     }
   },
   {
     "rule_id": "DISC-016",
     "title": "Index-provider licensing disclaimer",
     "description": "For index funds / ETFs based on an NSE or BSE index, the creative must carry the applicable index-provider (NSE Indices / AIPL-BSE) licensing disclaimer stating the scheme is not sponsored, endorsed, or promoted by the index provider.",
-    "trigger": { "type": "conditional", "feature": "index_etf" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "index_etf"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Index/ETF index-licensing disclaimers)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "examples": {
-      "pass": { "content": "This scheme is not sponsored, endorsed, sold or promoted by NSE Indices Limited. NSE Indices Limited does not make any representation regarding the advisability of investing in the scheme. For the complete disclaimer, refer to the SID.", "note": "Index-provider disclaimer present." },
-      "fail": { "content": "Track the Nifty 50 with our low-cost index fund. Invest now!", "note": "Index-based scheme without the index-provider licensing disclaimer — verify the correct provider text." }
+      "pass": {
+        "content": "This scheme is not sponsored, endorsed, sold or promoted by NSE Indices Limited. NSE Indices Limited does not make any representation regarding the advisability of investing in the scheme. For the complete disclaimer, refer to the SID.",
+        "note": "Index-provider disclaimer present."
+      },
+      "fail": {
+        "content": "Track the Nifty 50 with our low-cost index fund. Invest now!",
+        "note": "Index-based scheme without the index-provider licensing disclaimer — verify the correct provider text."
+      }
     }
   },
   {
     "rule_id": "DISC-017",
     "title": "Exchange-listing disclaimer",
     "description": "For ETFs and close-ended schemes listed on NSE / BSE, the creative must carry the exchange's disclaimer that the permission given by the exchange does not imply approval of the SID or scheme.",
-    "trigger": { "type": "conditional", "feature": "exchange_listed" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "exchange_listed"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (NSE/BSE listing disclaimers)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "examples": {
-      "pass": { "content": "It is to be distinctly understood that the permission given by NSE should not in any way be deemed or construed that the SID / Scheme has been cleared or approved by NSE. Investors are advised to refer to the SID for the full text of the disclaimer clause.", "note": "Exchange-listing disclaimer present." },
-      "fail": { "content": "Now listed on NSE — trade our ETF live through the day!", "note": "Listed scheme without the exchange disclaimer." }
+      "pass": {
+        "content": "It is to be distinctly understood that the permission given by NSE should not in any way be deemed or construed that the SID / Scheme has been cleared or approved by NSE. Investors are advised to refer to the SID for the full text of the disclaimer clause.",
+        "note": "Exchange-listing disclaimer present."
+      },
+      "fail": {
+        "content": "Now listed on NSE — trade our ETF live through the day!",
+        "note": "Listed scheme without the exchange disclaimer."
+      }
     }
   },
   {
     "rule_id": "DISC-018",
     "title": "Offshore-promotion disclaimer",
     "description": "When domestic schemes are promoted to offshore investors, the creative must carry the offshore disclaimer clarifying it is not a solicitation or offer to offshore investors and that the product is meant for investors based in India.",
-    "trigger": { "type": "conditional", "feature": "offshore_promotion" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "offshore_promotion"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (offshore-investor advertisement disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "This document is for information purposes only. It should not be construed as a solicitation to buy any product of [AMC], nor does it constitute an offer to any offshore investors in respect of any investments. The product is solely meant for investors based in India.",
       "language": "en",
       "match_threshold": 0.72
     },
     "examples": {
-      "pass": { "content": "This document is for information purposes only. It should not be construed as a solicitation to buy any product of [AMC], nor does it constitute an offer to any offshore investors. The product is solely meant for investors based in India.", "note": "Offshore disclaimer present." },
-      "fail": { "content": "NRIs and global investors — access India's growth story with [AMC] funds!", "note": "Offshore promotion without the offshore disclaimer." }
+      "pass": {
+        "content": "This document is for information purposes only. It should not be construed as a solicitation to buy any product of [AMC], nor does it constitute an offer to any offshore investors. The product is solely meant for investors based in India.",
+        "note": "Offshore disclaimer present."
+      },
+      "fail": {
+        "content": "NRIs and global investors — access India's growth story with [AMC] funds!",
+        "note": "Offshore promotion without the offshore disclaimer."
+      }
     }
   },
   {
     "rule_id": "DISC-019",
     "title": "App-rating disclaimer",
     "description": "When an app-store rating is displayed, the creative must clarify that the rating is not for the schemes of the AMC.",
-    "trigger": { "type": "conditional", "feature": "app_rating" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "app_rating"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "low",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (App Rating disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "Rating is not for schemes of [AMC].",
       "language": "en",
       "match_threshold": 0.8
     },
     "examples": {
-      "pass": { "content": "Rated 4.6★ on the app store. Rating is not for schemes of [AMC].", "note": "App rating shown with the clarification." },
-      "fail": { "content": "Our 4.6★ app — download and start investing today!", "note": "App rating shown without the clarification." }
+      "pass": {
+        "content": "Rated 4.6★ on the app store. Rating is not for schemes of [AMC].",
+        "note": "App rating shown with the clarification."
+      },
+      "fail": {
+        "content": "Our 4.6★ app — download and start investing today!",
+        "note": "App rating shown without the clarification."
+      }
     }
   },
   {
     "rule_id": "DISC-020",
     "title": "Risk-profiler / goal-planner tool disclaimer",
     "description": "When a risk profiler, goal planner, or similar planning tool is presented, the creative must carry the tool disclaimer that it is only an aid based on the investor's inputs and that investors are responsible for their own decisions.",
-    "trigger": { "type": "conditional", "feature": "planning_tool" },
-    "applies_to": ["all"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "planning_tool"
+    },
+    "applies_to": [
+      "all"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Risk Profiler / Goal Planner disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "The risk profiler / goal planner is just a tool to help you based on your inputs. Investors are responsible for their own investment decisions and may seek investment advice from their financial advisors.",
       "language": "en",
       "match_threshold": 0.75
     },
     "examples": {
-      "pass": { "content": "Try our goal planner. The goal planner is just a tool to help you in financial planning based on your inputs. Investors are responsible for their own investment decisions and may seek investment advice from their financial advisors.", "note": "Planning tool with the disclaimer." },
-      "fail": { "content": "Our goal planner tells you exactly how much you'll have at retirement.", "note": "Planning tool without the disclaimer (and overreaching claim)." }
+      "pass": {
+        "content": "Try our goal planner. The goal planner is just a tool to help you in financial planning based on your inputs. Investors are responsible for their own investment decisions and may seek investment advice from their financial advisors.",
+        "note": "Planning tool with the disclaimer."
+      },
+      "fail": {
+        "content": "Our goal planner tells you exactly how much you'll have at retirement.",
+        "note": "Planning tool without the disclaimer (and overreaching claim)."
+      }
     }
   },
   {
     "rule_id": "DISC-021",
     "title": "Asset-allocation / investment-strategy disclaimer",
     "description": "When current portfolio allocation or investment strategy is shown, the creative must state that it is based on current market conditions and subject to change per the fund manager's view, and refer to the SID.",
-    "trigger": { "type": "conditional", "feature": "asset_allocation" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "asset_allocation"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "low",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Asset Allocation & Investment Strategy disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "Current portfolio allocation is based on current market conditions and is subject to change depending on the fund manager's view of the markets. Please refer to the SID for the detailed Asset Allocation and Investment Strategy of the Scheme.",
       "language": "en",
       "match_threshold": 0.75
     },
     "examples": {
-      "pass": { "content": "Current allocation: 65% equity, 35% debt. Current portfolio allocation is based on current market conditions and is subject to change depending on the fund manager's view of the markets. Please refer to the SID.", "note": "Allocation shown with the disclaimer." },
-      "fail": { "content": "Our fixed 65/35 equity-debt split, locked in for you.", "note": "Allocation shown without the disclaimer (and misrepresents it as fixed)." }
+      "pass": {
+        "content": "Current allocation: 65% equity, 35% debt. Current portfolio allocation is based on current market conditions and is subject to change depending on the fund manager's view of the markets. Please refer to the SID.",
+        "note": "Allocation shown with the disclaimer."
+      },
+      "fail": {
+        "content": "Our fixed 65/35 equity-debt split, locked in for you.",
+        "note": "Allocation shown without the disclaimer (and misrepresents it as fixed)."
+      }
     }
   },
   {
     "rule_id": "DISC-022",
     "title": "SIP low-ticket availability disclaimer",
     "description": "When a SIP as low as ₹100 or ₹10 is advertised, the creative must clarify that not all schemes offer this feature.",
-    "trigger": { "type": "conditional", "feature": "sip_low_ticket" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "sip_low_ticket"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "low",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (SIP as low as 100/10)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "Please note that not all mutual fund schemes offered by [AMC] have this SIP feature of investment as small as ₹100 or ₹10.",
       "language": "en",
       "match_threshold": 0.8
     },
     "examples": {
-      "pass": { "content": "Start a SIP for as little as ₹100. Please note that not all mutual fund schemes offered by [AMC] have this SIP feature of investment as small as ₹100 or ₹10.", "note": "Low-ticket SIP with the clarification." },
-      "fail": { "content": "Start any SIP with just ₹100 today!", "note": "Low-ticket SIP claim without the availability clarification." }
+      "pass": {
+        "content": "Start a SIP for as little as ₹100. Please note that not all mutual fund schemes offered by [AMC] have this SIP feature of investment as small as ₹100 or ₹10.",
+        "note": "Low-ticket SIP with the clarification."
+      },
+      "fail": {
+        "content": "Start any SIP with just ₹100 today!",
+        "note": "Low-ticket SIP claim without the availability clarification."
+      }
     }
   },
   {
     "rule_id": "DISC-023",
     "title": "Small-cap SIP/STP registration restriction disclaimer",
     "description": "For small-cap schemes, where a per-instalment SIP/STP restriction applies, the creative must disclose the applicable registration limit.",
-    "trigger": { "type": "conditional", "feature": "small_cap_scheme" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "conditional",
+      "feature": "small_cap_scheme"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "low",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Small Cap disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "Fresh / new registrations through Systematic Investment Plan (SIP) or Systematic Transfer Plan (STP) or such other special product will be allowed / accepted wherein the value of per instalment would be less than or equal to ₹1 crore per investor (across all folios) till further notice, from the effective date.",
       "language": "en",
       "match_threshold": 0.72
     },
     "examples": {
-      "pass": { "content": "[AMC] Small Cap Fund. Fresh / new registrations through SIP or STP will be allowed wherein the value of per instalment would be less than or equal to ₹1 crore per investor (across all folios) till further notice.", "note": "Small-cap creative with the SIP/STP restriction disclaimer." },
-      "fail": { "content": "[AMC] Small Cap Fund — start an unlimited SIP of any size!", "note": "Small-cap creative missing the SIP/STP restriction disclaimer." }
+      "pass": {
+        "content": "[AMC] Small Cap Fund. Fresh / new registrations through SIP or STP will be allowed wherein the value of per instalment would be less than or equal to ₹1 crore per investor (across all folios) till further notice.",
+        "note": "Small-cap creative with the SIP/STP restriction disclaimer."
+      },
+      "fail": {
+        "content": "[AMC] Small Cap Fund — start an unlimited SIP of any size!",
+        "note": "Small-cap creative missing the SIP/STP restriction disclaimer."
+      }
     }
   },
   {
     "rule_id": "DISC-024",
     "title": "Article disclaimer",
     "description": "Article creatives must carry the article disclaimer covering data sources, that it is not a complete disclosure or investment advice, that no returns are assured, and the standard market-risk warning.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["article_blog"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "others_media"
+    ],
+    "creative_type": [
+      "article"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Article disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "This article has been issued on the basis of internal data, publicly available information and other sources believed to be reliable. The information contained herein is for general purposes only and not a complete disclosure of every material fact. It should not be construed as investment advice to any party. [AMC] is not guaranteeing / assuring any returns on investments. Readers shall be fully responsible / liable for any decision taken on the basis of this article. Mutual Fund investments are subject to market risks, read all scheme related documents carefully.",
       "language": "en",
       "match_threshold": 0.7
     },
     "examples": {
-      "pass": { "content": "An explainer on rupee-cost averaging through SIPs. This article has been issued on the basis of internal data, publicly available information and other sources believed to be reliable. The information contained herein is for general purposes only and not a complete disclosure of every material fact. It should not be construed as investment advice to any party. [AMC] is not guaranteeing / assuring any returns on investments. Readers shall be fully responsible / liable for any decision taken on the basis of this article. Mutual Fund investments are subject to market risks, read all scheme related documents carefully.", "note": "Article carries the article disclaimer." },
-      "fail": { "content": "[article on SIP investing that ends with a call-to-action and no disclaimer].", "note": "Article missing the article disclaimer." }
+      "pass": {
+        "content": "An explainer on rupee-cost averaging through SIPs. This article has been issued on the basis of internal data, publicly available information and other sources believed to be reliable. The information contained herein is for general purposes only and not a complete disclosure of every material fact. It should not be construed as investment advice to any party. [AMC] is not guaranteeing / assuring any returns on investments. Readers shall be fully responsible / liable for any decision taken on the basis of this article. Mutual Fund investments are subject to market risks, read all scheme related documents carefully.",
+        "note": "Article carries the article disclaimer."
+      },
+      "fail": {
+        "content": "[article on SIP investing that ends with a call-to-action and no disclaimer].",
+        "note": "Article missing the article disclaimer."
+      }
     }
   },
   {
     "rule_id": "DISC-025",
     "title": "Blog disclaimer",
     "description": "Blog creatives must carry the blog disclaimer stating the views are for information only, not investment advice or a solicitation, that no returns are assured, and advising due caution.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["article_blog", "social_post"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "others_media"
+    ],
+    "creative_type": [
+      "blog",
+      "social_post"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Blog disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "Views and opinions contained herein are for information purposes only and should not be construed as investment advice / recommendation to any party or solicitation to buy, sell or hold any security or to adopt any investment strategy. [AMC] is not guaranteeing / assuring any returns on investments. The recipient should exercise due caution and / or seek professional advice before making any decision.",
       "language": "en",
       "match_threshold": 0.7
     },
     "examples": {
-      "pass": { "content": "A blog on staying invested through market volatility. Views and opinions contained herein are for information purposes only and should not be construed as investment advice / recommendation to any party or solicitation to buy, sell or hold any security or to adopt any investment strategy. [AMC] is not guaranteeing / assuring any returns on investments. The recipient should exercise due caution and / or seek professional advice before making any decision.", "note": "Blog carries the blog disclaimer." },
-      "fail": { "content": "[blog post recommending investors buy the fund now, with no disclaimer].", "note": "Blog missing the blog disclaimer (and reads as a recommendation)." }
+      "pass": {
+        "content": "A blog on staying invested through market volatility. Views and opinions contained herein are for information purposes only and should not be construed as investment advice / recommendation to any party or solicitation to buy, sell or hold any security or to adopt any investment strategy. [AMC] is not guaranteeing / assuring any returns on investments. The recipient should exercise due caution and / or seek professional advice before making any decision.",
+        "note": "Blog carries the blog disclaimer."
+      },
+      "fail": {
+        "content": "[blog post recommending investors buy the fund now, with no disclaimer].",
+        "note": "Blog missing the blog disclaimer (and reads as a recommendation)."
+      }
     }
   },
   {
     "rule_id": "DISC-026",
     "title": "Video content disclaimer",
     "description": "Video creatives must carry the video disclaimer covering data sources, that it is not a complete disclosure or investment advice, that no returns are assured, and advising due caution.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["mf_scheme"],
-    "creative_type": ["video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "scheme_related"
+    ],
+    "creative_type": [
+      "video"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (Videos disclaimer)",
-    "provenance": ["internal_policy"],
+    "provenance": [
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "This video has been prepared on the basis of internal data, publicly available information and other sources believed to be reliable. The information contained in this video is for general purposes only and not a complete disclosure of every material fact. It should not be construed as investment advice to any party. [AMC] is not guaranteeing / assuring any returns on investments. Viewers should exercise due caution and / or seek professional advice before making any decision.",
       "language": "en",
       "match_threshold": 0.7
     },
     "examples": {
-      "pass": { "content": "An explainer video on goal-based investing. This video has been prepared on the basis of internal data, publicly available information and other sources believed to be reliable. The information contained in this video is for general purposes only and not a complete disclosure of every material fact. It should not be construed as investment advice to any party. [AMC] is not guaranteeing / assuring any returns on investments. Viewers should exercise due caution and / or seek professional advice before making any decision.", "note": "Video carries the video disclaimer." },
-      "fail": { "content": "[explainer video ending on a call-to-action with no disclaimer].", "note": "Video missing the video disclaimer." }
+      "pass": {
+        "content": "An explainer video on goal-based investing. This video has been prepared on the basis of internal data, publicly available information and other sources believed to be reliable. The information contained in this video is for general purposes only and not a complete disclosure of every material fact. It should not be construed as investment advice to any party. [AMC] is not guaranteeing / assuring any returns on investments. Viewers should exercise due caution and / or seek professional advice before making any decision.",
+        "note": "Video carries the video disclaimer."
+      },
+      "fail": {
+        "content": "[explainer video ending on a call-to-action with no disclaimer].",
+        "note": "Video missing the video disclaimer."
+      }
     }
   },
   {
     "rule_id": "DISC-027",
     "title": "Investor-awareness (IAP) disclaimer",
     "description": "Investor education and awareness initiative creatives must carry the IAP disclaimer covering the one-time KYC process, dealing only with registered Mutual Funds, and the SEBI SCORES grievance-redressal route.",
-    "trigger": { "type": "unconditional" },
-    "applies_to": ["iap"],
-    "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+    "trigger": {
+      "type": "unconditional"
+    },
+    "applies_to": [
+      "iap"
+    ],
+    "creative_type": [
+      "all"
+    ],
     "severity": "medium",
     "check_type": "automated",
     "source_clause": "Internal compliance checklist — Disclaimer Repository (IAP disclaimer); SEBI investor-awareness norms",
-    "provenance": ["sebi", "internal_policy"],
+    "provenance": [
+      "sebi",
+      "internal_policy"
+    ],
     "mandated_text": {
       "text": "This is an investor education and awareness initiative by [AMC]. Investors have to complete one-time KYC process. Visit [AMC website] or contact us on [AMC email] for more information. Investors should deal only with registered Mutual Funds, details of which are available on www.sebi.gov.in - Intermediaries / Market Infrastructure Institutions section. For any grievance redressal, investors can call us on [AMC helpline] or register a complaint on the SEBI SCORES portal at https://scores.sebi.gov.in/",
       "language": "en",
       "match_threshold": 0.7
     },
     "examples": {
-      "pass": { "content": "5 things to check before you invest. This is an investor education and awareness initiative by [AMC]. Investors have to complete one-time KYC process. Visit [AMC website] or contact us on [AMC email] for more information. Investors should deal only with registered Mutual Funds, details of which are available on www.sebi.gov.in - Intermediaries / Market Infrastructure Institutions section. For any grievance redressal, investors can call us on [AMC helpline] or register a complaint on the SEBI SCORES portal at https://scores.sebi.gov.in/", "note": "IAP creative with the IAP disclaimer." },
-      "fail": { "content": "[Investor-awareness post with no IAP disclaimer].", "note": "IAP creative missing the IAP disclaimer." }
+      "pass": {
+        "content": "5 things to check before you invest. This is an investor education and awareness initiative by [AMC]. Investors have to complete one-time KYC process. Visit [AMC website] or contact us on [AMC email] for more information. Investors should deal only with registered Mutual Funds, details of which are available on www.sebi.gov.in - Intermediaries / Market Infrastructure Institutions section. For any grievance redressal, investors can call us on [AMC helpline] or register a complaint on the SEBI SCORES portal at https://scores.sebi.gov.in/",
+        "note": "IAP creative with the IAP disclaimer."
+      },
+      "fail": {
+        "content": "[Investor-awareness post with no IAP disclaimer].",
+        "note": "IAP creative missing the IAP disclaimer."
+      }
     }
   }
 ]

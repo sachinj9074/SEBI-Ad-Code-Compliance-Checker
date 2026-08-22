@@ -4,7 +4,7 @@
   "description": "The creative must not state, imply, or suggest assured, guaranteed, or protected returns for any mutual fund scheme.",
   "trigger": { "type": "unconditional" },
   "applies_to": ["all"],
-  "creative_type": ["general_kv", "anniversary", "yield", "article_blog", "social_post", "video"],
+  "creative_type": ["all"],
   "severity": "critical",
   "check_type": "automated",
   "source_clause": "SEBI (Mutual Funds) Regulations 1996, Sixth Schedule (Advertisement Code); MF Master Circular 2026-03-20, advertisement chapter",

@@ -42,7 +42,7 @@ def image_eval() -> bool:
         print("\nimage eval: needs a valid ANTHROPIC_API_KEY (skipped)")
         return True
 
-    v = build_verdict(str(banner), ["mf_scheme"], "general_kv")
+    v = build_verdict(str(banner), "scheme_related", ["key_visual"])
     rl = {r["rule_id"]: r["verdict"] for r in v["rule_layer"]["results"]}
     checks = [
         ("source read as image", v["extraction"]["source_kind"] == "image"),

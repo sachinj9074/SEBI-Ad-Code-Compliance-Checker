@@ -30,7 +30,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))  # for the sibling `ren
 
 from src import model  # noqa: E402
 from src.checker import build_verdict  # noqa: E402
-from src.corpus import ACTIVE_CREATIVE_TYPES  # noqa: E402
+from src.corpus import AREAS, AREA_CTYPE_OPTIONS  # noqa: E402
 import render  # noqa: E402  (sibling module; not `from app import ...` because the script itself is module 'app')
 
 DEMO_CACHE = ROOT / "demo_cache"
@@ -67,18 +67,20 @@ LIVE_PASSWORD = _secret("LIVE_PASSWORD", "") or ""
 MAX_LIVE_RUNS = int(_secret("MAX_LIVE_RUNS", "15") or "15")
 
 # ---- vocabularies (human labels over the internal tags) ---------------------
+# The 'all' tag is the mandatory baseline on rules and is never a user option.
 AREA_LABELS = {
-    "all": "All materials",
-    "mf_scheme": "Mutual-fund scheme",
-    "nfo": "New Fund Offer (NFO)",
-    "iap": "Investor Awareness Programme",
+    "scheme_related": "Scheme-related",
+    "iap": "Investor Awareness Programme (IAP)",
+    "others_media": "Others & Media",
 }
 CTYPE_LABELS = {
-    "general_kv": "General / key visual",
-    "anniversary": "Anniversary creative",
-    "yield": "Yield / debt creative",
-    "article_blog": "Article / blog",
-    "social_post": "Social post",
+    "nfo": "NFO",
+    "key_visual": "Key visual",
+    "yield": "Yield / debt",
+    "social_post": "Social media post",
+    "article": "Article",
+    "blog": "Blog",
+    "anniversary": "Anniversary",
 }
 UPLOAD_TYPES = ["docx", "pdf", "txt", "png", "jpg", "jpeg", "webp"]
 
@@ -169,16 +171,21 @@ with st.sidebar:
         "…or try a bundled sample", [NO_SAMPLE, *SAMPLES],
         help="Generic sample creatives written for this tool, no upload needed.",
     )
-    areas = st.multiselect(
-        "Business area(s)", options=list(AREA_LABELS),
-        default=["mf_scheme"], format_func=lambda a: AREA_LABELS[a],
+    area = st.radio(
+        "Business area", options=AREAS,
+        format_func=lambda a: AREA_LABELS[a],
     )
-    _ctype_opts = sorted(ACTIVE_CREATIVE_TYPES)
-    ctype = st.selectbox(
-        "Creative type", options=_ctype_opts,
-        index=_ctype_opts.index("general_kv") if "general_kv" in _ctype_opts else 0,
-        format_func=lambda c: CTYPE_LABELS.get(c, c),
-    )
+    _ctype_opts = AREA_CTYPE_OPTIONS[area]
+    if _ctype_opts:
+        ctypes = st.multiselect(
+            "Creative type(s)", options=_ctype_opts,
+            default=["key_visual"] if "key_visual" in _ctype_opts else [],
+            format_func=lambda c: CTYPE_LABELS.get(c, c),
+            help="Pick every type that applies; the matching rules are added together.",
+        )
+    else:
+        ctypes = []
+        st.caption("IAP creatives take no creative-type input; the IAP and mandatory rules run.")
     run = st.button("Run compliance check", type="primary", use_container_width=True)
 
 if not run:
@@ -188,8 +195,8 @@ if not run:
 if not uploads and sample_choice == NO_SAMPLE:
     st.error("Please upload a file or pick a bundled sample.")
     st.stop()
-if not areas:
-    st.error("Please select at least one business area.")
+if area != "iap" and not ctypes:
+    st.error("Please select at least one creative type.")
     st.stop()
 
 # Decide the source and whether this is a zero-cost cached run or a live one.
@@ -226,13 +233,15 @@ if use_cache:
 else:
     with st.spinner("Extracting and checking…"):
         try:
-            verdict = build_verdict(path, areas, ctype)
+            verdict = build_verdict(path, area, ctypes)
         except Exception as exc:  # noqa: BLE001 — surface, never a blank page
             st.error(f"Could not process the creative: {type(exc).__name__}: {exc}")
             st.stop()
     st.session_state["live_runs"] = st.session_state.get("live_runs", 0) + 1
 
 st.divider()
+for _w in verdict["meta"].get("selection_warnings", []):
+    st.warning(f"⚠️ {_w}")
 render.headline(verdict)
 render.summary_strip(verdict)
 render.features(verdict)

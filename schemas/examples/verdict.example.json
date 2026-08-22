@@ -3,8 +3,8 @@
   "meta": {
     "creative_id": "sample-001",
     "source_filename": "sample_clean.docx",
-    "areas_selected": ["mf_scheme"],
-    "creative_type": "general_kv",
+    "areas_selected": ["scheme_related"],
+    "creative_type": ["key_visual"],
     "run_at": "2026-08-06T10:00:00Z",
     "model_used": "tbd",
     "tool_version": "0.1.0"

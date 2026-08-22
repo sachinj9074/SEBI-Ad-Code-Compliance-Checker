@@ -17,8 +17,8 @@ ROOT = Path(__file__).resolve().parent.parent
 RULES_DIR = ROOT / "corpus" / "rules"
 DEFAULT_OUT = ROOT / "review" / "corpus_review.html"
 
-ACTIVE_CREATIVE_TYPES = {"general_kv", "anniversary", "yield", "article_blog", "social_post"}
-ALL6 = {"general_kv", "anniversary", "yield", "article_blog", "social_post", "video"}
+ACTIVE_CREATIVE_TYPES = {"all", "nfo", "key_visual", "yield", "social_post", "article", "blog", "anniversary"}
+ALL6 = {"all"}  # post-retag: the full-coverage tag is literally "all"
 
 CATEGORIES = {
     "01_prohibitions": "General prohibitions",
