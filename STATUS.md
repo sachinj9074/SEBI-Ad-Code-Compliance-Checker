@@ -59,6 +59,11 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
     name. PDF states it is a first-pass check, not a sign-off; includes creative identity (name +
     SHA-256), scope + warnings, acknowledgements, passed rules, fact-check (assumptions listed),
     human-review + advisory items. `meta.content_sha256` added to the verdict.
+    Layout is **status-forward** (fpdf2 `table()`): a colour-coded at-a-glance tile strip, banded
+    section headers, and tables per section (passed rules with severity chips; fact-check with a Note
+    column; a dedicated "Assumptions & caveats" box) so the reviewer sees what passed / what was
+    assumed / what is still open at a glance. Presentation-only: no corpus/prompt/pipeline change, so
+    no eval re-run or demo-cache regen needed.
   - Deterministic eval still 100% (44/44); scope + report + UI covered by headless AppTests.
 
 ## Architecture (where things live)
