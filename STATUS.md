@@ -1,6 +1,6 @@
 # Build status & handoff
 
-_Last updated: 2026-08-07._ Living note so a fresh context (or a post-compaction session) can
+_Last updated: 2026-08-23._ Living note so a fresh context (or a post-compaction session) can
 resume instantly. The README is the product spec; CLAUDE.md is the working rules; this file is
 "where we are and what's next." Read those three, then `git log --oneline`.
 
@@ -135,6 +135,25 @@ resume instantly. The README is the product spec; CLAUDE.md is the working rules
   teams to build a genuine eval file; hold a slot for it. Now a README roadmap item too.
 - ⬜ **RBAC / accounts / rule-management + maker-checker** — new roadmap items (README). Login, role-based
   access, a UI to add/edit rules without touching code, and maker-checker approval on any rule-set change.
+
+## Roadmap (post-v1)
+_The forward view, consolidated. Mirrored in `README.md` (Roadmap) and `docs/PRODUCT_SPEC.md` section 11._
+- **Screen-recording walkthrough** of the demo.
+- **Accounts + RBAC** for teams.
+- **Rule-management UI** to add or edit rules without touching code, with **maker-checker** approval on any
+  rule-set change (under RBAC).
+- **Scheme-document knowledge base (SID / KIM / SAI)** _(added 2026-08-23)_. Extend the section-6 KB beyond
+  factsheets with the scheme's own documents, so Layer-2 fact-checks can verify the scheme / benchmark
+  risk-o-meter, product suitability, and investment objective against source instead of raising
+  `needs_review`. Feeds: the public SID/KIM/SAI PDFs on the AMC website (same batch-extraction pattern as the
+  factsheet KB), or a compact compliance-maintained sheet of just the essential data points. Same section-6
+  discipline (one record per scheme, `as_of_date`, monthly regen). Directly closes the `riskometer_level`
+  null gap under Known gaps.
+- **Video creative support**. Activate the `video`-tagged rules; temporal checks (flash-frame disclaimers,
+  voice-over requirements).
+- **More business areas** (AIF, PMS, branding, social): more rules in the same corpus.
+- **Real-world evaluation set**: labelled, reviewed marketing material from the compliance team (user to
+  source), to measure accuracy on genuine examples beyond the built-in pass/fail set.
 
 ## Writing/README conventions (2026-08-09)
 - **No em dashes** in any generated content, ever (README, docs, commits, code comments, chat). Use
