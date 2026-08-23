@@ -1,4 +1,4 @@
-> **Note:** This is the product spec / build bible — the single source of truth for *what* the project is and *why*. It was the repo's original README; the top-level `README.md` is now a plain-English portfolio overview, and `CLAUDE.md` imports this file.
+> **Note:** This is the product spec / build bible, the single source of truth for *what* the project is and *why*. It was the repo's original README; the top-level `README.md` is now a plain-English portfolio overview, and `CLAUDE.md` imports this file.
 
 # SEBI Ad Code Compliance Checker
 
