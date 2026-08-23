@@ -196,6 +196,7 @@ Working rules for every Claude Code session:
 ## 11. Out of scope for the first build
 
 - **Video.** Parked. The video checkpoint rules are encoded in the corpus with the `video` creative-type tag but stay inactive. Video adds a temporal dimension (a disclaimer flashing for a second, voice-over requirements) deserving its own phase.
+- **Scheme-document knowledge base (SID / KIM / SAI).** The section 6 knowledge base covers the published factsheets only. A natural extension is to ingest the scheme's own documents (Scheme Information Document, Key Information Memorandum, Statement of Additional Information) into the same structured KB, so Layer-2 fact-checks can verify claims the factsheet does not carry cleanly: the scheme and benchmark risk-o-meter level, the product-suitability / product-labelling statement, and the investment objective, against source rather than raising a `needs_review`. Two possible feeds, both usable behind the same deterministic lookup: extract from the public SID/KIM/SAI PDFs on the AMC website (the same batch-extraction pattern as the factsheet KB), or load a compact compliance-maintained sheet of just the essential data points. Keep the section 6 discipline: one record per scheme, `as_of_date` stamped, monthly regeneration.
 - **Workflow and routing.** Who receives the result, logging, dashboards.
 - **Any login, database, or multi-user handling.**
 
