@@ -30,11 +30,15 @@ The exact figures (how far TAT falls, how many rework cycles are saved) are what
 
 ## What it does
 
-You **upload a creative**, tell it the **business area** (e.g. a mutual-fund scheme) and the **type** (banner, social post, etc.), and it returns a structured verdict in three clearly separated parts:
+You **upload a creative** and tell it two things: the **business area** (a mutual-fund scheme, an investor-awareness programme, or other/media) and, where it applies, the **creative type** (an NFO, a key visual, a yield creative, a social post, and so on). Those two choices decide which rules run. It then returns a structured verdict in three clearly separated parts:
 
 1. **Rule checks.** Does it break the SEBI advertisement code or AMFI guidelines? Each issue comes with a plain-English reason and the exact edit to make.
 2. **Factsheet fact-check.** Do the numbers in the creative (returns, AUM) actually match the fund's **official published factsheet**? A wrong return figure is a factual error, reported on its own.
 3. **Advisory.** A softer second read that flags anything that could *mislead an investor* even when no specific rule is broken.
+
+The verdict is laid out in **priority order**: what to fix first, then the factual issues, then the items a human still needs to confirm, then advisory notes, then everything that already passed. A clickable summary strip at the top jumps you straight to any section.
+
+When a creative comes back **clean** (no rule failures, no factual mismatches) and the reviewer has ticked off the human-check and advisory items, the tool produces a **downloadable clearance report (PDF)** to attach when handing the creative to compliance. It sets out what passed, what was assumed, and what a person still confirmed by hand, and states plainly that it is a first-pass self-check, not a sign-off.
 
 It reads Word docs, PDFs, and (importantly) **images and banners**, because a large share of real violations are visual: a mandatory warning that's present but printed too small to read, a missing risk-o-meter, a low-contrast disclaimer.
 
@@ -49,6 +53,8 @@ It reads Word docs, PDFs, and (importantly) **images and banners**, because a la
 **4 · It never hides a bad read.** Every result shows the tool's **extraction confidence** and a **"what the tool read"** panel, so a garbled scan is caught at a glance instead of being confidently checked as if it were correct.
 
 **5 · It flags for a human instead of guessing.** Some things a model genuinely can't decide from the file alone (is that person a celebrity? does this match the approved script?). Those are marked **"needs a human check"** and routed onward. The tool never pretends to make a call it can't.
+
+**6 · It ends in an artifact, not an approval.** A clean creative produces a **clearance report** the creator can attach when they hand it over, but only after they have personally acknowledged the human-check and advisory items, and the report says on its face that it is a first-pass self-check, not a sign-off. It shortens the handover without ever pretending to be the approval itself.
 
 ## How it works
 
@@ -67,12 +73,13 @@ flowchart TB
     F --> J["Layer 3 · Advisory<br/>unscored second read"]
     K[("Factsheet knowledge base<br/>built from public factsheets")] --> I
 
-    H --> V["One-page verdict:<br/>fix these · human-check these · fact issues · advisory"]
+    H --> V["One-page verdict, in priority order:<br/>fix these · fact issues · human-check · advisory · passed"]
     I --> V
     J --> V
+    V --> R["Clearance report (PDF)<br/>only when clean + acknowledged"]
 ```
 
-In plain terms: the creative is read (as text, or by vision for images), the tool detects what it contains, that decides which rules apply, and the result is assembled into three separate sections, plus a fact-check against a knowledge base built from the public factsheets.
+In plain terms: the creative is read (as text, or by vision for images), the tool detects what it contains, that decides which rules apply, and the result is assembled into three separate sections plus a fact-check against a knowledge base built from the public factsheets. If it comes back clean and the reviewer signs off the manual items, they can download a clearance report to pass along.
 
 ## A quick example
 
@@ -96,6 +103,7 @@ In plain terms: the creative is read (as text, or by vision for images), the too
 - **Anthropic Claude** (official SDK), tiered on cost: a fast model (**Haiku**) for reading and classification, a stronger model (**Sonnet**) for rule judgment, the advisory read, and vision
 - **pdfplumber, PyMuPDF, python-docx** for reading Word docs and both text-based and scanned PDFs
 - **RapidFuzz** for fuzzy-matching the mandatory disclaimer texts (tolerant of line-break and punctuation drift, and Devanagari-aware for Hindi)
+- **fpdf2** for the downloadable clearance-report PDF
 - **JSON Schema**: the rule, verdict, and factsheet-record shapes are schema-defined and validated (the schemas are the source of truth)
 - A **one-command evaluation script**: every rule ships a pass and a fail example, so the corpus doubles as the test set
 
@@ -109,10 +117,12 @@ A larger, real-world evaluation set (reviewed marketing material labelled by the
 
 ## Scope & honest limitations
 
-- **It advises; it does not approve.** Every output is an issue to resolve or a check to route onward, never a compliance sign-off.
+- **It advises; it does not approve.** Every output is an issue to resolve or a check to route onward. Even the clearance report is a first-pass self-check that records manual sign-offs, never a compliance approval.
+- **Coverage is deepest for scheme creatives.** The rule set is richest for mutual-fund schemes and NFOs, where the most specific, highest-value rules live. Investor-awareness and other/media creatives are covered more lightly today; adding depth there is more rules in the same corpus, not new machinery.
+- **The fact-check reads tables, not graphics.** It verifies numbers that appear in the factsheet tables (returns, AUM). Some published values, like the risk-o-meter risk level, are printed as a dial rather than machine-readable text, so a claim about them is marked *not verified* rather than guessed.
+- **Advisory is a second read, not a rule.** The advisory layer is a model's judgment call, unscored and separate. Treat it as prompts to look again, not as findings.
 - **Video is parked.** Video rules are written but switched off, because video adds a time dimension (a disclaimer flashing for one second, voice-over rules) that deserves its own phase.
-- **A first, focused rule set.** ~60 rules covering the highest-value areas (general schemes and NFOs); more business areas are a straightforward extension of the same corpus.
-- **No login, database, or workflow routing yet.** It's a focused prototype: upload, check, read.
+- **No login, database, or workflow routing yet.** It's a focused prototype: upload, check, read, and download the report.
 
 ## Data and sources
 
@@ -149,9 +159,9 @@ streamlit run app/app.py
 
 Open it and pick a **bundled sample** from the sidebar to see a full, real verdict straight away. The bundled samples run from pre-computed results, so exploring the demo is instant and costs nothing. To run a live check on your own creative, an access code is available on request.
 
-![The one-page verdict for a sample with planted violations: a plain-language "not ready to send yet" headline, a clickable summary dashboard (must-fix, human-check, fact issues, advisory), the features the tool detected, and the fixes grouped below.](docs/img/demo-verdict.png)
+Below is the **clearance report** a clean creative produces, the artifact a creator attaches when handing work to compliance: a colour-coded summary strip, then tables for what passed, what was assumed, and what a person confirmed by hand, all under a standing note that it is a first-pass self-check, not a sign-off.
 
-![The home screen: pick a bundled sample or upload a creative, choose the business area and creative type, and run the check.](docs/img/demo-home.png)
+![The downloadable clearance report: a "not a compliance sign-off" disclaimer band, a colour-coded at-a-glance strip (passed, to fix, human review, fact mismatches, advisory), an assumptions-and-caveats box, and a table of passed checks with severity chips.](docs/img/clearance-report.png)
 
 ## Roadmap
 
