@@ -177,6 +177,7 @@ Open it and pick a **bundled sample** from the sidebar to see a full, real verdi
 - **User accounts and role-based access control (RBAC)** for teams
 - **A rule-management interface** so compliance can add and edit rules without touching code
 - **Maker-checker approval** (under RBAC) for changes to the rule set, so new or edited rules are reviewed before they go live
+- **Scheme-document data in the knowledge base (SID / KIM / SAI).** Extend the fact-check beyond the factsheet by adding the scheme's own documents (Scheme Information Document, Key Information Memorandum, Statement of Additional Information), so claims about the scheme and benchmark risk-o-meter, product suitability, and the investment objective can be verified against source rather than only flagged for a human. The data can come from the documents published on the AMC website, or from a compact reference sheet of just the essential data points.
 - **Video creative support** (temporal checks: flash-frame disclaimers, voice-over requirements)
 - **More business areas** (AIF, PMS, branding, social), the same corpus with more rules
 - **A real-world evaluation set** built with the compliance team, to measure accuracy on genuine reviewed material
