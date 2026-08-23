@@ -159,7 +159,15 @@ streamlit run app/app.py
 
 Open it and pick a **bundled sample** from the sidebar to see a full, real verdict straight away. The bundled samples run from pre-computed results, so exploring the demo is instant and costs nothing. To run a live check on your own creative, an access code is available on request.
 
-Below is the **clearance report** a clean creative produces, the artifact a creator attaches when handing work to compliance: a colour-coded summary strip, then tables for what passed, what was assumed, and what a person confirmed by hand, all under a standing note that it is a first-pass self-check, not a sign-off.
+**The home screen.** Upload a creative or pick a bundled sample, then choose the business area and, where it applies, the creative type(s). Those two choices decide which rules run.
+
+![The home screen: a sidebar to upload a creative or pick a bundled sample, then choose the business area (Scheme-related, Investor Awareness Programme, or Others & Media) and the creative type(s).](docs/img/demo-homescreen.png)
+
+**The verdict.** A plain-language headline says whether it is ready, a clickable summary strip jumps to any section, and the issues are laid out in priority order with the exact edit to make.
+
+![A verdict for a sample with planted violations: a "not ready to send yet" headline, a reconciling count line, a clickable strip (fix these, fact check, human check, advisory, passed, and the gated report), the detected features, and the fixes below.](docs/img/demo-verdict.png)
+
+**The clearance report.** When a creative comes back clean, the creator can download this to attach when they hand the work over: a colour-coded summary strip, then tables for what passed, what was assumed, and what a person confirmed by hand, all under a standing note that it is a first-pass self-check, not a sign-off.
 
 ![The downloadable clearance report: a "not a compliance sign-off" disclaimer band, a colour-coded at-a-glance strip (passed, to fix, human review, fact mismatches, advisory), an assumptions-and-caveats box, and a table of passed checks with severity chips.](docs/img/clearance-report.png)
 
